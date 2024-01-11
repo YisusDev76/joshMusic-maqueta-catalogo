@@ -1,70 +1,4 @@
-//Manejadores de la aplicación 
-//Navbar escritorio/tablets
-const navBarRight= document.querySelector('.navbar-right');
-
-const menuEmail = document.querySelector('.navbar-email');
-const menuHamIcon = document.querySelector('.menu');
-const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');
-const productDetailCloseIcon = document.querySelector('.product-detail-close');
-const desktopMenu = document.querySelector('.desktop-menu');
-const mobileMenu = document.querySelector('.mobile-menu');
-
-//Shopping cart menu/Product details
-const asideShoppingCart = document.querySelector('#asideShoppingCart');
-const productDetailContainer = document.querySelector('#productDetail');
-
-const arrowAsideClose = document.querySelector('.arrow-close');
-const cardsContainer = document.querySelector('.cards-container');
-const darken = document.querySelector('.darken');
-
-const mobileMenuLine = document.querySelector('.mobile-menu ul:nth-child(1)');
-
-// Declarando funciones para abrir y cerrar los contenedores
-const toggleDesktopMenu = () => {
-    asideShoppingCart.classList.remove('show');
-    desktopMenu.classList.toggle('inactive');
-};
-
-const toggleMobileMenu = () => {
-    asideShoppingCart.classList.remove('show');
-    mobileMenu.classList.toggle('active');
-    mobileMenuLine.classList.toggle('active');
-    productDetailContainer.classList.remove('show');
-    darken.classList.remove('show');
-};
-
-const toggleCarritoAside = () => {
-    mobileMenu.classList.remove('active');
-    mobileMenuLine.classList.remove('active');
-    desktopMenu.classList.add('inactive');
-    productDetailContainer.classList.remove('show');
-    darken.classList.remove('show');
-    asideShoppingCart.classList.toggle('show');
-};
-
-const openProductDetailAside = () => {
-    mobileMenu.classList.remove('active');
-    mobileMenuLine.classList.remove('active');
-    desktopMenu.classList.add('inactive');
-    asideShoppingCart.classList.remove('show');
-
-    productDetailContainer.classList.toggle('show');
-    darken.classList.toggle('show');
-};
-
-const closeProductDetailAside = () => {
-    productDetailContainer.classList.remove('show');
-    darken.classList.remove('show');
-};
-
-// llamando eventos para abrir y cerrar los contenedores
-menuEmail.addEventListener('click', toggleDesktopMenu);
-menuHamIcon.addEventListener('click', toggleMobileMenu);
-menuCarritoIcon.addEventListener('click', toggleCarritoAside);
-arrowAsideClose.addEventListener('click', toggleCarritoAside);
-productDetailCloseIcon.addEventListener('click', closeProductDetailAside);
-darken.addEventListener('click', closeProductDetailAside);
-
+//DATASET
 // Lista de productos
 const productList = [];
 productList.push({
@@ -275,6 +209,73 @@ Distancia de Trabajo / Alcance:
 Hasta 200 metros.
     `,
 });
+
+//Manejadores de la aplicación 
+//Navbar escritorio/tablets
+const navBarRight= document.querySelector('.navbar-right');
+
+const menuEmail = document.querySelector('.navbar-email');
+const menuHamIcon = document.querySelector('.menu');
+const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');
+const productDetailCloseIcon = document.querySelector('.product-detail-close');
+const desktopMenu = document.querySelector('.desktop-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+//Shopping cart menu/Product details
+const asideShoppingCart = document.querySelector('#asideShoppingCart');
+const productDetailContainer = document.querySelector('#productDetail');
+
+const arrowAsideClose = document.querySelector('.arrow-close');
+const cardsContainer = document.querySelector('.cards-container');
+const darken = document.querySelector('.darken');
+
+const mobileMenuLine = document.querySelector('.mobile-menu ul:nth-child(1)');
+
+// Declarando funciones para abrir y cerrar los contenedores
+const toggleDesktopMenu = () => {
+    asideShoppingCart.classList.remove('show');
+    desktopMenu.classList.toggle('inactive');
+};
+
+const toggleMobileMenu = () => {
+    asideShoppingCart.classList.remove('show');
+    mobileMenu.classList.toggle('active');
+    mobileMenuLine.classList.toggle('active');
+    productDetailContainer.classList.remove('show');
+    darken.classList.remove('show');
+};
+
+const toggleCarritoAside = () => {
+    mobileMenu.classList.remove('active');
+    mobileMenuLine.classList.remove('active');
+    desktopMenu.classList.add('inactive');
+    productDetailContainer.classList.remove('show');
+    darken.classList.remove('show');
+    asideShoppingCart.classList.toggle('show');
+};
+
+const openProductDetailAside = () => {
+    mobileMenu.classList.remove('active');
+    mobileMenuLine.classList.remove('active');
+    desktopMenu.classList.add('inactive');
+    asideShoppingCart.classList.remove('show');
+
+    productDetailContainer.classList.toggle('show');
+    darken.classList.toggle('show');
+};
+
+const closeProductDetailAside = () => {
+    productDetailContainer.classList.remove('show');
+    darken.classList.remove('show');
+};
+
+// llamando eventos para abrir y cerrar los contenedores
+menuEmail.addEventListener('click', toggleDesktopMenu);
+menuHamIcon.addEventListener('click', toggleMobileMenu);
+menuCarritoIcon.addEventListener('click', toggleCarritoAside);
+arrowAsideClose.addEventListener('click', toggleCarritoAside);
+productDetailCloseIcon.addEventListener('click', closeProductDetailAside);
+darken.addEventListener('click', closeProductDetailAside);
 
 // Declaración de selectores y array para Shopping Cart
 const shoppingContainer = document.querySelector('.shopping-container');
