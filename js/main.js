@@ -392,56 +392,6 @@ function formatPrice(price) { // Esta función convierte el número a un formato
     return isFloat(price) ? `$${price.toFixed(2)}` : `$${price}.00`;
 }
 
-const addShopping = product => {
-    console.log("Deberia de agregar productos al carrito");
-    // const shoppingCart = document.createElement('div');
-    // shoppingCart.classList.add('shopping-cart');
-
-    // const shoppingFigure = document.createElement('figure');
-    // const productImg = document.createElement('img');
-    // productImg.setAttribute('src', product.image);
-    // productImg.setAttribute('alt', product.name);
-    // shoppingFigure.appendChild(productImg);
-
-    // const productName = document.createElement('p');
-    // productName.innerText = product.name;
-    // const productPrice = document.createElement('p');
-    // productPrice.innerText = product.price;
-
-    // const removeIcon = document.createElement('img');
-    // removeIcon.setAttribute('src', './icons/icon_close.png');
-    // removeIcon.setAttribute('alt', 'close');
-    // removeIcon.classList.add('cur-p');
-    // removeIcon.addEventListener('click', removeShopping);
-
-    // shoppingCart.appendChild(shoppingFigure);
-    // shoppingCart.appendChild(productName);
-    // shoppingCart.appendChild(productPrice);
-    // shoppingCart.appendChild(removeIcon);
-
-    // shoppingContainer.appendChild(shoppingCart);
-
-    // totalProduct.innerText = shoppingContainer.childElementCount;
-    // totalPrice.innerText =
-    //     parseInt(totalPrice.textContent.substring(1)) + product.price;
-    // shoppingPriceProducts.push(product.price);
-
-    // totalPrice.innerText = `$${addPriceProducts(shoppingPriceProducts)}`;
-
-    // // Función para eliminar producto de 'Shopping Cart'
-    // function removeShopping() {
-    //     shoppingCart.remove();
-    //     totalProduct.innerText = shoppingContainer.childElementCount;
-
-    //     const totalValue = document.querySelector('.price-count');
-    //     const totalCurrentValue =
-    //         parseInt(totalValue.textContent.substring(1)) - product.price;
-
-    //     totalValue.innerText = `$${totalCurrentValue}`;
-    //     shoppingPriceProducts.push(product.price - product.price * 2);
-    // }
-};
-
 // Función para poner los datos del producto seleccionado en la ventana de Detalles
 const detailsProduct = product => {
     openProductDetailAside();
