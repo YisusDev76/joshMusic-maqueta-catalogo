@@ -4,7 +4,7 @@ const productList = [];
 productList.push({
     id: 'producto1', // Agregar un ID único
     name: 'CurcKua Bolsa de guitarra ajustable para concierto, acústica suave',
-    price: 319.11,
+    price: 319.00,
     image: 'https://m.media-amazon.com/images/I/41907QbWViL._AC_SL1099_.jpg',
     category: 'accesorios',
     description: `Descripción
@@ -129,7 +129,7 @@ productList.push({
     id: 'producto9',
     name: 'RIUKOE - Par de luces LED SlimPAR RGBW para DJ',
     price: 3383.22,
-    image: 'https://drive.google.com/uc?id=1j24kmnRR2sBGNcFFqRg9FU5S8p5PWeSD',
+    image: 'https://m.media-amazon.com/images/I/61HSnhDE9SL._AC_SL1000_.jpg',
     category: 'iluminacion',
     description: `Fabricado de alta calidad
     Está construido con carcasa de aluminio fundido a presión, duradero y no plástico, y viene con piezas de materias primas de buena calidad como la fuente LED de Taiwán. Lo hace duradero y digno.
@@ -143,8 +143,8 @@ productList.push({
 productList.push({
     id: 'producto10',
     name: 'TRIXTER Luces De Escenario,',
-    price: 459,
-    image: 'https://drive.google.com/uc?id=1Szyseu1krqze8nCHdp_JDccnxfRKVbIB',
+    price: 359.12,
+    image: 'https://m.media-amazon.com/images/I/61JJLB1f0zL._AC_SL1200_.jpg',
     category: 'iluminacion',
     description: `TRIXTER CAÑON 36*3W
     Lámpara LED para diversión de tus fiestas tipo DJ, con 36leds RGB de 3W cada uno, 6 en 1, funciona automáticamente y con sonido(música), variables colores de luz para intercambiar (rojo, verde y azul), maestro esclavo (es decir controla uno o más procesos), (no incluye cables), botón de menú, botones para cambiar el modo de luz que desee, conectores de entrada y salida, base articulada y cable de luz led integrado, base articulada desarmable, y 2 tornillos.
@@ -171,7 +171,7 @@ productList.push({
     id: 'producto11',
     name: 'NT 1000',
     price: 21000,
-    image: 'https://drive.google.com/uc?id=1Pqi4yLJKjOhUIPp4TdJUGDSkibEG2_h8',
+    image: 'https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/NT1000-cat-logo-2.png',
     category: 'audio-prof',
     description: `NT1000 es la respuesta de MELO a los profesionales que trabajan en lugares donde la estética es
     un tema fundamental, que requieren gran potencia en equipos compactos.
@@ -192,8 +192,8 @@ productList.push({
     id: 'producto12',
     name: 'Micrófono WM301 - Melo Sound Of Music',
     price: 10500,
-    image: 'https://drive.google.com/uc?id=1OBUHa1dD8RAc7TZ0zmZYU5u6ZqZyLfSI',
-    category: 'mricrofonia',
+    image: 'https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/WM-301-catalogo-768x570.png',
+    category: 'microfonia',
     description: `El nuevo WM301 brinda un excelente sonido, claridad y seguridad. Sistema inalámbrico dedicado a oradores, cantantes, guitarristas o bajistas que requieren un sistema inalámbrico profesional a un excelente precio. Se conforma por una cápsula lavalier, una diadema, cable TS para instrumento, transmisor y receptor, ¡3 opciones de conexión en un solo equipo!
     CARACTERÍSTICAS
 Modo de Modulación:
@@ -211,6 +211,184 @@ Hasta 200 metros.
     `,
 });
 
+productList.push({
+    id: 'producto13',
+    name: 'RF 100 - Micrófono Inalámbrico',
+    price: 1050,
+    image: 'https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/RF-100-2048x1121.png',
+    category: 'microfonia',
+    description: `El sistema de micrófono inalámbrico, fácil de instalar y conveniente de usar, es la primera
+    opción para cantantes. Este modelo adopta hardware criptográfico inteligente, para lograr un
+    sonido y un rendimiento de RF únicos.
+
+    Caracteristicas:
+    * Modo de Modulación: Banda ancha FM
+    * Rango de Frecuencia: 640 – 690 MHz
+    * Respuesta de Frecuencia de audio: 30-20KHz/±2dB
+    * Relación Señal / Ruido: 96 dB
+    * Distorsión: ≤0.1%
+    * Distancia de Trabajo / Alcance: Hasta 200 metros
+    
+    RECEPTOR
+    `,
+});
+
+productList.push({
+    id: 'producto14',
+    name: 'RF 200B - Micrófono Inalámbrico',
+    price: 7800,
+    image: 'https://resources.claroshop.com/medios-plazavip/mkt/6595a22a139ba_rf-200bjpg.jpg',
+    category: 'microfonia',
+    description: `La nueva generacion de los RF-200, el sistema de micrófono inalámbrico, fácil de instalar y conveniente de usar, es la primera
+    opción para cantantes. Este modelo adopta hardware criptográfico inteligente, para lograr un
+    sonido y un rendimiento de RF únicos.
+
+    Caracteristicas:
+    * Modo de Modulación: Banda ancga FM
+    * Rango de Frecuencia: 740-790 MHz
+    * Respuesta de Freciencia de Audio_ 40 Hz 18 kHz (3 dB)
+    * Relación señal/Ruido: 105 dB
+    * Distorsión: 0.3%
+    * Distancia de trabajo/Alcance: Alrededor de 50 m.
+    
+    RECEPTOR
+    - Modo de receptor : Automático
+    `,
+});
+
+productList.push({
+    id: 'producto15',
+    name: 'KC11 Micrófono de condensador profesional',
+    price: 2500,
+    image: 'https://krieg.mx/gallery/KC11_1_uakegicm.png',
+    category: 'microfonia',
+    description: `Conoce una opcion a tu alcance de un microfono para grabación con todas las ventajas de uno pro a un precio 
+    verdaderamente increíble.
+
+    Especificaciones: 
+    Micrófono de condensador con cápsula dorada y diafragma grande.
+    Respuesta en frecuencia: 20Hz – 20kHz
+    Patrón polar: Cardioide
+    Sensibilidad: -34dB +/- 3dB (0dB = 1V / Pa @ 1kHz)
+    Máximo nivel de presión sonora:  135dB (1kHZ con 1% T.H.D.)
+    Alimentación de +48 volts (Phantom Power)
+    Ruido propio relativamente bajo
+    Amplio rango dinámico de 135dB
+
+    `,
+});
+
+productList.push({
+    id: 'producto16',
+    name: 'K511 Micrófono multi propósito',
+    price: 450,
+    image: 'https://krieg.mx/images/k511galeria.png',
+    category: 'microfonia',
+    description: `La familia K500 de Krieg®, son micrófonos dinámicos de mano del tipo multi propósito de bajo costo. 
+    Con un patrón unidireccional, su mejor aplicación es para voz, en donde la pastilla cardioide minimiza el feedback y las 
+    reflexiones de piso de otras fuentes sonoras. Disponen de switch de encendido / apagado e incluye cable con conector de 
+    XLR/6.3 mm (1/4”) que facilita su conectividad.
+
+    Caracteristicas
+
+    Cápsula: Dinámico
+    Patrón Polar: Cardioide
+    Frecuencia: 70 ˜ 14 000 Hz
+    Sensibilidad: -75 dB ± 3 dB (0dB = 1 ubar @ 1 KHz)
+    `,
+});
+
+productList.push({
+    id: 'producto17',
+    name: 'Batería Tornado 5 Piezas TND5254TCFJ MAPEX',
+    price: 14700,
+    image: 'https://hermesmusicclub.mx/cdn/shop/files/c887dc9d-09c6-40ff-b41a-530510551390_747x690.jpg?v=1704807568',
+    category: 'instrumentos',
+    description: `La batería Tornado Series de Mapex, es un set de batería completo con todo el hardware incluido, Tornado ofrece accesibilidad y facilidad de montaje para el baterista que toca por primera vez sin sacrificar la calidad del sonido. Los tambores están fabricados en madera de Poplar y cuentan con el SONIClear Bearing Edge de Mapex que, provoca que la afinación sea más simple y duradera, pero al mismo tiempo, brinda a la batería un tono mucho más rico y controlado.
+    El Bombo de 22" ofrece unos graves contundentes y profundos, mientras que los Toms de tamaño completo, brindan una gran potencia y nitidez para un gran sonido.
+    Bombo 22x16".
+    Tarola 14x5.
+    Tom1 12x9".
+    Tom2 13x10".
+    Tom de piso 16x16".
+    Platillos 14" y 16”.
+    Color Brown Wood Grain.
+    Platillos: Hi-Hats 14” y Crash 16”.
+    Hardware incluido (Atriles, Pedal para Bombo y Banco).
+    Este producto cuenta con 1 año de garantía por defecto de fábrica.
+    `,
+});
+
+productList.push({
+    id: 'producto18',
+    name: 'Cabeza Móvil Led De 15w Efecto Disco Mini Ball Lite Tek',
+    price: 2158,
+    image: 'https://lite-tek.com.mx/wp-content/uploads/2023/03/MiniBall.jpg',
+    category: 'iluminacion',
+    description: `MiniBALL es una cabeza móvil de leds, que proyecta múltiples haces de
+    colores RGBW emulando el efecto de una bola de cristal de los 70’s,
+    pero con movimiento.
+    
+    Lámpara: LED de 15W
+    Modos de operación: DMX512, Audio, Auto, Master/Slave
+    Efectos: Rayos delgados que giran en ambos sentidos
+    RGBW
+    Dimmer 0-100% mecánico
+    11 Canales DMX
+    Estrobo: 1-20 veces por segundo
+    Display
+    IP20
+    Voltaje: 110 240V~ 50-60Hz 35W
+    `,
+});
+
+productList.push({
+    id: 'producto19',
+    name: 'Destellador de luz S-PAR54',
+    price: 1672,
+    image: 'https://www.cyberpuerta.mx/img/product/M/CP-MEGALUZ-PAR54*1RGB-4de87a.jpg',
+    category: 'iluminacion',
+    description: `El destellador de luz S-PAR54 es un producto de la marca Megaluz. Cuenta con 54 luces LED de alta potencia que permiten 
+    crear efectos de luz en una amplia gama de colores, incluyendo ambar, azul, rojo y verde.
+
+    Parámetros  TécnicosÑ
+    Voltaje: 85-265V~ 60HZ
+    Consumo de corriente: 80W
+    Color: RGB 3 IN 1
+    Modos DMX: 6CH
+
+    `,
+});
+
+productList.push({
+    id: 'producto20',
+    name: 'M215-A - Bafle activo doble 15',
+    price: 32500,
+    image: 'https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/M-215-cat-logo-276x300.png',
+    category: 'audio-prof',
+    description: `
+    
+    `,
+});
+
+productList.push({
+    id: 'producto21',
+    name: 'M21-A - Subwoofer de 21"',
+    price: 39900,
+    image: 'https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/06/M21-A-Frente-2.png',
+    category: 'audio-prof',
+    description: `
+    El M-21A es un subwoofer de alto desempeño ideal para la serie M e incluso otras series como los sistemas lineales.
+
+    INFORMACIÓN
+    Cuenta con configuración Bass Reflex, amplificador de 300W RMS.
+    Una bocina de 21″, presets de configuración para adaptarse a cualquier evento.
+    Las conexiones son sencillas, la señal proveniente de una mezcladora, procesador o controlador se insertan al sistema. no hay una regla a seguir, puedes conectar directamente a los satélites o al subwoofer y de allí al siguiente bafle.
+    Cuenta con entrada y salida de voltaje para<<puentear>> hasta dos subwoofers por linea.
+    `,
+});
+
+
 let carritoGlobal = [];
 // Llamamos a esta función cuando se carga la página
 document.addEventListener('DOMContentLoaded', function(){
@@ -218,7 +396,28 @@ document.addEventListener('DOMContentLoaded', function(){
     renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
 });
 
+// Manejador de eventos a cada enlace de la barra de navegación. 
+document.querySelectorAll('.nav-link').forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      const category = item.getAttribute('data-category');
+      filterProducts(category);
+      window.history.pushState({ category }, `Category: ${category}`, `#${category}`);
+    });
+  });
 
+  window.addEventListener('popstate', (e) => {
+    const category = e.state?.category || 'all';
+    filterProducts(category);
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // console.log("Entra a este evento");
+    const category = window.location.hash.substring(1) || 'all';
+    filterProducts(category);
+  });
+  
+  
 
 //Manejadores de la aplicación 
 //Navbar escritorio/tablets
@@ -365,6 +564,17 @@ const renderProducts = arr => {
         cardsContainer.appendChild(productCard);
     }
 };
+
+function filterProducts(category) {
+    let filteredProducts = [];
+    if (category === 'all') {
+      filteredProducts = productList;
+    } else {
+      filteredProducts = productList.filter(product => product.category === category);
+    }
+    cardsContainer.innerHTML='';
+    renderProducts(filteredProducts);
+  }
 
 function addProductToCart(idProducto) {
     const productoExistente = carritoGlobal.find(producto => producto.id === idProducto);
