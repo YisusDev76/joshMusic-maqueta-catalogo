@@ -391,33 +391,34 @@ productList.push({
 
 let carritoGlobal = [];
 // Llamamos a esta función cuando se carga la página
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function () {
     cargarCarritoDesdeLocalStorage(),
-    renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
+        renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
 });
 
 // Manejador de eventos a cada enlace de la barra de navegación. 
 document.querySelectorAll('.nav-link').forEach(item => {
     item.addEventListener('click', (e) => {
-      e.preventDefault();
-      const category = item.getAttribute('data-category');
-      filterProducts(category);
-      window.history.pushState({ category }, `Category: ${category}`, `#${category}`);
+        mobileMenu.classList.remove('active');
+        mobileMenuLine.classList.remove('active');
+        e.preventDefault();
+        const category = item.getAttribute('data-category');
+        filterProducts(category);
+        window.history.pushState({ category }, `Category: ${category}`, `#${category}`);
     });
-  });
+});
 
-  window.addEventListener('popstate', (e) => {
+window.addEventListener('popstate', (e) => {
     const category = e.state?.category || 'all';
     filterProducts(category);
-  });
+});
 
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     // console.log("Entra a este evento");
     const category = window.location.hash.substring(1) || 'all';
     filterProducts(category);
-  });
-  
-  
+});
+
 
 //Manejadores de la aplicación 
 //Navbar escritorio/tablets
@@ -431,6 +432,7 @@ const desktopMenu = document.querySelector('.desktop-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 
 //Shopping cart menu/Product details
+const buttonProductDetailaddProductToCart = document.querySelector('.add-to-cart-button');
 const asideShoppingCart = document.querySelector('#asideShoppingCart');
 const productDetailContainer = document.querySelector('#productDetail');
 
@@ -458,8 +460,15 @@ const toggleCarritoAside = () => {
     mobileMenu.classList.remove('active');
     mobileMenuLine.classList.remove('active');
     desktopMenu.classList.add('inactive');
-    productDetailContainer.classList.remove('show');
-    darken.classList.remove('show');
+
+    // Si el detalle del producto está abierto, ciérralo pero no alteres 'darken'
+    if (productDetailContainer.classList.contains('show')) {
+        productDetailContainer.classList.remove('show');
+    } else {
+        // Si el detalle del producto no está abierto, entonces alterna 'darken'
+        darken.classList.toggle('show');
+    }
+
     asideShoppingCart.classList.toggle('show');
     renderCart(carritoGlobal);
 };
@@ -476,6 +485,16 @@ const openProductDetailAside = () => {
 
 const closeProductDetailAside = () => {
     productDetailContainer.classList.remove('show');
+    
+    // Verificar si el carrito está abierto antes de quitar 'darken'
+    if (!asideShoppingCart.classList.contains('show')) {
+        darken.classList.remove('show');
+    }
+};
+
+const closeOverlays = () => {
+    productDetailContainer.classList.remove('show');
+    asideShoppingCart.classList.remove('show');
     darken.classList.remove('show');
 };
 
@@ -485,7 +504,7 @@ menuHamIcon.addEventListener('click', toggleMobileMenu);
 menuCarritoIcon.addEventListener('click', toggleCarritoAside);
 arrowAsideClose.addEventListener('click', toggleCarritoAside);
 productDetailCloseIcon.addEventListener('click', closeProductDetailAside);
-darken.addEventListener('click', closeProductDetailAside);
+darken.addEventListener('click', closeOverlays);
 
 // Declaración de selectores y array para Shopping Cart
 // const shoppingContainer = document.querySelector('.shopping-container');
@@ -500,20 +519,37 @@ function formatPrice(price) { // Esta función convierte el número a un formato
 }
 
 // Función para poner los datos del producto seleccionado en la ventana de Detalles
+let currentButtonListener = null; // Definimos la variable fuera de la función para mantener su valor.
 const detailsProduct = product => {
     openProductDetailAside();
 
     const detailImage = document.querySelector('#productDetail>img');
     const detailPrice = document.querySelector('.product-info p:nth-child(1)');
     const detailName = document.querySelector('.product-info p:nth-child(2)');
-    const detailDescription = document.querySelector(
-        '.product-info p:nth-child(3)'
-    );
+    const detailDescription = document.querySelector('.product-info p:nth-child(3)');
+    const buttonAddToCart = document.querySelector('.add-to-cart-button');
 
+    //Actualizar la info del producto
     detailImage.setAttribute('src', product.image);
     detailPrice.innerText = `$${product.price}`;
     detailName.innerText = product.name;
     detailDescription.innerText = product.description;
+
+    if (currentButtonListener) {
+        //Eliminar cualquier oyente de eventos anteior al boton
+        buttonAddToCart.removeEventListener('click', currentButtonListener);
+    }
+
+    //Crear una Nueva funcion de oyente de eventos
+    currentButtonListener = () => {
+        console.log("Se esta ejecunatando el listener");
+        addProductToCart(product.id);
+        renderCart(carritoGlobal);
+        renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
+    }
+
+    //Agregar el nuevi oyente de eventos al boton
+    buttonAddToCart.addEventListener('click', currentButtonListener);
 };
 
 // Función para agregar los productos en el main
@@ -568,13 +604,13 @@ const renderProducts = arr => {
 function filterProducts(category) {
     let filteredProducts = [];
     if (category === 'all') {
-      filteredProducts = productList;
+        filteredProducts = productList;
     } else {
-      filteredProducts = productList.filter(product => product.category === category);
+        filteredProducts = productList.filter(product => product.category === category);
     }
-    cardsContainer.innerHTML='';
+    cardsContainer.innerHTML = '';
     renderProducts(filteredProducts);
-  }
+}
 
 function addProductToCart(idProducto) {
     const productoExistente = carritoGlobal.find(producto => producto.id === idProducto);
@@ -670,7 +706,6 @@ function renderCart(arrayCarrito) {
         productDeleteButton.setAttribute('src', './icons/icon_close.png');
         productDeleteButton.setAttribute('alt', 'close');
         productDeleteButton.addEventListener('click', function () {
-            console.log("Aqui deberia borrar el producto");
             eliminarProductoDelCarrito(product.id);
             renderCart(carritoGlobal);
             renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
