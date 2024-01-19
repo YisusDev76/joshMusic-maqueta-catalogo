@@ -542,7 +542,7 @@ const detailsProduct = product => {
 
     //Crear una Nueva funcion de oyente de eventos
     currentButtonListener = () => {
-        console.log("Se esta ejecunatando el listener");
+        // console.log("Se esta ejecunatando el listener");
         addProductToCart(product.id);
         renderCart(carritoGlobal);
         renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
@@ -621,6 +621,20 @@ function addProductToCart(idProducto) {
         carritoGlobal.push({ id: idProducto, cantidad: 1 });
     }
     guardarCarritoEnLocalStorage();
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        destination: "",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "left", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
 }
 
 function eliminarProductoDelCarrito(idProducto) {
