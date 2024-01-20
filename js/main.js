@@ -703,6 +703,26 @@ function renderCart(arrayCarrito) {
         const productImg = document.createElement('img');
         productImg.setAttribute('src', productDetails.image);
         productImg.setAttribute('alt', productDetails.name);
+        productImg.classList.add('hover-neon-effect');
+        /*
+ * Este bloque de código utiliza una IIFE (Immediately Invoked Function Expression) para manejar
+ * los event listeners dentro de un bucle for. Cada iteración del bucle sobrescribe 'productDetails',
+ * por lo que sin esta técnica, todos los listeners referirían al último producto en el bucle.
+ *
+ * La IIFE captura el estado actual de 'productDetails' para cada producto y lo pasa a la función
+ * del event listener. Esto asegura que cada listener tenga una copia independiente de los detalles
+ * del producto, permitiendo que al hacer clic en una imagen, se muestren los detalles correctos.
+ *
+ * Este método puede parecer menos directo, pero es crucial para evitar errores comunes en el manejo
+ * de variables dentro de bucles. Garantiza una experiencia de usuario coherente y precisa en la
+ * visualización de detalles del producto.
+ */
+        productImg.addEventListener('click', ((details)=>{
+            return () =>{
+                console.log("el detalle del producto es", details);
+                detailsProduct(details);
+            };
+        })(productDetails));
         const productFigure = document.createElement('figure');
         productFigure.classList.add('cart-product-figure');
         productFigure.append(productImg, numberOfSameProduct);

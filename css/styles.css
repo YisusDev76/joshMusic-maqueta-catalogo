@@ -492,6 +492,17 @@ body::-webkit-scrollbar-track:active {
   justify-content: center;
 }
 
+.hover-neon-effect {
+  cursor: pointer; /* Cambia el cursor a una manita */
+  border: 3px solid transparent;
+  transition: border 0.3s ease-in-out;
+}
+
+.hover-neon-effect:hover {
+  border-color: #39FF14; /* Color fosforescente verde tipo neón */
+  box-shadow: 0 0 10px #39FF14, 0 0 15px #39FF14, 0 0 20px #39FF14;
+}
+
 
 /* Product List */
 #productDetail {
