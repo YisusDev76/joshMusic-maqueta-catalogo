@@ -390,6 +390,7 @@ productList.push({
 
 
 let carritoGlobal = [];
+let checkoutButton;
 // Llamamos a esta función cuando se carga la página
 document.addEventListener('DOMContentLoaded', function () {
     cargarCarritoDesdeLocalStorage(),
@@ -419,6 +420,15 @@ document.addEventListener('DOMContentLoaded', () => {
     filterProducts(category);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    checkoutButton = document.getElementById('checkoutButton');
+  
+    checkoutButton.addEventListener('click', () => {
+      window.location.href = '/checkout.html'; // Cambia esto por la URL de tu página de contacto
+    });
+
+    checkCartStatus();
+  });  
 
 //Manejadores de la aplicación 
 //Navbar escritorio/tablets
@@ -441,6 +451,7 @@ const cardsContainer = document.querySelector('.cards-container');
 const darken = document.querySelector('.darken');
 
 const mobileMenuLine = document.querySelector('.mobile-menu ul:nth-child(1)');
+
 
 // Declarando funciones para abrir y cerrar los contenedores
 const toggleDesktopMenu = () => {
@@ -511,6 +522,23 @@ darken.addEventListener('click', closeOverlays);
 const totalProduct = document.querySelector('.product-count');
 const totalPrice = document.querySelector('.price-count');
 const shoppingPriceProducts = [];
+
+function checkCartStatus() {
+    console.log("entra a checkar el status");
+    if (carritoGlobal.length === 0) {
+      // Desactiva el botón si el carrito está vacío
+      checkoutButton.disabled = true;
+      checkoutButton.classList.add('primary-button-disabled');
+      checkoutButton.classList.remove('hover-neon-effect'); 
+      checkoutButton.classList.remove('primary-button-active');
+    } else {
+      // Activa el botón si hay elementos en el carrito
+      checkoutButton.disabled = false;
+      checkoutButton.classList.remove('primary-button-disabled');
+      checkoutButton.classList.add('hover-neon-effect');
+      checkoutButton.classList.add('primary-button-active'); 
+    }
+  }
 
 const isFloat = value => Number(value) === value && value % 1 !== 0;
 function formatPrice(price) { // Esta función convierte el número a un formato de precio
@@ -635,11 +663,13 @@ function addProductToCart(idProducto) {
         },
         onClick: function(){} // Callback after click
       }).showToast();
+      checkCartStatus();
 }
 
 function eliminarProductoDelCarrito(idProducto) {
     carritoGlobal = carritoGlobal.filter(producto => producto.id !== idProducto);
     guardarCarritoEnLocalStorage();
+    checkCartStatus();
 }
 
 

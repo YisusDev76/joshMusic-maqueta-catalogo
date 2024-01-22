@@ -15,6 +15,7 @@
   --very-light-pink: #C7C7C7;
   --text-input-field: #F7F7F7;
   --hospital-green: #ACD9B2;
+  --hospital-gren-hover:#1fd537;
   --sm: 14px;
   --md: 16px;
   --lg: 18px;
@@ -484,6 +485,19 @@ body::-webkit-scrollbar-track:active {
   font-size: var(--md);
   font-weight: bold;
   height: 50px;
+}
+
+.primary-button-active:hover{
+  background-color: var(--hospital-gren-hover);
+}
+
+.primary-button-disabled {
+  background-color: var(--very-light-pink);
+  cursor: auto;
+}
+
+.primary-button-disabled:hover {
+  background-color: var(--very-light-pink);
 }
 
 .add-to-cart-button {
