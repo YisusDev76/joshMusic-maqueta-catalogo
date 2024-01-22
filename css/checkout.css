@@ -43,3 +43,47 @@ body {
 .main-container {
   margin-top: 61px;
 }
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  
+  .inactive {
+    display: none;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .navbar-left {
+    display: flex;
+  }
+
+  .navbar-left p {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-left: 12px;
+    padding-top: 8px;
+    font-size: larger;
+  }
+
+  .navbar-left a{
+    display: flex;
+    align-items: center;
+  }
+
+  
