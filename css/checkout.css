@@ -10,6 +10,7 @@
 
 /* General */
 :root {
+  --body-bg:#fbf7f7;
   --white: #FFFFFF;
   --black: #000000;
   --very-light-pink: #C7C7C7;
@@ -25,6 +26,7 @@ body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
+  background: var(--white);
 }
 
 .cur-p {
@@ -86,4 +88,42 @@ nav {
     align-items: center;
   }
 
+  /* Checkout cointainer */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .column {
+    width: 49.5%; /* Ajusta este valor según necesites */
+  }
+  
+  .card {
+    background: var(--white);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1), /* Sombra general */
+                0 8px 10px -5px rgba(0,0,0,0.2); /* Mayor sombra en la parte inferior */
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio entre tarjetas */
+    transition: transform 0.3 ease-in-out;
+  }
+
+
+.card:hover {
+    transform: translateY(-5px); /* Opcional: efecto al pasar el mouse */
+  }
+  
+  /* Media query para pantallas menores a 601px */
+  @media (max-width: 600px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  
+    .column {
+      width: 100%;
+    }
+  }
+  
   
