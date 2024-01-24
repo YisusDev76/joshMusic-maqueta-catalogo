@@ -169,9 +169,9 @@ productList.push({
 });
 productList.push({
     id: 'producto11',
-    name: 'NT 1000',
+    name: 'Sistema de Columna Activa NT 1000',
     price: 21000,
-    image: 'https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/NT1000-cat-logo-2.png',
+    image: 'https://149476031.v2.pressablecdn.com/wp-content/uploads/2023/08/NT1000-melo-4.webp',
     category: 'audio-prof',
     description: `NT1000 es la respuesta de MELO a los profesionales que trabajan en lugares donde la estética es
     un tema fundamental, que requieren gran potencia en equipos compactos.
