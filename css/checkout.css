@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* General */
+:root {
+  --body-bg:#fbf7f7;
+  --white: #FFFFFF;
+  --black: #000000;
+  --very-light-pink: #C7C7C7;
+  --text-input-field: #F7F7F7;
+  --hospital-green: #ACD9B2;
+  --hospital-gren-hover:#1fd537;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  background: var(--white);
+}
+
+.cur-p {
+  cursor: pointer;
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  width: 100%;
+  z-index: 500;
+}
+
+.main-container {
+  margin-top: 61px;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  
+  .inactive {
+    display: none;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .navbar-left {
+    display: flex;
+  }
+
+  .navbar-left p {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-left: 12px;
+    padding-top: 8px;
+    font-size: larger;
+  }
+
+  .navbar-left a{
+    display: flex;
+    align-items: center;
+  }
+
+/* Checkout cointainer */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .column {
+    width: 49.5%; /* Ajusta este valor según necesites */
+  }
+
+/* Cards */
+.card {
+  background: var(--white);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1), /* Sombra general */
+              0 8px 10px -5px rgba(0,0,0,0.2); /* Mayor sombra en la parte inferior */
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px; /* Espacio entre tarjetas */
+  transition: transform 0.3 ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Opcional: efecto al pasar el mouse */
+}
+
+input {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  transition: 0.6s;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  background-color: transparent;
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid #28a2a2;
+  }
+}
+
+label {
+  color: #CCC;
+  position: absolute; 
+  cursor: text;
+  transform: translateY(-25px);
+  transition: transform 0.3s ease;
+  left: 0;
+  bottom: 0px;
+}
+
+div.input-container {
+  width: 100%; 
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.animation label {
+  transform: translateY(-55px);
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.animation-color label {
+  color: #28a2a2;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 0.85em;
+  display: none; /* Ocultamos el mensaje de error por defecto */
+}
+
+.input-error {
+  border-bottom: 1px solid #ff0000 !important;
+}
+
+.input-error + label + .error-message {
+  display: block;
+}
+
+/* Asegúrate de que los mensajes de error estén correctamente posicionados */
+.error-message {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: none; /* Ocultamos el mensaje de error por defecto */
+}
+  
+/* Primera card: Info del usuario */
+/* Estilos para cambiar el fondo del autocompletar */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: #666 !important;
+}
+
+/* Estilos específicos para los <p> dentro de .card-summary */
+.card-summary p {
+  margin-top: 5px; /* Espacio superior reducido */
+  margin-bottom: 5px; /* Espacio inferior reducido */
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 7px;
+  border: solid 1px #dcdcdc; /* Añade un borde claro */
+  margin-bottom: -1px; /* Ajusta el margen negativo para solapar los bordes */
+}
+.item-image img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.item-details {
+  flex-grow: 1;
+  padding-left: 15px;
+}
+
+.item-title {
+  font-size: 1em;
+  color: #000;
+  margin: 0;
+  margin-bottom: 4px; /* Espacio entre el título y el precio */
+}
+
+.item-price {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.item-options {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los selects */
+  margin-right: 39px; /* Espacio antes del botón de eliminar */
+}
+
+.item-size, .item-quantity {
+  /* background-color: #e6e6e6;
+  border: none;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 4px;
+  -webkit-appearance: none; */
+  margin-bottom: 16px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  transition: 0.6s;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  background-color: transparent;
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid #28a2a2;
+  }
+}
+
+.item-size:focus, .item-quantity:focus {
+  outline: none;
+}
+
+.item-remove img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+  
+/* Media Querys */
+  
+/* Media query para pantallas menores a 601px */
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 601px) {
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+      /* margin-bottom: 20px; */
+  }
+  .row .input-container {
+      flex: 1;
+      min-width: 120px; /* Para asegurarnos de que no se vuelvan demasiado pequeños */
+      
+  }
+
+  .row .input-container:first-child {
+    margin-right: 39px; /* Añade un margen a la derecha de cada .form-group */
+}
+}

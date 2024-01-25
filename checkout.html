@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <title>JoshMusic - Checkout</title>
+</head>
+<body>
+    <header class="header-container">
+        <nav>
+            <div class="navbar-left">
+                <a href="/index.html">
+                    <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+                </a>
+                <p>Checkout</p>
+            </div>
+        </nav>
+      </header>
+
+      <div class="flex-container">
+
+        <div class="column">
+          <div class="card card-information">
+            <h2>Información</h2>
+
+              <div class="row">
+                  <div class="input-container">
+                    <input type="text" id="full-name" class="login-input">
+                    <label for="full-name" unselectable="on">Nombre Completo</label>
+                    <p class="error-message">Por favor, ingrese su nombre Completo</p>
+                  </div>
+
+                  <div class="input-container">
+                    <input type="text" id="company" class="login-input">
+                    <label for="company" unselectable="on">Compañia (opcional)</label>
+                  </div>
+              </div>
+
+              <div class="input-container">
+                <input type="text" id="clientAddress" name="clientAddress" class="login-input">
+                <label for="fullAddress" unselectable="on">Direccion Completa</label>
+                <p class="error-message">Por favor, ingrese una dirección valida</p>
+              </div>
+
+              <div class="input-container">
+                <input type="text" id="email" class="login-input">
+                <label for="email" unselectable="on">Correo electronico</label>
+                <p class="error-message">Por favor, ingrese un correo electrónico</p>
+              </div>
+          </div>
+
+          <div class="card card-information">
+            <h1>Shipping</h1>
+            <p>Datos del usuario</p>
+            <input type="text" placeholder="Nombre completo">
+          </div>
+
+          <div class="card card-information">
+            <h1>Maybe you could also be interested in...</h1>
+            <p>Datos del usuario</p>
+            <input type="text" placeholder="Nombre completo">
+          </div>
+
+          <div class="card card-information">
+            <h1>Carta 5</h1>
+            <p>Datos del usuario</p>
+            <input type="text" placeholder="Nombre completo">
+          </div>
+      
+          <!-- Puedes colocar más tarjetas aquí en la columna izquierda -->
+        </div>
+      
+        <div class="column">
+          <div class="card card-summary">
+            <h2>Resumen del Pedido</h2>
+            <p> <b>Detalles del pedido:</b></p>
+            <p><span id="preview-full-name"></span></p>
+            <p><span id="preview-company"></span></p>
+            <p><span id="preview-address"></span></p>
+            <p><span id="preview-email"></span></p>
+            <h2>Tu orden</h2>
+            <p><b id="total-items"></b></p>
+
+            <div class="my-order-content">
+    
+              <!-- Comienza la estructura del item del carrito -->
+              <div class="order-item">
+                <div class="item-image">
+                  <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Black t-shirt">
+                </div>
+                <div class="item-details">
+                  <h3 class="item-title">Black t-shirt</h3>
+                  <p class="item-price">$34</p>
+                </div>
+                <div class="item-options">
+                  <!-- <select class="item-size">
+                    <option value="L" selected>L</option>
+                  </select> -->
+                  <select class="item-quantity">
+                    <option value="1">1 pza</option>
+                    <option value="2">2 pzas</option>
+                    <option value="3">3 pzas</option>
+                    <option value="4">4 pzas</option>
+                    <option value="5">5 pzas</option>
+                    <option value="6">6 pzas</option>
+                    <option value="7">7 pzas</option>
+                    <option value="8">8 pzas</option>
+                    <option value="9">9 pzas</option>
+                    <option value="10">10 pzas</option>
+                  </select>
+                </div>
+                <div class="item-remove">
+                  <img src="./icons/icon_close.png" alt="remove">
+                </div>
+              </div>
+              <!-- Repetir la estructura del item del carrito para cada producto ... -->
+              <div class="order-item">
+                <div class="item-image">
+                  <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Black t-shirt">
+                </div>
+                <div class="item-details">
+                  <h3 class="item-title">Black t-shirt</h3>
+                  <p class="item-price">$34</p>
+                </div>
+                <div class="item-options">
+                  <!-- <select class="item-size">
+                    <option value="L" selected>L</option>
+                  </select> -->
+                  <select class="item-quantity">
+                    <option value="1">1 pza</option>
+                    <option value="2">2 pzas</option>
+                    <option value="3">3 pzas</option>
+                    <option value="4">4 pzas</option>
+                    <option value="5">5 pzas</option>
+                    <option value="6">6 pzas</option>
+                    <option value="7">7 pzas</option>
+                    <option value="8">8 pzas</option>
+                    <option value="9">9 pzas</option>
+                    <option value="10">10 pzas</option>
+                  </select>
+                </div>
+                <div class="item-remove">
+                  <img src="./icons/icon_close.png" alt="remove">
+                </div>
+              </div>
+
+              <div class="order-item">
+                <div class="item-image">
+                  <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Black t-shirt">
+                </div>
+                <div class="item-details">
+                  <h3 class="item-title">Black t-shirt</h3>
+                  <p class="item-price">$34</p>
+                </div>
+                <div class="item-options">
+                  <!-- <select class="item-size">
+                    <option value="L" selected>L</option>
+                  </select> -->
+                  <select class="item-quantity">
+                    <option value="1">1 pza</option>
+                    <option value="2">2 pzas</option>
+                    <option value="3">3 pzas</option>
+                    <option value="4">4 pzas</option>
+                    <option value="5">5 pzas</option>
+                    <option value="6">6 pzas</option>
+                    <option value="7">7 pzas</option>
+                    <option value="8">8 pzas</option>
+                    <option value="9">9 pzas</option>
+                    <option value="10">10 pzas</option>
+                  </select>
+                </div>
+                <div class="item-remove">
+                  <img src="./icons/icon_close.png" alt="remove">
+                </div>
+              </div>
+
+              <div class="order-item">
+                <div class="item-image">
+                  <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Black t-shirt">
+                </div>
+                <div class="item-details">
+                  <h3 class="item-title">Black t-shirt</h3>
+                  <p class="item-price">$34</p>
+                </div>
+                <div class="item-options">
+                  <!-- <select class="item-size">
+                    <option value="L" selected>L</option>
+                  </select> -->
+                  <select class="item-quantity">
+                    <option value="1">1 pza</option>
+                    <option value="2">2 pzas</option>
+                    <option value="3">3 pzas</option>
+                    <option value="4">4 pzas</option>
+                    <option value="5">5 pzas</option>
+                    <option value="6">6 pzas</option>
+                    <option value="7">7 pzas</option>
+                    <option value="8">8 pzas</option>
+                    <option value="9">9 pzas</option>
+                    <option value="10">10 pzas</option>
+                  </select>
+                </div>
+                <div class="item-remove">
+                  <img src="./icons/icon_close.png" alt="remove">
+                </div>
+              </div>
+          
+            </div>
+
+          </div>
+      
+          <!-- Puedes colocar más tarjetas aquí en la columna derecha -->
+        </div>
+      
+      </div>
+</body>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzIZl7CPRCjGmbGN4tp2zrf--7URcxpN8&libraries=places&callback=initMap" async defer"></script>
+<script>
+function initMap() {
+   let input = document.getElementById('clientAddress');
+    var options = {
+      componentRestrictions: { country: 'mx' }
+  };
+   var autocomplete = new google.maps.places.Autocomplete(input, options);
+   // Establece el placeholder a un string vacío o al valor que prefieras
+   input.placeholder = "";
+   autocomplete.addListener('place_changed', function() {
+        console.log("entra aqui")
+       var place = autocomplete.getPlace();
+       let previewAddress = document.getElementById('preview-address');
+       previewAddress.innerHTML = '';  
+       var previewText = place.formatted_address.replace(/,/g, '<br>');
+       previewAddress.innerHTML = previewText;  
+   });
+}
+</script>
+<script src="js/checkout.js"></script>
+</html>

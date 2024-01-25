@@ -1,5 +1,5 @@
 //DATASET
-// Lista de productos
+// Catalogo joshMusic
 const productList = [];
 productList.push({
     id: 'producto1', // Agregar un ID único
@@ -169,9 +169,9 @@ productList.push({
 });
 productList.push({
     id: 'producto11',
-    name: 'Sistema de Columna Activa NT 1000',
+    name: 'NT 1000',
     price: 21000,
-    image: 'https://149476031.v2.pressablecdn.com/wp-content/uploads/2023/08/NT1000-melo-4.webp',
+    image: 'https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/NT1000-cat-logo-2.png',
     category: 'audio-prof',
     description: `NT1000 es la respuesta de MELO a los profesionales que trabajan en lugares donde la estética es
     un tema fundamental, que requieren gran potencia en equipos compactos.
@@ -388,405 +388,118 @@ productList.push({
     `,
 });
 
-
 let carritoGlobal = [];
-let checkoutButton;
-// Llamamos a esta función cuando se carga la página
+
 document.addEventListener('DOMContentLoaded', function () {
-    cargarCarritoDesdeLocalStorage(),
-        renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
+    var inputs = document.querySelectorAll('input:not(#company)');
+
+    inputs.forEach(function(input) {
+        input.addEventListener('blur', function() {
+            validateInput(this);
+        });
+
+        // Evento para comprobar los cambios en el campo
+        input.addEventListener('input', function() {
+            if (this.value.trim() !== '') {
+                this.classList.remove('input-error');
+                var errorMessage = this.parentElement.querySelector('.error-message');
+                if (errorMessage) {
+                    errorMessage.style.display = 'none';
+                }
+            }
+        });
+    });
+
+    function validateInput(input) {
+        var errorMessage = input.parentElement.querySelector('.error-message');
+        if (input.value.trim() === '') {
+            input.classList.add('input-error');
+            if (errorMessage) {
+                errorMessage.style.display = 'block';
+            }
+        } else {
+            input.classList.remove('input-error');
+            if (errorMessage) {
+                errorMessage.style.display = 'none';
+            }
+        }
+    }
 });
 
-// Manejador de eventos a cada enlace de la barra de navegación. 
-document.querySelectorAll('.nav-link').forEach(item => {
-    item.addEventListener('click', (e) => {
-        mobileMenu.classList.remove('active');
-        mobileMenuLine.classList.remove('active');
-        e.preventDefault();
-        const category = item.getAttribute('data-category');
-        filterProducts(category);
-        window.history.pushState({ category }, `Category: ${category}`, `#${category}`);
+document.addEventListener('DOMContentLoaded', function () {
+    // Selecciona el campo de entrada y el elemento de previsualización
+    let fullNameInput = document.getElementById('full-name');
+    let fullNamePreview = document.getElementById('preview-full-name');
+    var companyInput = document.getElementById('company');
+    var companyPreview = document.getElementById('preview-company');
+    var emailInput = document.getElementById('email');
+    var emailPreview = document.getElementById('preview-email');
+
+    // Evento que se dispara cuando se escribe en el campo de nombre completo
+    fullNameInput.addEventListener('input', function() {
+        fullNamePreview.textContent = this.value;
+    });
+
+    // Repite el proceso para otros campos de entrada y sus previsualizaciones
+
+    companyInput.addEventListener('input', function() {
+        companyPreview.textContent = this.value;
+    });
+
+    emailInput.addEventListener('input', function() {
+        emailPreview.textContent = this.value;
     });
 });
 
-window.addEventListener('popstate', (e) => {
-    const category = e.state?.category || 'all';
-    filterProducts(category);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    // console.log("Entra a este evento");
-    const category = window.location.hash.substring(1) || 'all';
-    filterProducts(category);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    checkoutButton = document.getElementById('checkoutButton');
-  
-    checkoutButton.addEventListener('click', () => {
-      window.location.href = '/checkout.html'; // Cambia esto por la URL de tu página de contacto
+//Load animation if fields containing data on page load
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll(".input-container .login-input").forEach(function(element) {
+        if (element.value !== "") {
+            element.closest('.input-container').classList.add("animation");
+        }
     });
+});
 
-    checkCartStatus();
-  });  
+document.querySelectorAll(".input-container .login-input").forEach(function(element) {
+    element.addEventListener('focus', function() {
+        this.closest('.input-container').classList.add("animation", "animation-color");
+    });
+});
 
-//Manejadores de la aplicación 
-//Navbar escritorio/tablets
-const navBarRight = document.querySelector('.navbar-right');
+document.querySelectorAll(".input-container .login-input").forEach(function(element) {
+    element.addEventListener('focusout', function() {
+        if (this.value === "") {
+            this.closest('.input-container').classList.remove("animation");
+        }
+        this.closest('.input-container').classList.remove("animation-color");
+    });
+});
 
-const menuEmail = document.querySelector('.navbar-email');
-const menuHamIcon = document.querySelector('.menu');
-const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');
-const productDetailCloseIcon = document.querySelector('.product-detail-close');
-const desktopMenu = document.querySelector('.desktop-menu');
-const mobileMenu = document.querySelector('.mobile-menu');
-
-//Shopping cart menu/Product details
-const buttonProductDetailaddProductToCart = document.querySelector('.add-to-cart-button');
-const asideShoppingCart = document.querySelector('#asideShoppingCart');
-const productDetailContainer = document.querySelector('#productDetail');
-
-const arrowAsideClose = document.querySelector('.arrow-close');
-const cardsContainer = document.querySelector('.cards-container');
-const darken = document.querySelector('.darken');
-
-const mobileMenuLine = document.querySelector('.mobile-menu ul:nth-child(1)');
-
-
-// Declarando funciones para abrir y cerrar los contenedores
-const toggleDesktopMenu = () => {
-    asideShoppingCart.classList.remove('show');
-    desktopMenu.classList.toggle('inactive');
-};
-
-const toggleMobileMenu = () => {
-    asideShoppingCart.classList.remove('show');
-    mobileMenu.classList.toggle('active');
-    mobileMenuLine.classList.toggle('active');
-    productDetailContainer.classList.remove('show');
-    darken.classList.remove('show');
-};
-
-const toggleCarritoAside = () => {
-    mobileMenu.classList.remove('active');
-    mobileMenuLine.classList.remove('active');
-    desktopMenu.classList.add('inactive');
-
-    // Si el detalle del producto está abierto, ciérralo pero no alteres 'darken'
-    if (productDetailContainer.classList.contains('show')) {
-        productDetailContainer.classList.remove('show');
-    } else {
-        // Si el detalle del producto no está abierto, entonces alterna 'darken'
-        darken.classList.toggle('show');
-    }
-
-    asideShoppingCart.classList.toggle('show');
-    renderCart(carritoGlobal);
-};
-
-const openProductDetailAside = () => {
-    mobileMenu.classList.remove('active');
-    mobileMenuLine.classList.remove('active');
-    desktopMenu.classList.add('inactive');
-    asideShoppingCart.classList.remove('show');
-
-    productDetailContainer.classList.toggle('show');
-    darken.classList.toggle('show');
-};
-
-const closeProductDetailAside = () => {
-    productDetailContainer.classList.remove('show');
-    
-    // Verificar si el carrito está abierto antes de quitar 'darken'
-    if (!asideShoppingCart.classList.contains('show')) {
-        darken.classList.remove('show');
-    }
-};
-
-const closeOverlays = () => {
-    productDetailContainer.classList.remove('show');
-    asideShoppingCart.classList.remove('show');
-    darken.classList.remove('show');
-};
-
-// llamando eventos para abrir y cerrar los contenedores
-menuEmail.addEventListener('click', toggleDesktopMenu);
-menuHamIcon.addEventListener('click', toggleMobileMenu);
-menuCarritoIcon.addEventListener('click', toggleCarritoAside);
-arrowAsideClose.addEventListener('click', toggleCarritoAside);
-productDetailCloseIcon.addEventListener('click', closeProductDetailAside);
-darken.addEventListener('click', closeOverlays);
-
-// Declaración de selectores y array para Shopping Cart
-// const shoppingContainer = document.querySelector('.shopping-container');
-const totalProduct = document.querySelector('.product-count');
-const totalPrice = document.querySelector('.price-count');
-const shoppingPriceProducts = [];
-
-function checkCartStatus() {
-    console.log("entra a checkar el status");
+document.addEventListener('DOMContentLoaded', () => {
+    carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || [];
     if (carritoGlobal.length === 0) {
-      // Desactiva el botón si el carrito está vacío
-      checkoutButton.disabled = true;
-      checkoutButton.classList.add('primary-button-disabled');
-      checkoutButton.classList.remove('hover-neon-effect'); 
-      checkoutButton.classList.remove('primary-button-active');
-    } else {
-      // Activa el botón si hay elementos en el carrito
-      checkoutButton.disabled = false;
-      checkoutButton.classList.remove('primary-button-disabled');
-      checkoutButton.classList.add('hover-neon-effect');
-      checkoutButton.classList.add('primary-button-active'); 
+        // Redirige al usuario a la página de inicio si el carrito está vacío
+        window.location.href = '/index.html'; // Cambia esto por la URL de tu página de inicio
     }
-  }
-
-const isFloat = value => Number(value) === value && value % 1 !== 0;
-function formatPrice(price) { // Esta función convierte el número a un formato de precio
-    // Asume que si el número es un entero no necesita decimales, y si es flotante, los mantiene
-    return isFloat(price) ? `$${price.toFixed(2)}` : `$${price}.00`;
-}
-
-// Función para poner los datos del producto seleccionado en la ventana de Detalles
-let currentButtonListener = null; // Definimos la variable fuera de la función para mantener su valor.
-const detailsProduct = product => {
-    openProductDetailAside();
-
-    const detailImage = document.querySelector('#productDetail>img');
-    const detailPrice = document.querySelector('.product-info p:nth-child(1)');
-    const detailName = document.querySelector('.product-info p:nth-child(2)');
-    const detailDescription = document.querySelector('.product-info p:nth-child(3)');
-    const buttonAddToCart = document.querySelector('.add-to-cart-button');
-
-    //Actualizar la info del producto
-    detailImage.setAttribute('src', product.image);
-    detailPrice.innerText = `$${product.price}`;
-    detailName.innerText = product.name;
-    detailDescription.innerText = product.description;
-
-    if (currentButtonListener) {
-        //Eliminar cualquier oyente de eventos anteior al boton
-        buttonAddToCart.removeEventListener('click', currentButtonListener);
-    }
-
-    //Crear una Nueva funcion de oyente de eventos
-    currentButtonListener = () => {
-        // console.log("Se esta ejecunatando el listener");
-        addProductToCart(product.id);
-        renderCart(carritoGlobal);
-        renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
-    }
-
-    //Agregar el nuevi oyente de eventos al boton
-    buttonAddToCart.addEventListener('click', currentButtonListener);
-};
-
-// Función para agregar los productos en el main
-const renderProducts = arr => {
-    for (let product of arr) {
-        const productCard = document.createElement('div');
-        productCard.classList.add('product-card');
-
-        const productImg = document.createElement('img');
-        productImg.setAttribute('src', product.image);
-        productImg.setAttribute('alt', product.name);
-        productImg.classList.add('cur-p');
-        productImg.addEventListener('click', function () {
-            detailsProduct(product);
-        });
-
-        const productInfo = document.createElement('div');
-        productInfo.classList.add('product-info');
-
-        const productInfoDiv = document.createElement('div');
-
-        const productPrice = document.createElement('p');
-        productPrice.innerText = `$${product.price}`;
-        const productName = document.createElement('p');
-        productName.innerText = `${product.name}`;
-
-        productInfoDiv.appendChild(productPrice);
-        productInfoDiv.appendChild(productName);
-
-        const productInfoFigure = document.createElement('figure');
-        const productImgCard = document.createElement('img');
-        productImgCard.setAttribute('src', './icons/bt_add_to_cart.svg');
-        productImgCard.classList.add('cur-p');
-        productInfoFigure.addEventListener('click', function () {
-            addProductToCart(product.id);
-            renderCart(carritoGlobal);
-            renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
-        });
-
-        productInfoFigure.appendChild(productImgCard);
-
-        productInfo.appendChild(productInfoDiv);
-        productInfo.appendChild(productInfoFigure);
-
-        productCard.appendChild(productImg);
-        productCard.appendChild(productInfo);
-
-        cardsContainer.appendChild(productCard);
-    }
-};
-
-function filterProducts(category) {
-    let filteredProducts = [];
-    if (category === 'all') {
-        filteredProducts = productList;
-    } else {
-        filteredProducts = productList.filter(product => product.category === category);
-    }
-    cardsContainer.innerHTML = '';
-    renderProducts(filteredProducts);
-}
-
-function addProductToCart(idProducto) {
-    const productoExistente = carritoGlobal.find(producto => producto.id === idProducto);
-
-    if (productoExistente) {
-        productoExistente.cantidad += 1;
-    } else {
-        carritoGlobal.push({ id: idProducto, cantidad: 1 });
-    }
-    guardarCarritoEnLocalStorage();
-    Toastify({
-        text: "Producto agregado",
-        duration: 3000,
-        destination: "",
-        newWindow: true,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "left", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-          background: "linear-gradient(to right, #00b09b, #96c93d)",
-        },
-        onClick: function(){} // Callback after click
-      }).showToast();
-      checkCartStatus();
-}
-
-function eliminarProductoDelCarrito(idProducto) {
-    carritoGlobal = carritoGlobal.filter(producto => producto.id !== idProducto);
-    guardarCarritoEnLocalStorage();
-    checkCartStatus();
-}
+    renderactualizarTotalItems(carritoGlobal.length);
 
 
-// Función para buscar el precio de un producto por su ID
-function buscarPrecioPorId(id) {
-    const producto = productList.find(p => p.id === id);
-    return producto ? producto.price : 0;
-}
+    // El resto de tu lógica de la página de checkout
+});
 
-// Función para calcular el total del carrito
-function calcularTotalCarrito(carrito) {
-    return carrito.reduce((total, item) => {
-        const precio = buscarPrecioPorId(item.id);
-        return total + (precio * item.cantidad);
-    }, 0);
-}
-
-function guardarCarritoEnLocalStorage() {
-    // Convertir el array del carrito a una cadena JSON
-    const carritoJSON = JSON.stringify(carritoGlobal);
-    localStorage.setItem('carrito', carritoJSON);
-}
-
-function cargarCarritoDesdeLocalStorage() {
-    const carritoJSON = localStorage.getItem('carrito');
-
-    // Si hay datos, convertirlos de nuevo a un array y establecer el estado del carrito
-    if (carritoJSON) {
-        carritoGlobal = JSON.parse(carritoJSON);
+function renderactualizarTotalItems() {
+    const totalItems = document.querySelector('#total-items');
+    if (totalItems) {
+        totalItems.textContent = contarTotalItems(carritoGlobal) + " artículos";
     }
 }
 
-function contarProductosEnCarrito(carrito) {
-    return carrito.reduce((total, item) => total + item.cantidad, 0);
-}
+function contarTotalItems(carrito) {
+    let totalItems = 0;
 
-function renderactualizarContadorCarrito(totalProductos) {
-    const contadorCarrito = document.querySelector('.product-count');
-    if (contadorCarrito) {
-        contadorCarrito.textContent = totalProductos;
+    for (let item of carrito) {
+        totalItems += item.cantidad;
     }
+
+    return totalItems;
 }
-
-function renderCart(arrayCarrito) {
-    const totalPriceContainer = asideShoppingCart.querySelector('#TotalPrice');
-    const shoppingContainer = document.querySelector('.shopping-container');
-    shoppingContainer.innerHTML = '';
-
-    for (let product of arrayCarrito) {
-        //Div que contiene el numero de veces que un producto esta repetido en el carrito
-        const numberOfSameProduct = document.createElement('div');
-        numberOfSameProduct.innerText = product.cantidad;
-
-        //Genero el contenedor del producto
-        const productCartContainer = document.createElement('div');
-        productCartContainer.classList.add('shopping-cart');
-
-        productDetails = productList.find(producto => producto.id === product.id);
-
-        //Genero la imagen del producto y la agrego un figure 
-        const productImg = document.createElement('img');
-        productImg.setAttribute('src', productDetails.image);
-        productImg.setAttribute('alt', productDetails.name);
-        productImg.classList.add('hover-neon-effect');
-        /*
- * Este bloque de código utiliza una IIFE (Immediately Invoked Function Expression) para manejar
- * los event listeners dentro de un bucle for. Cada iteración del bucle sobrescribe 'productDetails',
- * por lo que sin esta técnica, todos los listeners referirían al último producto en el bucle.
- *
- * La IIFE captura el estado actual de 'productDetails' para cada producto y lo pasa a la función
- * del event listener. Esto asegura que cada listener tenga una copia independiente de los detalles
- * del producto, permitiendo que al hacer clic en una imagen, se muestren los detalles correctos.
- *
- * Este método puede parecer menos directo, pero es crucial para evitar errores comunes en el manejo
- * de variables dentro de bucles. Garantiza una experiencia de usuario coherente y precisa en la
- * visualización de detalles del producto.
- */
-        productImg.addEventListener('click', ((details)=>{
-            return () =>{
-                console.log("el detalle del producto es", details);
-                detailsProduct(details);
-            };
-        })(productDetails));
-        const productFigure = document.createElement('figure');
-        productFigure.classList.add('cart-product-figure');
-        productFigure.append(productImg, numberOfSameProduct);
-
-        //Agrego el precio y nombre del producto
-        const productPrice = document.createElement('p');
-        const productName = document.createElement('p');
-        const productPriceCents = Math.round(productDetails.price * 100); // Convertir a centavos
-        const totalPriceCents = productPriceCents * parseInt(numberOfSameProduct.innerText);
-        productPrice.innerText = formatPrice(productPriceCents / 100);
-        productName.innerText = productDetails.name;
-
-        //Agrego la imagen para quitar el producto del carrito junto con el evento para eliminarlo y hacer un update de precios
-        const productDeleteButton = document.createElement('img');
-        productDeleteButton.setAttribute('src', './icons/icon_close.png');
-        productDeleteButton.setAttribute('alt', 'close');
-        productDeleteButton.addEventListener('click', function () {
-            eliminarProductoDelCarrito(product.id);
-            renderCart(carritoGlobal);
-            renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
-
-            const totalCarrito = calcularTotalCarrito(carritoGlobal);
-            totalPriceContainer.innerText = formatPrice(totalCarrito);
-        });
-
-        //Integro todos los componentes
-        productCartContainer.append(productFigure, productName, productPrice, productDeleteButton);
-        shoppingContainer.appendChild(productCartContainer);
-
-        const totalCarrito = calcularTotalCarrito(carritoGlobal);
-        totalPriceContainer.innerText = formatPrice(totalCarrito);
-    }
-}
-
-
-renderProducts(productList);
-

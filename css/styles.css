@@ -15,6 +15,7 @@
   --very-light-pink: #C7C7C7;
   --text-input-field: #F7F7F7;
   --hospital-green: #ACD9B2;
+  --hospital-gren-hover:#1fd537;
   --sm: 14px;
   --md: 16px;
   --lg: 18px;
@@ -315,7 +316,7 @@ body::-webkit-scrollbar-track:active {
 
 
 /* ShoppingCart */
-#shoppingCartContainer {
+#asideShoppingCart {
   padding: 30px 0;
 }
 
@@ -375,7 +376,7 @@ body::-webkit-scrollbar-track:active {
   width: 70px;
   height: 70px;
   border-radius: 20px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .shopping-cart p:nth-child(2) {
@@ -397,6 +398,24 @@ body::-webkit-scrollbar-track:active {
   font-size: var(--md);
   font-weight: bold;
   height: 50px;
+}
+
+.cart-product-figure{
+  position: relative;
+}
+.cart-product-figure div{
+  width: 16px;
+  height: 16px;
+  background-color: var(--hospital-green);
+  border-radius: 50%;
+  font-size: var(--sm);
+  font-weight: bold;
+  position: absolute;
+  top: -6px;
+  right: -3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ProductDetail */
@@ -468,10 +487,34 @@ body::-webkit-scrollbar-track:active {
   height: 50px;
 }
 
+.primary-button-active:hover{
+  background-color: var(--hospital-gren-hover);
+}
+
+.primary-button-disabled {
+  background-color: var(--very-light-pink);
+  cursor: auto;
+}
+
+.primary-button-disabled:hover {
+  background-color: var(--very-light-pink);
+}
+
 .add-to-cart-button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hover-neon-effect {
+  cursor: pointer; /* Cambia el cursor a una manita */
+  border: 3px solid transparent;
+  transition: border 0.3s ease-in-out;
+}
+
+.hover-neon-effect:hover {
+  border-color: #39FF14; /* Color fosforescente verde tipo neón */
+  box-shadow: 0 0 10px #39FF14, 0 0 15px #39FF14, 0 0 20px #39FF14;
 }
 
 
@@ -563,7 +606,7 @@ aside.show {
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
 }
 
-#shoppingCartContainer.show {
+#asideShoppingCart.show {
   padding: 30px 24px;
 }
 
