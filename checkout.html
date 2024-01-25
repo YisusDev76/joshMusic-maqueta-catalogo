@@ -38,7 +38,7 @@
               </div>
 
               <div class="input-container">
-                <input type="text" id="fullAddress" class="login-input">
+                <input type="text" id="clientAddress" name="clientAddress" class="login-input">
                 <label for="fullAddress" unselectable="on">Direccion Completa</label>
                 <p class="error-message">Por favor, ingrese una dirección valida</p>
               </div>
@@ -73,9 +73,12 @@
       
         <div class="column">
           <div class="card card-summary">
-            <h1>Resumen del Pedido</h1>
-            <p>Detalles del pedido</p>
-            <input type="text" placeholder="Total del pedido">
+            <h2>Resumen del Pedido</h2>
+            <p> <b>Detalles del pedido:</b></p>
+            <p><span id="preview-full-name"></span></p>
+            <p><span id="preview-company"></span></p>
+            <p><span id="preview-address"></span></p>
+            <p><span id="preview-email"></span></p>
           </div>
       
           <!-- Puedes colocar más tarjetas aquí en la columna derecha -->
@@ -83,6 +86,25 @@
       
       </div>
 </body>
-
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzIZl7CPRCjGmbGN4tp2zrf--7URcxpN8&libraries=places&callback=initMap" async defer"></script>
+<script>
+function initMap() {
+   let input = document.getElementById('clientAddress');
+    var options = {
+      componentRestrictions: { country: 'mx' }
+  };
+   var autocomplete = new google.maps.places.Autocomplete(input, options);
+   // Establece el placeholder a un string vacío o al valor que prefieras
+   input.placeholder = "";
+   autocomplete.addListener('place_changed', function() {
+        console.log("entra aqui")
+       var place = autocomplete.getPlace();
+       let previewAddress = document.getElementById('preview-address');
+       previewAddress.innerHTML = '';  
+       var previewText = place.formatted_address.replace(/,/g, '<br>');
+       previewAddress.innerHTML = previewText;  
+   });
+}
+</script>
 <script src="js/checkout.js"></script>
 </html>

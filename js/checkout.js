@@ -424,6 +424,32 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Selecciona el campo de entrada y el elemento de previsualización
+    let fullNameInput = document.getElementById('full-name');
+    let fullNamePreview = document.getElementById('preview-full-name');
+    var companyInput = document.getElementById('company');
+    var companyPreview = document.getElementById('preview-company');
+    var emailInput = document.getElementById('email');
+    var emailPreview = document.getElementById('preview-email');
+
+    // Evento que se dispara cuando se escribe en el campo de nombre completo
+    fullNameInput.addEventListener('input', function() {
+        fullNamePreview.textContent = this.value;
+    });
+
+    // Repite el proceso para otros campos de entrada y sus previsualizaciones
+
+    companyInput.addEventListener('input', function() {
+        companyPreview.textContent = this.value;
+    });
+
+    emailInput.addEventListener('input', function() {
+        emailPreview.textContent = this.value;
+    });
+});
+
+
 
 
 

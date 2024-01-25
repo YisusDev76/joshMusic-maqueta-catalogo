@@ -180,6 +180,20 @@ div.input-container {
 }
   
 /* Primera card: Info del usuario */
+/* Estilos para cambiar el fondo del autocompletar */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: #666 !important;
+}
+
+/* Estilos específicos para los <p> dentro de .card-summary */
+.card-summary p {
+  margin-top: 5px; /* Espacio superior reducido */
+  margin-bottom: 5px; /* Espacio inferior reducido */
+}
 
   
 /* Media Querys */
