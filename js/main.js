@@ -424,7 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
     checkoutButton = document.getElementById('checkoutButton');
   
     checkoutButton.addEventListener('click', () => {
-      window.location.href = '/checkout.html'; // Cambia esto por la URL de tu página de contacto
+      window.location.href = './checkout.html'; // Cambia esto por la URL de tu página de contacto
     });
 
     checkCartStatus();
