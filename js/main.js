@@ -541,9 +541,11 @@ function checkCartStatus() {
   }
 
 const isFloat = value => Number(value) === value && value % 1 !== 0;
-function formatPrice(price) { // Esta función convierte el número a un formato de precio
-    // Asume que si el número es un entero no necesita decimales, y si es flotante, los mantiene
-    return isFloat(price) ? `$${price.toFixed(2)}` : `$${price}.00`;
+function formatPrice(price) {
+    return price.toLocaleString('es-MX', {
+        style: 'currency',
+        currency: 'MXN'
+    });
 }
 
 // Función para poner los datos del producto seleccionado en la ventana de Detalles
@@ -600,7 +602,8 @@ const renderProducts = arr => {
         const productInfoDiv = document.createElement('div');
 
         const productPrice = document.createElement('p');
-        productPrice.innerText = `$${product.price}`;
+        //Fortmato de precio a Mexico
+        productPrice.innerText = formatPrice(product.price);
         const productName = document.createElement('p');
         productName.innerText = `${product.name}`;
 
@@ -749,7 +752,6 @@ function renderCart(arrayCarrito) {
  */
         productImg.addEventListener('click', ((details)=>{
             return () =>{
-                console.log("el detalle del producto es", details);
                 detailsProduct(details);
             };
         })(productDetails));
@@ -760,9 +762,7 @@ function renderCart(arrayCarrito) {
         //Agrego el precio y nombre del producto
         const productPrice = document.createElement('p');
         const productName = document.createElement('p');
-        const productPriceCents = Math.round(productDetails.price * 100); // Convertir a centavos
-        const totalPriceCents = productPriceCents * parseInt(numberOfSameProduct.innerText);
-        productPrice.innerText = formatPrice(productPriceCents / 100);
+        productPrice.innerText = formatPrice(productDetails.price);
         productName.innerText = productDetails.name;
 
         //Agrego la imagen para quitar el producto del carrito junto con el evento para eliminarlo y hacer un update de precios
