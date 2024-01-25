@@ -388,6 +388,45 @@ productList.push({
     `,
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var inputs = document.querySelectorAll('input:not(#company)');
+
+    inputs.forEach(function(input) {
+        input.addEventListener('blur', function() {
+            validateInput(this);
+        });
+
+        // Evento para comprobar los cambios en el campo
+        input.addEventListener('input', function() {
+            if (this.value.trim() !== '') {
+                this.classList.remove('input-error');
+                var errorMessage = this.parentElement.querySelector('.error-message');
+                if (errorMessage) {
+                    errorMessage.style.display = 'none';
+                }
+            }
+        });
+    });
+
+    function validateInput(input) {
+        var errorMessage = input.parentElement.querySelector('.error-message');
+        if (input.value.trim() === '') {
+            input.classList.add('input-error');
+            if (errorMessage) {
+                errorMessage.style.display = 'block';
+            }
+        } else {
+            input.classList.remove('input-error');
+            if (errorMessage) {
+                errorMessage.style.display = 'none';
+            }
+        }
+    }
+});
+
+
+
+
 //Load animation if fields containing data on page load
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll(".input-container .login-input").forEach(function(element) {

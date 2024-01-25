@@ -116,6 +116,7 @@ nav {
 }
 
 input {
+  margin-bottom: 20px;
   width: 100%;
   height: 40px;
   font-size: 16px;
@@ -136,12 +137,13 @@ label {
   transform: translateY(-25px);
   transition: transform 0.3s ease;
   left: 0;
-  bottom: -15px;
+  bottom: 0px;
 }
 
-p.input-container {
+div.input-container {
   width: 100%; 
   position: relative;
+  margin-bottom: 10px;
 }
 
 .animation label {
@@ -158,6 +160,22 @@ p.input-container {
 .error-message {
   color: #ff0000;
   font-size: 0.85em;
+  display: none; /* Ocultamos el mensaje de error por defecto */
+}
+
+.input-error {
+  border-bottom: 1px solid #ff0000 !important;
+}
+
+.input-error + label + .error-message {
+  display: block;
+}
+
+/* Asegúrate de que los mensajes de error estén correctamente posicionados */
+.error-message {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
   display: none; /* Ocultamos el mensaje de error por defecto */
 }
   
