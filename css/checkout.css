@@ -88,7 +88,7 @@ nav {
     align-items: center;
   }
 
-  /* Checkout cointainer */
+/* Checkout cointainer */
 .flex-container {
     display: flex;
     justify-content: space-between;
@@ -99,38 +99,20 @@ nav {
   .column {
     width: 49.5%; /* Ajusta este valor según necesites */
   }
-  
-  .card {
-    background: var(--white);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1), /* Sombra general */
-                0 8px 10px -5px rgba(0,0,0,0.2); /* Mayor sombra en la parte inferior */
-    border-radius: 4px;
-    padding: 20px;
-    margin-bottom: 20px; /* Espacio entre tarjetas */
-    transition: transform 0.3 ease-in-out;
-  }
 
-  /* Estilos por defecto para móviles */
-  .form-group {
-    margin-bottom: 10px;
-  }
-.card:hover {
-    transform: translateY(-5px); /* Opcional: efecto al pasar el mouse */
-  }
-
-p.input-container {
-  width: 100%; 
-  position: relative;
+/* Cards */
+.card {
+  background: var(--white);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1), /* Sombra general */
+              0 8px 10px -5px rgba(0,0,0,0.2); /* Mayor sombra en la parte inferior */
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px; /* Espacio entre tarjetas */
+  transition: transform 0.3 ease-in-out;
 }
 
-label {
-  color: #CCC;
-  position: absolute; 
-  cursor: text;
-  transform: translateY(-25px);
-  transition: transform 0.3s ease;
-  left: 0;
-  bottom: -15px;
+.card:hover {
+  transform: translateY(-5px); /* Opcional: efecto al pasar el mouse */
 }
 
 input {
@@ -147,6 +129,20 @@ input {
   }
 }
 
+label {
+  color: #CCC;
+  position: absolute; 
+  cursor: text;
+  transform: translateY(-25px);
+  transition: transform 0.3s ease;
+  left: 0;
+  bottom: -15px;
+}
+
+p.input-container {
+  width: 100%; 
+  position: relative;
+}
 
 .animation label {
   transform: translateY(-55px);
@@ -159,6 +155,28 @@ input {
   color: #28a2a2;
 }
 
+.error-message {
+  color: #ff0000;
+  font-size: 0.85em;
+  display: none; /* Ocultamos el mensaje de error por defecto */
+}
+  
+/* Primera card: Info del usuario */
+
+  
+/* Media Querys */
+  
+/* Media query para pantallas menores a 601px */
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
+
 /* Estilos para pantallas más grandes */
 @media (min-width: 601px) {
   .row {
@@ -166,7 +184,6 @@ input {
       flex-wrap: wrap;
       /* margin-bottom: 20px; */
   }
-
   .row .input-container {
       flex: 1;
       min-width: 120px; /* Para asegurarnos de que no se vuelvan demasiado pequeños */
@@ -177,60 +194,3 @@ input {
     margin-right: 39px; /* Añade un margen a la derecha de cada .form-group */
 }
 }
-  
-  /* Media query para pantallas menores a 601px */
-  @media (max-width: 600px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  
-    .column {
-      width: 100%;
-    }
-  }
-  
-  /* Primera card: Info del usuario */
-
-  .form-group {
-    margin-bottom: 15px;
-  }
-
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-
-  .form-group input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  .form-group input:focus {
-    outline: none;
-    border-color: #ff0000;
-    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
-  }
-
-  .form-group .required {
-    color: #ff0000;
-  }
-
-  .error-message {
-    color: #ff0000;
-    font-size: 0.85em;
-    display: none; /* Ocultamos el mensaje de error por defecto */
-  }
-
-  /* Estilo para mostrar el mensaje de error cuando sea necesario */
-.form-group.error input {
-    border-color: #ff0000;
-  }
-
-  .form-group.error .error-message {
-    display: block;
-  }
-  
-  
