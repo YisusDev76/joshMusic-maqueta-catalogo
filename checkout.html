@@ -23,35 +23,32 @@
         <div class="column">
           <div class="card card-information">
             <h2>Información</h2>
-            <div class="form-group">
-                <label for="full-name">Full name <span class="required">*</span></label>
-                <input type="text" id="full-name" placeholder="Please fill out full name">
+
+              <div class="row">
+                  <p class="input-container">
+                    <input type="text" id="full-name" class="login-input">
+                    <label for="full-name" unselectable="on">Nombre Completo</label>
+                    <p class="error-message">Please fill out full name</p>
+                  </p>
+
+                  <p class="input-container">
+                    <input type="text" id="company" class="login-input">
+                    <label for="company" unselectable="on">Compañia (opcional)</label>
+                    <p class="error-message">Please fill out full name</p>
+                  </p>
+              </div>
+
+              <p class="input-container">
+                <input type="text" id="fullAddress" class="login-input">
+                <label for="fullAddress" unselectable="on">Direccion Completa</label>
                 <p class="error-message">Please fill out full name</p>
-            </div>
-              
-            <div class="form-group">
-                <label for="company">Company (optional)</label>
-                <input type="text" id="company">
-            </div>
-            
-            <div class="form-group">
-                <label for="address">Full address <span class="required">*</span></label>
-                <input type="text" id="address" placeholder="Please fill out full address">
-                <p class="error-message">Please fill out full address</p>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email <span class="required">*</span></label>
-                <input type="email" id="email" placeholder="Please fill out email">
-                <p class="error-message">Please fill out email</p>
-            </div>
-            
-            <div class="form-group">
-                <label for="phone">Phone <span class="required">*</span></label>
-                <input type="tel" id="phone" placeholder="Please fill out phone">
-                <p class="error-message">Please fill out phone</p>
-            </div>
-            
+              </p>
+
+              <p class="input-container">
+                <input type="text" id="email" class="login-input">
+                <label for="email" unselectable="on">Correo electronico</label>
+                <p class="error-message">Please fill out full name</p>
+              </p>
           </div>
 
           <div class="card card-information">

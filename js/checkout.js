@@ -388,6 +388,32 @@ productList.push({
     `,
 });
 
+//Load animation if fields containing data on page load
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll(".input-container .login-input").forEach(function(element) {
+        if (element.value !== "") {
+            element.closest('.input-container').classList.add("animation");
+        }
+    });
+});
+
+document.querySelectorAll(".input-container .login-input").forEach(function(element) {
+    element.addEventListener('focus', function() {
+        this.closest('.input-container').classList.add("animation", "animation-color");
+    });
+});
+
+document.querySelectorAll(".input-container .login-input").forEach(function(element) {
+    element.addEventListener('focusout', function() {
+        if (this.value === "") {
+            this.closest('.input-container').classList.remove("animation");
+        }
+        this.closest('.input-container').classList.remove("animation-color");
+    });
+});
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     let carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || [];
 
