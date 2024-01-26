@@ -14,7 +14,7 @@ Además, este enfoque sirve como un punto de partida para el desarrollo futuro. 
 En resumen, este proyecto no solo aborda la necesidad inmediata de una presencia en línea para la tienda, sino que también establece una base sólida para el desarrollo futuro. Representa un equilibrio entre practicidad y visión a largo plazo, asegurando que la tienda no solo mantenga su relevancia en el mercado actual, sino que también esté preparada para el crecimiento y la innovación en el futuro.
 
 ## Demostración en Vivo
-Aqui estara el link de proyecto a gitHub Pages cuando ya este el deploy
+Aqui esta el link de proyecto a gitHub Pages : https://yisusdev76.github.io/joshMusic-maqueta-catalogo/
 
 ## Características
 El proyecto de ecommerce para la tienda de instrumentos musicales se distingue por varias características clave que lo hacen único y valioso para nuestro negocio. A continuación se detallan las principales funcionalidades y atributos que hacen destacar este proyecto:
@@ -50,47 +50,10 @@ Existe la opcion tambien de ahorrarse unos pasos y usando la extencion *live Ser
 En este caso no son necesarias la instlacion de nada adicional.
 
 ## Contribuciones
-Las contribuciones son lo que hacen que la comunidad de código abierto sea un lugar increíble para aprender, inspirar y crear. Cualquier contribución que hagas será **muy apreciada**.
 
-Si tienes una sugerencia que podría mejorar este proyecto, por favor forkea el repositorio y crea un pull request. También puedes simplemente abrir un issue con la etiqueta "mejora". No olvides dar una estrella al proyecto si te gusta. ¡Gracias de antemano!
+¿Interesado en contribuir? ¡Eso es genial! Para empezar, por favor lee nuestro [archivo CONTRIBUTING](CONTRIBUTING.md) para obtener información sobre cómo hacerlo.
 
-Aquí tienes una guía paso a paso para hacer una contribución:
-
-1. **Forkea el Proyecto:** Ve a la página principal del repositorio y haz clic en el botón "Fork" en la parte superior derecha. Esto creará una copia del proyecto en tu cuenta de GitHub.
-
-2. **Clona el Repositorio**: Una vez que hayas forkeado el repositorio, clónalo a tu máquina local para hacer cambios. Abre tu terminal y ejecuta:
-
-```bash
-git clone https://github.com/yisusDev76/joshMusic-maqueta-catalogo.git
-```
-Asegúrate de reemplazar tu-usuario y tu-repositorio con tus datos correspondientes.
-
-3. **Crea una Rama de Características**: Antes de realizar cualquier cambio, es una buena práctica crear una nueva rama:
-
-```bash
-git checkout -b nombre-de-tu-rama
-```
-El nombre de la rama debería reflejar la característica o mejora que planeas agregar.
-
-4. **Realiza tus Cambios**: Haz tus modificaciones en los archivos necesarios en tu rama local. Asegúrate de seguir las convenciones de codificación del proyecto.
-
-5. **Compromete tus Cambios**: Una vez que hayas realizado tus cambios, añádelos y crea un commit con un mensaje significativo:
-
-```bash
-git add .
-git commit -m "Añadir alguna característica increíble"
-```
-
-6. **Sube tus Cambios al Repositorio Remoto**: Con tus cambios comprometidos en tu rama local, es hora de subirlos al repositorio remoto (tu fork en GitHub):
-
-```bash
-git push origin nombre-de-tu-rama
-```
-7. **Crea un Pull Request**: Ve a tu repositorio en GitHub. Verás un botón para "Comparar y crear un pull request". Haz clic en él, escribe un mensaje claro y detallado que explique tus cambios y envía el pull request.
-
-8. **Espera la Revisión**: Mantente atento a cualquier comentario o solicitud de cambios de los mantenedores del proyecto. Una vez que tu pull request sea aprobado y fusionado, ¡tu contribución se habrá completado con éxito!
-
-Recuerda mantener tu fork sincronizado con el repositorio original para facilitar futuras contribuciones.
+Agradecemos cualquier tipo de contribución, desde correcciones de errores hasta sugerencias de mejoras. ¡Tu ayuda es bienvenida!
 
 ## Licencia
 Para este caso que el proyecto es una demo/maqueta/version preliminar se usara la licencia MIT
