@@ -197,12 +197,15 @@ input:-webkit-autofill:active  {
 
 .order-item {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Esto centrará todos los elementos hijos verticalmente */
   padding: 10px;
   border-radius: 7px;
-  border: solid 1px #dcdcdc; /* Añade un borde claro */
+  border: solid 1px #dcdcdc;
   margin-bottom: -1px; /* Ajusta el margen negativo para solapar los bordes */
 }
+
 .item-image img {
   width: 64px;
   height: 64px;
@@ -211,8 +214,14 @@ input:-webkit-autofill:active  {
 }
 
 .item-details {
-  flex-grow: 1;
+  flex: 1;
   padding-left: 15px;
+  padding-bottom: 6px;
+}
+
+.nameAndPrice{
+  flex-grow:2; 
+  flex-basis:2;
 }
 
 .item-title {
@@ -220,28 +229,23 @@ input:-webkit-autofill:active  {
   color: #000;
   margin: 0;
   margin-bottom: 4px; /* Espacio entre el título y el precio */
+  padding-right: 34px;
 }
 
 .item-price {
   font-size: 0.8em;
   color: #666;
+  margin: 0;
 }
 
 .item-options {
-  display: flex;
-  align-items: center; /* Alinea verticalmente los selects */
-  margin-right: 39px; /* Espacio antes del botón de eliminar */
+  flex: 0 ;
+  
 }
 
 .item-size, .item-quantity {
-  /* background-color: #e6e6e6;
-  border: none;
-  padding: 5px;
-  margin-right: 10px;
-  border-radius: 4px;
-  -webkit-appearance: none; */
   margin-bottom: 16px;
-  width: 100%;
+  width: 34%;
   height: 40px;
   font-size: 16px;
   transition: 0.6s;
@@ -255,7 +259,7 @@ input:-webkit-autofill:active  {
 }
 
 .item-size:focus, .item-quantity:focus {
-  outline: none;
+  border-bottom: 1px solid #28a2a2;
 }
 
 .item-remove img {
@@ -264,9 +268,7 @@ input:-webkit-autofill:active  {
   height: 20px;
 }
 
-  
 /* Media Querys */
-  
 /* Media query para pantallas menores a 601px */
 @media (max-width: 600px) {
   .flex-container {
@@ -294,4 +296,36 @@ input:-webkit-autofill:active  {
   .row .input-container:first-child {
     margin-right: 39px; /* Añade un margen a la derecha de cada .form-group */
 }
+}
+
+/* Media query para pantallas más grandes */
+/* Estilos existentes... */
+
+/* Media Query para escritorio */
+/* Media Query para escritorio */
+@media screen and (min-width: 854px) {
+  .order-item {
+    align-items: center; /* Esto centrará todos los elementos hijos verticalmente */
+  }
+
+  .item-details,
+  .item-options,
+  .item-remove {
+    /* Aseguramos que los elementos tengan una alineación vertical centrada */
+    display: flex;
+    align-items: center;
+  }
+
+  .item-options {
+    justify-content: flex-end; /* Esto empujará el select hacia la derecha */
+    flex-grow:1; 
+    flex-basis:0;
+  }
+
+  .item-quantity {
+    width: auto; /* O el ancho que prefieras, pero debe ser menor al 100% */
+    margin-right: 34px;
+  }
+
+  /* ... otras reglas específicas para la vista de escritorio si es necesario ... */
 }
