@@ -1,5 +1,5 @@
 //DATASET
-// Catalogo joshMusic
+// Lista de productos
 const productList = [];
 productList.push({
     id: 'producto1', // Agregar un ID único
@@ -169,9 +169,9 @@ productList.push({
 });
 productList.push({
     id: 'producto11',
-    name: 'NT 1000',
+    name: 'Sistema de Columna Activa NT 1000',
     price: 21000,
-    image: 'https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/NT1000-cat-logo-2.png',
+    image: 'https://149476031.v2.pressablecdn.com/wp-content/uploads/2023/08/NT1000-melo-4.webp',
     category: 'audio-prof',
     description: `NT1000 es la respuesta de MELO a los profesionales que trabajan en lugares donde la estética es
     un tema fundamental, que requieren gran potencia en equipos compactos.
@@ -214,7 +214,7 @@ Hasta 200 metros.
 productList.push({
     id: 'producto13',
     name: 'RF 100 - Micrófono Inalámbrico',
-    price: 1050,
+    price: 4300.00,
     image: 'https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/RF-100-2048x1121.png',
     category: 'microfonia',
     description: `El sistema de micrófono inalámbrico, fácil de instalar y conveniente de usar, es la primera
@@ -483,8 +483,72 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     renderactualizarTotalItems(carritoGlobal.length);
 
-
-    // El resto de tu lógica de la página de checkout
+    function renderCart(arrayCarrito) {
+        const contenedorProductos = document.querySelector(".my-order-content");
+        contenedorProductos.innerHTML = ''; // Limpiar el contenedor existente
+    
+        arrayCarrito.forEach(producto => {
+            // Crear el div del producto
+            const productoDiv = document.createElement("div");
+            productoDiv.classList.add("order-item");
+    
+            productDetails = productList.find(productFinder => producto.id === productFinder.id);
+    
+            // Agregar imagen, detalles y opciones del producto
+            productoDiv.innerHTML = `
+                <div class="item-image">
+                    <img src="${productDetails.image}" alt="${productDetails.name}">
+                </div>
+                <div class="item-details">
+                    <div class="nameAndPrice">
+                        <h3 class="item-title">${productDetails.name}</h3>
+                        <p class="item-price">$${productDetails.price}</p>
+                    </div>
+                    <div class="item-options">
+                    <select class="item-quantity" data-id="${producto.cantidad}">
+                        <option value="1">1 pza</option>
+                        <option value="2">2 pzas</option>
+                        <option value="3">3 pzas</option>
+                        <option value="4">4 pzas</option>
+                        <option value="5">5 pzas</option>
+                        <option value="6">6 pzas</option>
+                        <option value="7">7 pzas</option>
+                        <option value="8">8 pzas</option>
+                        <option value="9">9 pzas</option>
+                        <option value="10">10 pzas</option>
+                    </select>
+                </div>
+                </div>
+    
+                <div class="item-remove">
+                    <img src="./icons/icon_close.png" alt="remove" data-id="${producto.id}">
+                </div>
+            `;
+    
+            // Establecer la cantidad seleccionada
+            const selectCantidad = productoDiv.querySelector(".item-quantity");
+            selectCantidad.value = producto.cantidad;
+    
+            // Agregar evento para eliminar producto
+            const botonEliminar = productoDiv.querySelector(".item-remove img");
+            botonEliminar.addEventListener("click", () => eliminarProducto(producto.id));
+    
+            // Agregar el producto al contenedor
+            contenedorProductos.appendChild(productoDiv);
+        });
+    }
+    
+    function eliminarProducto(idProducto) {
+        // Eliminar el producto del array y actualizar la vista
+        const indice = productosEnCarrito.findIndex(p => p.id === idProducto);
+        if (indice !== -1) {
+            productosEnCarrito.splice(indice, 1);
+            renderizarProductos(productosEnCarrito);
+        }
+    }
+    
+    // Inicializar la vista con los productos del carrito
+    renderCart(carritoGlobal);
 });
 
 function renderactualizarTotalItems() {

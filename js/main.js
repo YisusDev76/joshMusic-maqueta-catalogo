@@ -214,7 +214,7 @@ Hasta 200 metros.
 productList.push({
     id: 'producto13',
     name: 'RF 100 - Micrófono Inalámbrico',
-    price: 1050,
+    price: 4300.00,
     image: 'https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/RF-100-2048x1121.png',
     category: 'microfonia',
     description: `El sistema de micrófono inalámbrico, fácil de instalar y conveniente de usar, es la primera
