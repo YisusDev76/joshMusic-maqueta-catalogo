@@ -502,7 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="item-details">
                     <div class="nameAndPrice">
                         <h3 class="item-title">${productDetails.name}</h3>
-                        <p class="item-price">$${productDetails.price}</p>
+                        <p class="item-price" id="price-${producto.id}">$${productDetails.price * producto.cantidad}</p>
                     </div>
                     <div class="item-options">
                     <select class="item-quantity" data-id="${producto.cantidad}">
@@ -528,6 +528,22 @@ document.addEventListener('DOMContentLoaded', () => {
             // Establecer la cantidad seleccionada
             const selectCantidad = productoDiv.querySelector(".item-quantity");
             selectCantidad.value = producto.cantidad;
+            // Asegurarse de que la opción actual esté disponible
+            if (producto.cantidad > 10) {
+            const option = document.createElement("option");
+            option.value = producto.cantidad;
+            option.textContent = `${producto.cantidad} pza${producto.cantidad > 1 ? 's' : ''}`;
+            option.selected = true; // Marcar como seleccionada
+            selectCantidad.appendChild(option);
+            } else {
+                selectCantidad.value = producto.cantidad;
+            }
+
+            // Añadir el event listener para cambios en la selección
+            selectCantidad.addEventListener("change", function(event) {
+                const nuevaCantidad = parseInt(event.target.value);
+                actualizarPrecioProducto(producto.id, nuevaCantidad);
+            });            
     
             // Agregar evento para eliminar producto
             const botonEliminar = productoDiv.querySelector(".item-remove img");
@@ -541,6 +557,25 @@ document.addEventListener('DOMContentLoaded', () => {
             contenedorProductos.appendChild(productoDiv);
         });
     }
+
+        // Función para actualizar la cantidad en el carrito
+        function actualizarPrecioProducto(idProducto, nuevaCantidad) {
+            // Encuentra el producto en productList por su ID para obtener el precio actualizado
+            const productoEncontrado = productList.find(producto => producto.id === idProducto);
+            if (productoEncontrado) {
+                const precioTotal = nuevaCantidad * productoEncontrado.price;
+                document.getElementById(`price-${idProducto}`).innerText = `$${precioTotal.toFixed(2)}`;
+        
+                // Actualiza la cantidad en carritoGlobal
+                const productoEnCarrito = carritoGlobal.find(producto => producto.id === idProducto);
+                if (productoEnCarrito) {
+                    productoEnCarrito.cantidad = nuevaCantidad;
+                }
+
+                guardarCarritoEnLocalStorage();
+            }
+        }
+        
 
     function removeFromCart(idProduct) {
         console.log("entra al la funcion de quitar producto");
