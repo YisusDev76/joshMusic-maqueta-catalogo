@@ -531,21 +531,40 @@ document.addEventListener('DOMContentLoaded', () => {
     
             // Agregar evento para eliminar producto
             const botonEliminar = productoDiv.querySelector(".item-remove img");
-            botonEliminar.addEventListener("click", () => eliminarProducto(producto.id));
+            botonEliminar.addEventListener("click", function() {
+                removeFromCart(producto.id);
+                renderCart(carritoGlobal);
+            }
+            );
     
             // Agregar el producto al contenedor
             contenedorProductos.appendChild(productoDiv);
         });
     }
-    
-    function eliminarProducto(idProducto) {
-        // Eliminar el producto del array y actualizar la vista
-        const indice = productosEnCarrito.findIndex(p => p.id === idProducto);
-        if (indice !== -1) {
-            productosEnCarrito.splice(indice, 1);
-            renderizarProductos(productosEnCarrito);
-        }
+
+    function removeFromCart(idProduct) {
+        console.log("entra al la funcion de quitar producto");
+        carritoGlobal = carritoGlobal.filter(producto => producto.id !== idProduct);
+        guardarCarritoEnLocalStorage();
+        checkCartStatus();
     }
+
+    function guardarCarritoEnLocalStorage() {
+        const jsonCart = JSON.stringify(carritoGlobal);
+        localStorage.setItem('carrito', jsonCart);
+    }
+
+
+    function checkCartStatus() {
+        if (carritoGlobal.length === 0) {
+            console.log("El carrito esta vacio");
+          document.getElementById('total-items').innerText = '0 items';
+          document.getElementById('empty-cart-message').classList.remove('inactive');
+        } else {
+          // Actualizar el botón y otros elementos según sea necesario
+        }
+      }
+      
     
     // Inicializar la vista con los productos del carrito
     renderCart(carritoGlobal);
