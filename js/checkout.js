@@ -391,6 +391,13 @@ productList.push({
 let carritoGlobal = [];
 
 document.addEventListener('DOMContentLoaded', function () {
+
+    document.querySelectorAll('input[name="delivery"]').forEach(radio => {
+        radio.addEventListener('change', function() {
+          console.log('Option selected:', this.value);
+        });
+      });
+      
     var inputs = document.querySelectorAll('input:not(#company)');
 
     inputs.forEach(function(input) {

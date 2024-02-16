@@ -50,10 +50,29 @@
               </div>
           </div>
 
-          <div class="card card-information">
-            <h1>Shipping</h1>
-            <p>Datos del usuario</p>
-            <input type="text" placeholder="Nombre completo">
+          <div class="card card-information shipping">
+            <h1>Envío</h1>
+            <p>Elija el proveedor de envío que desee</p>
+            <br>
+            <form id="delivery-options">
+              <label class="radio-option">
+                <input type="radio" name="delivery" value="tresguerras" />
+                <span>TresGuerras - Paquete entregado directamente a la puerta - $10</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="delivery" value="fedex" />
+                <span>FedEx - Paquete entregado directamente a la puerta - $10</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="delivery" value="estafeta" />
+                <span>Estafeta - Paquete entregado directamente a su empresa - $12</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="delivery" value="castores" />
+                <span>Castores - Recogida en punto de venta - $14</span>
+              </label>
+            </form>
+            
           </div>
 
           <div class="card card-information">

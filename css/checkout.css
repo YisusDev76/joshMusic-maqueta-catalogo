@@ -297,6 +297,60 @@ input:-webkit-autofill:active  {
   height: 20px;
 }
 
+/* Segunda Card del Usuario: Shipping */
+/* .card.card-information.shipping span,  */
+.card.card-information.shipping p
+{
+  font-size: 15px;
+}
+.radio-option {
+  display: block;
+  margin: 10px 0;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 16px;
+  /* Asegúrate de que el texto no seleccione al hacer clic */
+  user-select: none;
+}
+
+.radio-option input[type="radio"] {
+  position: absolute;
+  opacity: 0; /* Oculta el radio button predeterminado */
+  cursor: pointer;
+}
+
+.radio-option span {
+  padding-left: 10px;
+}
+
+/* Estilo para el círculo que representa el radio button */
+.radio-option::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid #888;
+  border-radius: 50%;
+  background-color: white; /* Fondo blanco para el círculo */
+}
+
+/* Estilo para el círculo interno cuando el radio button está seleccionado */
+.radio-option input[type="radio"]:checked + span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 4px; /* Ajusta esto para centrar el círculo interno */
+  transform: translate(0, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: black; /* Círculo negro para indicar que está seleccionado */
+}
+
 /* Media Querys */
 /* Media query para pantallas menores a 601px */
 @media (max-width: 600px) {
