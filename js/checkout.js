@@ -392,9 +392,43 @@ let carritoGlobal = [];
 
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Para los Radio button
+    const radioOptions = document.querySelectorAll('.radio-option input[type="radio"]');
+    radioOptions.forEach(function(radio) {
+        radio.addEventListener('change', function() {
+          radioOptions.forEach(function(radio) {
+            radio.parentNode.classList.remove('selected');
+          });
+          // Agregar la clase 'selected' solo al elemento seleccionado
+          if (radio.checked) {
+            radio.parentNode.classList.add('selected');
+          }
+        });
+      });
+
     document.querySelectorAll('input[name="delivery"]').forEach(radio => {
         radio.addEventListener('change', function() {
-          console.log('Option selected:', this.value);
+          const shippingProvider = this.value;
+          switch (shippingProvider) {
+            case 'tresguerras':
+                console.log("ENTRO A TRES GUERRAS");
+                break;
+            
+            case 'fedex':
+                console.log("FEDEX");
+                break;
+
+            case 'estafeta':
+                console.log("ESTAFETAAA");
+                break;
+            
+            case 'castores':
+                console.log("CASTORES PAAAA");
+                break;
+            default:
+                console.log("OTRA OPCION SELECCIONADA");
+                break;
+          }
         });
       });
       

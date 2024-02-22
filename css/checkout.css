@@ -10,13 +10,13 @@
 
 /* General */
 :root {
-  --body-bg:#fbf7f7;
-  --white: #FFFFFF;
+  --body-bg: #fbf7f7;
+  --white: #ffffff;
   --black: #000000;
-  --very-light-pink: #C7C7C7;
-  --text-input-field: #F7F7F7;
-  --hospital-green: #ACD9B2;
-  --hospital-gren-hover:#1fd537;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --hospital-green: #acd9b2;
+  --hospital-gren-hover: #1fd537;
   --sm: 14px;
   --md: 16px;
   --lg: 18px;
@@ -24,7 +24,7 @@
 
 body {
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 16px;
   background: var(--white);
 }
@@ -53,62 +53,62 @@ body {
 /* Navbar */
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 24px;
-    border-bottom: 1px solid var(--very-light-pink);
-  }
-  
-  .inactive {
-    display: none;
-  }
-  
-  .menu {
-    display: none;
-  }
-  
-  .logo {
-    width: 100px;
-  }
-  
-  .navbar-left {
-    display: flex;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--very-light-pink);
+}
 
-  .navbar-left p {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    height: 60px;
-    margin-left: 12px;
-    padding-top: 8px;
-    font-size: larger;
-  }
+.inactive {
+  display: none;
+}
 
-  .navbar-left a{
-    display: flex;
-    align-items: center;
-  }
+.menu {
+  display: none;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.navbar-left p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin-left: 12px;
+  padding-top: 8px;
+  font-size: larger;
+}
+
+.navbar-left a {
+  display: flex;
+  align-items: center;
+}
 
 /* Checkout cointainer */
 .flex-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    margin-top: 50px;
-  }
-  
-  .column {
-    width: 49.5%; /* Ajusta este valor según necesites */
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.column {
+  width: 49.5%; /* Ajusta este valor según necesites */
+}
 
 /* Cards */
 .card {
   background: var(--white);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1), /* Sombra general */
-              0 8px 10px -5px rgba(0,0,0,0.2); /* Mayor sombra en la parte inferior */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+    /* Sombra general */ 0 8px 10px -5px rgba(0, 0, 0, 0.2); /* Mayor sombra en la parte inferior */
   border-radius: 4px;
   padding: 20px;
   margin-bottom: 20px; /* Espacio entre tarjetas */
@@ -126,7 +126,7 @@ input {
   font-size: 16px;
   transition: 0.6s;
   border: none;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #ccc;
   background-color: transparent;
   &:focus {
     outline: none;
@@ -135,8 +135,8 @@ input {
 }
 
 label {
-  color: #CCC;
-  position: absolute; 
+  color: #ccc;
+  position: absolute;
   cursor: text;
   transform: translateY(-25px);
   transition: transform 0.3s ease;
@@ -145,7 +145,7 @@ label {
 }
 
 div.input-container {
-  width: 100%; 
+  width: 100%;
   position: relative;
   margin-bottom: 10px;
 }
@@ -182,15 +182,15 @@ div.input-container {
   left: 0;
   display: none; /* Ocultamos el mensaje de error por defecto */
 }
-  
+
 /* Primera card: Info del usuario */
 /* Estilos para cambiar el fondo del autocompletar */
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
-    -webkit-text-fill-color: #666 !important;
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #666 !important;
 }
 
 /* Estilos específicos para los <p> dentro de .card-summary */
@@ -206,7 +206,7 @@ input:-webkit-autofill:active  {
 }
 
 .empty-cart-message button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -248,9 +248,9 @@ input:-webkit-autofill:active  {
   padding-bottom: 6px;
 }
 
-.nameAndPrice{
-  flex-grow:2; 
-  flex-basis:2;
+.nameAndPrice {
+  flex-grow: 2;
+  flex-basis: 2;
 }
 
 .item-title {
@@ -268,18 +268,18 @@ input:-webkit-autofill:active  {
 }
 
 .item-options {
-  flex: 0 ;
-  
+  flex: 0;
 }
 
-.item-size, .item-quantity {
+.item-size,
+.item-quantity {
   margin-bottom: 16px;
   width: 34%;
   height: 40px;
   font-size: 16px;
   transition: 0.6s;
   border: none;
-  border-bottom: 1px solid #CCC;
+  border-bottom: 1px solid #ccc;
   background-color: transparent;
   &:focus {
     outline: none;
@@ -287,7 +287,8 @@ input:-webkit-autofill:active  {
   }
 }
 
-.item-size:focus, .item-quantity:focus {
+.item-size:focus,
+.item-quantity:focus {
   border-bottom: 1px solid #28a2a2;
 }
 
@@ -298,59 +299,89 @@ input:-webkit-autofill:active  {
 }
 
 /* Segunda Card del Usuario: Shipping */
-/* .card.card-information.shipping span,  */
-.card.card-information.shipping p
-{
+.card.card-information.shipping p {
   font-size: 15px;
 }
+
 .radio-option {
-  display: block;
-  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
   position: relative;
-  padding-left: 35px;
+  /* padding: 10px; Padding amplio para aumentar el área de clic */
   cursor: pointer;
   font-size: 16px;
-  /* Asegúrate de que el texto no seleccione al hacer clic */
-  user-select: none;
 }
 
-.radio-option input[type="radio"] {
-  position: absolute;
-  opacity: 0; /* Oculta el radio button predeterminado */
-  cursor: pointer;
-}
-
-.radio-option span {
-  padding-left: 10px;
-}
-
-/* Estilo para el círculo que representa el radio button */
 .radio-option::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  content: "";
+  display: block;
   width: 20px;
   height: 20px;
   border: 2px solid #888;
   border-radius: 50%;
-  background-color: white; /* Fondo blanco para el círculo */
+  background-color: white;
+  margin-right: 15px; /* Espacio entre el círculo y el texto */
+  transition: background-color 0.5s ease, border-color 0.5s ease;
 }
 
-/* Estilo para el círculo interno cuando el radio button está seleccionado */
+.radio-option.selected::before {
+  border-color: var(--black); /* Cambia el color del borde a rojo */
+}
+
 .radio-option input[type="radio"]:checked + span::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black; 
+}
+
+.radio-option input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  height: min-content;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.radio-option span {
+  padding-left: 0px;
+  margin-left:  0px; /* Mueve el texto para alinearlo con el pseudo-elemento */
+  flex: 1; /* Permite que el texto ocupe el espacio restante */
+  min-width: 0; /* Permite que el texto se ajuste */
+  flex-grow: 1;
+
+}
+
+/* Adicionalmente, si quieres que el círculo interno aparezca con una transición, puedes hacerlo así: */
+.radio-option span::after {
   content: '';
   position: absolute;
   top: 50%;
-  left: 4px; /* Ajusta esto para centrar el círculo interno */
-  transform: translate(0, -50%);
+  left: 4px;
+  transform: translateY(-50%);
   width: 12px;
   height: 12px;
+  background-color: white;
   border-radius: 50%;
-  background: black; /* Círculo negro para indicar que está seleccionado */
+  transition: width 0.4s ease, height 0.4s ease, background-color 0.4s ease;
+  opacity: 0; /* Empieza invisible */
+  pointer-events: none; /* Asegura que no afecte la funcionalidad del click */
 }
 
+.radio-option input[type="radio"]:checked + span::after {
+  opacity: 1; /* Se hace visible */
+  background-color: black; /* Color del círculo interior */
+  width: 12px; /* Ajusta el tamaño al círculo completo */
+  height: 12px;
+}
 /* Media Querys */
 /* Media query para pantallas menores a 601px */
 @media (max-width: 600px) {
@@ -363,22 +394,21 @@ input:-webkit-autofill:active  {
   }
 }
 
-/* Estilos para pantallas más grandes */
+/* Para cuando la pantalla super los 601px*/
 @media (min-width: 601px) {
   .row {
-      display: flex;
-      flex-wrap: wrap;
-      /* margin-bottom: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-bottom: 20px; */
   }
   .row .input-container {
-      flex: 1;
-      min-width: 120px; /* Para asegurarnos de que no se vuelvan demasiado pequeños */
-      
+    flex: 1;
+    min-width: 120px; /* Para asegurarnos de que no se vuelvan demasiado pequeños */
   }
 
   .row .input-container:first-child {
     margin-right: 39px; /* Añade un margen a la derecha de cada .form-group */
-}
+  }
 }
 
 /* Media query para pantallas más grandes */
@@ -401,8 +431,8 @@ input:-webkit-autofill:active  {
 
   .item-options {
     justify-content: flex-end; /* Esto empujará el select hacia la derecha */
-    flex-grow:1; 
-    flex-basis:0;
+    flex-grow: 1;
+    flex-basis: 0;
   }
 
   .item-quantity {
