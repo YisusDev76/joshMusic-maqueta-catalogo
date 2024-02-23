@@ -388,12 +388,27 @@ productList.push({
     `,
 });
 
+const radioOptions = document.querySelectorAll('.radio-option input[type="radio"]');
+
 let carritoGlobal = [];
+let totalCarrito = 0 ;
+const shippingRates = {
+    tresguerras:172.00,
+    fedex:171.00,
+    estafeta:205.00,
+    castores:239.00
+}
+
+carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || [];
+if (carritoGlobal.length === 0) {
+    // Redirige al usuario a la página de inicio si el carrito está vacío
+    window.location.href = '/index.html'; // Cambia esto por la URL de tu página de inicio
+}
+
+totalCarrito = calcularTotalCarrito(carritoGlobal);
+console.log("EL total del carrito es", totalCarrito );
 
 document.addEventListener('DOMContentLoaded', function () {
-
-    // Para los Radio button
-    const radioOptions = document.querySelectorAll('.radio-option input[type="radio"]');
     radioOptions.forEach(function(radio) {
         radio.addEventListener('change', function() {
           radioOptions.forEach(function(radio) {
@@ -409,26 +424,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('input[name="delivery"]').forEach(radio => {
         radio.addEventListener('change', function() {
           const shippingProvider = this.value;
-          switch (shippingProvider) {
-            case 'tresguerras':
-                console.log("ENTRO A TRES GUERRAS");
-                break;
-            
-            case 'fedex':
-                console.log("FEDEX");
-                break;
-
-            case 'estafeta':
-                console.log("ESTAFETAAA");
-                break;
-            
-            case 'castores':
-                console.log("CASTORES PAAAA");
-                break;
-            default:
-                console.log("OTRA OPCION SELECCIONADA");
-                break;
-          }
+          console.log("la paquetria enviada es ", shippingProvider);
+          calculateShipping(shippingProvider, totalCarrito);
         });
       });
       
@@ -517,11 +514,6 @@ document.querySelectorAll(".input-container .login-input").forEach(function(elem
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || [];
-    if (carritoGlobal.length === 0) {
-        // Redirige al usuario a la página de inicio si el carrito está vacío
-        window.location.href = '/index.html'; // Cambia esto por la URL de tu página de inicio
-    }
     renderactualizarTotalItems(carritoGlobal.length);
 
     function renderCart(arrayCarrito) {
@@ -646,6 +638,49 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCart(carritoGlobal);
 });
 
+function calculateShipping(shippingProvider, totalCart) {
+    // Definición de tarifas basadas en el total del carrito
+    let cartRate;
+    if (totalCart > 0 && totalCart < 3000) {
+        cartRate = 233;
+    } else if (totalCart >= 3000 && totalCart < 10000) {
+        cartRate = 400;
+    } else if (totalCart >= 10000 && totalCart < 11000) {
+        cartRate = 681;
+    } else if (totalCart >= 11000 && totalCart < 25000) {
+        cartRate = 700;
+    } else if (totalCart >= 25000 && totalCart < 55000) {
+        cartRate = 1100;
+    } else if (totalCart >= 55000 && totalCart < 60000) {
+        cartRate = 2633;
+    } else if (totalCart >= 60000 && totalCart < 125000) {
+        cartRate = 4000;
+    } else if (totalCart >= 125000 && totalCart < 130000) {
+        cartRate = 5950;
+    } else if (totalCart >= 130000 && totalCart < 260000) {
+        cartRate = 7000;
+    } else if (totalCart >= 260000) {
+        cartRate = 10000;
+    } else {
+        // Si el total del carrito es 0 o negativo, se podría manejar de manera especial
+        console.log("Total del carrito inválido");
+        return;
+    }
+
+    // Calcula el costo de envío basado en la paquetería y el total del carrito
+    let shippingCost = shippingRates[shippingProvider.toLowerCase().replace(/\s/g, '')]; // Normaliza el nombre de la paquetería
+    if (shippingCost === undefined) {
+        console.log("Paquetería no reconocida");
+        return;
+    }
+
+    // Suma la tarifa base de la paquetería con la tarifa basada en el total del carrito
+    let totalShippingCost = cartRate + shippingCost;
+    console.log("El costo total del envío es: ", totalShippingCost);
+    return totalShippingCost;
+}
+
+
 function renderactualizarTotalItems() {
     const totalItems = document.querySelector('#total-items');
     if (totalItems) {
@@ -661,4 +696,17 @@ function contarTotalItems(carrito) {
     }
 
     return totalItems;
+}
+
+// Función para buscar el precio de un producto por su ID
+function buscarPrecioPorId(id) {
+    const producto = productList.find(p => p.id === id);
+    return producto ? producto.price : 0;
+}
+
+function calcularTotalCarrito(carrito) {
+    return carrito.reduce((total, item) => {
+        const precio = buscarPrecioPorId(item.id);
+        return total + (precio * item.cantidad);
+    }, 0);
 }
