@@ -303,6 +303,11 @@ input:-webkit-autofill:active {
   font-size: 15px;
 }
 
+.card.card-information.shipping  {
+  position: relative;
+  padding: 24px;
+}
+
 .radio-option {
   display: flex;
   align-items: center;
@@ -381,6 +386,21 @@ input:-webkit-autofill:active {
   background-color: black; /* Color del círculo interior */
   width: 12px; /* Ajusta el tamaño al círculo completo */
   height: 12px;
+}
+
+.shipping-warning {
+  position: absolute;
+  bottom: 10px; /* Ajusta según necesites */
+  padding: 10px;
+  border-radius: 5px; /* Bordes redondeados para el mensaje */
+  font-size: 12px; /* Tamaño de fuente más pequeño */
+  color: var(--very-light-pink);
+}
+
+.shipping-warning:hover {
+  color: var(--body-bg);
+  background-color: rgba(0,0,0,0.8); /* Fondo ligeramente transparente */
+  cursor: context-menu;
 }
 /* Media Querys */
 /* Media query para pantallas menores a 601px */
