@@ -564,10 +564,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     </select>
                 </div>
                 </div>
-    
-                <div class="item-remove">
-                    <img src="./icons/icon_close.png" alt="remove" data-id="${producto.id}">
-                </div>
             `;
     
             // Establecer la cantidad seleccionada
@@ -589,14 +585,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const nuevaCantidad = parseInt(event.target.value);
                 actualizarPrecioProducto(producto.id, nuevaCantidad);
             });            
-    
-            // Agregar evento para eliminar producto
-            const botonEliminar = productoDiv.querySelector(".item-remove img");
-            botonEliminar.addEventListener("click", function() {
-                removeFromCart(producto.id);
-                renderCart(carritoGlobal);
-            }
-            );
     
             // Agregar el producto al contenedor
             contenedorProductos.appendChild(productoDiv);
@@ -620,14 +608,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 guardarCarritoEnLocalStorage();
             }
         }
-        
-
-    function removeFromCart(idProduct) {
-        console.log("entra al la funcion de quitar producto");
-        carritoGlobal = carritoGlobal.filter(producto => producto.id !== idProduct);
-        guardarCarritoEnLocalStorage();
-        checkCartStatus();
-    }
 
     function guardarCarritoEnLocalStorage() {
         const jsonCart = JSON.stringify(carritoGlobal);
