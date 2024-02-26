@@ -42,12 +42,18 @@
                 <label for="fullAddress" unselectable="on">Direccion Completa</label>
                 <p class="error-message">Por favor, ingrese una dirección valida</p>
               </div>
+              <div class="row">
+                <div class="input-container">
+                  <input type="text" id="email" class="login-input">
+                  <label for="email" unselectable="on">Correo electrónico (opcional)</label>
+                </div>
 
-              <div class="input-container">
-                <input type="text" id="email" class="login-input">
-                <label for="email" unselectable="on">Correo electronico</label>
-                <p class="error-message">Por favor, ingrese un correo electrónico</p>
-              </div>
+                <div class="input-container">
+                  <input type="text" id="phone" class="login-input">
+                  <label for="phone" unselectable="on">Telefono</label>
+                  <p class="error-message">Por favor, ingrese un teléfono valido</p>
+                </div>
+            </div>
           </div>
 
           <div class="card card-information shipping">
@@ -56,7 +62,7 @@
             <br>
             <form id="delivery-options">
               <label class="radio-option">
-                <input type="radio" name="delivery" value="tresguerras"/>
+                <input type="radio" name="delivery" value="tresguerras" checked/>
                 <span>TresGuerras - Paquete entregado directamente a la puerta -<span id="priceTresguerras"></span> </span>
               </label>
               <label class="radio-option">
@@ -101,6 +107,7 @@
             <p><span id="preview-company"></span></p>
             <p><span id="preview-address"></span></p>
             <p><span id="preview-email"></span></p>
+            <p><span id="preview-phone"></span></p>
             <h2>Tu orden</h2>
             <p><b id="total-items"></b></p>
 

@@ -230,7 +230,7 @@ input:-webkit-autofill:active {
   justify-content: space-between;
   align-items: center; /* Esto centrará todos los elementos hijos verticalmente */
   padding: 10px;
-  border-radius: 7px;
+  border-radius: 6px;
   border: solid 1px #dcdcdc;
   margin-bottom: -1px; /* Ajusta el margen negativo para solapar los bordes */
 }
