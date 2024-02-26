@@ -389,14 +389,35 @@ productList.push({
 });
 
 const radioOptions = document.querySelectorAll('.radio-option input[type="radio"]');
+const spanProviderShipping = document.querySelector('#providerShipping');
+const spanPriceTotalShipping = document.querySelector('#totalShipping');
 
 let carritoGlobal = [];
 let totalCarrito = 0 ;
+let totalToPay = 0;
+let selectedShippingProvider = null;
+let globalShippingPrice = 0;
+
 const shippingRates = {
     tresguerras:172.00,
     fedex:171.00,
     estafeta:205.00,
     castores:239.00
+}
+
+const shippingProviders = {
+    name:{
+        tresguerras:"TresGuerras",
+        fedex:"FedEx",
+        estafeta:"Estafeta",
+        castores:"Castores"
+    },
+    description:{
+        tresguerras:"Paquete entregado directamente a la puerta",
+        fedex:"Paquete entregado directamente a la puerta",
+        estafeta:"Paquete entregado directamente a su empresa",
+        castores:"Recogida en punto de venta"
+    }
 }
 
 carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || [];
@@ -406,7 +427,7 @@ if (carritoGlobal.length === 0) {
 }
 
 totalCarrito = calcularTotalCarrito(carritoGlobal);
-console.log("EL total del carrito es", totalCarrito );
+// console.log("EL total del carrito es", totalCarrito );
 
 document.addEventListener('DOMContentLoaded', function () {
     radioOptions.forEach(function(radio) {
@@ -418,14 +439,6 @@ document.addEventListener('DOMContentLoaded', function () {
           if (radio.checked) {
             radio.parentNode.classList.add('selected');
           }
-        });
-      });
-
-    document.querySelectorAll('input[name="delivery"]').forEach(radio => {
-        radio.addEventListener('change', function() {
-          const shippingProvider = this.value;
-          console.log("la paquetria enviada es ", shippingProvider);
-          calculateShipping(shippingProvider, totalCarrito);
         });
       });
       
@@ -487,15 +500,14 @@ document.addEventListener('DOMContentLoaded', function () {
     emailInput.addEventListener('input', function() {
         emailPreview.textContent = this.value;
     });
-});
 
-//Load animation if fields containing data on page load
-document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll(".input-container .login-input").forEach(function(element) {
         if (element.value !== "") {
             element.closest('.input-container').classList.add("animation");
         }
     });
+
+    updateAllShippingCostsUI(totalCarrito);
 });
 
 document.querySelectorAll(".input-container .login-input").forEach(function(element) {
@@ -679,6 +691,32 @@ function calculateShipping(shippingProvider, totalCart) {
     console.log("El costo total del envío es: ", totalShippingCost);
     return totalShippingCost;
 }
+
+function updateShippingCostUI(shippingProvider, shippingCost) {
+    if (shippingCost !== undefined) {
+        const formattedProvider = shippingProvider.charAt(0).toUpperCase() + shippingProvider.slice(1);
+        document.getElementById(`price${formattedProvider}`).innerText = ` $${shippingCost}`;
+    }
+}
+
+function updateAllShippingCostsUI(totalCart) {
+    Object.keys(shippingRates).forEach(provider => {
+        const shippingCost = calculateShipping(provider, totalCart);
+        updateShippingCostUI(provider, shippingCost);
+    });
+
+    // Escuchadores de evento para actualizar la selección global
+    document.querySelectorAll('input[name="delivery"]').forEach(radio => {
+        radio.addEventListener('change', function() {
+            selectedShippingProvider = this.value;
+            globalShippingPrice = calculateShipping(selectedShippingProvider,totalCarrito);
+            spanProviderShipping.innerText = shippingProviders.name[selectedShippingProvider] + ' - ' + shippingProviders.description[selectedShippingProvider];
+            spanPriceTotalShipping.innerHTML = globalShippingPrice;           
+        });
+    });
+}
+
+
 
 
 function renderactualizarTotalItems() {

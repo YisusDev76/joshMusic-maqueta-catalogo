@@ -57,19 +57,19 @@
             <form id="delivery-options">
               <label class="radio-option">
                 <input type="radio" name="delivery" value="tresguerras"/>
-                <span>TresGuerras - Paquete entregado directamente a la puerta -<span id="priceTresGuerras">$10</span> </span>
+                <span>TresGuerras - Paquete entregado directamente a la puerta -<span id="priceTresguerras"></span> </span>
               </label>
               <label class="radio-option">
                 <input type="radio" name="delivery" value="fedex" />
-                <span>FedEx - Paquete entregado directamente a la puerta -<span id="priceFedex"></span>$10</span>
+                <span>FedEx - Paquete entregado directamente a la puerta -<span id="priceFedex"></span></span>
               </label>
               <label class="radio-option">
                 <input type="radio" name="delivery" value="estafeta" />
-                <span>Estafeta - Paquete entregado directamente a su empresa -<span id="priceEstafeta">$12</span> </span>
+                <span>Estafeta - Paquete entregado directamente a su empresa -<span id="priceEstafeta"></span> </span>
               </label>
               <label class="radio-option">
                 <input type="radio" name="delivery" value="castores" />
-                <span>Castores - Recogida en punto de venta -<span id="priceCastores"></span>$14</span>
+                <span>Castores - Recogida en punto de venta -<span id="priceCastores"></span></span>
               </label>
             </form>
             <div class="shipping-warning">
@@ -110,7 +110,10 @@
             </div>  
             <div id="my-order-content" class="my-order-content">                
             </div>
+            <p>Envio <span id="providerShipping"></span></span> </p>
+            <span id="totalShipping"></span>
           </div>
+
       
           <!-- Puedes colocar más tarjetas aquí en la columna derecha -->
         </div>
