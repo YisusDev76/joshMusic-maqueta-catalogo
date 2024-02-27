@@ -480,7 +480,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     // Selecciona el campo de entrada y el elemento de previsualización
     let fullNameInput = document.getElementById('full-name');
-    let fullNamePreview = document.getElementById('preview-full-name');
+    const fullNamePreview = document.getElementById('preview-full-name');
     const companyInput = document.getElementById('company');
     var companyPreview = document.getElementById('preview-company');
     var emailInput = document.getElementById('email');
@@ -511,6 +511,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    const selectedOption = document.querySelector('input[name="delivery"]:checked');
+    selectedShippingProvider = selectedOption.value;
+    globalShippingPrice = calculateShipping(selectedShippingProvider, totalCarrito);
+    renderShippingInfo(selectedShippingProvider);
     updateAllShippingCostsUI(totalCarrito);
 });
 
@@ -693,15 +697,23 @@ function updateAllShippingCostsUI(totalCart) {
     document.querySelectorAll('input[name="delivery"]').forEach(radio => {
         radio.addEventListener('change', function() {
             selectedShippingProvider = this.value;
-            globalShippingPrice = calculateShipping(selectedShippingProvider,totalCarrito);
-            spanProviderShipping.innerText = shippingProviders.name[selectedShippingProvider] + ' - ' + shippingProviders.description[selectedShippingProvider];
-            spanPriceTotalShipping.innerHTML = globalShippingPrice;           
+            globalShippingPrice = calculateShipping(selectedShippingProvider,totalCarrito);   
+            renderShippingInfo(selectedShippingProvider);    
         });
     });
 }
 
+function renderShippingInfo(shippingProvider) {
+    spanProviderShipping.innerText = shippingProviders.name[shippingProvider] + ' - ' + shippingProviders.description[shippingProvider];
+    spanPriceTotalShipping.innerText = formatPrice(globalShippingPrice);    
+}
 
-
+function formatPrice(price) {
+    return price.toLocaleString('es-MX', {
+        style: 'currency',
+        currency: 'MXN'
+    });
+}
 
 function renderactualizarTotalItems() {
     const totalItems = document.querySelector('#total-items');

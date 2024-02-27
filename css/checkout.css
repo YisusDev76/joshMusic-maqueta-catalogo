@@ -298,6 +298,22 @@ input:-webkit-autofill:active {
   height: 20px;
 }
 
+#my-shipping-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+#my-shipping-content p{
+  font-weight: bolder;
+}
+
+#providerShipping {
+  font-weight: lighter;
+  font-style: italic;
+}
+
 /* Segunda Card del Usuario: Shipping */
 .card.card-information.shipping p {
   font-size: 15px;
@@ -389,8 +405,6 @@ input:-webkit-autofill:active {
 }
 
 .shipping-warning {
-  position: absolute;
-  bottom: 10px; /* Ajusta según necesites */
   padding: 10px;
   border-radius: 5px; /* Bordes redondeados para el mensaje */
   font-size: 12px; /* Tamaño de fuente más pequeño */
@@ -458,6 +472,12 @@ input:-webkit-autofill:active {
   .item-quantity {
     width: auto; /* O el ancho que prefieras, pero debe ser menor al 100% */
     margin-right: 34px;
+  }
+
+  .shipping-warning{
+    position: absolute;
+    bottom: 9px; /* Ajusta según necesites */
+    
   }
 
   /* ... otras reglas específicas para la vista de escritorio si es necesario ... */
