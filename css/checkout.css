@@ -105,6 +105,8 @@ nav {
 }
 
 /* Cards */
+/* La mobile card */
+
 .card {
   background: var(--white);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
@@ -428,7 +430,7 @@ input:-webkit-autofill:active {
   }
 }
 
-/* Para cuando la pantalla super los 601px*/
+/* Para cuando la pantalla supere los 601px*/
 @media (min-width: 601px) {
   .row {
     display: flex;
@@ -443,12 +445,15 @@ input:-webkit-autofill:active {
   .row .input-container:first-child {
     margin-right: 39px; /* Añade un margen a la derecha de cada .form-group */
   }
+
+  #mobile-card {
+    display: none;
+  }
 }
 
 /* Media query para pantallas más grandes */
 /* Estilos existentes... */
 
-/* Media Query para escritorio */
 /* Media Query para escritorio */
 @media screen and (min-width: 854px) {
   .order-item {
@@ -479,6 +484,4 @@ input:-webkit-autofill:active {
     bottom: 9px; /* Ajusta según necesites */
     
   }
-
-  /* ... otras reglas específicas para la vista de escritorio si es necesario ... */
 }
