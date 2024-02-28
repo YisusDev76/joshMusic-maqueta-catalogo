@@ -326,89 +326,9 @@ input:-webkit-autofill:active {
   padding: 24px;
 }
 
-.radio-option {
-  display: flex;
-  align-items: center;
-  margin: 15px 0;
-  position: relative;
-  /* padding: 10px; Padding amplio para aumentar el área de clic */
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.radio-option::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #888;
-  border-radius: 50%;
-  background-color: white;
-  margin-right: 15px; /* Espacio entre el círculo y el texto */
-  transition: background-color 0.5s ease, border-color 0.5s ease;
-}
-
-.radio-option.selected::before {
-  border-color: var(--black); /* Cambia el color del borde a rojo */
-}
-
-.radio-option input[type="radio"]:checked + span::before {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 12px;
-  background: black;
-  border-radius: 50%;
-  position: absolute;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: black; 
-}
-
-.radio-option input[type="radio"] {
-  opacity: 0;
-  position: absolute;
-  height: min-content;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.radio-option span {
-  padding-left: 0px;
-  margin-left:  0px; /* Mueve el texto para alinearlo con el pseudo-elemento */
-  flex: 1; /* Permite que el texto ocupe el espacio restante */
-  min-width: 0; /* Permite que el texto se ajuste */
-  flex-grow: 1;
-
-}
-
-/* Adicionalmente, si quieres que el círculo interno aparezca con una transición, puedes hacerlo así: */
-.radio-option span::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 4px;
-  transform: translateY(-50%);
-  width: 12px;
-  height: 12px;
-  background-color: white;
-  border-radius: 50%;
-  transition: width 0.4s ease, height 0.4s ease, background-color 0.4s ease;
-  opacity: 0; /* Empieza invisible */
-  pointer-events: none; /* Asegura que no afecte la funcionalidad del click */
-}
-
-.radio-option input[type="radio"]:checked + span::after {
-  opacity: 1; /* Se hace visible */
-  background-color: black; /* Color del círculo interior */
-  width: 12px; /* Ajusta el tamaño al círculo completo */
-  height: 12px;
-}
-
 .shipping-warning {
   padding: 10px;
-  border-radius: 5px; /* Bordes redondeados para el mensaje */
+  border-radius: 5px;
   font-size: 12px; /* Tamaño de fuente más pequeño */
   color: var(--very-light-pink);
 }
