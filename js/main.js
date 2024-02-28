@@ -669,7 +669,16 @@ function addProductToCart(idProducto) {
       checkCartStatus();
 }
 
-function eliminarProductoDelCarrito(idProducto) {
+/*
+ * Esta línea actualiza el carritoGlobal eliminando el producto especificado.
+ * Se utiliza el método .filter para crear un nuevo array que contiene todos los 
+ * productos, excepto aquel cuyo ID coincide con idProducto. Esto se logra mediante
+ * una función de flecha que compara el ID de cada producto en carritoGlobal con 
+ * idProducto. Si el ID del producto es diferente de idProducto, el producto se
+ * mantiene en el nuevo array. De esta manera, el producto con idProducto es 
+ * efectivamente removido del carrito.
+ */
+function removeFromCart(idProducto) {
     carritoGlobal = carritoGlobal.filter(producto => producto.id !== idProducto);
     guardarCarritoEnLocalStorage();
     checkCartStatus();
@@ -770,7 +779,7 @@ function renderCart(arrayCarrito) {
         productDeleteButton.setAttribute('src', './icons/icon_close.png');
         productDeleteButton.setAttribute('alt', 'close');
         productDeleteButton.addEventListener('click', function () {
-            eliminarProductoDelCarrito(product.id);
+            removeFromCart(product.id);
             renderCart(carritoGlobal);
             renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
 

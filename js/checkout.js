@@ -388,9 +388,63 @@ productList.push({
     `,
 });
 
+const radioOptions = document.querySelectorAll('.radio-option input[type="radio"]');
+const spanProviderShipping = document.querySelector('#providerShipping');
+const spanPriceTotalShipping = document.querySelector('#totalShipping');
+const infoIcon = document.getElementById('infoIcon');
+const infoTooltip = document.getElementById('infoTooltip');
+let tooltipTimeout;
+
 let carritoGlobal = [];
+let totalCarrito = 0 ;
+let totalToPay = 0;
+let selectedShippingProvider = null;
+let globalShippingPrice = 0;
+
+const shippingRates = {
+    tresguerras:172.00,
+    fedex:171.00,
+    estafeta:205.00,
+    castores:239.00
+}
+
+const shippingProviders = {
+    name:{
+        tresguerras:"TresGuerras",
+        fedex:"FedEx",
+        estafeta:"Estafeta",
+        castores:"Castores"
+    },
+    description:{
+        tresguerras:"Paquete entregado directamente a la puerta",
+        fedex:"Paquete entregado directamente a la puerta",
+        estafeta:"Paquete entregado directamente a su empresa",
+        castores:"Recogida en punto de venta"
+    }
+}
+
+carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || [];
+if (carritoGlobal.length === 0) {
+    // Redirige al usuario a la página de inicio si el carrito está vacío
+    window.location.href = '/index.html'; // Cambia esto por la URL de tu página de inicio
+}
+
+totalCarrito = calcularTotalCarrito(carritoGlobal);
+// console.log("EL total del carrito es", totalCarrito );
 
 document.addEventListener('DOMContentLoaded', function () {
+    radioOptions.forEach(function(radio) {
+        radio.addEventListener('change', function() {
+          radioOptions.forEach(function(radio) {
+            radio.parentNode.classList.remove('selected');
+          });
+          // Agregar la clase 'selected' solo al elemento seleccionado
+          if (radio.checked) {
+            radio.parentNode.classList.add('selected');
+          }
+        });
+      });
+      
     var inputs = document.querySelectorAll('input:not(#company)');
 
     inputs.forEach(function(input) {
@@ -424,23 +478,46 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
+      // Escucha el evento de toque
+    infoIcon.addEventListener('touchstart', function(e) {
+        // Previene el evento de clic en dispositivos móviles para evitar que se dispare dos veces
+        e.preventDefault();
+        toggleTooltip();
+    });
+
+    
 });
+
+  // Función para manejar la visibilidad del tooltip
+  function toggleTooltip() {
+    var isTooltipVisible = infoTooltip.style.visibility === 'visible';
+    clearTimeout(tooltipTimeout);
+
+    if (isTooltipVisible) {
+      infoTooltip.style.visibility = 'hidden';
+    } else {
+      infoTooltip.style.visibility = 'visible';
+      tooltipTimeout = setTimeout(function() {
+        infoTooltip.style.visibility = 'hidden';
+      }, 2400);
+    }
+  }
 
 document.addEventListener('DOMContentLoaded', function () {
     // Selecciona el campo de entrada y el elemento de previsualización
     let fullNameInput = document.getElementById('full-name');
-    let fullNamePreview = document.getElementById('preview-full-name');
-    var companyInput = document.getElementById('company');
+    const fullNamePreview = document.getElementById('preview-full-name');
+    const companyInput = document.getElementById('company');
     var companyPreview = document.getElementById('preview-company');
     var emailInput = document.getElementById('email');
     var emailPreview = document.getElementById('preview-email');
+    const phoneInput = document.getElementById('phone');
+    const phonePreview = document.querySelector('#preview-phone');
 
     // Evento que se dispara cuando se escribe en el campo de nombre completo
     fullNameInput.addEventListener('input', function() {
         fullNamePreview.textContent = this.value;
     });
-
-    // Repite el proceso para otros campos de entrada y sus previsualizaciones
 
     companyInput.addEventListener('input', function() {
         companyPreview.textContent = this.value;
@@ -449,15 +526,22 @@ document.addEventListener('DOMContentLoaded', function () {
     emailInput.addEventListener('input', function() {
         emailPreview.textContent = this.value;
     });
-});
 
-//Load animation if fields containing data on page load
-document.addEventListener('DOMContentLoaded', function() {
+    phoneInput.addEventListener('input', function () {
+        phonePreview.textContent = this.value;
+    });
+
     document.querySelectorAll(".input-container .login-input").forEach(function(element) {
         if (element.value !== "") {
             element.closest('.input-container').classList.add("animation");
         }
     });
+
+    const selectedOption = document.querySelector('input[name="delivery"]:checked');
+    selectedShippingProvider = selectedOption.value;
+    globalShippingPrice = calculateShipping(selectedShippingProvider, totalCarrito);
+    renderShippingInfo(selectedShippingProvider);
+    updateAllShippingCostsUI(totalCarrito);
 });
 
 document.querySelectorAll(".input-container .login-input").forEach(function(element) {
@@ -476,11 +560,6 @@ document.querySelectorAll(".input-container .login-input").forEach(function(elem
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || [];
-    if (carritoGlobal.length === 0) {
-        // Redirige al usuario a la página de inicio si el carrito está vacío
-        window.location.href = '/index.html'; // Cambia esto por la URL de tu página de inicio
-    }
     renderactualizarTotalItems(carritoGlobal.length);
 
     function renderCart(arrayCarrito) {
@@ -502,7 +581,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="item-details">
                     <div class="nameAndPrice">
                         <h3 class="item-title">${productDetails.name}</h3>
-                        <p class="item-price">$${productDetails.price}</p>
+                        <p class="item-price" id="price-${producto.id}">$${productDetails.price * producto.cantidad}</p>
                     </div>
                     <div class="item-options">
                     <select class="item-quantity" data-id="${producto.cantidad}">
@@ -519,37 +598,149 @@ document.addEventListener('DOMContentLoaded', () => {
                     </select>
                 </div>
                 </div>
-    
-                <div class="item-remove">
-                    <img src="./icons/icon_close.png" alt="remove" data-id="${producto.id}">
-                </div>
             `;
     
             // Establecer la cantidad seleccionada
             const selectCantidad = productoDiv.querySelector(".item-quantity");
             selectCantidad.value = producto.cantidad;
-    
-            // Agregar evento para eliminar producto
-            const botonEliminar = productoDiv.querySelector(".item-remove img");
-            botonEliminar.addEventListener("click", () => eliminarProducto(producto.id));
+            // Asegurarse de que la opción actual esté disponible
+            if (producto.cantidad > 10) {
+            const option = document.createElement("option");
+            option.value = producto.cantidad;
+            option.textContent = `${producto.cantidad} pza${producto.cantidad > 1 ? 's' : ''}`;
+            option.selected = true; // Marcar como seleccionada
+            selectCantidad.appendChild(option);
+            } else {
+                selectCantidad.value = producto.cantidad;
+            }
+
+            // Añadir el event listener para cambios en la selección
+            selectCantidad.addEventListener("change", function(event) {
+                const nuevaCantidad = parseInt(event.target.value);
+                actualizarPrecioProducto(producto.id, nuevaCantidad);
+            });            
     
             // Agregar el producto al contenedor
             contenedorProductos.appendChild(productoDiv);
         });
     }
-    
-    function eliminarProducto(idProducto) {
-        // Eliminar el producto del array y actualizar la vista
-        const indice = productosEnCarrito.findIndex(p => p.id === idProducto);
-        if (indice !== -1) {
-            productosEnCarrito.splice(indice, 1);
-            renderizarProductos(productosEnCarrito);
+
+        // Función para actualizar la cantidad en el carrito
+        function actualizarPrecioProducto(idProducto, nuevaCantidad) {
+            // Encuentra el producto en productList por su ID para obtener el precio actualizado
+            const productoEncontrado = productList.find(producto => producto.id === idProducto);
+            if (productoEncontrado) {
+                const precioTotal = nuevaCantidad * productoEncontrado.price;
+                document.getElementById(`price-${idProducto}`).innerText = `$${precioTotal.toFixed(2)}`;
+        
+                // Actualiza la cantidad en carritoGlobal
+                const productoEnCarrito = carritoGlobal.find(producto => producto.id === idProducto);
+                if (productoEnCarrito) {
+                    productoEnCarrito.cantidad = nuevaCantidad;
+                }
+
+                guardarCarritoEnLocalStorage();
+            }
         }
+
+    function guardarCarritoEnLocalStorage() {
+        const jsonCart = JSON.stringify(carritoGlobal);
+        localStorage.setItem('carrito', jsonCart);
     }
+
+
+    function checkCartStatus() {
+        if (carritoGlobal.length === 0) {
+            console.log("El carrito esta vacio");
+          document.getElementById('total-items').innerText = '0 items';
+          document.getElementById('empty-cart-message').classList.remove('inactive');
+        } else {
+          // Actualizar el botón y otros elementos según sea necesario     // Escucha el evento de clic
+        infoIcon.addEventListener('click', toggleTooltip);
+        }
+      }
+      
     
     // Inicializar la vista con los productos del carrito
     renderCart(carritoGlobal);
 });
+
+function calculateShipping(shippingProvider, totalCart) {
+    // Definición de tarifas basadas en el total del carrito
+    let cartRate;
+    if (totalCart > 0 && totalCart < 3000) {
+        cartRate = 233;
+    } else if (totalCart >= 3000 && totalCart < 10000) {
+        cartRate = 400;
+    } else if (totalCart >= 10000 && totalCart < 11000) {
+        cartRate = 681;
+    } else if (totalCart >= 11000 && totalCart < 25000) {
+        cartRate = 700;
+    } else if (totalCart >= 25000 && totalCart < 55000) {
+        cartRate = 1100;
+    } else if (totalCart >= 55000 && totalCart < 60000) {
+        cartRate = 2633;
+    } else if (totalCart >= 60000 && totalCart < 125000) {
+        cartRate = 4000;
+    } else if (totalCart >= 125000 && totalCart < 130000) {
+        cartRate = 5950;
+    } else if (totalCart >= 130000 && totalCart < 260000) {
+        cartRate = 7000;
+    } else if (totalCart >= 260000) {
+        cartRate = 10000;
+    } else {
+        // Si el total del carrito es 0 o negativo, se podría manejar de manera especial
+        console.log("Total del carrito inválido");
+        return;
+    }
+
+    // Calcula el costo de envío basado en la paquetería y el total del carrito
+    let shippingCost = shippingRates[shippingProvider.toLowerCase().replace(/\s/g, '')]; // Normaliza el nombre de la paquetería
+    if (shippingCost === undefined) {
+        console.log("Paquetería no reconocida");
+        return;
+    }
+
+    // Suma la tarifa base de la paquetería con la tarifa basada en el total del carrito
+    let totalShippingCost = cartRate + shippingCost;
+    console.log("El costo total del envío es: ", totalShippingCost);
+    return totalShippingCost;
+}
+
+function updateShippingCostUI(shippingProvider, shippingCost) {
+    if (shippingCost !== undefined) {
+        const formattedProvider = shippingProvider.charAt(0).toUpperCase() + shippingProvider.slice(1);
+        document.getElementById(`price${formattedProvider}`).innerText = ` $${shippingCost}`;
+    }
+}
+
+function updateAllShippingCostsUI(totalCart) {
+    Object.keys(shippingRates).forEach(provider => {
+        const shippingCost = calculateShipping(provider, totalCart);
+        updateShippingCostUI(provider, shippingCost);
+    });
+
+    // Escuchadores de evento para actualizar la selección global
+    document.querySelectorAll('input[name="delivery"]').forEach(radio => {
+        radio.addEventListener('change', function() {
+            selectedShippingProvider = this.value;
+            globalShippingPrice = calculateShipping(selectedShippingProvider,totalCarrito);   
+            renderShippingInfo(selectedShippingProvider);    
+        });
+    });
+}
+
+function renderShippingInfo(shippingProvider) {
+    spanProviderShipping.innerText = shippingProviders.name[shippingProvider] + ' - ' + shippingProviders.description[shippingProvider];
+    spanPriceTotalShipping.innerText = formatPrice(globalShippingPrice);    
+}
+
+function formatPrice(price) {
+    return price.toLocaleString('es-MX', {
+        style: 'currency',
+        currency: 'MXN'
+    });
+}
 
 function renderactualizarTotalItems() {
     const totalItems = document.querySelector('#total-items');
@@ -566,4 +757,17 @@ function contarTotalItems(carrito) {
     }
 
     return totalItems;
+}
+
+// Función para buscar el precio de un producto por su ID
+function buscarPrecioPorId(id) {
+    const producto = productList.find(p => p.id === id);
+    return producto ? producto.price : 0;
+}
+
+function calcularTotalCarrito(carrito) {
+    return carrito.reduce((total, item) => {
+        const precio = buscarPrecioPorId(item.id);
+        return total + (precio * item.cantidad);
+    }, 0);
 }

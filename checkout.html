@@ -21,6 +21,12 @@
       <div class="flex-container">
 
         <div class="column">
+          <div class="card card-information" id="mobile-card">
+            <p><strong>Artículos en el carrito:</strong><span id="resume-items"></span></p>
+            <p><strong>Envío: </strong><span id="resume-shipping"></span></p>
+            <p><strong>Total: </strong><span id="resume-totalToPay"></span></p>
+            <span>Rellene los siguientes datos y vaya directamente al pago pulsando el botón.</span>
+          </div>
           <div class="card card-information">
             <h2>Información</h2>
 
@@ -42,18 +48,49 @@
                 <label for="fullAddress" unselectable="on">Direccion Completa</label>
                 <p class="error-message">Por favor, ingrese una dirección valida</p>
               </div>
+              <div class="row">
+                <div class="input-container">
+                  <input type="text" id="email" class="login-input">
+                  <label for="email" unselectable="on">Correo electrónico (opcional)</label>
+                </div>
 
-              <div class="input-container">
-                <input type="text" id="email" class="login-input">
-                <label for="email" unselectable="on">Correo electronico</label>
-                <p class="error-message">Por favor, ingrese un correo electrónico</p>
-              </div>
+                <div class="input-container">
+                  <input type="text" id="phone" class="login-input">
+                  <label for="phone" unselectable="on">Telefono</label>
+                  <p class="error-message">Por favor, ingrese un teléfono valido</p>
+                </div>
+            </div>
           </div>
 
-          <div class="card card-information">
-            <h1>Shipping</h1>
-            <p>Datos del usuario</p>
-            <input type="text" placeholder="Nombre completo">
+          <div class="card card-information shipping">
+            <img id="infoIcon" src="./icons/info-circle-svgrepo.svg" alt="ifo-icon" class="info-icon">
+            <span id="infoTooltip" class="info-tooltip">El envío refleja el cuidado y la seguridad que tu inversión merece: embalaje y manejo especial para equipos de alto valor. Precios transparentes, sin sorpresas.</span>
+            
+            <h1>Envío</h1>
+            <p>Elija el proveedor de envío que desee</p>
+            <br>
+            <form id="delivery-options">
+              <label class="radio-option">
+                <input type="radio" name="delivery" value="tresguerras" checked/>
+                <span>TresGuerras - Paquete entregado directamente a la puerta -<span id="priceTresguerras"></span> </span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="delivery" value="fedex" />
+                <span>FedEx - Paquete entregado directamente a la puerta -<span id="priceFedex"></span></span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="delivery" value="estafeta" />
+                <span>Estafeta - Paquete entregado directamente a su empresa -<span id="priceEstafeta"></span> </span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="delivery" value="castores" />
+                <span>Castores - Recogida en punto de venta -<span id="priceCastores"></span></span>
+              </label>
+            </form>
+            <div class="shipping-warning">
+              *En caso de que detectemos que la paquetería que seleccionaste no hace envíos a tu ciudad, te contactaremos por llamada, WhatsApp o correo electrónico para que selecciones otra paquetería.
+            </div>
+            
           </div>
 
           <div class="card card-information">
@@ -61,13 +98,6 @@
             <p>Datos del usuario</p>
             <input type="text" placeholder="Nombre completo">
           </div>
-
-          <div class="card card-information">
-            <h1>Carta 5</h1>
-            <p>Datos del usuario</p>
-            <input type="text" placeholder="Nombre completo">
-          </div>
-      
           <!-- Puedes colocar más tarjetas aquí en la columna izquierda -->
         </div>
       
@@ -79,13 +109,22 @@
             <p><span id="preview-company"></span></p>
             <p><span id="preview-address"></span></p>
             <p><span id="preview-email"></span></p>
+            <p><span id="preview-phone"></span></p>
             <h2>Tu orden</h2>
             <p><b id="total-items"></b></p>
 
-            <div class="my-order-content">    
+            <div id="empty-cart-message" class="empty-cart-message inactive">
+              <p>😔 Tu carrito está vacío 😔</p>
+              <button onclick="window.location.href='index.html'">Seguir Comprando</button>
+            </div>  
+            <div id="my-order-content" class="my-order-content">                
             </div>
-
+            <div id="my-shipping-content">
+              <p>Envio <span id="providerShipping"></span></span> </p>
+              <span id="totalShipping"></span>
+            </div>
           </div>
+
       
           <!-- Puedes colocar más tarjetas aquí en la columna derecha -->
         </div>
