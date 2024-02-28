@@ -391,6 +391,9 @@ productList.push({
 const radioOptions = document.querySelectorAll('.radio-option input[type="radio"]');
 const spanProviderShipping = document.querySelector('#providerShipping');
 const spanPriceTotalShipping = document.querySelector('#totalShipping');
+const infoIcon = document.getElementById('infoIcon');
+const infoTooltip = document.getElementById('infoTooltip');
+let tooltipTimeout;
 
 let carritoGlobal = [];
 let totalCarrito = 0 ;
@@ -475,7 +478,30 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
+      // Escucha el evento de toque
+    infoIcon.addEventListener('touchstart', function(e) {
+        // Previene el evento de clic en dispositivos móviles para evitar que se dispare dos veces
+        e.preventDefault();
+        toggleTooltip();
+    });
+
+    
 });
+
+  // Función para manejar la visibilidad del tooltip
+  function toggleTooltip() {
+    var isTooltipVisible = infoTooltip.style.visibility === 'visible';
+    clearTimeout(tooltipTimeout);
+
+    if (isTooltipVisible) {
+      infoTooltip.style.visibility = 'hidden';
+    } else {
+      infoTooltip.style.visibility = 'visible';
+      tooltipTimeout = setTimeout(function() {
+        infoTooltip.style.visibility = 'hidden';
+      }, 2400);
+    }
+  }
 
 document.addEventListener('DOMContentLoaded', function () {
     // Selecciona el campo de entrada y el elemento de previsualización
@@ -629,7 +655,8 @@ document.addEventListener('DOMContentLoaded', () => {
           document.getElementById('total-items').innerText = '0 items';
           document.getElementById('empty-cart-message').classList.remove('inactive');
         } else {
-          // Actualizar el botón y otros elementos según sea necesario
+          // Actualizar el botón y otros elementos según sea necesario     // Escucha el evento de clic
+        infoIcon.addEventListener('click', toggleTooltip);
         }
       }
       
