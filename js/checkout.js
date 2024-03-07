@@ -394,6 +394,12 @@ const spanPriceTotalShipping = document.querySelector('#totalShipping');
 const infoIcon = document.getElementById('infoIcon');
 const infoTooltip = document.getElementById('infoTooltip');
 const fullNameInput = document.getElementById('full-name');
+const totalItems = document.querySelector('#total-items');
+const inputs = document.querySelectorAll('input:not(#company)');
+const spanCartResume = document.querySelector('#resume-items');
+const spanTotalShippingResume = document.querySelector('#resume-shipping');
+const spanTotalToPay = document.querySelector('#resume-totalToPay');
+
 let tooltipTimeout;
 
 let carritoGlobal = [];
@@ -409,9 +415,7 @@ if (carritoGlobal.length === 0) {
 }
 totalCarrito = calcularTotalCarrito(carritoGlobal);
 
-document.addEventListener('DOMContentLoaded', function () {      
-    var inputs = document.querySelectorAll('input:not(#company)');
-
+document.addEventListener('DOMContentLoaded', function () {
     inputs.forEach(function(input) {
         input.addEventListener('blur', function() {
             validateInput(this);
@@ -433,7 +437,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // Previene el evento de clic en dispositivos móviles para evitar que se dispare dos veces
         e.preventDefault();
         toggleTooltip();
-    });  
+    });
+    
+    updateInfoUI();
 });
 
   // Función para manejar la visibilidad del tooltip
@@ -479,7 +485,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    renderactualizarTotalItems(carritoGlobal.length);
+    updateInfoUI();
 
     function renderCart(arrayCarrito) {
         const contenedorProductos = document.querySelector(".my-order-content");
@@ -584,6 +590,14 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCart(carritoGlobal);
 });
 
+document.getElementById('termsCheckbox').addEventListener('change', function() {
+    if (this.checked) {
+    //   alert('Has aceptado los términos y condiciones.');
+    } else {
+    //   alert('No has aceptado los términos y condiciones.');
+    }
+  });  
+
 // Esta bloque aun no se bien para que sirve xd
 document.querySelectorAll(".input-container .login-input").forEach(function(element) {
     if (element.value !== "") {
@@ -628,13 +642,6 @@ function formatPrice(price) {
     });
 }
 
-function renderactualizarTotalItems() {
-    const totalItems = document.querySelector('#total-items');
-    if (totalItems) {
-        totalItems.textContent = contarTotalItems(carritoGlobal) + " artículos";
-    }
-}
-
 function contarTotalItems(carrito) {
     let totalItems = 0;
 
@@ -656,6 +663,11 @@ function calcularTotalCarrito(carrito) {
         const precio = buscarPrecioPorId(item.id);
         return total + (precio * item.cantidad);
     }, 0);
+}
+
+function updateInfoUI(){
+    spanCartResume.innerHTML = contarTotalItems(carritoGlobal); 
+    totalItems.textContent = contarTotalItems(carritoGlobal) + " artículos";
 }
 
 // function updateShippingCostUI(shippingProvider, shippingCost) {
