@@ -390,16 +390,15 @@ productList.push({
 
 const radioOptions = document.querySelectorAll('.radio-option input[type="radio"]');
 const spanProviderShipping = document.querySelector('#providerShipping');
-const spanPriceTotalShipping = document.querySelector('#totalShipping');
 const infoIcon = document.getElementById('infoIcon');
 const infoTooltip = document.getElementById('infoTooltip');
 const fullNameInput = document.getElementById('full-name');
 const totalItems = document.querySelector('#total-items');
 const inputs = document.querySelectorAll('input:not(#company)');
 const spanCartResume = document.querySelector('#resume-items');
-const spanTotalShippingResume = document.querySelector('#resume-shipping');
 const spanTotalToPay = document.querySelector('#resume-totalToPay');
-
+const shippingCostElements = document.querySelectorAll('.shipping-cost');
+const totalToPayElments = document.querySelectorAll('.element-total-to-Pay');
 let tooltipTimeout;
 
 let carritoGlobal = [];
@@ -407,15 +406,17 @@ let totalCarrito = 0 ;
 let totalToPay = 0;
 let selectedShippingProvider = null;
 let globalShippingPrice = 0;
+let priceShipping;
 
 carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || [];
 if (carritoGlobal.length === 0) {
     // Redirige al usuario a la página de inicio si el carrito está vacío
     window.location.href = '/index.html';
 }
-totalCarrito = calcularTotalCarrito(carritoGlobal);
+
 
 document.addEventListener('DOMContentLoaded', function () {
+    totalCarrito = calcularTotalCarrito(carritoGlobal);
     inputs.forEach(function(input) {
         input.addEventListener('blur', function() {
             validateInput(this);
@@ -438,6 +439,18 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         toggleTooltip();
     });
+
+    priceShipping = generarPrecioAleatorio();
+    totalToPay = priceShipping + totalCarrito;
+
+    shippingCostElements.forEach(function(elemento) {
+        elemento.textContent =  formatPrice(priceShipping);
+    });
+
+    totalToPayElments.forEach(function(elemento) {
+        elemento.textContent =  formatPrice(totalToPay);
+    });
+    
     
     updateInfoUI();
 });
@@ -669,6 +682,16 @@ function updateInfoUI(){
     spanCartResume.innerHTML = contarTotalItems(carritoGlobal); 
     totalItems.textContent = contarTotalItems(carritoGlobal) + " artículos";
 }
+
+//Solo en lo que existe una forma de caluclar el precio que se acerce a lo que pidio josh
+function generarPrecioAleatorio() {
+    // Generar número aleatorio entre 400 y 100000
+    const min = 400;
+    const max = 15000;
+    const numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+    return numeroAleatorio;
+}
+
 
 // function updateShippingCostUI(shippingProvider, shippingCost) {
 //     if (shippingCost !== undefined) {

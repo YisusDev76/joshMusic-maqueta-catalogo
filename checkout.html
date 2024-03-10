@@ -23,8 +23,8 @@
         <div class="column">
           <div class="card card-information" id="mobile-card">
             <p><strong>Artículos en el carrito:</strong><span id="resume-items"></span></p>
-            <p><strong>Envío: </strong><span id="resume-shipping"></span></p>
-            <p><strong>Total: </strong><span id="resume-totalToPay"></span></p>
+            <p><strong>Envío: </strong> JoshMusic determinará paquetería - <span class="shipping-cost"></span></p>
+            <p><strong>Total: </strong><span class="element-total-to-Pay"></span></p>
             <span>Rellene los siguientes datos y vaya directamente al pago pulsando el botón.</span>
           </div>
           <div class="card card-information">
@@ -67,13 +67,15 @@
             <span id="infoTooltip" class="info-tooltip">El envío refleja el cuidado y la seguridad que tu inversión merece: embalaje y manejo especial para equipos de alto valor. Precios transparentes, sin sorpresas.</span>
             
             <h2>Envío</h2>
+            <div>
+              <span class="shipping-cost"></span></p>
+            </div>
 
             <p>Política de Envío</p>
 
             <p>Gracias por comprar en JoshMusic. Debido a la naturaleza especializada de nuestros productos, la disponibilidad varía en todo México. Nuestro compromiso es entregar tu compra de la manera más eficiente posible. Sin embargo, en casos excepcionales donde nuestra paquetería no pueda realizar la entrega directamente en tu localidad, nos pondremos en contacto contigo para coordinar un envío alternativo a la localidad más cercana que te convenga. Nuestro objetivo es asegurar que recibas tu pedido satisfactoriamente, manteniéndote informado durante todo el proceso de envío.</p>
             <p>Al realizar tu compra, te pedimos amablemente que marques la casilla a continuación para indicar que has leído y aceptado los términos y condiciones relacionados con el proceso de envío de nuestra tienda. Entendemos la importancia de recibir tus productos a tiempo y en perfecto estado, y agradecemos tu comprensión y cooperación para hacerlo posible.</p>
 
-            <!-- <p>IMPORTANTE: En caso de que detectemos que la paquetería que seleccionaste no hace envíos a tu ciudad, te contactaremos por llamada, WhatsApp o correo electrónico para que selecciones otra paquetería.</p> -->
             <div class="checkbox-container">
               <input type="checkbox" id="termsCheckbox">
               <label for="termsCheckbox"></label>
@@ -110,10 +112,23 @@
             </div>  
             <div id="my-order-content" class="my-order-content">                
             </div>
-            <div id="my-shipping-content">
-              <p>Envio <span id="providerShipping"></span></span> </p>
-              <span id="totalShipping"></span>
+            <div class="contentShippingAndTax">
+              <p>Envio <span id="providerShipping">JoshMusic determinará paquetería</span></span> </p>
+              <span class="shipping-cost"></span>
             </div>
+            <div class="contentShippingAndTax">
+              <p>Impuestos</p>
+              <span>Impuestos incorporados en total</span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="contentShippingAndTax total">
+              <p>Total (impuestos aplicables incluidos)</p>
+              <span class="element-total-to-Pay"></span>
+            </div>
+
           </div>
 
       

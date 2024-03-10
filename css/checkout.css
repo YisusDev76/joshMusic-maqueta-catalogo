@@ -300,15 +300,22 @@ input:-webkit-autofill:active {
   height: 20px;
 }
 
-#my-shipping-content{
+.contentShippingAndTax{
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 12px;
 }
 
-#my-shipping-content p{
+.contentShippingAndTax p{
   font-weight: bolder;
+}
+
+.contentShippingAndTax.total{
+  margin-inline: -20px;
+  border-top: 1px solid rgba(160, 160, 160, 0.2);; 
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);;
+  padding: 20px;
 }
 
 #providerShipping {
