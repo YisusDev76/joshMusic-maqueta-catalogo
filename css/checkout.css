@@ -106,6 +106,10 @@ nav {
 
 /* Cards */
 /* La mobile card */
+#mobile-card .endTxt{
+  font-size: small;
+  color: #acacac;
+}
 
 .card {
   background: var(--white);
@@ -257,10 +261,10 @@ input:-webkit-autofill:active {
 
 .item-title {
   font-size: 1em;
-  color: #000;
+  color: var(--black);
   margin: 0;
   margin-bottom: 4px; /* Espacio entre el título y el precio */
-  padding-right: 34px;
+  padding-right: 30px;
 }
 
 .item-price {
@@ -309,6 +313,7 @@ input:-webkit-autofill:active {
 
 .contentShippingAndTax p{
   font-weight: bolder;
+  font-size: 15px;
 }
 
 .contentShippingAndTax.total{
@@ -316,6 +321,15 @@ input:-webkit-autofill:active {
   border-top: 1px solid rgba(160, 160, 160, 0.2);; 
   border-bottom: 1px solid rgba(160, 160, 160, 0.2);;
   padding: 20px;
+}
+
+.contentShippingAndTax.special-margin {
+  margin-bottom: 24px;
+}
+
+.element-total-to-Pay{
+  font-size: large;
+  font-weight: bold;
 }
 
 #providerShipping {
@@ -469,6 +483,10 @@ input[type="checkbox"] {
     /* left: 60%; */
     top: 10px;
     font-size: 12px;
+  }
+
+  .contentShippingAndTax p{
+    font-size: large;
   }
 
 }
