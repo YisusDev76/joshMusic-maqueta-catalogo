@@ -390,9 +390,15 @@ productList.push({
 
 const radioOptions = document.querySelectorAll('.radio-option input[type="radio"]');
 const spanProviderShipping = document.querySelector('#providerShipping');
-const spanPriceTotalShipping = document.querySelector('#totalShipping');
 const infoIcon = document.getElementById('infoIcon');
 const infoTooltip = document.getElementById('infoTooltip');
+const fullNameInput = document.getElementById('full-name');
+const totalItems = document.querySelector('#total-items');
+const inputs = document.querySelectorAll('input:not(#company)');
+const spanCartResume = document.querySelector('#resume-items');
+const spanTotalToPay = document.querySelector('#resume-totalToPay');
+const shippingCostElements = document.querySelectorAll('.shipping-cost');
+const totalToPayElments = document.querySelectorAll('.element-total-to-Pay');
 let tooltipTimeout;
 
 let carritoGlobal = [];
@@ -400,53 +406,17 @@ let totalCarrito = 0 ;
 let totalToPay = 0;
 let selectedShippingProvider = null;
 let globalShippingPrice = 0;
-
-const shippingRates = {
-    tresguerras:172.00,
-    fedex:171.00,
-    estafeta:205.00,
-    castores:239.00
-}
-
-const shippingProviders = {
-    name:{
-        tresguerras:"TresGuerras",
-        fedex:"FedEx",
-        estafeta:"Estafeta",
-        castores:"Castores"
-    },
-    description:{
-        tresguerras:"Paquete entregado directamente a la puerta",
-        fedex:"Paquete entregado directamente a la puerta",
-        estafeta:"Paquete entregado directamente a su empresa",
-        castores:"Recogida en punto de venta"
-    }
-}
+let priceShipping;
 
 carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || [];
 if (carritoGlobal.length === 0) {
     // Redirige al usuario a la página de inicio si el carrito está vacío
-    window.location.href = '/index.html'; // Cambia esto por la URL de tu página de inicio
+    window.location.href = '/index.html';
 }
 
-totalCarrito = calcularTotalCarrito(carritoGlobal);
-// console.log("EL total del carrito es", totalCarrito );
 
 document.addEventListener('DOMContentLoaded', function () {
-    radioOptions.forEach(function(radio) {
-        radio.addEventListener('change', function() {
-          radioOptions.forEach(function(radio) {
-            radio.parentNode.classList.remove('selected');
-          });
-          // Agregar la clase 'selected' solo al elemento seleccionado
-          if (radio.checked) {
-            radio.parentNode.classList.add('selected');
-          }
-        });
-      });
-      
-    var inputs = document.querySelectorAll('input:not(#company)');
-
+    totalCarrito = calcularTotalCarrito(carritoGlobal);
     inputs.forEach(function(input) {
         input.addEventListener('blur', function() {
             validateInput(this);
@@ -463,21 +433,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-
-    function validateInput(input) {
-        var errorMessage = input.parentElement.querySelector('.error-message');
-        if (input.value.trim() === '') {
-            input.classList.add('input-error');
-            if (errorMessage) {
-                errorMessage.style.display = 'block';
-            }
-        } else {
-            input.classList.remove('input-error');
-            if (errorMessage) {
-                errorMessage.style.display = 'none';
-            }
-        }
-    }
       // Escucha el evento de toque
     infoIcon.addEventListener('touchstart', function(e) {
         // Previene el evento de clic en dispositivos móviles para evitar que se dispare dos veces
@@ -485,7 +440,19 @@ document.addEventListener('DOMContentLoaded', function () {
         toggleTooltip();
     });
 
+    priceShipping = generarPrecioAleatorio();
+    totalToPay = priceShipping + totalCarrito;
+
+    shippingCostElements.forEach(function(elemento) {
+        elemento.textContent =  formatPrice(priceShipping);
+    });
+
+    totalToPayElments.forEach(function(elemento) {
+        elemento.textContent =  formatPrice(totalToPay);
+    });
     
+    
+    updateInfoUI();
 });
 
   // Función para manejar la visibilidad del tooltip
@@ -504,8 +471,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Selecciona el campo de entrada y el elemento de previsualización
-    let fullNameInput = document.getElementById('full-name');
     const fullNamePreview = document.getElementById('preview-full-name');
     const companyInput = document.getElementById('company');
     var companyPreview = document.getElementById('preview-company');
@@ -530,37 +495,10 @@ document.addEventListener('DOMContentLoaded', function () {
     phoneInput.addEventListener('input', function () {
         phonePreview.textContent = this.value;
     });
-
-    document.querySelectorAll(".input-container .login-input").forEach(function(element) {
-        if (element.value !== "") {
-            element.closest('.input-container').classList.add("animation");
-        }
-    });
-
-    const selectedOption = document.querySelector('input[name="delivery"]:checked');
-    selectedShippingProvider = selectedOption.value;
-    globalShippingPrice = calculateShipping(selectedShippingProvider, totalCarrito);
-    renderShippingInfo(selectedShippingProvider);
-    updateAllShippingCostsUI(totalCarrito);
-});
-
-document.querySelectorAll(".input-container .login-input").forEach(function(element) {
-    element.addEventListener('focus', function() {
-        this.closest('.input-container').classList.add("animation", "animation-color");
-    });
-});
-
-document.querySelectorAll(".input-container .login-input").forEach(function(element) {
-    element.addEventListener('focusout', function() {
-        if (this.value === "") {
-            this.closest('.input-container').classList.remove("animation");
-        }
-        this.closest('.input-container').classList.remove("animation-color");
-    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    renderactualizarTotalItems(carritoGlobal.length);
+    updateInfoUI();
 
     function renderCart(arrayCarrito) {
         const contenedorProductos = document.querySelector(".my-order-content");
@@ -665,74 +603,49 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCart(carritoGlobal);
 });
 
-function calculateShipping(shippingProvider, totalCart) {
-    // Definición de tarifas basadas en el total del carrito
-    let cartRate;
-    if (totalCart > 0 && totalCart < 3000) {
-        cartRate = 233;
-    } else if (totalCart >= 3000 && totalCart < 10000) {
-        cartRate = 400;
-    } else if (totalCart >= 10000 && totalCart < 11000) {
-        cartRate = 681;
-    } else if (totalCart >= 11000 && totalCart < 25000) {
-        cartRate = 700;
-    } else if (totalCart >= 25000 && totalCart < 55000) {
-        cartRate = 1100;
-    } else if (totalCart >= 55000 && totalCart < 60000) {
-        cartRate = 2633;
-    } else if (totalCart >= 60000 && totalCart < 125000) {
-        cartRate = 4000;
-    } else if (totalCart >= 125000 && totalCart < 130000) {
-        cartRate = 5950;
-    } else if (totalCart >= 130000 && totalCart < 260000) {
-        cartRate = 7000;
-    } else if (totalCart >= 260000) {
-        cartRate = 10000;
+document.getElementById('termsCheckbox').addEventListener('change', function() {
+    if (this.checked) {
+    //   alert('Has aceptado los términos y condiciones.');
     } else {
-        // Si el total del carrito es 0 o negativo, se podría manejar de manera especial
-        console.log("Total del carrito inválido");
-        return;
+    //   alert('No has aceptado los términos y condiciones.');
     }
+  });  
 
-    // Calcula el costo de envío basado en la paquetería y el total del carrito
-    let shippingCost = shippingRates[shippingProvider.toLowerCase().replace(/\s/g, '')]; // Normaliza el nombre de la paquetería
-    if (shippingCost === undefined) {
-        console.log("Paquetería no reconocida");
-        return;
+// Esta bloque aun no se bien para que sirve xd
+document.querySelectorAll(".input-container .login-input").forEach(function(element) {
+    if (element.value !== "") {
+        element.closest('.input-container').classList.add("animation");
     }
+});
 
-    // Suma la tarifa base de la paquetería con la tarifa basada en el total del carrito
-    let totalShippingCost = cartRate + shippingCost;
-    console.log("El costo total del envío es: ", totalShippingCost);
-    return totalShippingCost;
-}
-
-function updateShippingCostUI(shippingProvider, shippingCost) {
-    if (shippingCost !== undefined) {
-        const formattedProvider = shippingProvider.charAt(0).toUpperCase() + shippingProvider.slice(1);
-        document.getElementById(`price${formattedProvider}`).innerText = ` $${shippingCost}`;
-    }
-}
-
-function updateAllShippingCostsUI(totalCart) {
-    Object.keys(shippingRates).forEach(provider => {
-        const shippingCost = calculateShipping(provider, totalCart);
-        updateShippingCostUI(provider, shippingCost);
+document.querySelectorAll(".input-container .login-input").forEach(function(element) {
+    element.addEventListener('focus', function() {
+        this.closest('.input-container').classList.add("animation", "animation-color");
     });
+});
 
-    // Escuchadores de evento para actualizar la selección global
-    document.querySelectorAll('input[name="delivery"]').forEach(radio => {
-        radio.addEventListener('change', function() {
-            selectedShippingProvider = this.value;
-            globalShippingPrice = calculateShipping(selectedShippingProvider,totalCarrito);   
-            renderShippingInfo(selectedShippingProvider);    
-        });
+document.querySelectorAll(".input-container .login-input").forEach(function(element) {
+    element.addEventListener('focusout', function() {
+        if (this.value === "") {
+            this.closest('.input-container').classList.remove("animation");
+        }
+        this.closest('.input-container').classList.remove("animation-color");
     });
-}
+});
 
-function renderShippingInfo(shippingProvider) {
-    spanProviderShipping.innerText = shippingProviders.name[shippingProvider] + ' - ' + shippingProviders.description[shippingProvider];
-    spanPriceTotalShipping.innerText = formatPrice(globalShippingPrice);    
+function validateInput(input) {
+    var errorMessage = input.parentElement.querySelector('.error-message');
+    if (input.value.trim() === '') {
+        input.classList.add('input-error');
+        if (errorMessage) {
+            errorMessage.style.display = 'block';
+        }
+    } else {
+        input.classList.remove('input-error');
+        if (errorMessage) {
+            errorMessage.style.display = 'none';
+        }
+    }
 }
 
 function formatPrice(price) {
@@ -740,13 +653,6 @@ function formatPrice(price) {
         style: 'currency',
         currency: 'MXN'
     });
-}
-
-function renderactualizarTotalItems() {
-    const totalItems = document.querySelector('#total-items');
-    if (totalItems) {
-        totalItems.textContent = contarTotalItems(carritoGlobal) + " artículos";
-    }
 }
 
 function contarTotalItems(carrito) {
@@ -771,3 +677,25 @@ function calcularTotalCarrito(carrito) {
         return total + (precio * item.cantidad);
     }, 0);
 }
+
+function updateInfoUI(){
+    spanCartResume.innerHTML = contarTotalItems(carritoGlobal); 
+    totalItems.textContent = contarTotalItems(carritoGlobal) + " artículos";
+}
+
+//Solo en lo que existe una forma de caluclar el precio que se acerce a lo que pidio josh
+function generarPrecioAleatorio() {
+    // Generar número aleatorio entre 400 y 100000
+    const min = 400;
+    const max = 15000;
+    const numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+    return numeroAleatorio;
+}
+
+
+// function updateShippingCostUI(shippingProvider, shippingCost) {
+//     if (shippingCost !== undefined) {
+//         const formattedProvider = shippingProvider.charAt(0).toUpperCase() + shippingProvider.slice(1);
+//         document.getElementById(`price${formattedProvider}`).innerText = ` $${shippingCost}`;
+//     }
+// }
