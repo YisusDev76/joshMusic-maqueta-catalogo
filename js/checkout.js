@@ -416,6 +416,14 @@ if (carritoGlobal.length === 0) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+// fetch('/js/articles.json')
+//   .then(response => response.json())
+//   .then(data => {
+//     // Guardar los datos en productList
+//     productList.push(...data.productos);
+//     console.log(productList);
+//   })
+//   .catch(error => console.error('Error al cargar los datos:', error));
     totalCarrito = calcularTotalCarrito(carritoGlobal);
     inputs.forEach(function(input) {
         input.addEventListener('blur', function() {

@@ -110,6 +110,35 @@ nav {
   font-size: small;
   color: #acacac;
 }
+#mobile-card{
+  position: relative;
+}
+
+.button-with-arrow {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background-color: #ff5722; /* Cambia el color de fondo según tu diseño */
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 20px; /* Ajusta según sea necesario */
+  position: absolute; /* Para posicionar la flecha relativa al botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 29px;
+  bottom: -22px;
+}
+
+.button-with-arrow img {
+  width: 24px;
+}
+
+/* Añade efectos de hover si lo deseas */
+.button-with-arrow:hover {
+  background-color: #e64a19; /* Un tono más oscuro para el efecto hover */
+}
 
 .card {
   background: var(--white);
@@ -318,8 +347,8 @@ input:-webkit-autofill:active {
 
 .contentShippingAndTax.total{
   margin-inline: -20px;
-  border-top: 1px solid rgba(160, 160, 160, 0.2);; 
-  border-bottom: 1px solid rgba(160, 160, 160, 0.2);;
+  border-top: 1px solid rgba(160, 160, 160, 0.2);
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
   padding: 20px;
 }
 
@@ -328,8 +357,13 @@ input:-webkit-autofill:active {
 }
 
 .element-total-to-Pay{
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
+}
+
+.element-total-to-Pay.total-mobile{
+  font-weight: normal;
+  font-size: medium;
 }
 
 #providerShipping {
