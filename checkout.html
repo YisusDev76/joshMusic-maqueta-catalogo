@@ -29,48 +29,47 @@
               <img src="icons/arrow-down-svgrepo-com.svg" alt="" srcset="">
             </a>
             <p class="endTxt">Rellene los siguientes datos y vaya directamente al pago pulsando el botón.</p>
-
-            
           </div>
           <div class="card card-information">
             <h2>Información</h2>
-
+            <form id="formularioInformacion">
               <div class="row">
-                  <div class="input-container">
-                    <input type="text" id="full-name" class="login-input">
-                    <label for="full-name" unselectable="on">Nombre Completo</label>
-                    <p class="error-message">Por favor, ingrese su nombre Completo</p>
-                  </div>
-
-                  <div class="input-container">
-                    <input type="text" id="company" class="login-input">
-                    <label for="company" unselectable="on">Compañia (opcional)</label>
-                  </div>
+                <div class="input-container">
+                  <input type="text" id="full-name" name="fullName" class="login-input" required>
+                  <label for="full-name" unselectable="on">Nombre Completo</label>
+                  <p class="error-message">Por favor, ingrese su nombre Completo</p>
+                </div>
+          
+                <div class="input-container">
+                  <input type="text" id="company" name="company" class="login-input">
+                  <label for="company" unselectable="on">Compañia (opcional)</label>
+                </div>
               </div>
-
+          
               <div class="input-container">
-                <input type="text" id="clientAddress" name="clientAddress" class="login-input">
-                <label for="fullAddress" unselectable="on">Direccion Completa</label>
+                <input type="text" id="clientAddress" name="clientAddress" class="login-input" required>
+                <label for="clientAddress" unselectable="on">Dirección Completa</label>
                 <p class="error-message">Por favor, ingrese una dirección valida</p>
               </div>
+          
               <div class="row">
                 <div class="input-container">
-                  <input type="text" id="email" class="login-input">
+                  <input type="email" id="email" name="email" class="login-input">
                   <label for="email" unselectable="on">Correo electrónico (opcional)</label>
                 </div>
-
+          
                 <div class="input-container">
-                  <input type="text" id="phone" class="login-input">
-                  <label for="phone" unselectable="on">Telefono</label>
+                  <input type="tel" id="phone" name="phone" class="login-input" required>
+                  <label for="phone" unselectable="on">Teléfono</label>
                   <p class="error-message">Por favor, ingrese un teléfono valido</p>
                 </div>
-            </div>
-          </div>
+              </div>
+            </form>
+          </div>          
 
           <div class="card card-information shipping">
             <img id="infoIcon" src="./icons/info-circle-svgrepo.svg" alt="ifo-icon" class="info-icon">
-            <span id="infoTooltip" class="info-tooltip">El envío refleja el cuidado y la seguridad que tu inversión merece: embalaje y manejo especial para equipos de alto valor. Precios transparentes, sin sorpresas.</span>
-            
+            <span id="infoTooltip" class="info-tooltip">El envío refleja el cuidado y la seguridad que tu inversión merece: embalaje y manejo especial para equipos de alto valor. Precios transparentes, sin sorpresas.</span>            
             <h2>Envío</h2>
             <div>
               <span class="shipping-cost"></span></p>
@@ -96,11 +95,10 @@
             <p>Datos del usuario</p>
             <input type="text" placeholder="Nombre completo">
           </div>
-          <!-- Puedes colocar más tarjetas aquí en la columna izquierda -->
         </div>
       
         <div class="column">
-          <div class="card card-summary">
+          <div id="cartSummary" class="card card-summary">
             <h2>Resumen del Pedido</h2>
             <p> <b>Detalles del pedido:</b></p>
             <p><span id="preview-full-name"></span></p>
@@ -132,8 +130,6 @@
 
           </div>
 
-      
-          <!-- Puedes colocar más tarjetas aquí en la columna derecha -->
         </div>
       
       </div>
