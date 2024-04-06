@@ -19,7 +19,7 @@ const darken = document.querySelector('.darken');
 
 const mobileMenuLine = document.querySelector('.mobile-menu ul:nth-child(1)');
 
-const testProducts = [{id: 1, name: 'Producto Test', price: 100, variations: [{ images: ['https://placehold.co/600x400'] }]}];
+// const testProducts = [{id: 1, name: 'Producto Test', price: 100, variations: [{ images: ['https://placehold.co/600x400'] }]}];
 const productList = [];
 let carritoGlobal = [];
 let checkoutButton;
@@ -208,9 +208,10 @@ const renderProducts = arr => {
         productCard.classList.add('product-card');
 
         // Determinar la imagen principal del producto
-        const firstImage = product.images ? product.images[0] : 
-                           (product.variations && product.variations.length > 0 ? product.variations[0].images[0] : 'https://placehold.co/600x400');                   
-        
+        const firstImage = (product.images && product.images.length > 0) ? product.images[0] :
+        (product.variations && product.variations.length > 0 && product.variations[0].images && product.variations[0].images.length > 0) ? product.variations[0].images[0] :
+        'https://placehold.co/600x400';
+             
         const productImg = document.createElement('img');
         productImg.setAttribute('src', firstImage);
         productImg.setAttribute('alt', product.name);

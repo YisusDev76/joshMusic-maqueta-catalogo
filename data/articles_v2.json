@@ -207,19 +207,21 @@
         "id":10,
         "name":"Bajo Quinto JoshMusic acústico",
         "category":"instrumentos",
-        "description":"",
+        "description":"Una descripción del producto.",
         "variations":[
           {
               "attribute": "estilo",
               "value": "Madera de acre rizado Natural",
               "price":8500.00,
-              "discountedPrice":8350
+              "discountedPrice":8350,
+              "images":[]
             },
             {
               "attribute": "estilo",
               "value": "Cosmos Brillante",
               "price":8000.00,
-              "discountedPrice":7800.00
+              "discountedPrice":7800.00,
+              "images":[]
             }
       ]
       },
@@ -229,7 +231,6 @@
         "price":7000.00,
         "discountedPrice":6850.00,
         "images":[
-          "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
         ],
         "category":"instrumentos",
         "description":""
