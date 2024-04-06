@@ -135,7 +135,6 @@
                 "price": 2400.00,
                 "discountedPrice": 2300.00,
                 "images": [
-                  "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg"
                 ]
               }  
         ]
@@ -150,7 +149,8 @@
                 "attribute": "Madera",
                 "value": "Caoba",
                 "price": 3000.00,
-                "discountedPrice": 2800.00
+                "discountedPrice": 2800.00,
+                "images":[]
               }
               
         ]

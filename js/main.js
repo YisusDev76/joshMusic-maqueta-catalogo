@@ -1,59 +1,3 @@
-//DATASET
-// Lista de productos
-const productList = [];
-let carritoGlobal = [];
-let checkoutButton;
-// Llamamos a esta función cuando se carga la página
-document.addEventListener('DOMContentLoaded', function () {
-    fetch('../data/articles_v2.json')
-        .then(response => response.json())
-        .then(data => {
-            if (Array.isArray(data.products)) { // Cambio realizado aquí de "productos" a "products"
-                productList.push(...data.products); // Y aquí también
-                console.log(productList);
-            } else {
-                console.error('La propiedad "products" no existe o no es un array');
-            }
-        })
-        .catch(error => console.error('Error al cargar los datos:', error));
-    cargarCarritoDesdeLocalStorage(),
-    renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
-});
-
-// Manejador de eventos a cada enlace de la barra de navegación. 
-document.querySelectorAll('.nav-link').forEach(item => {
-    item.addEventListener('click', (e) => {
-        mobileMenu.classList.remove('active');
-        mobileMenuLine.classList.remove('active');
-        e.preventDefault();
-        const category = item.getAttribute('data-category');
-        filterProducts(category);
-        window.history.pushState({ category }, `Category: ${category}`, `#${category}`);
-    });
-});
-
-window.addEventListener('popstate', (e) => {
-    const category = e.state?.category || 'all';
-    filterProducts(category);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    // console.log("Entra a este evento");
-    const category = window.location.hash.substring(1) || 'all';
-    filterProducts(category);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    checkoutButton = document.getElementById('checkoutButton');
-  
-    checkoutButton.addEventListener('click', () => {
-      window.location.href = 'checkout.html'; // Cambia esto por la URL de tu página de contacto
-    });
-
-    checkCartStatus();
-  });  
-
-//Manejadores de la aplicación 
 //Navbar escritorio/tablets
 const navBarRight = document.querySelector('.navbar-right');
 
@@ -75,6 +19,57 @@ const darken = document.querySelector('.darken');
 
 const mobileMenuLine = document.querySelector('.mobile-menu ul:nth-child(1)');
 
+const testProducts = [{id: 1, name: 'Producto Test', price: 100, variations: [{ images: ['https://placehold.co/600x400'] }]}];
+const productList = [];
+let carritoGlobal = [];
+let checkoutButton;
+// Llamamos a esta función cuando se carga la página
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('../data/articles_v2.json')
+        .then(response => response.json())
+        .then(data => {
+            if (Array.isArray(data.products)) {
+                productList.push(...data.products);
+                renderProducts(productList);
+            } else {
+                console.error('La propiedad "products" no existe o no es un array');
+            }
+        })
+        .catch(error => console.error('Error al cargar los datos:', error));
+    cargarCarritoDesdeLocalStorage(),
+    renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
+
+    //Para que al dar click ocurra el filtrado por categorias:
+    const category = window.location.hash.substring(1) || 'all';
+    filterProducts(category);
+});
+
+// Manejador de eventos a cada enlace de la barra de navegación. 
+document.querySelectorAll('.nav-link').forEach(item => {
+    item.addEventListener('click', (e) => {
+        mobileMenu.classList.remove('active');
+        mobileMenuLine.classList.remove('active');
+        e.preventDefault();
+        const category = item.getAttribute('data-category');
+        filterProducts(category);
+        window.history.pushState({ category }, `Category: ${category}`, `#${category}`);
+    });
+});
+
+window.addEventListener('popstate', (e) => {
+    const category = e.state?.category || 'all';
+    filterProducts(category);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    checkoutButton = document.getElementById('checkoutButton');
+  
+    checkoutButton.addEventListener('click', () => {
+      window.location.href = 'checkout.html'; // Cambia esto por la URL de tu página de contacto
+    });
+
+    checkCartStatus();
+  });  
 
 // Declarando funciones para abrir y cerrar los contenedores
 const toggleDesktopMenu = () => {
@@ -207,12 +202,17 @@ const detailsProduct = product => {
 
 // Función para agregar los productos en el main
 const renderProducts = arr => {
-    for (let product of arr) {
+    arr.forEach(product => {
+        console.log(product);
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
 
+        // Determinar la imagen principal del producto
+        const firstImage = product.images ? product.images[0] : 
+                           (product.variations && product.variations.length > 0 ? product.variations[0].images[0] : 'https://placehold.co/600x400');                   
+        
         const productImg = document.createElement('img');
-        productImg.setAttribute('src', product.image);
+        productImg.setAttribute('src', firstImage);
         productImg.setAttribute('alt', product.name);
         productImg.classList.add('cur-p');
         productImg.addEventListener('click', function () {
@@ -224,11 +224,15 @@ const renderProducts = arr => {
 
         const productInfoDiv = document.createElement('div');
 
+        // Determinar el precio del producto
+        const price = product.price ? product.price : 
+                      (product.variations && product.variations.length > 0 && product.variations[0].price ? product.variations[0].price : 'Precio no disponible');
+
         const productPrice = document.createElement('p');
-        //Fortmato de precio a Mexico
-        productPrice.innerText = formatPrice(product.price);
+        productPrice.innerText = formatPrice(price);
+
         const productName = document.createElement('p');
-        productName.innerText = `${product.name}`;
+        productName.innerText = product.name;
 
         productInfoDiv.appendChild(productPrice);
         productInfoDiv.appendChild(productName);
@@ -252,8 +256,9 @@ const renderProducts = arr => {
         productCard.appendChild(productInfo);
 
         cardsContainer.appendChild(productCard);
-    }
+    });
 };
+
 
 function filterProducts(category) {
     let filteredProducts = [];
@@ -418,7 +423,3 @@ function renderCart(arrayCarrito) {
         totalPriceContainer.innerText = formatPrice(totalCarrito);
     }
 }
-
-
-renderProducts(productList);
-
