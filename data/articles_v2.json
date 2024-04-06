@@ -12,21 +12,21 @@
           "attribute": "color",
           "value": "Degradado rojo Ruby",
           "images": [
-            "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
+
           ]
         },
         {
           "attribute": "color",
           "value": "Degradado verde esmeralda",
           "images": [
-            "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
+
           ]
         },
         {
           "attribute": "color",
           "value": "Rosa cicle",
           "images": [
-            "https://m.media-amazon.com/images/I/82PiVCVe4xL._AC_SL1500_.jpg"
+
           ]
         },
         {
@@ -35,7 +35,7 @@
           "price": 1150.00,
           "discountedPrice": 1100,
           "images": [
-            "https://m.media-amazon.com/images/I/83PiVCVe4xL._AC_SL1500_.jpg"
+
           ]
         }
       ]

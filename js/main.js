@@ -203,7 +203,6 @@ const detailsProduct = product => {
 // Función para agregar los productos en el main
 const renderProducts = arr => {
     arr.forEach(product => {
-        console.log(product);
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
 
@@ -219,6 +218,10 @@ const renderProducts = arr => {
         productImg.addEventListener('click', function () {
             detailsProduct(product);
         });
+        productImg.onerror = function(){
+            this.onerror = null;
+            this.src = 'https://placehold.co/600x400';
+        }
 
         const productInfo = document.createElement('div');
         productInfo.classList.add('product-info');
