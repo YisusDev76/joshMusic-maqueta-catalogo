@@ -159,6 +159,7 @@ function checkCartStatus() {
   }
 
 const isFloat = value => Number(value) === value && value % 1 !== 0;
+
 function formatPrice(price) {
     return price.toLocaleString('es-MX', {
         style: 'currency',
@@ -177,8 +178,13 @@ const detailsProduct = product => {
     const detailDescription = document.querySelector('.product-info p:nth-child(3)');
     const buttonAddToCart = document.querySelector('.add-to-cart-button');
 
+    detailImage.onerror = function(){
+        this.onerror = null;
+        this.src = 'https://placehold.co/600x400';
+    }
+
     //Actualizar la info del producto
-    detailImage.setAttribute('src', product.image);
+    detailImage.setAttribute('src', getFirstProductImage(product));
     detailPrice.innerText = `$${product.price}`;
     detailName.innerText = product.name;
     detailDescription.innerText = product.description;
@@ -206,10 +212,8 @@ const renderProducts = arr => {
         const productCard = document.createElement('div');
         productCard.classList.add('product-card');
 
-        // Determinar la imagen principal del producto
-        const firstImage = (product.images && product.images.length > 0) ? product.images[0] :
-        (product.variations && product.variations.length > 0 && product.variations[0].images && product.variations[0].images.length > 0) ? product.variations[0].images[0] :
-        'https://placehold.co/600x400';
+        
+        const firstImage = getFirstProductImage(product);
              
         const productImg = document.createElement('img');
         productImg.setAttribute('src', firstImage);
@@ -261,7 +265,14 @@ const renderProducts = arr => {
 
         cardsContainer.appendChild(productCard);
     });
-};
+}
+
+    // Determinar la imagen principal del producto
+    function getFirstProductImage (product) {
+        return (product.images && product.images.length > 0) ? product.images[0] :
+        (product.variations && product.variations.length > 0 && product.variations[0].images && product.variations[0].images.length > 0) ? product.variations[0].images[0] :
+        'https://placehold.co/600x400';    
+    }
 
 
 function filterProducts(category) {
@@ -372,6 +383,7 @@ function renderCart(arrayCarrito) {
         productCartContainer.classList.add('shopping-cart');
 
         productDetails = productList.find(producto => producto.id === product.id);
+        console.log("Destalles de un producto: ", productDetails);
 
         //Genero la imagen del producto y la agrego un figure 
         const productImg = document.createElement('img');
@@ -379,23 +391,24 @@ function renderCart(arrayCarrito) {
         productImg.setAttribute('alt', productDetails.name);
         productImg.classList.add('hover-neon-effect');
         /*
- * Este bloque de código utiliza una IIFE (Immediately Invoked Function Expression) para manejar
- * los event listeners dentro de un bucle for. Cada iteración del bucle sobrescribe 'productDetails',
- * por lo que sin esta técnica, todos los listeners referirían al último producto en el bucle.
- *
- * La IIFE captura el estado actual de 'productDetails' para cada producto y lo pasa a la función
- * del event listener. Esto asegura que cada listener tenga una copia independiente de los detalles
- * del producto, permitiendo que al hacer clic en una imagen, se muestren los detalles correctos.
- *
- * Este método puede parecer menos directo, pero es crucial para evitar errores comunes en el manejo
- * de variables dentro de bucles. Garantiza una experiencia de usuario coherente y precisa en la
- * visualización de detalles del producto.
+        * Este bloque de código utiliza una IIFE (Immediately Invoked Function Expression) para manejar
+        * los event listeners dentro de un bucle for. Cada iteración del bucle sobrescribe 'productDetails',
+        * por lo que sin esta técnica, todos los listeners referirían al último producto en el bucle.
+        *
+        * La IIFE captura el estado actual de 'productDetails' para cada producto y lo pasa a la función
+        * del event listener. Esto asegura que cada listener tenga una copia independiente de los detalles
+        * del producto, permitiendo que al hacer clic en una imagen, se muestren los detalles correctos.
+        *
+        * Este método puede parecer menos directo, pero es crucial para evitar errores comunes en el manejo
+        * de variables dentro de bucles. Garantiza una experiencia de usuario coherente y precisa en la
+        * visualización de detalles del producto.
  */
         productImg.addEventListener('click', ((details)=>{
             return () =>{
                 detailsProduct(details);
             };
         })(productDetails));
+
         const productFigure = document.createElement('figure');
         productFigure.classList.add('cart-product-figure');
         productFigure.append(productImg, numberOfSameProduct);
@@ -403,6 +416,7 @@ function renderCart(arrayCarrito) {
         //Agrego el precio y nombre del producto
         const productPrice = document.createElement('p');
         const productName = document.createElement('p');
+        console.log("EL precio del producto es ", product.price);
         productPrice.innerText = formatPrice(productDetails.price);
         productName.innerText = productDetails.name;
 
