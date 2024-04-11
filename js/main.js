@@ -167,6 +167,12 @@ function formatPrice(price) {
     });
 }
 
+function handleImageError(imageElement) {
+    imageElement.onerror = null; // Eliminar el manejador de error existente para evitar bucles infinitos
+    imageElement.src = 'https://placehold.co/600x400'; // Puedes cambiar esta URL por cualquier imagen de respaldo que prefieras
+}
+
+
 // Función para poner los datos del producto seleccionado en la ventana de Detalles
 let currentButtonListener = null; // Definimos la variable fuera de la función para mantener su valor.
 const detailsProduct = product => {
@@ -177,34 +183,58 @@ const detailsProduct = product => {
     const detailName = document.querySelector('.product-info p:nth-child(2)');
     const detailDescription = document.querySelector('.product-info p:nth-child(3)');
     const buttonAddToCart = document.querySelector('.add-to-cart-button');
+    const variantSelector = document.querySelector('.variant-selector'); // Selector de variantes
 
-    detailImage.onerror = function(){
-        this.onerror = null;
-        this.src = 'https://placehold.co/600x400';
+    detailImage.onerror = () => handleImageError(detailImage);
+
+    // Limpiar opciones anteriores
+    variantSelector.innerHTML = '';
+
+    // Llenar el selector de variantes si están disponibles
+    if (product.variations && product.variations.length > 0) {
+        product.variations.forEach(variation => {
+            let option = document.createElement('option');
+            option.value = variation.variantID;
+            option.textContent = `${variation.attribute}: ${variation.value}`;
+            variantSelector.appendChild(option);
+        });
+
+        // Actualizar la imagen y el precio basado en la variante seleccionada
+        variantSelector.addEventListener('change', () => {
+            const selectedVariant = product.variations.find(v => v.variantID === variantSelector.value);
+            detailImage.setAttribute('src', selectedVariant.images.length ? selectedVariant.images[0] : 'https://placehold.co/600x400');
+            detailImage.onerror = () => handleImageError(detailImage); // Asegurarse de que el manejo de error se aplica a la nueva imagen
+            detailPrice.innerText = formatPrice(selectedVariant.price);
+        });
+
+        // Disparar el cambio inicial para cargar los detalles de la primera variante
+        variantSelector.dispatchEvent(new Event('change'));
+    } else {
+        // No hay variantes, ocultar el selector
+        variantSelector.style.display = 'none';
+
+        // Mostrar detalles generales del producto
+        detailImage.src = getFirstProductImage(product);
+        detailImage.onerror = () => handleImageError(detailImage);
+        detailPrice.innerText = formatPrice(getFirstProductoPrice(product));
     }
 
-    //Actualizar la info del producto
-    detailImage.setAttribute('src', getFirstProductImage(product));
-    detailPrice.innerText = `$${product.price}`;
     detailName.innerText = product.name;
     detailDescription.innerText = product.description;
 
     if (currentButtonListener) {
-        //Eliminar cualquier oyente de eventos anteior al boton
         buttonAddToCart.removeEventListener('click', currentButtonListener);
     }
 
-    //Crear una Nueva funcion de oyente de eventos
     currentButtonListener = () => {
-        // console.log("Se esta ejecunatando el listener");
         addProductToCart(product.id);
         renderCart(carritoGlobal);
         renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
     }
 
-    //Agregar el nuevi oyente de eventos al boton
     buttonAddToCart.addEventListener('click', currentButtonListener);
 };
+
 
 // Función para agregar los productos en el main
 const renderProducts = arr => {
@@ -233,8 +263,7 @@ const renderProducts = arr => {
         const productInfoDiv = document.createElement('div');
 
         // Determinar el precio del producto
-        const price = product.price ? product.price : 
-                      (product.variations && product.variations.length > 0 && product.variations[0].price ? product.variations[0].price : 'Precio no disponible');
+        const price = getFirstProductoPrice(product);
 
         const productPrice = document.createElement('p');
         productPrice.innerText = formatPrice(price);
@@ -249,11 +278,28 @@ const renderProducts = arr => {
         const productImgCard = document.createElement('img');
         productImgCard.setAttribute('src', './icons/bt_add_to_cart.svg');
         productImgCard.classList.add('cur-p');
-        productInfoFigure.addEventListener('click', function () {
-            addProductToCart(product.id);
-            renderCart(carritoGlobal);
-            renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
-        });
+
+
+        // productInfoFigure.addEventListener('click', function () {
+        //     addProductToCart(product.id);
+        //     renderCart(carritoGlobal);
+        //     renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
+        // });
+
+        // Modificación para controlar el comportamiento del botón de añadir al carrito
+        if (!product.variations || product.variations.length === 0) {
+            // Si no hay variaciones, permitir añadir al carrito directamente
+            productInfoFigure.addEventListener('click', function () {
+                addProductToCart(product.id);
+                renderCart(carritoGlobal);
+                renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
+            });
+        } else {
+            // Si hay variaciones, redirigir a los detalles del producto
+            productInfoFigure.addEventListener('click', function () {
+                detailsProduct(product);
+            });
+        }
 
         productInfoFigure.appendChild(productImgCard);
 
@@ -272,6 +318,11 @@ const renderProducts = arr => {
         return (product.images && product.images.length > 0) ? product.images[0] :
         (product.variations && product.variations.length > 0 && product.variations[0].images && product.variations[0].images.length > 0) ? product.variations[0].images[0] :
         'https://placehold.co/600x400';    
+    }
+
+    function getFirstProductoPrice(product){
+        return product.price ? product.price : 
+        (product.variations && product.variations.length > 0 && product.variations[0].price ? product.variations[0].price : 'Precio no disponible');
     }
 
 
@@ -387,7 +438,7 @@ function renderCart(arrayCarrito) {
 
         //Genero la imagen del producto y la agrego un figure 
         const productImg = document.createElement('img');
-        productImg.setAttribute('src', productDetails.image);
+        productImg.setAttribute('src', getFirstProductImage(product));
         productImg.setAttribute('alt', productDetails.name);
         productImg.classList.add('hover-neon-effect');
         /*
