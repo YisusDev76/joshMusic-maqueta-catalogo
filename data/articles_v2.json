@@ -465,6 +465,66 @@
           "images": [],
           "category": "instrumentos",
           "description": ""
-      }
+      },
+      {
+        "id": 31,
+        "name": "Bafle Melo Dsp 1560",
+        "price": 8500,
+        "discountedPrice": 8250.00,
+        "images": [
+            "https://m.media-amazon.com/images/I/88PiVCVe4xL._AC_SL1500_.jpg"
+        ],
+        "category": "Audio Profesional",
+        "description": ""
+    },
+    {
+        "id": 32,
+        "name": "Sistema de Columna Activa NT 1000",
+        "price": 21500,
+        "discountedPrice": 20900,
+        "images": [],
+        "category": "Audio Profesional",
+        "description": ""
+    },
+    {
+        "id": 33,
+        "name": "M-SUB 28A Subwoofer de doble 18”",
+        "price": 51800,
+        "discountedPrice": 50800,
+        "images": [
+            "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M-Sub28-A-5-300x169.png"
+        ],
+        "category": "Audio Profesional",
+        "description": ""
+    },
+    {
+        "id": 34,
+        "name": "RF 200 - Micrófono Inalámbrico”",
+        "price": 7500,
+        "discountedPrice": 7300,
+        "category": "Microfonia",
+        "description": "",
+        "variations": [
+            {
+                "attribute": "color",
+                "value": "Golden (Dorado)",
+                "images": [
+                    "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
+                ],
+                "variantID": "34_1"
+            },
+            {
+                "attribute": "color",
+                "value": "Black (Negro)",
+                "images": [
+                    "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
+                ],
+                "variantID": "34_2"
+            }
+        ]
+    }
+
+
+
   ]
 }

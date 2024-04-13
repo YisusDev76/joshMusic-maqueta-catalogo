@@ -1,4 +1,8 @@
 //Navbar escritorio/tablets
+
+//Revisar que hay un problema que, cuando hay un producto que sus variantes valen lo mismo, y por ende el precio no esta en cada variante, eso hace romper el codigo
+// y hace que de el error de  read properties of undefined (reading 'toLocaleString') por lo tanto hay que ajustar eso, ya se poniendo el precio aunque sea el mismo para cada variantes,
+// o manejar logica adicional para este apartado
 const navBarRight = document.querySelector('.navbar-right');
 
 const menuEmail = document.querySelector('.navbar-email');
