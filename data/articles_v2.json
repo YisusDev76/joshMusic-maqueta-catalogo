@@ -522,9 +522,94 @@
                 "variantID": "34_2"
             }
         ]
+    },
+    {
+        "id": 35,
+        "name": "Amplificador FP10000Q MELO",
+        "price": 26900,
+        "discountedPrice": 25900,
+        "images": [
+            "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/FP10000Q-1-768x168.png"
+        ],
+        "category": "Audio Profesional",
+        "description": ""
+    },
+    {
+        "id": 36,
+        "name": "Sistema Lineal MELO KENDO-A ",
+        "price": 53000,
+        "discountedPrice": 52000,
+        "images": [
+            "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Kendo-A-2-768x407.png"
+        ],
+        "category": "Audio Profesional",
+        "description": ""
+    },
+    {
+        "id": 37,
+        "name": "Bafle Melo M-15A",
+        "price": 21500,
+        "discountedPrice": 21000,
+        "images": [
+
+        ],
+        "category": "Audio Profesional",
+        "description": ""
+    },
+    {
+        "id": 38,
+        "name": "Bafle activo doble 15” M215-A",
+        "price": 31900,
+        "discountedPrice": 30100,
+        "images": [
+
+        ],
+        "category": "Audio Profesional",
+        "description": ""
+    },
+    {
+        "id": 39,
+        "name": "Bafle VAMAV Mercury 15 BCN003 activo 15”",
+        "price": 5000,
+        "discountedPrice": 4500,
+        "images": [
+            "https://www.stratusmusicstore.com.mx/cdn/shop/products/IMG_8739_500x.jpg?v=1636134532"
+        ],
+        "category": "Audio Profesional",
+        "description": ""
+    },
+    {
+        "id": 40,
+        "name": "Sistema De Sonido Vamav VRX815",
+        "price": 19900,
+        "discountedPrice": 16500,
+        "images": [
+            "https://macalmusic.com.mx/cdn/shop/products/D_NQ_NP_2X_644669-MLM50183912084_062022-F.webp?v=1660235005&width=1000"
+        ],
+        "category": "Audio Profesional",
+        "description": ""
+    },
+    {
+        "id": 41,
+        "name": "Bafle Vamav Nova 215 portátil con bluetooth negra 110V/240V",
+        "price": 12000,
+        "discountedPrice": 9500,
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_859751-MLA53348152373_012023-O.webp"
+        ],
+        "category": "Audio Profesional",
+        "description": ""
+    },
+    {
+        "id": 42,
+        "name": "Subwoofer doble Vamav 1500w Rms Terra-218 Activo",
+        "price": 19500,
+        "discountedPrice": 16600,
+        "images": [
+            "https://http2.mlstatic.com/D_NQ_NP_855397-MLM74342612304_022024-O.webp"
+        ],
+        "category": "Audio Profesional",
+        "description": ""
     }
-
-
-
   ]
 }
