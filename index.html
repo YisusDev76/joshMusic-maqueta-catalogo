@@ -139,14 +139,23 @@
     <div class="product-detail-close">
       <img src="./icons/icon_close.png" alt="close">
     </div>
-    <img
-      src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-      alt="bike">
+    <img>
     <div class="product-info">
       <p></p>
       <p></p>
       <p></p>
-      <select class="variant-selector"></select> <!-- Selector de variantes -->
+      <!-- <select class="variant-selector"></select> Selector de variantes -->
+      <label id="img_category_label"class="field"for="img_category"data-value="">
+        <span id="span_variationKey">Category</span>
+        <div id="img_category"class="psuedo_select"name="img_category">
+            <span class="selected"></span>
+            <ul id="img_category_options"class="options">
+                <li class="option"data-value="opt_1">Option 1</li>
+                <li class="option"data-value="opt_2">Option 2</li>
+            </ul>
+        </div>
+    </label>
+    
       <button class="primary-button add-to-cart-button">
         <img src="./icons/bt_add_to_cart.svg" alt="add to cart">
         Add to cart
