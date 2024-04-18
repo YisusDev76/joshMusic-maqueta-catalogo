@@ -13,7 +13,7 @@ const desktopMenu = document.querySelector('.desktop-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 
 //Shopping cart menu/Product details
-const buttonProductDetailaddProductToCart = document.querySelector('.add-to-cart-button');
+// const buttonProductDetailaddProductToCart = document.querySelector('.add-to-cart-button');
 const asideShoppingCart = document.querySelector('#asideShoppingCart');
 const productDetailContainer = document.querySelector('#productDetail');
 
@@ -179,7 +179,9 @@ function handleImageError(imageElement) {
 
 // Función para poner los datos del producto seleccionado en la ventana de Detalles
 let currentButtonListener = null; // Definimos la variable fuera de la función para mantener su valor.
+let selectedVariantID = null; // Esta variable mantendrá el ID de la variante seleccionada
 const detailsProduct = product => {
+    selectedVariantID = null; // Esta variable mantendrá el ID de la variante seleccionada
     console.log("Los datalle del producto son: ", product);
     openProductDetailAside();
 
@@ -217,8 +219,10 @@ const detailsProduct = product => {
                 detailImage.onerror = () => handleImageError(detailImage);
                 detailPrice.innerText = variation.price ? formatPrice(variation.price) : formatPrice(product.price);
             };
-            optionsList.appendChild(optionElement);
+            optionsList.appendChild(optionElement); 
         });
+        selectDefaultOption(product.variations[0]);
+        selectedVariantID = product.variations[0].variantID;
     } else {
         console.log("El producto no tiene variantes");
     }
@@ -237,13 +241,33 @@ const detailsProduct = product => {
     }
 
     currentButtonListener = () => {
-        addProductToCart(product.id);
-        renderCart(carritoGlobal);
-        renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
-    }
+        console.log("El valor de la variante es ", selectedVariantID);
+        if (product.variations && product.variations.length > 0 && !selectedVariantID) {
+            alert("Por favor, selecciona una variante del producto antes de añadir al carrito.");
+        } else {
+            addProductToCart(product.id, selectedVariantID); // Añade al carrito con o sin variante
+            renderCart(carritoGlobal);
+            renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
+        }
+    };
 
     buttonAddToCart.addEventListener('click', currentButtonListener);
+    
 };
+
+function selectDefaultOption(variation) {
+    const detailImage = document.querySelector('#productDetail>img');
+    const detailPrice = document.querySelector('.product-info p:nth-child(1)');
+    const selectedSpan = document.querySelector('#img_category .selected');
+
+    // Actualiza los detalles con la información de la variante por defecto
+    selectedSpan.innerText = variation.value;
+    selectedSpan.dataset.value = variation.variantID;
+    detailImage.src = variation.images.length > 0 ? variation.images[0] : 'fallback-image-url.jpg';
+    detailImage.onerror = () => handleImageError(detailImage);
+    detailPrice.innerText = variation.price ? formatPrice(variation.price) : '';
+}
+
 
 
 
@@ -672,37 +696,58 @@ f: {
 				}
 			}
 		},
-		selection: function (child, parent) {
-			var children = parent.childNodes, i, ii, nested_child, nested_children, time = 0, value
-			if (util.f.isElem(child) && util.f.isElem(parent)) {
-				parent.dataset.value = child.dataset.value
-				value = child.innerHTML;
-                console.log("Select Option: ", value);
-			}
-			for (i = 0; i < children.length; i += 1) {
-				child = children[i]
-				if (util.f.isElem(child)) {
-					if (child.classList.contains("psuedo_select")) {
-						nested_children = child.childNodes
-						for (ii = 0; ii < nested_children.length; ii += 1) {
-							nested_child = nested_children[ii]
-							if (util.f.isElem(nested_child) && nested_child.classList.contains("selected")) {
-								if (nested_child.innerHTML)  {
-									time = 1E2
-									util.f.addStyle(nested_child, ["Opacity", "Transform"], [0, "translateY(24px)"], "all")
-								}
-								setTimeout(function (c, v) {
-									c.innerHTML = v
-									util.f.addStyle(c, ["Opacity", "Transform", "TransitionDuration"], [1, "translateY(0px)", ".1s"], "all")
-								}, time, nested_child, value)
-							}
-						}
-					} else if (child.tagName == "SPAN") {
-						util.f.addStyle(child, ["FontSize", "Top"], ["12px", "8px"])
-				   }
-			   }
-			}
-		},
+        selection: function (child, parent) {
+            // Variables para manejar la selección y estilos
+            var children = parent.childNodes, i, ii, nested_child, nested_children, time = 0, value;
+            
+            // Si 'child' y 'parent' son elementos válidos
+            if (util.f.isElem(child) && util.f.isElem(parent)) {
+                // Establece el valor lógico de 'parent' al valor de 'data-value' de 'child'
+                parent.dataset.value = child.dataset.value;
+                // Captura el texto de 'child'
+                value = child.textContent || child.innerText;
+            }
+            
+            // Buscar el span de selección y actualizarlo
+            var selectedSpan = parent.querySelector('.selected');
+            if (selectedSpan) {
+                selectedSpan.textContent = value;
+            }
+        
+            // Ahora debes actualizar el estilo de los elementos según corresponda
+            // y cerrar el menú desplegable si está abierto.
+            for (i = 0; i < children.length; i += 1) {
+                child = children[i];
+                if (util.f.isElem(child) && child.classList.contains("psuedo_select")) {
+                    nested_children = child.childNodes;
+                    for (ii = 0; ii < nested_children.length; ii += 1) {
+                        nested_child = nested_children[ii];
+                        if (util.f.isElem(nested_child) && nested_child.classList.contains("selected")) {
+                            // Aquí se maneja la animación de desaparición del span seleccionado.
+                            if (nested_child.innerHTML) {
+                                time = 100;
+                                util.f.addStyle(nested_child, ["Opacity", "Transform"], [0, "translateY(24px)"], "all");
+                            }
+                            // Actualiza el span seleccionado después de la animación.
+                            setTimeout((function (c, v) {
+                                return function () {
+                                    c.innerHTML = v;
+                                    util.f.addStyle(c, ["Opacity", "Transform", "TransitionDuration"], [1, "translateY(0px)", ".1s"], "all");
+                                };
+                            })(nested_child, value), time);
+                        }
+                    }
+                } else if (child.tagName == "SPAN" && child !== selectedSpan) {
+                    // Aquí se actualiza el estilo del span si no es el seleccionado.
+                    util.f.addStyle(child, ["FontSize", "Top"], ["12px", "8px"]);
+                }
+            }
+            
+            // Log para depurar
+            selectedVariantID = parent.dataset.value;
+            console.log('Valor seleccionado:', parent.dataset.value);
+        },
+        
 		toggle: function (event) {
 			util.f.events.stop(event)
 			var child = util.f.getTrg(event), children, i, parent
@@ -723,4 +768,18 @@ f: {
 		}
 	}
 }}
-window.onload = form.f.init.register
+window.onload = function () {
+    // Inicialización del formulario
+    form.f.init.register();
+
+    // Establecer la selección por defecto
+    var defaultOption = document.querySelector("#img_category_options .option[data-value='opt_1']");
+    if (defaultOption) {
+        form.f.select.selection(defaultOption, defaultOption.closest(".field"));
+    }
+    
+    // // Loguear el valor seleccionado por defecto
+    // var pseudoSelectDiv = document.getElementById('img_category');
+    // console.log('El valor seleccionado por defecto es:', pseudoSelectDiv.dataset.value);
+};
+
