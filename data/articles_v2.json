@@ -595,6 +595,51 @@
             ],
             "category": "Audio Profesional",
             "description": ""
+        },
+        {
+            "id": 43,
+            "name": "QSC CP8 - Altavoz Compacto de 8",
+            "price": 12080,
+            "discountedPrice": 11800,
+            "images": [
+                "https://http2.mlstatic.com/D_NQ_NP_939529-MLU72572529622_112023-O.webp"
+            ],
+            "category": "Audio Profesional",
+            "description": ""
+        },
+        {
+            "id": 44,
+            "name": "KD332 Micrófono Inalámbrico Doble",
+            "price": 3900,
+            "discountedPrice": 3500,
+            "images": [
+                "https://krieg.mx/images/Layout_KD332_web-copia_2_02.png"
+            ],
+            "category": "Microfonia",
+            "description": ""
+        },
+        {
+            "id": 45,
+            "name": "Consola Melo Sm6usb 4 Canales Mono, Conexión Bluetooth",
+            "price": 1900,
+            "discountedPrice": 1750,
+            "images": [
+                "https://http2.mlstatic.com/D_NQ_NP_998575-MLM73371541777_122023-O.webp"
+            ],
+            "category": "Audio Profesional",
+            "description": ""
+        },
+        {
+            "id": 46,
+            "name": "El Kit de Micrófono de Bombo PGADRUMKIT5",
+            "price": 8300,
+            "discountedPrice": 8000,
+            "images": [
+                "https://products.shureweb.eu/cdn-cgi/image/width=1400,height=1400,format=auto/shure_product_db/product_main_images/files/32c/982/22-/header_transparent/b26a56932136fcf62a1a2f5064867b0f.png"
+            ],
+            "category": "Microfonia",
+            "description": ""
         }
+        
     ]
 }
