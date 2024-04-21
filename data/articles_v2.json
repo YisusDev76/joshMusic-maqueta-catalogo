@@ -73,7 +73,7 @@
             "price": 650.0,
             "discountedPrice": 600,
             "category": "instrumentos",
-            "description": "",
+            "description":  "## Características Principales\n\n- Madera de alta calidad\n- Cuerdas resistentes\n\n[Descargar ficha técnica](ficha_tecnica.pdf)",
             "variations": [
                 {
                     "value": "Abeto y Caoba",
@@ -449,12 +449,18 @@
         },
         {
             "id": 30,
-            "name": "Teclado Musical De 54 Teclas Y Micrófono Kaiser Mtc-5470 Color Negro",
+            "name": "Teclado Musical De 54 Teclas Kaiser MTC-5470 y micrófono incluido",
             "price": 1700,
             "discountedPrice": 1600,
-            "images": [],
+            "images": [
+                "https://kaiser.shop/cdn/shop/files/MTC-5470-2_640x_crop_center.jpg?v=1709250614",
+                "https://kaiser.shop/cdn/shop/files/MTC-5470-10_640x_crop_center.jpg?v=1709250623",
+                "https://kaiser.shop/cdn/shop/files/MTC-5470-3_640x_crop_center.jpg?v=1709250616",
+                "https://m.media-amazon.com/images/I/81ZgL6GccDL.jpg"
+            ],
             "category": "instrumentos",
-            "description": ""
+            "description": "Con el Teclado versátil con micrófono y 54 teclas* KAISER®* podrás crear composiciones increíbles, o comenzar tus lecciones para convertirte en una gran tecladista.\n\n## Especificaciones\n- Versátil para cualquier género musical\n- Salida de audio de gran fidelidad\n- Función de grabar melodías\n- Volumen maestro\n- 12 tonos\n- 10 botones de ritmo\n- Tecnología de conectividad: Auxiliar\n- 2 h de vida\n- 8 botones de percusión\n- 20 canciones demo\n- Utiliza 6 baterías \"AA” (no incluidas)\n- Incluye: respaldo para partituras y adaptador para conectarse\n\n[Descarga manual en PDF.](https://d822yi8obt972.cloudfront.net/MANUALES+WEB/MTC-5470_MANUAL.pdf \"Descarga manual en PDF.\")"
+        
         },
         {
             "id": 31,

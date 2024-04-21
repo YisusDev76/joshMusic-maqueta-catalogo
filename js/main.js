@@ -234,8 +234,8 @@ const detailsProduct = product => {
     detailImage.onerror = () => handleImageError(detailImage);
     detailPrice.innerText = formatPrice(getFirstProductPrice(product));
     detailName.innerText = product.name;
-    detailDescription.innerText = product.description;
-
+    detailDescription.innerHTML = marked.parse(product.description); 
+    
     if (currentButtonListener) {
         buttonAddToCart.removeEventListener('click', currentButtonListener);
     }
