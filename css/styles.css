@@ -584,11 +584,42 @@ body::-webkit-scrollbar-track:active {
   margin: 24px 24px 0 24px;
 }
 
-.product-info p:nth-child(1) {
+.product-info .product-price {
   font-weight: bold;
   font-size: var(--md);
   margin-top: 0;
   margin-bottom: 4px;
+}
+
+/* Estilos para la descripcion que esta hecha en markdown */
+.product-description-markdowm { 
+  margin-bottom: 20px; 
+}
+
+.product-description-markdowm p { 
+  color: var(--very-light-pink);
+  font-size: small; 
+}
+
+.product-description-markdowm ul, ol{
+  padding-left: 24px;
+  color: var(--very-light-pink);
+  font-size: small; 
+}
+
+.product-description-markdowm h2, h3{
+  color: var(--very-light-pink);
+  font-size: medium;
+  font-weight: bold; 
+}
+
+.product-description-markdowm a{
+  color: blue; text-decoration: none; 
+}
+
+
+.product-description-markdowm a:hover {
+  text-decoration: underline;
 }
 
 .product-info p:nth-child(2) {

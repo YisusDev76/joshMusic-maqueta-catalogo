@@ -46,6 +46,7 @@
                 {
                     "value": "Negro brillante",
                     "images": [
+                        "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg",
                         "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg"
                     ],
                     "variantID": "2_1"
@@ -53,6 +54,7 @@
                 {
                     "value": "Negro Degradado Sol Naciente (Sunburst)",
                     "images": [
+                        "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg",
                         "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg"
                     ],
                     "variantID": "2_2"
@@ -531,7 +533,7 @@
         },
         {
             "id": 36,
-            "name": "Sistema Lineal MELO KENDO-A ",
+            "name": "Sistema Lineal MELO KENDO-A",
             "price": 53000,
             "discountedPrice": 52000,
             "images": [
@@ -645,7 +647,60 @@
             ],
             "category": "Microfonia",
             "description": ""
+        },
+        {
+            "id": 47,
+            "name": "Match 112 - Sistema lienal versátil Activo - 1000 W RMS",
+            "price": 26900,
+            "discountedPrice": 25900,
+            "images": [
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-catalogo-768x381.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-4.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-5.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-8.png"
+            ],
+            "category": "Audio Profesional",
+            "description": "##Esto es la descripcion de un producto \n Y es un lineal"
+        },
+        {
+            "id": 48,
+            "name": "DSP1540 Bafle Activo 400W RMS - Bluetooth",
+            "price": 6800,
+            "discountedPrice": 6660,
+            "images": [
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/DSP-1540-catalogo-768x671.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/DSP-1540-3.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/DSP-1540-4.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/DSP-1540-5.png"
+            ],
+            "category": "Audio Profesional",
+            "description": "La etapa de potencia de toda la serie DSP está basada en amplificaciones clase D, esto garantiza el mayor aprovechamiento de energía, entregando calidad sonora."
+        },
+        {
+            "id": 49,
+            "name": "Pack de cabezas moviles Mega Spot 470",
+            "price": 101037,
+            "discountedPrice": 100000,
+            "images": [
+                "https://lite-tek.com.mx/wp-content/uploads/2020/09/Mega-Spot-470W-20R.jpg",
+                "https://lite-tek.com.mx/wp-content/uploads/2020/09/Mega-Spot-470.jpg",
+                "https://lite-tek.com.mx/wp-content/uploads/2020/09/Mega-Spot-20R.jpg"
+            ],
+            "category": "Iluminación",
+            "description": "Una descripcion"
+        },
+        {
+            "id": 50,
+            "name": "ULXD4Q Receptor inalámbrico digital cuádruple",
+            "price": 157000,
+            "discountedPrice": 155700,
+            "images": [
+                "https://products.shureweb.eu/cdn-cgi/image/width=1400,height=1400,format=auto/shure_product_db/product_main_images/files/8ed/a9e/17-/header_transparent/e5ed31006c35010746bf58406c28c521.png",
+                "https://products.shureweb.eu/cdn-cgi/image/width=1400,height=1400,format=auto/shure_product_db/product_main_images/files/8ed/a9e/17-/header_transparent/e5ed31006c35010746bf58406c28c521.png"
+            ],
+            "category": "Iluminación",
+            "description": "Receptor inalámbrico digital cuádruple diseñado para aplicaciones de refuerzo sonoro profesional. Incluye características como la diversity digital con conmutación predictiva, hasta 72 MHz de banda de sintonización y la encriptación AES de 256 bits para garantizar la privacidad."
         }
-        
+  
     ]
 }

@@ -188,7 +188,7 @@ const detailsProduct = product => {
     const detailImage = document.querySelector('#productDetail>img');
     const detailPrice = document.querySelector('.product-info p:nth-child(1)');
     const detailName = document.querySelector('.product-info p:nth-child(2)');
-    const detailDescription = document.querySelector('.product-info p:nth-child(3)');
+    const detailDescription = document.querySelector('.product-description-markdowm');
     const buttonAddToCart = document.querySelector('.add-to-cart-button');
     const imgCategoryLabel = document.querySelector('#img_category_label');
     const spanVariationKey = document.querySelector('#span_variationKey');

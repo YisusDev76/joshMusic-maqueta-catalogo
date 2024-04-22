@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="shortcut icon" href="./logos/favicon_yard_sale.svg" type="image/x-icon">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -141,9 +142,9 @@
     </div>
     <img>
     <div class="product-info">
+      <p class="product-price"></p>
       <p></p>
-      <p></p>
-      <p></p>
+      <div class="product-description-markdowm"></div>
       <!-- <select class="variant-selector"></select> Selector de variantes -->
       <label id="img_category_label"class="field"for="img_category"data-value="">
         <span id="span_variationKey">Category</span>
@@ -171,14 +172,10 @@
     </div>
   </main>
   <div id="content"></div>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="./js/main.js"></script>
-  <script>
-    document.getElementById('content').innerHTML =
-      marked.parse('# Marked in the browser\n\nRendered by **marked**.');
-  </script>
 </body>
 
 </html>
