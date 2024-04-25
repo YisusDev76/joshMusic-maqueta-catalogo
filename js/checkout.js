@@ -402,15 +402,15 @@ const totalToPayElments = document.querySelectorAll('.element-total-to-Pay');
 const arrowButton = document.querySelector('.button-with-arrow');
 let tooltipTimeout;
 
-let carritoGlobal = [];
+let shoppingCart = [];
 let totalCart = 0 ;
 let totalToPay = 0;
 let selectedShippingProvider = null;
 let globalShippingPrice = 0;
 let priceShipping;
 
-carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || [];
-if (carritoGlobal.length === 0) {
+shoppingCart = JSON.parse(localStorage.getItem('carrito')) || [];
+if (shoppingCart.length === 0) {
     // Redirige al usuario a la página de inicio si el carrito está vacío
     window.location.href = '/index.html';
 }
@@ -425,7 +425,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //     console.log(productList);
 //   })
 //   .catch(error => console.error('Error al cargar los datos:', error));
-    totalCart = calcularTotalCarrito(carritoGlobal);
+    totalCart = calcularTotalCarrito(shoppingCart);
     inputs.forEach(function(input) {
         input.addEventListener('blur', function() {
             validateInput(this);
@@ -611,8 +611,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const precioTotal = nuevaCantidad * productoEncontrado.price;
                 document.getElementById(`price-${idProducto}`).innerText = `$${precioTotal.toFixed(2)}`;
         
-                // Actualiza la cantidad en carritoGlobal
-                const productoEnCarrito = carritoGlobal.find(producto => producto.id === idProducto);
+                // Actualiza la cantidad en shoppingCart
+                const productoEnCarrito = shoppingCart.find(producto => producto.id === idProducto);
                 if (productoEnCarrito) {
                     productoEnCarrito.cantidad = nuevaCantidad;
                 }
@@ -622,13 +622,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     function guardarCarritoEnLocalStorage() {
-        const jsonCart = JSON.stringify(carritoGlobal);
+        const jsonCart = JSON.stringify(shoppingCart);
         localStorage.setItem('carrito', jsonCart);
     }
 
 
     function checkCartStatus() {
-        if (carritoGlobal.length === 0) {
+        if (shoppingCart.length === 0) {
             console.log("El carrito esta vacio");
           document.getElementById('total-items').innerText = '0 items';
           document.getElementById('empty-cart-message').classList.remove('inactive');
@@ -640,7 +640,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
     
     // Inicializar la vista con los productos del carrito
-    renderCart(carritoGlobal);
+    renderCart(shoppingCart);
 });
 
 document.getElementById('termsCheckbox').addEventListener('change', function() {
@@ -719,8 +719,8 @@ function calcularTotalCarrito(carrito) {
 }
 
 function updateInfoUI(){
-    spanCartResume.innerHTML = contarTotalItems(carritoGlobal); 
-    totalItems.textContent = contarTotalItems(carritoGlobal) + " artículos";
+    spanCartResume.innerHTML = contarTotalItems(shoppingCart); 
+    totalItems.textContent = contarTotalItems(shoppingCart) + " artículos";
 }
 
 //Solo en lo que existe una forma de caluclar el precio que se acerce a lo que pidio josh

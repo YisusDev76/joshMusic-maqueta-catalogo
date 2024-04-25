@@ -25,7 +25,7 @@ const mobileMenuLine = document.querySelector('.mobile-menu ul:nth-child(1)');
 
 // const testProducts = [{id: 1, name: 'Producto Test', price: 100, variations: [{ images: ['https://placehold.co/600x400'] }]}];
 const productList = [];
-let carritoGlobal = [];
+let shoppingCart = [];
 let checkoutButton;
 // Llamamos a esta función cuando se carga la página
 document.addEventListener('DOMContentLoaded', function () {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => console.error('Error al cargar los datos:', error));
     cargarCarritoDesdeLocalStorage(),
-    renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
+    renderactualizarContadorCarrito(contarProductosEnCarrito(shoppingCart));
 
     //Para que al dar click ocurra el filtrado por categorias:
     const category = window.location.hash.substring(1) || 'all';
@@ -103,7 +103,7 @@ const toggleCarritoAside = () => {
     }
 
     asideShoppingCart.classList.toggle('show');
-    renderCart(carritoGlobal);
+    renderCart(shoppingCart);
 };
 
 const openProductDetailAside = () => {
@@ -147,7 +147,7 @@ const shoppingPriceProducts = [];
 
 function checkCartStatus() {
     console.log("entra a checkar el status");
-    if (carritoGlobal.length === 0) {
+    if (shoppingCart.length === 0) {
       // Desactiva el botón si el carrito está vacío
       checkoutButton.disabled = true;
       checkoutButton.classList.add('primary-button-disabled');
@@ -246,8 +246,8 @@ const detailsProduct = product => {
             alert("Por favor, selecciona una variante del producto antes de añadir al carrito.");
         } else {
             addProductToCart(product.id, selectedVariantID); // Añade al carrito con o sin variante
-            renderCart(carritoGlobal);
-            renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
+            renderCart(shoppingCart);
+            renderactualizarContadorCarrito(contarProductosEnCarrito(shoppingCart));
         }
     };
 
@@ -318,8 +318,8 @@ const renderProducts = arr => {
 
         // productInfoFigure.addEventListener('click', function () {
         //     addProductToCart(product.id);
-        //     renderCart(carritoGlobal);
-        //     renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
+        //     renderCart(shoppingCart);
+        //     renderactualizarContadorCarrito(contarProductosEnCarrito(shoppingCart));
         // });
 
         // Modificación para controlar el comportamiento del botón de añadir al carrito
@@ -327,8 +327,8 @@ const renderProducts = arr => {
             // Si no hay variaciones, permitir añadir al carrito directamente
             productInfoFigure.addEventListener('click', function () {
                 addProductToCart(product.id);
-                renderCart(carritoGlobal);
-                renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
+                renderCart(shoppingCart);
+                renderactualizarContadorCarrito(contarProductosEnCarrito(shoppingCart));
             });
         } else {
             // Si hay variaciones, redirigir a los detalles del producto
@@ -373,44 +373,59 @@ function filterProducts(category) {
     renderProducts(filteredProducts);
 }
 
-function addProductToCart(idProducto) {
-    const productoExistente = carritoGlobal.find(producto => producto.id === idProducto);
+function addProductToCart(productId, variantId = null) {
+     // Buscar el producto existente en el carrito con el mismo ID y variante
+    const existingProduct = shoppingCart.find(product => 
+        product.id === productId && product.variantId === variantId
+    );
 
-    if (productoExistente) {
-        productoExistente.cantidad += 1;
+    if (existingProduct) {
+         // Si ya existe, simplemente aumenta la cantidad
+        existingProduct.quantity += 1;
     } else {
-        carritoGlobal.push({ id: idProducto, cantidad: 1 });
+         // Si no existe, añadir nuevo producto con la variante al carrito
+        shoppingCart.push({ 
+            id: productId, 
+            variantId: variantId, 
+            quantity: 1 
+        });
     }
-    guardarCarritoEnLocalStorage();
+      // Guardar el carrito actualizado en localStorage
+    syncCartToLocalStorage();
+
     Toastify({
         text: "Producto agregado",
         duration: 3000,
-        destination: "",
-        newWindow: true,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "left", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top",
+        position: "left",
         style: {
           background: "linear-gradient(to right, #00b09b, #96c93d)",
         },
-        onClick: function(){} // Callback after click
-      }).showToast();
-      checkCartStatus();
+        onClick: function(){} 
+    }).showToast();
+    
+    checkCartStatus();
+}
+
+function syncCartToLocalStorage() {
+    // Convertir el array del carrito a una cadena JSON
+    const carritoJSON = JSON.stringify(shoppingCart);
+    localStorage.setItem('carrito', carritoJSON);
 }
 
 /*
- * Esta línea actualiza el carritoGlobal eliminando el producto especificado.
+ * Esta línea actualiza el shoppingCart eliminando el producto especificado.
  * Se utiliza el método .filter para crear un nuevo array que contiene todos los 
  * productos, excepto aquel cuyo ID coincide con idProducto. Esto se logra mediante
- * una función de flecha que compara el ID de cada producto en carritoGlobal con 
+ * una función de flecha que compara el ID de cada producto en shoppingCart con 
  * idProducto. Si el ID del producto es diferente de idProducto, el producto se
  * mantiene en el nuevo array. De esta manera, el producto con idProducto es 
  * efectivamente removido del carrito.
  */
 function removeFromCart(idProducto) {
-    carritoGlobal = carritoGlobal.filter(producto => producto.id !== idProducto);
-    guardarCarritoEnLocalStorage();
+    shoppingCart = shoppingCart.filter(producto => producto.id !== idProducto);
+    syncCartToLocalStorage();
     checkCartStatus();
 }
 
@@ -429,18 +444,12 @@ function calcularTotalCarrito(carrito) {
     }, 0);
 }
 
-function guardarCarritoEnLocalStorage() {
-    // Convertir el array del carrito a una cadena JSON
-    const carritoJSON = JSON.stringify(carritoGlobal);
-    localStorage.setItem('carrito', carritoJSON);
-}
-
 function cargarCarritoDesdeLocalStorage() {
     const carritoJSON = localStorage.getItem('carrito');
 
     // Si hay datos, convertirlos de nuevo a un array y establecer el estado del carrito
     if (carritoJSON) {
-        carritoGlobal = JSON.parse(carritoJSON);
+        shoppingCart = JSON.parse(carritoJSON);
     }
 }
 
@@ -513,10 +522,10 @@ function renderCart(arrayCarrito) {
         productDeleteButton.setAttribute('alt', 'close');
         productDeleteButton.addEventListener('click', function () {
             removeFromCart(product.id);
-            renderCart(carritoGlobal);
-            renderactualizarContadorCarrito(contarProductosEnCarrito(carritoGlobal));
+            renderCart(shoppingCart);
+            renderactualizarContadorCarrito(contarProductosEnCarrito(shoppingCart));
 
-            const totalCarrito = calcularTotalCarrito(carritoGlobal);
+            const totalCarrito = calcularTotalCarrito(shoppingCart);
             totalPriceContainer.innerText = formatPrice(totalCarrito);
         });
 
@@ -524,7 +533,7 @@ function renderCart(arrayCarrito) {
         productCartContainer.append(productFigure, productName, productPrice, productDeleteButton);
         shoppingContainer.appendChild(productCartContainer);
 
-        const totalCarrito = calcularTotalCarrito(carritoGlobal);
+        const totalCarrito = calcularTotalCarrito(shoppingCart);
         totalPriceContainer.innerText = formatPrice(totalCarrito);
     }
 }
@@ -745,7 +754,7 @@ f: {
             
             // Log para depurar
             selectedVariantID = parent.dataset.value;
-            console.log('Valor seleccionado:', parent.dataset.value);
+            // console.log('Valor seleccionado:', parent.dataset.value);
         },
         
 		toggle: function (event) {
