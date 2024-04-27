@@ -4,7 +4,6 @@
 // y hace que de el error de  read properties of undefined (reading 'toLocaleString') por lo tanto hay que ajustar eso, ya se poniendo el precio aunque sea el mismo para cada variantes,
 // o manejar logica adicional para este apartado
 const navBarRight = document.querySelector('.navbar-right');
-
 const menuEmail = document.querySelector('.navbar-email');
 const menuHamIcon = document.querySelector('.menu');
 const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');
@@ -22,8 +21,9 @@ const cardsContainer = document.querySelector('.cards-container');
 const darken = document.querySelector('.darken');
 
 const mobileMenuLine = document.querySelector('.mobile-menu ul:nth-child(1)');
+const totalProduct = document.querySelector('.product-count');
+const totalPrice = document.querySelector('.price-count');
 
-// const testProducts = [{id: 1, name: 'Producto Test', price: 100, variations: [{ images: ['https://placehold.co/600x400'] }]}];
 const productList = [];
 let shoppingCart = [];
 let checkoutButton;
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => console.error('Error al cargar los datos:', error));
     cargarCarritoDesdeLocalStorage(),
-    renderactualizarContadorCarrito(contarProductosEnCarrito(shoppingCart));
+    renderactualizarContadorCarrito(countProductsInCart());
 
     //Para que al dar click ocurra el filtrado por categorias:
     const category = window.location.hash.substring(1) || 'all';
@@ -139,10 +139,7 @@ arrowAsideClose.addEventListener('click', toggleCarritoAside);
 productDetailCloseIcon.addEventListener('click', closeProductDetailAside);
 darken.addEventListener('click', closeOverlays);
 
-// Declaración de selectores y array para Shopping Cart
-// const shoppingContainer = document.querySelector('.shopping-container');
-const totalProduct = document.querySelector('.product-count');
-const totalPrice = document.querySelector('.price-count');
+
 const shoppingPriceProducts = [];
 
 function checkCartStatus() {
@@ -247,7 +244,7 @@ const detailsProduct = product => {
         } else {
             addProductToCart(product.id, selectedVariantID); // Añade al carrito con o sin variante
             renderCart(shoppingCart);
-            renderactualizarContadorCarrito(contarProductosEnCarrito(shoppingCart));
+            renderactualizarContadorCarrito(countProductsInCart());
         }
     };
 
@@ -328,7 +325,7 @@ const renderProducts = arr => {
             productInfoFigure.addEventListener('click', function () {
                 addProductToCart(product.id);
                 renderCart(shoppingCart);
-                renderactualizarContadorCarrito(contarProductosEnCarrito(shoppingCart));
+                renderactualizarContadorCarrito(countProductsInCart());
             });
         } else {
             // Si hay variaciones, redirigir a los detalles del producto
@@ -453,10 +450,6 @@ function cargarCarritoDesdeLocalStorage() {
     }
 }
 
-function contarProductosEnCarrito(carrito) {
-    return carrito.reduce((total, item) => total + item.cantidad, 0);
-}
-
 function renderactualizarContadorCarrito(totalProductos) {
     const contadorCarrito = document.querySelector('.product-count');
     if (contadorCarrito) {
@@ -523,7 +516,7 @@ function renderCart(arrayCarrito) {
         productDeleteButton.addEventListener('click', function () {
             removeFromCart(product.id);
             renderCart(shoppingCart);
-            renderactualizarContadorCarrito(contarProductosEnCarrito(shoppingCart));
+            renderactualizarContadorCarrito(countProductsInCart());
 
             const totalCarrito = calcularTotalCarrito(shoppingCart);
             totalPriceContainer.innerText = formatPrice(totalCarrito);
@@ -537,6 +530,11 @@ function renderCart(arrayCarrito) {
         totalPriceContainer.innerText = formatPrice(totalCarrito);
     }
 }
+
+function countProductsInCart() {
+    return shoppingCart.reduce((total, item) => total + item.quantity, 0);
+}
+
 
    ////////////////////////////////////
   // prerequisite utility functions //

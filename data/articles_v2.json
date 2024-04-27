@@ -329,12 +329,20 @@
         },
         {
             "id": 18,
-            "name": "Bajo Eléctrico Logan 5 cuerdas Color vino tinto",
+            "name": "Logan Bajo Eléctrico Standard Jazz Bass 5 Cuerdas Vino",
             "price": 5550,
             "discountedPrice": 5450,
-            "images": [],
+            "images": [
+                "https://tropicomusicstore.com/wp-content/uploads/L-EB-5C-1WI-2-1.jpg",
+                "https://tropicomusicstore.com/wp-content/uploads/L-EB-5C-1WI-4-1.jpg",
+                "https://tropicomusicstore.com/wp-content/uploads/L-EB-5C-1WI-3-1.jpg",
+                "https://tropicomusicstore.com/wp-content/uploads/L-EB-5C-1WI-1-1.jpg",
+                "https://m.media-amazon.com/images/I/615WKO+CqJL._AC_SL1500_.jpg"
+
+            ],
             "category": "instrumentos",
-            "description": ""
+            "description": "Presentamos el Logan J Bass, un bajo que captura la esencia de los icónicos Jazz Bass de Fender pero a un costo significativamente menor. Este instrumento ofrece especificaciones que, aunque son más básicas, mantienen una calidad sólida y un sonido vibrante. Además, su precio accesible lo hace aún más atractivo. Es una opción robusta, conocida por su estructura resistente y su capacidad para entregar actuaciones excepcionales, especialmente en las noches de sábado.\n\n |        |        |\n |-------------|-------------|\n | **Marca** | LOGAN    |\n | **Tipo de acabado** | Brillante    |\n | **Instrumento** | Bajo eléctrico |"
+
         },
         {
             "id": 19,

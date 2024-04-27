@@ -622,6 +622,36 @@ body::-webkit-scrollbar-track:active {
   text-decoration: underline;
 }
 
+/* Estilos generales para todas las tablas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Estilos para las celdas de cabecera */
+th {
+  /* background-color: #f2f2f2; Color de fondo para las cabeceras */
+  color: #333; /* Color de texto para las cabeceras */
+  padding: 8px; /* Espaciado interno */
+  text-align: left; /* Alineación del texto */
+  border-bottom: 1px solid #ddd; /* Borde inferior */
+}
+
+/* Estilos para las celdas normales */
+td {
+  padding: 8px; /* Espaciado interno */
+  text-align: left; /* Alineación del texto */
+  border-bottom: 1px solid #ddd; /* Borde inferior */
+}
+
+/* Estilos para las filas de cuerpo de la tabla al pasar el mouse */
+tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+
 .product-info p:nth-child(2) {
   color: var(--very-light-pink);
   font-size: var(--md);
