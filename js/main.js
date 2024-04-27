@@ -465,14 +465,13 @@ function renderCart(arrayCarrito) {
     for (let product of arrayCarrito) {
         //Div que contiene el numero de veces que un producto esta repetido en el carrito
         const numberOfSameProduct = document.createElement('div');
-        numberOfSameProduct.innerText = product.cantidad;
+        numberOfSameProduct.innerText = product.quantity;
 
         //Genero el contenedor del producto
         const productCartContainer = document.createElement('div');
         productCartContainer.classList.add('shopping-cart');
 
         productDetails = productList.find(producto => producto.id === product.id);
-        console.log("Destalles de un producto: ", productDetails);
 
         //Genero la imagen del producto y la agrego un figure 
         const productImg = document.createElement('img');
