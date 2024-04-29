@@ -470,7 +470,6 @@ function renderCart(arrayCarrito) {
         //Genero el contenedor del producto
         const productCartContainer = document.createElement('div');
         productCartContainer.classList.add('shopping-cart');
-
         productDetails = productList.find(producto => producto.id === product.id);
 
         //Genero la imagen del producto y la agrego un figure 
@@ -478,6 +477,11 @@ function renderCart(arrayCarrito) {
         productImg.setAttribute('src', getFirstProductImage(product));
         productImg.setAttribute('alt', productDetails.name);
         productImg.classList.add('hover-neon-effect');
+
+        const productPrice = document.createElement('p');
+        const productName = document.createElement('p');
+        productPrice.innerText = formatPrice(getPriceFromCart(product, productDetails));
+        productName.innerText = productDetails.name;
         /*
         * Este bloque de código utiliza una IIFE (Immediately Invoked Function Expression) para manejar
         * los event listeners dentro de un bucle for. Cada iteración del bucle sobrescribe 'productDetails',
@@ -501,13 +505,6 @@ function renderCart(arrayCarrito) {
         productFigure.classList.add('cart-product-figure');
         productFigure.append(productImg, numberOfSameProduct);
 
-        //Agrego el precio y nombre del producto
-        const productPrice = document.createElement('p');
-        const productName = document.createElement('p');
-        console.log("EL precio del producto es ", product.price);
-        productPrice.innerText = formatPrice(productDetails.price);
-        productName.innerText = productDetails.name;
-
         //Agrego la imagen para quitar el producto del carrito junto con el evento para eliminarlo y hacer un update de precios
         const productDeleteButton = document.createElement('img');
         productDeleteButton.setAttribute('src', './icons/icon_close.png');
@@ -528,6 +525,23 @@ function renderCart(arrayCarrito) {
         const totalCarrito = calcularTotalCarrito(shoppingCart);
         totalPriceContainer.innerText = formatPrice(totalCarrito);
     }
+}
+
+function getPriceFromCart(cartItem, product) {
+    // Verificar si el cartItem tiene un variantId
+    if (cartItem.variantId) {
+        // Buscar la variante específica usando el variantId
+        const variant = product.variations.find(variant => variant.variantID === cartItem.variantId);
+
+        // Si encontramos la variante y tiene un precio definido, retornamos ese precio
+        if (variant && variant.price) {
+            return variant.price;
+        }
+    }
+    
+    // Si el variantId es null o la variante no tiene un precio definido, usamos el precio del producto
+    // También cubre el caso donde el producto tiene variantes pero sin precios individuales
+    return product.price;
 }
 
 function countProductsInCart() {
