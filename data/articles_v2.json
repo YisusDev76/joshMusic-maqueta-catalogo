@@ -708,7 +708,52 @@
             ],
             "category": "Iluminación",
             "description": "Receptor inalámbrico digital cuádruple diseñado para aplicaciones de refuerzo sonoro profesional. Incluye características como la diversity digital con conmutación predictiva, hasta 72 MHz de banda de sintonización y la encriptación AES de 256 bits para garantizar la privacidad."
+        },
+        {
+            "id": 51,
+            "name": "NT 700 - Columna con subwoofer de 12' y Bluetooth",
+            "price": 19322.00,
+            "discountedPrice": 17350.00,
+            "images": [
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2024/02/NT-700-catalogo.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2024/02/NT-700-Lateral.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2024/02/NT-700-Funda-1.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2024/02/NT-700-Funda-2.png"
+            ],
+            "category": "Audio Profesional",
+            "description": "\nNT 700 es la respuesta de MELO a los profesionales que trabajan en lugares donde la estética es\nun tema fundamental, que requieren gran potencia en equipos compactos.\n\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5p91eKlesKA?si=LMrHqcVs0MqIhd1x\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n\n\n## CARACTERISTÍCAS\nNT700\nColumna activa.\nEquipado con un amplificador de 700W RMS.\nSonido potente y claro.\n126 db SPL pico.\n\nNT700 sistema activo de columna con un subwoofer.\n\nIncluye 2 fundas\n\n¡Olvídate del cableado!\n\n## ESPECIFICACIONES\n- Columna activa.\n- Equipado con un amplificador de 700w RMS.\n- Excelente sonido potente y claro.\n- 126 db SPL pico.\n- Conectividad Bluetooth.\n- Respuesta de Freuencia de 40Hz- 18kHz.\n- Max SPL 126 db SPL (pico).\n- Dispersión (H X V) 100° X 60°\n- Bocinas 1 x 12″ Subwoofer, 6 X 3″ Medios.\n- Potencia de Amplificador 700W RMS\n- Conectores de Entrada Combo, RCA Y TRS\n- Impedancia de Entrada de Línea: 20kΩ balanceada, 10kΩ no balanceada.\n- Impedancia de Entrada de Micrófono 2kΩ balanceada, 1kΩ no balanceada.\n- Impedancia de Entrada de Instrumento: 470kΩ no balanceada.\n- Nivel de Entrada Línea 775mVrms, Mic 400mVrms.\n- Voltaje: 120 o 240V vía switch 50/60Hz.\n- Consumo: 3.5 Amper 420W @ 120V.\n\n"
+        },
+        {
+            "id": 52,
+            "name": "Amplificador FP14000 / MELO",
+            "price": 27949.00,
+            "discountedPrice": 27789.00,
+            "images": [
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/FP14000-1-1024x221.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/FP14000-2.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/FP14000-3.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/FP14000-4.png"
+            ],
+            "category": "Audio Profesional",
+            "description": "\n\nEl FP14000 es un amplificador profesional con 14000W de salida pico con todos los canales operados y 2 canales de amplificación.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/wgs3MhBnVi0?si=mcCx-c_B-27LZJPd\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n **CARACTERÍSTICAS**\n- Amplificador dedicado a bajas frecuencias\n- 2 canales de amplificación\n- 2 entradas de señal balanceadas XLR\n- Selector de ganancia de entrada\n- Limitador de voltaje pico por canal\n- Sensor de temperatura\n- Protección contra cargas abiertas y cortocircuitos\n\nESPECIFICACIONES\n\n|   |   |\n| ------------ | ------------ |\n| Número de canales:   |  2 |\n| Salida de pico con todos los canales operados:  | 14000W  |\n| Salida de voltaje pico por canal  | 195V  |\n|  Máxima salida en modo stereo por canal  |   |\n| 16Ω:  | 1200W  |\n| 8Ω  | 2350W  |\n|  4Ω | 4400W  |\n| Consumo de corriente  |  16A@220V |\n|  THD 20Hz  |  20kHz < 0.1% |\n\n\n"
+
+        },
+        {
+            "id": 53,
+            "name": "Subwoofer Activo 18'' M18-A",
+            "price": 30896.00,
+            "discountedPrice": 28165.00,
+            "images": [
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M18-A-catalogo-768x403.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M-18-A-5.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M-18-A-4.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M-18-A-2.png"
+            ],
+            "category": "Audio Profesional",
+            "description": "\n\nBafle activo, integra un componente de 18” con bocina de 4.5”, usamos un amplificador de clase D; el cual añade poco peso al bafle y tiene una capacidad de 1800W RWS.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/EvatBU6Vj-c?si=pBOMVOzZaFiSdXgb\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n**ESPECIFICACIONES**\n\n|   |   |\n| ------------ | ------------ |\n| **Rango de Frecuencia (-6dB)**  | 30-50HZ a 80 – 100 Hz  |\n| **Dispersión**  | Omnidireccional  |\n| **Presión Sonora Nominal @ 1m**  | 118 dB Ruido rosa  |\n|  **Presión Sonora Pico @ 1m** |  130 dB Ruido rosa |\n| **Componentes LF**  |  1X18” MWS-18F Ferrita / Bobina 4.5” |\n| **Amplificador**  |  1800W RMS |\n| **Conectores**  |  XLR |\n| **Gabinete**  | Bass Reflex  |\n| **Material Del Gabinete**  | Multiplay 18mm  |\n| **Pintura**  | Color Negro poliurea  |\n|  **Parrilla Frontal** | Pintura Electrostática Color Negro / Doble Perforado Elíptico  |\n|  **Sensibilidad de entrada** | .775 v  |\n| **Peso**  | 35 Kg  |\n| **Amplificación y proceso**  | MELO  |\n| **Voltaje**  | 115V AC 60 Hz  |\n\n**INFORMACIÓN**\n\nEl M 18-A es un subwoofer de 18” que incorpora un nuevo diseño bass reflex que permite el libre flujo de aire logrando una increíble respuesta en baja frecuencia. El altavoz de larga excursión con bobina de 4.5” proporcionan un desempeño excepcional y de mayor impacto. Este subwoofer de alto rendimiento se coloca como uno de los más compactos y potentes en el mercado profesional\n\n"
+
         }
+
   
     ]
 }

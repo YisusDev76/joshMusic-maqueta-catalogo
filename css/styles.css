@@ -663,7 +663,7 @@ tbody tr:hover {
   color: var(--very-light-pink);
   font-size: var(--sm);
   margin-top: 0;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   opacity: 0;
   transition-duration: .3s;
   transition-property: opacity;
@@ -808,6 +808,23 @@ aside.show {
 #productDetail.show .product-info p:nth-child(3) {
   opacity: 1;
 }
+
+/* Ajusta el iframe a un ancho máximo del 90% de su contenedor */
+iframe {
+  width: 94% !important; /* Usa !important para sobreescribir cualquier estilo previo */
+  height: auto; /* Ajusta la altura automáticamente basada en el ancho para mantener la proporción */
+  display: block; /* Asegura que el iframe no tenga elementos adyacentes en la misma línea */
+  margin: 0 auto; /* Centra el iframe horizontalmente */
+  margin-bottom: 25px;
+}
+
+.add-to-cart-button {
+  position: sticky;
+  bottom: 10px; /* Ajusta según necesites */
+  z-index: 10; /* Asegura que el botón esté sobre otros elementos si es necesario */
+}
+
+
 
 /* Media Query */
 @media screen and (max-width: 780px) {
