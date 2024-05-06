@@ -396,12 +396,16 @@
         },
         {
             "id": 23,
-            "name": "Guitarra Electrica Squier By Fender Telecaster Degradado Sol Naciente (Sunburst)",
-            "price": 7500.0,
-            "discountedPrice": 7350.0,
-            "images": [],
-            "category": "instrumentos",
-            "description": ""
+            "name": "Procesador de audio MLM 408 - Melo",
+            "price": 22336.00,
+            "discountedPrice": 19753.00,
+            "images": [
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/MLM-408.png",
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/MLM-408-Atr-s.png"
+            ],
+            "category": "Audio Profesional",
+            "description": "\nEste equipo adopta una frecuencia de muestreo de 96 KHZ y resolución de tecnología\nde conversión 24 bits- Σ A/D y D/A, el procesamiento de señal mediante DSP a 32 bits de punto\nflotante de cuarta generación . Cada entrada incluye control de ganancia, 10 secciones de\necualización paramétrica, ecualización dinámica, divisor de frecuencia, compresor, controlador de\nretardo y puerta de ruido. Cada salida cuenta con una matriz mezcladora, un ecualizador\nparamétrico de 10 secciones, un divisor de frecuencia con opción de filtraje FIR de hasta 512 Taps,\nun compresor RMS, un limitador así como delay.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/P35WCpjJM08?si=5hl-9_UvKXHNZUmM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n**CARACTERISTÍCAS**\n- Interfaz de usuario.\n- Panel frontal: la pantalla LCD indica la dirección IP del dispositivo y el número predeterminado actuale información relacionada.\n- Panel trasero: Conexión a corriente eléctrica, entradas y salidas de audio balanceadas, interfaces GPIO, conexiones RS 232/485 e interfaces de red Rj45.\n- Software de control: el software de control de PC equipado con este dispositivo puede ejecutarse en sistemas operativos Windows 7, 10 o superior @ 64BIT .\n- Otras características.\n- Todas las interfaces de entrada/salida adoptan un circuito de protección electrostática y de RF para garantizar el funcionamiento confiable del equipo.\n\n**ESPECIFICACIONES**\n\n|   |   |\n| ------------ | ------------ |\n| **Frecuencia de muestreo y resolucion**  | 96KHz 24 bits AD/DA 400MHz 32bit punto flotante  |\n| **Respuesta de frecuencia**  |  20HZ-20KHz @ +/- 0.3 dB |\n|  **THD+N** |  > 115dB |\n| **Impedancia de salida** (balanceada)  | 100Ω  |\n| **Crosstalk**  |  < -100 dB @ 1kHz |\n| **Maximo nivel de entrada**  |  >20 dBu @ 1 kHz |\n| **Maximo nivel de salida** |  >20 dBu @ 1 kHz |\n|  **Señal ruido** | < – 93dBu  |\n| **Retraso fijo del equipo** | < 2ms  |\n| **Generador de ruido**  | Ruido rosa/ ruido blanco y tono seleccionable  |\n|  **Modulos de procesamiento de señal**  |  Compuerta de ruido /ecualizador/HPF/ LPF/FIR/compresor/Limitar or/compresor RMS/Delay |\n|  **Requerimientos de voltaje**  | 90V-240V 50Hz/60Hz < 20W  |\n| **Medidas sin caja**  |  483X268X45mm |\n|  **Peso** | 3.5Kg  |\n|  **Temperatura de operación**  |  0-+40 grados centigrados |\n| **Temperatura ambiente de almacenamiento** |  -10 – + 60 grados centigrados |\n| **Accesorios**  |  Manual de operación, cable de corriente y software |\n\n\n\n\n"
+
         },
         {
             "id": 24,
