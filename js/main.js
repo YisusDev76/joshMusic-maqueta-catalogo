@@ -10,6 +10,7 @@ const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');
 const productDetailCloseIcon = document.querySelector('.product-detail-close');
 const desktopMenu = document.querySelector('.desktop-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
+const checkoutButton = document.getElementById('checkoutButton');
 
 //Shopping cart menu/Product details
 // const buttonProductDetailaddProductToCart = document.querySelector('.add-to-cart-button');
@@ -26,7 +27,7 @@ const totalPrice = document.querySelector('.price-count');
 
 const productList = [];
 let shoppingCart = [];
-let checkoutButton;
+
 // Llamamos a esta función cuando se carga la página
 document.addEventListener('DOMContentLoaded', function () {
     fetch('../data/articles_v2.json')
@@ -34,19 +35,25 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(data => {
             if (Array.isArray(data.products)) {
                 productList.push(...data.products);
-                renderProducts(productList);
+                const category = window.location.hash.substring(1) || 'all';
+                filterProducts(category);
             } else {
                 console.error('La propiedad "products" no existe o no es un array');
             }
         })
         .catch(error => console.error('Error al cargar los datos:', error));
-    cargarCarritoDesdeLocalStorage(),
+
+    cargarCarritoDesdeLocalStorage();
     renderactualizarContadorCarrito(countProductsInCart());
 
-    //Para que al dar click ocurra el filtrado por categorias:
-    const category = window.location.hash.substring(1) || 'all';
-    filterProducts(category);
+    const checkoutButton = document.getElementById('checkoutButton');
+    checkoutButton.addEventListener('click', () => {
+        window.location.href = 'checkout.html';
+    });
+  
+    checkCartStatus();
 });
+
 
 // Manejador de eventos a cada enlace de la barra de navegación. 
 document.querySelectorAll('.nav-link').forEach(item => {
@@ -62,18 +69,9 @@ document.querySelectorAll('.nav-link').forEach(item => {
 
 window.addEventListener('popstate', (e) => {
     const category = e.state?.category || 'all';
+    console.log("entra aqui");
     filterProducts(category);
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-    checkoutButton = document.getElementById('checkoutButton');
-  
-    checkoutButton.addEventListener('click', () => {
-      window.location.href = 'checkout.html'; // Cambia esto por la URL de tu página de contacto
-    });
-
-    checkCartStatus();
-  });  
 
 // Declarando funciones para abrir y cerrar los contenedores
 const toggleDesktopMenu = () => {
@@ -143,7 +141,6 @@ darken.addEventListener('click', closeOverlays);
 const shoppingPriceProducts = [];
 
 function checkCartStatus() {
-    console.log("entra a checkar el status");
     if (shoppingCart.length === 0) {
       // Desactiva el botón si el carrito está vacío
       checkoutButton.disabled = true;
