@@ -403,7 +403,7 @@
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/MLM-408.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/MLM-408-Atr-s.png"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": "\nEste equipo adopta una frecuencia de muestreo de 96 KHZ y resolución de tecnología\nde conversión 24 bits- Σ A/D y D/A, el procesamiento de señal mediante DSP a 32 bits de punto\nflotante de cuarta generación . Cada entrada incluye control de ganancia, 10 secciones de\necualización paramétrica, ecualización dinámica, divisor de frecuencia, compresor, controlador de\nretardo y puerta de ruido. Cada salida cuenta con una matriz mezcladora, un ecualizador\nparamétrico de 10 secciones, un divisor de frecuencia con opción de filtraje FIR de hasta 512 Taps,\nun compresor RMS, un limitador así como delay.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/P35WCpjJM08?si=5hl-9_UvKXHNZUmM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n**CARACTERISTÍCAS**\n- Interfaz de usuario.\n- Panel frontal: la pantalla LCD indica la dirección IP del dispositivo y el número predeterminado actuale información relacionada.\n- Panel trasero: Conexión a corriente eléctrica, entradas y salidas de audio balanceadas, interfaces GPIO, conexiones RS 232/485 e interfaces de red Rj45.\n- Software de control: el software de control de PC equipado con este dispositivo puede ejecutarse en sistemas operativos Windows 7, 10 o superior @ 64BIT .\n- Otras características.\n- Todas las interfaces de entrada/salida adoptan un circuito de protección electrostática y de RF para garantizar el funcionamiento confiable del equipo.\n\n**ESPECIFICACIONES**\n\n|   |   |\n| ------------ | ------------ |\n| **Frecuencia de muestreo y resolucion**  | 96KHz 24 bits AD/DA 400MHz 32bit punto flotante  |\n| **Respuesta de frecuencia**  |  20HZ-20KHz @ +/- 0.3 dB |\n|  **THD+N** |  > 115dB |\n| **Impedancia de salida** (balanceada)  | 100Ω  |\n| **Crosstalk**  |  < -100 dB @ 1kHz |\n| **Maximo nivel de entrada**  |  >20 dBu @ 1 kHz |\n| **Maximo nivel de salida** |  >20 dBu @ 1 kHz |\n|  **Señal ruido** | < – 93dBu  |\n| **Retraso fijo del equipo** | < 2ms  |\n| **Generador de ruido**  | Ruido rosa/ ruido blanco y tono seleccionable  |\n|  **Modulos de procesamiento de señal**  |  Compuerta de ruido /ecualizador/HPF/ LPF/FIR/compresor/Limitar or/compresor RMS/Delay |\n|  **Requerimientos de voltaje**  | 90V-240V 50Hz/60Hz < 20W  |\n| **Medidas sin caja**  |  483X268X45mm |\n|  **Peso** | 3.5Kg  |\n|  **Temperatura de operación**  |  0-+40 grados centigrados |\n| **Temperatura ambiente de almacenamiento** |  -10 – + 60 grados centigrados |\n| **Accesorios**  |  Manual de operación, cable de corriente y software |\n\n\n\n\n"
 
         },
@@ -484,7 +484,7 @@
             "images": [
                 "https://m.media-amazon.com/images/I/88PiVCVe4xL._AC_SL1500_.jpg"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -493,7 +493,7 @@
             "price": 21500,
             "discountedPrice": 20900,
             "images": [],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -504,7 +504,7 @@
             "images": [
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M-Sub28-A-5-300x169.png"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -512,20 +512,20 @@
             "name": "RF 200 - Micrófono Inalámbrico”",
             "price": 7500,
             "discountedPrice": 7300,
-            "category": "Microfonia",
+            "category": "microfonia",
             "description": "",
             "variations": [
                 {
                     "value": "Golden (Dorado)",
                     "images": [
-                        "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/RF-200-catalogo-768x515.png"
                     ],
                     "variantID": "34_1"
                 },
                 {
                     "value": "Black (Negro)",
                     "images": [
-                        "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://http2.mlstatic.com/D_NQ_NP_837896-MLU75650621742_042024-O.webp"
                     ],
                     "variantID": "34_2"
                 }
@@ -540,7 +540,7 @@
             "images": [
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/FP10000Q-1-768x168.png"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -551,7 +551,7 @@
             "images": [
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Kendo-A-2-768x407.png"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -560,7 +560,7 @@
             "price": 21500,
             "discountedPrice": 21000,
             "images": [],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -569,7 +569,7 @@
             "price": 31900,
             "discountedPrice": 30100,
             "images": [],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -580,7 +580,7 @@
             "images": [
                 "https://www.stratusmusicstore.com.mx/cdn/shop/products/IMG_8739_500x.jpg?v=1636134532"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -591,7 +591,7 @@
             "images": [
                 "https://macalmusic.com.mx/cdn/shop/products/D_NQ_NP_2X_644669-MLM50183912084_062022-F.webp?v=1660235005&width=1000"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -602,7 +602,7 @@
             "images": [
                 "https://http2.mlstatic.com/D_NQ_NP_859751-MLA53348152373_012023-O.webp"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -613,7 +613,7 @@
             "images": [
                 "https://http2.mlstatic.com/D_NQ_NP_855397-MLM74342612304_022024-O.webp"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -624,7 +624,7 @@
             "images": [
                 "https://http2.mlstatic.com/D_NQ_NP_939529-MLU72572529622_112023-O.webp"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -635,7 +635,7 @@
             "images": [
                 "https://krieg.mx/images/Layout_KD332_web-copia_2_02.png"
             ],
-            "category": "Microfonia",
+            "category": "microfonia",
             "description": ""
         },
         {
@@ -646,7 +646,7 @@
             "images": [
                 "https://http2.mlstatic.com/D_NQ_NP_998575-MLM73371541777_122023-O.webp"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": ""
         },
         {
@@ -657,7 +657,7 @@
             "images": [
                 "https://products.shureweb.eu/cdn-cgi/image/width=1400,height=1400,format=auto/shure_product_db/product_main_images/files/32c/982/22-/header_transparent/b26a56932136fcf62a1a2f5064867b0f.png"
             ],
-            "category": "Microfonia",
+            "category": "microfonia",
             "description": ""
         },
         {
@@ -671,7 +671,7 @@
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-5.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-8.png"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": "##Esto es la descripcion de un producto \n Y es un lineal"
         },
         {
@@ -685,7 +685,7 @@
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/DSP-1540-4.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/DSP-1540-5.png"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": "La etapa de potencia de toda la serie DSP está basada en amplificaciones clase D, esto garantiza el mayor aprovechamiento de energía, entregando calidad sonora."
         },
         {
@@ -698,7 +698,7 @@
                 "https://lite-tek.com.mx/wp-content/uploads/2020/09/Mega-Spot-470.jpg",
                 "https://lite-tek.com.mx/wp-content/uploads/2020/09/Mega-Spot-20R.jpg"
             ],
-            "category": "Iluminación",
+            "category": "iluminacion",
             "description": "Una descripcion"
         },
         {
@@ -710,7 +710,7 @@
                 "https://products.shureweb.eu/cdn-cgi/image/width=1400,height=1400,format=auto/shure_product_db/product_main_images/files/8ed/a9e/17-/header_transparent/e5ed31006c35010746bf58406c28c521.png",
                 "https://products.shureweb.eu/cdn-cgi/image/width=1400,height=1400,format=auto/shure_product_db/product_main_images/files/8ed/a9e/17-/header_transparent/e5ed31006c35010746bf58406c28c521.png"
             ],
-            "category": "Iluminación",
+            "category": "iluminacion",
             "description": "Receptor inalámbrico digital cuádruple diseñado para aplicaciones de refuerzo sonoro profesional. Incluye características como la diversity digital con conmutación predictiva, hasta 72 MHz de banda de sintonización y la encriptación AES de 256 bits para garantizar la privacidad."
         },
         {
@@ -724,7 +724,7 @@
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2024/02/NT-700-Funda-1.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2024/02/NT-700-Funda-2.png"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": "\nNT 700 es la respuesta de MELO a los profesionales que trabajan en lugares donde la estética es\nun tema fundamental, que requieren gran potencia en equipos compactos.\n\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5p91eKlesKA?si=LMrHqcVs0MqIhd1x\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n\n\n## CARACTERISTÍCAS\nNT700\nColumna activa.\nEquipado con un amplificador de 700W RMS.\nSonido potente y claro.\n126 db SPL pico.\n\nNT700 sistema activo de columna con un subwoofer.\n\nIncluye 2 fundas\n\n¡Olvídate del cableado!\n\n## ESPECIFICACIONES\n- Columna activa.\n- Equipado con un amplificador de 700w RMS.\n- Excelente sonido potente y claro.\n- 126 db SPL pico.\n- Conectividad Bluetooth.\n- Respuesta de Freuencia de 40Hz- 18kHz.\n- Max SPL 126 db SPL (pico).\n- Dispersión (H X V) 100° X 60°\n- Bocinas 1 x 12″ Subwoofer, 6 X 3″ Medios.\n- Potencia de Amplificador 700W RMS\n- Conectores de Entrada Combo, RCA Y TRS\n- Impedancia de Entrada de Línea: 20kΩ balanceada, 10kΩ no balanceada.\n- Impedancia de Entrada de Micrófono 2kΩ balanceada, 1kΩ no balanceada.\n- Impedancia de Entrada de Instrumento: 470kΩ no balanceada.\n- Nivel de Entrada Línea 775mVrms, Mic 400mVrms.\n- Voltaje: 120 o 240V vía switch 50/60Hz.\n- Consumo: 3.5 Amper 420W @ 120V.\n\n"
         },
         {
@@ -738,7 +738,7 @@
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/FP14000-3.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/FP14000-4.png"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": "\n\nEl FP14000 es un amplificador profesional con 14000W de salida pico con todos los canales operados y 2 canales de amplificación.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/wgs3MhBnVi0?si=mcCx-c_B-27LZJPd\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n **CARACTERÍSTICAS**\n- Amplificador dedicado a bajas frecuencias\n- 2 canales de amplificación\n- 2 entradas de señal balanceadas XLR\n- Selector de ganancia de entrada\n- Limitador de voltaje pico por canal\n- Sensor de temperatura\n- Protección contra cargas abiertas y cortocircuitos\n\nESPECIFICACIONES\n\n|   |   |\n| ------------ | ------------ |\n| Número de canales:   |  2 |\n| Salida de pico con todos los canales operados:  | 14000W  |\n| Salida de voltaje pico por canal  | 195V  |\n|  Máxima salida en modo stereo por canal  |   |\n| 16Ω:  | 1200W  |\n| 8Ω  | 2350W  |\n|  4Ω | 4400W  |\n| Consumo de corriente  |  16A@220V |\n|  THD 20Hz  |  20kHz < 0.1% |\n\n\n"
 
         },
@@ -753,11 +753,11 @@
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M-18-A-4.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M-18-A-2.png"
             ],
-            "category": "Audio Profesional",
+            "category": "audio-profesional",
             "description": "\n\nBafle activo, integra un componente de 18” con bocina de 4.5”, usamos un amplificador de clase D; el cual añade poco peso al bafle y tiene una capacidad de 1800W RWS.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/EvatBU6Vj-c?si=pBOMVOzZaFiSdXgb\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n**ESPECIFICACIONES**\n\n|   |   |\n| ------------ | ------------ |\n| **Rango de Frecuencia (-6dB)**  | 30-50HZ a 80 – 100 Hz  |\n| **Dispersión**  | Omnidireccional  |\n| **Presión Sonora Nominal @ 1m**  | 118 dB Ruido rosa  |\n|  **Presión Sonora Pico @ 1m** |  130 dB Ruido rosa |\n| **Componentes LF**  |  1X18” MWS-18F Ferrita / Bobina 4.5” |\n| **Amplificador**  |  1800W RMS |\n| **Conectores**  |  XLR |\n| **Gabinete**  | Bass Reflex  |\n| **Material Del Gabinete**  | Multiplay 18mm  |\n| **Pintura**  | Color Negro poliurea  |\n|  **Parrilla Frontal** | Pintura Electrostática Color Negro / Doble Perforado Elíptico  |\n|  **Sensibilidad de entrada** | .775 v  |\n| **Peso**  | 35 Kg  |\n| **Amplificación y proceso**  | MELO  |\n| **Voltaje**  | 115V AC 60 Hz  |\n\n**INFORMACIÓN**\n\nEl M 18-A es un subwoofer de 18” que incorpora un nuevo diseño bass reflex que permite el libre flujo de aire logrando una increíble respuesta en baja frecuencia. El altavoz de larga excursión con bobina de 4.5” proporcionan un desempeño excepcional y de mayor impacto. Este subwoofer de alto rendimiento se coloca como uno de los más compactos y potentes en el mercado profesional\n\n"
 
         }
 
   
     ]
-}
+} 
