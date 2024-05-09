@@ -610,7 +610,8 @@ body::-webkit-scrollbar-track:active {
 .product-description-markdowm h2, h3{
   color: var(--very-light-pink);
   font-size: medium;
-  font-weight: bold; 
+  font-weight: bold;
+  margin-top: 25px; 
 }
 
 .product-description-markdowm a{
