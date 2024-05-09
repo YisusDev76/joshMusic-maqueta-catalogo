@@ -513,7 +513,7 @@
             "price": 7500,
             "discountedPrice": 7300,
             "category": "microfonia",
-            "description": "",
+            "description": "\nEl sistema de micrófono inalámbrico, fácil de instalar y conveniente de usar, es la primera\nopción para cantantes. Este modelo adopta hardware criptográfico inteligente, para lograr un\nsonido y un rendimiento de RF únicos.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/RqYq3EDP_2Y?si=ySFwh9m-U7qh1gCc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n## CARACTERÍSTICAS\n|   |   |\n| ------------ | ------------ |\n|  **Modo de Modulación** |  Banda ancha FM  |\n| **Rango de Frecuencia** |  740 – 790 MHz |\n|  **Número de canales**  |  200 canales preset (UR 5100 99 CANALES PRESET) |\n| **Rango dinámico**  | 100dB  |\n|  **Desviación Máxima**  | ± 48KHz |\n|  **Relación Señal / Ruido** |  105 dB |\n|  **Distorsión** | ≤0.3%  |\n|  **Inhibición del Canal Adyacente**  | ≥70dB  |\n|  **Distancia de Trabajo / Alcance** | Hasta 100 metros  |\n| **Temperatura de trabajo**  | -10 – +40 °C  |\n\n\n## RECEPTOR\n- Modo del Receptor: Automático\n- Forma de Oscilación: PLL sintetizado\n- Entrada de Antena: BNC socket 50Ω\n- Salida: BNC socket 50Ω, Ganancia 0dBm±2dB\n- Frecuencia media 110 MHz, 10.7 MHz\n- Rechazo al ruido ≥ 75dB\n- Nivel máximo de salida +10dBV\n- Fuente: 12V DC\n- Fuente de Alimentación: 12V DC\n- Corriente de trabajo ≤ 500 mA\n\n## TRANSMISOR\n- Antena Micrófono con antena en espiral integrada\n- Potencia de salida de RF: High power: 30mW, Low power3mW\n- Tipo de cápsula: Bobina movible\n- Fuente de Alimentación Baterías Alcalinas AA/td>\n- Rechazo al ruido -60dB\n- Fuente: 2 baterías AA alcalinas\n- Tiempo de operación: Alta potencia: 6 – 10 horas\n\n",
             "variations": [
                 {
                     "value": "Golden (Dorado)",
@@ -633,7 +633,7 @@
             "price": 3900,
             "discountedPrice": 3500,
             "images": [
-                "https://krieg.mx/images/Layout_KD332_web-copia_2_02.png"
+
             ],
             "category": "microfonia",
             "description": ""
@@ -651,7 +651,7 @@
         },
         {
             "id": 46,
-            "name": "El Kit de Micrófono de Bombo PGADRUMKIT5",
+            "name": "Kit de Micrófono de Bombo PGADRUMKIT5",
             "price": 8300,
             "discountedPrice": 8000,
             "images": [
@@ -755,6 +755,18 @@
             ],
             "category": "audio-profesional",
             "description": "\n\nBafle activo, integra un componente de 18” con bocina de 4.5”, usamos un amplificador de clase D; el cual añade poco peso al bafle y tiene una capacidad de 1800W RWS.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/EvatBU6Vj-c?si=pBOMVOzZaFiSdXgb\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n**ESPECIFICACIONES**\n\n|   |   |\n| ------------ | ------------ |\n| **Rango de Frecuencia (-6dB)**  | 30-50HZ a 80 – 100 Hz  |\n| **Dispersión**  | Omnidireccional  |\n| **Presión Sonora Nominal @ 1m**  | 118 dB Ruido rosa  |\n|  **Presión Sonora Pico @ 1m** |  130 dB Ruido rosa |\n| **Componentes LF**  |  1X18” MWS-18F Ferrita / Bobina 4.5” |\n| **Amplificador**  |  1800W RMS |\n| **Conectores**  |  XLR |\n| **Gabinete**  | Bass Reflex  |\n| **Material Del Gabinete**  | Multiplay 18mm  |\n| **Pintura**  | Color Negro poliurea  |\n|  **Parrilla Frontal** | Pintura Electrostática Color Negro / Doble Perforado Elíptico  |\n|  **Sensibilidad de entrada** | .775 v  |\n| **Peso**  | 35 Kg  |\n| **Amplificación y proceso**  | MELO  |\n| **Voltaje**  | 115V AC 60 Hz  |\n\n**INFORMACIÓN**\n\nEl M 18-A es un subwoofer de 18” que incorpora un nuevo diseño bass reflex que permite el libre flujo de aire logrando una increíble respuesta en baja frecuencia. El altavoz de larga excursión con bobina de 4.5” proporcionan un desempeño excepcional y de mayor impacto. Este subwoofer de alto rendimiento se coloca como uno de los más compactos y potentes en el mercado profesional\n\n"
+        },
+        {
+            "id":54,
+            "name":"WM 201 - Sistema inalámbrico para instrumentos de viento",
+            "price": 3800.00,
+            "discountedPrice":3600.00,
+            "images":[
+
+            ],
+            "category":"microfonia",
+            "description": "\nNUEVO SISTEMA DE MICRÓFONIA inalámbrica de la **SerieWM** el increíble WM201, una opción asombrosa diseñada para trompetistas, guitarristas, bajistas y todo apasionado de la música que requiera un sistema inalámbrico profesional con un excelente sonido y claridad.\nUtilizándolo para bajo o guitarra; acordeón ó instrumento de viento.\n\n## Especificaciones\n|   |   |\n| ------------ | ------------ |\n|  **Frecuencia de trabajo** |  UHF 630-660MHZ  |\n| **Ancho de banda**  | 20MHZ  |\n| **Rango dinámico** |   96DB  |\n|  **Respuesta de frecuencia** |  30-20KHZ/ 2DB  |\n| **SALIDA DE AUDIO** |  1 Salida Desbalanceada X6.3MM, 1 Salida Balanceada XLR  |\n\n## Transmisor body pack (especificaciones)\n|   |   |\n| ------------ | ------------ |\n| **Baterías**  |  2X1.5V AA |\n| **Vida de las baterias**  |  5H |\n| **Frecuencia De Trabajo**  |  UHF 630-660MHZ  |\n| **Cambio de frecuencia**  | Via Infrarrojo  |\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/rjug8jdcPhg?si=DxAfTbmoyDCWsAdA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n\n"
+
 
         }
 
