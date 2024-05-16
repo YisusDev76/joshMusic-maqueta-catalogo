@@ -6,7 +6,7 @@
             "price": 950.0,
             "discountedPrice": 900,
             "category": "instrumentos",
-            "description": "Una descripción del producto.",
+            "description": "La **Guitarra económica JoshMusic 4/4** es una excelente opción para aquellos que buscan un instrumento de calidad a un precio accesible. Fabricada en la renombrada ciudad de **Paracho**, conocida por su tradición y excelencia en la elaboración de guitarras, este modelo es perfecto para principiantes.\n\n## Características principales\n\n- **Madera:** Pino, que asegura una buena resonancia y durabilidad, ofreciendo un sonido claro y brillante.\n- **Tamaño:** 4/4, ideal para adolescentes y adultos.\n- **Variaciones:** Cada color viene con su propia personalidad, permitiéndote escoger el que mejor se adapte a tu estilo. Asegúrate de revisar la parte superior, donde puedes seleccionar y ver las variaciones disponibles actualmente.\n\nEsta guitarra es no solo una herramienta musical, sino también una pieza de arte que refleja la rica herencia de Paracho. Perfecta para aprender, practicar y disfrutar de la música con un toque de estilo personal.\n\n",
             "variations": [
                 {
                     "value": "Degradado rojo Ruby",
@@ -41,7 +41,7 @@
             "price": 850.0,
             "discountedPrice": 800,
             "category": "instrumentos",
-            "description": "Una descripción del producto.",
+            "description": "\nLa **Guitarra económica JoshMusic (tercerola)** es una excelente opción para los niños de 6 a 12 años que buscan iniciarse en el mundo de la música con un instrumento de calidad a un precio accesible. Fabricada en la renombrada ciudad de **Paracho**, conocida por su tradición y excelencia en la elaboración de guitarras, este modelo es perfecto para pequeños músicos.\n\n## Características principales\n\n- **Madera:** Pino, que asegura una buena resonancia y durabilidad, ofreciendo un sonido claro y brillante.\n- **Tamaño:** Tercerola, ideal para niños de 6 a 12 años.\n- **Variaciones:** Cada color viene con su propia personalidad, permitiéndote escoger el que mejor se adapte al estilo del niño. Asegúrate de revisar la parte superior, donde puedes seleccionar y ver las variaciones disponibles actualmente.\n\nEsta guitarra no solo es una herramienta musical, sino también una pieza de arte que refleja la rica herencia de Paracho. Perfecta para aprender, practicar y disfrutar de la música desde una edad temprana con un toque de estilo personal.\n\n",
             "variations": [
                 {
                     "value": "Negro brillante",
@@ -71,11 +71,11 @@
         },
         {
             "id": 3,
-            "name": "Guitarra economica joshMsuic (bajito) - Para niños de 1 a 5 años",
+            "name": "Guitarra economica joshMsuic (bajito)",
             "price": 650.0,
             "discountedPrice": 600,
             "category": "instrumentos",
-            "description":  "## Características Principales\n\n- Madera de alta calidad\n- Cuerdas resistentes\n\n[Descargar ficha técnica](ficha_tecnica.pdf)",
+            "description": "\nLa **Guitarra económica JoshMusic (bajito)** es una opción ideal para aquellos que buscan un instrumento compacto y asequible sin comprometer la calidad. Fabricada en la renombrada ciudad de **Paracho**, conocida por su tradición y excelencia en la elaboración de guitarras, este modelo es perfecto para jóvenes músicos y aquellos con manos más pequeñas.\n\n## Características principales\n\n- **Madera:** Pino, que asegura una buena resonancia y durabilidad, ofreciendo un sonido claro y brillante.\n- **Tamaño:** Bajito, ideal para jóvenes músicos y personas con manos más pequeñas.\n- **Variaciones:** Cada color viene con su propia personalidad, permitiéndote escoger el que mejor se adapte a tu estilo. Asegúrate de revisar la parte superior, donde puedes seleccionar y ver las variaciones disponibles actualmente.\n\n## Descripción detallada\n\nEsta guitarra es no solo una herramienta musical, sino también una pieza de arte que refleja la rica herencia de Paracho. Perfecta para aprender, practicar y disfrutar de la música con un toque de estilo personal.\n",
             "variations": [
                 {
                     "value": "Abeto y Caoba",
@@ -98,7 +98,7 @@
             "id": 4,
             "name": "Guitarra acustica de estudio JoshMusic",
             "category": "instrumentos",
-            "description": "",
+            "description": "\nLa **Guitarra acústica de estudio JoshMusic** es una opción premium diseñada para aquellos que buscan un instrumento de alta calidad y un sonido excepcional. Fabricada en la renombrada ciudad de **Paracho**, esta guitarra está hecha con maderas seleccionadas para ofrecer la mejor resonancia y durabilidad.\n\n## Características principales\n\n- **Maderas disponibles:** La elección de la madera es crucial para el sonido y la estética de la guitarra. Las variaciones que manejamos son:\n  - **Cedro rojo:** Conocido por su tono cálido y resonante.\n  - **Caoba:** Proporciona un sonido rico y equilibrado.\n  - **Palo Escrito:** Ofrece una combinación única de claridad y proyección.\n  - **Abeto Rojo brillante:** Ideal para un sonido brillante y nítido.\n- **Tamaño:** Adecuado para estudiantes y músicos de estudio.\n\n\nAsegúrate de revisar la parte superior, donde puedes seleccionar y ver si tu guitarra favorita de esa madera está disponible en este momento. Estamos trabajando para agregar más guitarras de diferentes maderas en el futuro.\n\nCada guitarra es una obra maestra artesanal que refleja la rica herencia de Paracho. Estas guitarras son perfectas para estudiar, practicar y tocar en diversos entornos, ofreciendo un rendimiento superior y un toque de elegancia.\n",
             "variations": [
                 {
                     "value": "Cedro rojo",
@@ -143,7 +143,7 @@
             "id": 5,
             "name": "Guitarra acustica de estudio JoshMusic 3/4 (Tercerola) - Para niños de 6 a 12 años",
             "category": "instrumentos",
-            "description": "",
+            "description": "\nLa **Guitarra acústica de estudio JoshMusic 3/4 (Tercerola)** es una opción premium diseñada para niños de 6 a 12 años que buscan un instrumento de alta calidad y un sonido excepcional. Fabricada en la renombrada ciudad de **Paracho**, esta guitarra está hecha con madera seleccionada para ofrecer la mejor resonancia y durabilidad.\n\n## Características principales\n\n- **Madera disponible:** La elección de la madera es crucial para el sonido y la estética de la guitarra. La variación que manejamos es:\n  - **Caoba:** Proporciona un sonido rico y equilibrado.\n- **Tamaño:** 3/4, ideal para niños de 6 a 12 años.\n\nAsegúrate de revisar la parte superior, donde puedes seleccionar y ver si tu guitarra favorita de esta madera está disponible en este momento. Estamos trabajando para agregar más guitarras de diferentes maderas en el futuro.\n\nCada guitarra es una obra maestra artesanal que refleja la rica herencia de Paracho. Estas guitarras son perfectas para estudiar, practicar y tocar en diversos entornos, ofreciendo un rendimiento superior y un toque de elegancia.\n",
             "variations": [
                 {
                     "value": "Caoba",
@@ -161,23 +161,27 @@
             "price": 5500.0,
             "discountedPrice": 5350.0,
             "images": [
-                "https://m.media-amazon.com/images/I/87PiVCVe4xL._AC_SL1500_.jpg",
-                "https://m.media-amazon.com/images/I/88PiVCVe4xL._AC_SL1500_.jpg"
+                "https://www.yamaki.com.co/musica-audio-consumo/wp-content/uploads/sites/2/2023/12/00133431-500x500.png"
             ],
             "category": "instrumentos",
-            "description": "Una descripción del producto."
+            "description": "\n## Guitarra Acústica Tagima TW-30 EQ\n\nLa **Tagima TW-30 EQ** no solo luce increíble, sino que también ofrece un sonido extraordinario a un precio accesible.\n\n### Características Destacadas\n\n- **Serie Woodstock**: Esta guitarra dreadnought pertenece a la renombrada serie Woodstock de Tagima.\n- **Diseño Elegante**: Fondo y aros satinados con un exclusivo diseño de rayas de tigre sobre una tapa de abeto.\n- **Acabado de Lujo**: Color azul profundo con un acabado brillante que resalta su belleza.\n- **Tecnología Integrada**: Incluye un ecualizador activo de 4 bandas y un afinador incorporado, asegurando que siempre suene perfecta.\n\n¡Descubre por qué la Tagima TW-30 EQ está capturando la atención de músicos de todo el mundo y lleva tu música al siguiente nivel con esta increíble guitarra!\n\n## Especificaciones\n\n|   |   |\n| ------------ | ------------ |\n| **Tapa**  |  Basswood y flamed maple veeneer |\n| **Puente**  | Madera Chhlik  |\n| **Diapasón**  | Madera Technical Wood 25.5\"  |\n| **Aros y Fondo**  | Sapele  |\n\n"
+
         },
         {
             "id": 7,
-            "name": "Guitarra Electroacústica JN Glencairn (Campero) Estilo Nogal Mate",
+            "name": "J N Guitarra Electroacustica Tapa De Abeto Serie Glencairn",
             "price": 5800.0,
             "discountedPrice": 5650.0,
             "images": [
-                "xd",
-                "xd"
+                "https://http2.mlstatic.com/D_NQ_NP_753822-MLM74308633727_012024-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_806420-MLM74308593821_012024-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_635330-MLM74309807877_012024-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_639656-MLM74196001210_012024-O.webp"
+
+
             ],
             "category": "instrumentos",
-            "description": ""
+            "description": "\nLa **Guitarra Electroacústica JN Glencairn (Campero) Estilo Nogal Mate** es una guitarra de alta calidad diseñada para ofrecer un sonido excepcional y una apariencia elegante. Esta guitarra es perfecta para músicos que buscan un instrumento versátil y bien construido.\n\n## Características principales\n\n- **Tapa:** Pícea (Spruce), que proporciona un tono brillante y claro.\n- **Cuerpo:** Sapelli, conocido por su durabilidad y resonancia cálida.\n- **Mástil:** Caoba con forma moderna en \"C\" y acabado satinado para un toque suave y cómodo.\n- **Diapasón:** Palo de rosa (Rosewood) con incrustaciones de puntos blancos.\n- **Puente:** Palo de rosa (Rosewood).\n- **Cejuela y selleta:** Hueso.\n- **Roseta y ribete:** ABS negro.\n- **Descansa brazos:** ABS negro.\n- **Golpeador:** Diseño transparente Glencairn.\n- **Clavijeros:** Cromados con perillas de tipo madera.\n- **Electrónica:** \n  - Pastilla debajo del puente.\n  - Preamplificador con afinador cromático incorporado.\n  - Controles de volumen, presencia, bajos, medios y agudos.\n  - Indicador de carga de batería.\n  - Salida de jack de 6,35 mm (1/4\").\n- **Acabado:** Mate poro abierto.\n- **Incluye:** Funda acolchada.\n- **Color:** Natural.\n\nEsta guitarra no solo es una herramienta musical excepcional, sino también una pieza de arte que refleja la dedicación y el detalle en su construcción. Perfecta para actuaciones en vivo, grabaciones en estudio y sesiones de práctica.\n"
         },
         {
             "id": 8,
@@ -185,29 +189,29 @@
             "price": 5900.0,
             "discountedPrice": 5700.0,
             "images": [
-                "xd",
-                "xd"
+                "https://articulo.mercadolibre.com.mx/MLM-2015957953-guitarra-electroacustica-mccartney-12-cuerdas-color-natural-_JM?matt_tool=38017478&matt_word=&matt_source=google&matt_campaign_id=19644170615&matt_ad_group_id=144405426863&matt_match_type=&matt_network=g&matt_device=c&matt_creative=647377391744&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=117335053&matt_product_id=MLM2015957953&matt_product_partition_id=1803740323341&matt_target_id=aud-1884306157387:pla-1803740323341&cq_src=google_ads&cq_cmp=19644170615&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gclid=CjwKCAjwupGyBhBBEiwA0UcqaEiGbWhi6j8_P-4FOK9q4G_1_nH1MfI-SkGR0AuNVjIo46dGpMN7eRoCmXQQAvD_BwE"
             ],
             "category": "instrumentos",
             "description": ""
         },
         {
             "id": 9,
-            "name": "Guitarra Electroacústica de 12 Cuerdas (Docerola) Cort Modelo GA-MEDX-12 OP NATURAL MATE Numero Serie:230-279-197",
+            "name": "Guitarra Electroacústica de 12 Cuerdas (Docerola) Cort Modelo GA-MEDX-12 OP Natural Mate",
             "price": 8000.0,
             "discountedPrice": 7800.0,
             "images": [
-                "xd",
-                "xd"
+                "https://servimusic.mx/wp-content/uploads/2021/10/SM1516-01-150x150.jpg",
+                "https://servimusic.mx/wp-content/uploads/2021/10/SM1516-03-150x150.jpg",
+                "https://servimusic.mx/wp-content/uploads/2021/10/SM1516-02-150x150.jpg"
             ],
             "category": "instrumentos",
-            "description": ""
+            "description": "\n### Descripción\n\nLa docerola **Cort GA-MEDX-12** es parte de la popular serie Grand Regal, ofreciendo una guitarra acústica-eléctrica de alta calidad a un precio asequible. Con una tapa de abeto, parte trasera y laterales de caoba, y el versátil preamplificador CE306T, esta guitarra es perfecta para músicos que buscan valor y calidad.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/xm88rk5Pb6U?si=HvHT44y7juUXoTvX\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n### Uso y Diseño\n\nEl diseño del Grand Regal lo hace ideal tanto para rasguear como para puntear, adaptándose a músicos versátiles que buscan una guitarra capaz de cubrir una variedad de sonidos y estilos. La tapa de abeto ofrece un equilibrio perfecto entre resistencia y flexibilidad, siendo una de las maderas más populares para guitarras acústicas. Su carácter sonoro versátil es ideal para diversos géneros musicales y estilos de interpretación. La caoba, conocida por su tono brillante pero cálido y su fuerte rango medio, ha sido una elección estándar para guitarras acústicas de alta gama durante décadas.\n\n### Especificaciones\n\n| Característica                | Detalle                                     |\n|-------------------------------|---------------------------------------------|\n| **Tipo de Guitarra**             | Acústica-Eléctrica |\n| **Serie**                         | Grand Regal   |\n| **Tapa**                          | Abeto |\n| **Fondo y Aros**                  | Caoba |\n| **Preamplificador**               | CE306T con ecualizador de 4 bandas  |\n| **Profundidad del Cuerpo**       | 117 mm (4 5/8\")  |\n|**Ancho de Combate Superior**    | 292 mm (11 1/2\") |\n| **Ancho de Combate Inferior**    | 405 mm (16\")  |\n| **Diseño del Puente**             | Superficie recortada |\n| **Tono**                          | Brillante, rango medio fuerte y cálido |\n| **Características Adicionales**   | Sintonizador de pantalla LCD, mejor jugabilidad, sustain mejorado |\n\n"
         },
         {
             "id": 10,
             "name": "Bajo Quinto JoshMusic acústico",
             "category": "instrumentos",
-            "description": "Una descripción del producto.",
+            "description": "\n## Bajo Quinto JoshMusic - Artesanía Mexicana de Calidad\n\nSumérgete en la tradición y la calidad con el **Bajo Quinto de JoshMusic**, un instrumento excepcionalmente fabricado en la cuna de la luthería mexicana: Paracho, Michoacán. Este bajo quinto, elaborado con esmero por nuestros artesanos, combina tradición y modernidad para ofrecerte un instrumento único en su clase.\n\n### Características Destacadas:\n\n- **Fabricación Artesanal**: Cada bajo quinto es cuidadosamente construido por manos expertas en Paracho, reconocida mundialmente por su maestría en la creación de instrumentos de cuerda.\n- **Materiales de Alta Calidad**: Utilizamos maderas seleccionadas para asegurar una resonancia perfecta y una durabilidad excepcional.\n- **Acabados Premium**: Disponible en dos impresionantes acabados:\n  - **Madera de Acre Rizado Natural**: Un acabado que resalta la belleza natural de la madera, mostrando sus vetas y textura únicas.\n  - **Cosmos Brillante**: Un acabado moderno y llamativo que aporta un brillo especial y un estilo distintivo a tu instrumento.\n- **Sonido Excepcional**: Diseñado para ofrecer una proyección sonora potente y clara, ideal para cualquier género musical.\n\n### Especificaciones Técnicas:\n\n- **Cuerpo**: Madera de acre rizado natural o acabado cosmos brillante\n- **Puente**: Madera de alta resistencia para una mejor transmisión del sonido\n- **Diapasón**: Madera seleccionada para una mejor sensación y durabilidad\n- **Cuerdas**: Incluye un set de cuerdas de alta calidad para un sonido óptimo\n\nEl Bajo Quinto de JoshMusic es más que un instrumento; es una pieza de arte que refleja el alma y la pasión de la música mexicana. Perfecto para músicos profesionales y aficionados que buscan calidad y autenticidad en su sonido.\n\n¡Adquiere el tuyo y lleva tu música al siguiente nivel con JoshMusic!\n\n",
             "variations": [
                 {
                     "value": "Madera de acre rizado Natural",
@@ -233,7 +237,8 @@
             "discountedPrice": 6850.0,
             "images": [],
             "category": "instrumentos",
-            "description": ""
+            "description": "\n## Bajo Acústico Cardiel (Bajoloche) - Melocotón Claro\n\nEl **Bajo Acústico Cardiel (Bajoloche)** es la elección perfecta para aquellos que buscan un instrumento de alta calidad con un diseño único y atractivo. Con su acabado en **Melocotón Claro**, este bajoloche no solo suena increíble, sino que también luce espectacular.\n\n### Características Destacadas:\n\n- **Diseño Exclusivo**: El acabado en **Melocotón Claro** le da a este bajo acústico un aspecto fresco y moderno, ideal para destacar en cualquier escenario.\n- **Calidad Sonora Superior**: Fabricado con maderas seleccionadas y técnicas artesanales, este bajoloche ofrece una resonancia profunda y una claridad sonora que satisfará a los músicos más exigentes.\n- **Construcción Robusta**: Diseñado para durar, el Bajo Acústico Cardiel combina robustez y ligereza, permitiendo un uso cómodo y prolongado sin comprometer la durabilidad.\n- **Versatilidad Musical**: Perfecto para una variedad de géneros musicales, desde el folk hasta el jazz, este instrumento se adapta a diferentes estilos y técnicas de interpretación.\n\n### Especificaciones Técnicas:\n\n- **Cuerpo**: Acabado en Melocotón Claro\n- **Puente**: Madera de alta resistencia para una mejor transmisión del sonido\n- **Diapasón**: Madera seleccionada para una mejor sensación y durabilidad\n- **Cuerdas**: Incluye un set de cuerdas de alta calidad para un sonido óptimo\n\nEl **Bajo Acústico Cardiel (Bajoloche) Melocotón Claro** es más que un instrumento; es una pieza de arte que destaca tanto en sonido como en apariencia. Ideal para músicos profesionales y aficionados que buscan un instrumento que combine calidad, estilo y rendimiento.\n\n¡Descubre el sonido y la belleza del Bajoloche Cardiel y lleva tu música al siguiente nivel!\n"
+
         },
         {
             "id": 12,
@@ -241,7 +246,7 @@
             "price": 5500.0,
             "discountedPrice": 5300.0,
             "category": "instrumentos",
-            "description": ""
+            "description": "\n## Guitarrón JoshMusic - Pino Dorado Clásico\n\nEl **Guitarrón JoshMusic** en acabado **Pino Dorado Clásico** es la elección perfecta para los amantes de la música tradicional mexicana. Este instrumento, con su rica resonancia y elegante diseño, es ideal para cualquier mariachi o grupo folklórico que busque calidad y autenticidad en su sonido.\n\n### Características Destacadas:\n\n- **Construcción Artesanal**: Cada guitarrón es fabricado con esmero por artesanos expertos, utilizando técnicas tradicionales que garantizan una calidad excepcional.\n- **Materiales de Primera Calidad**: El cuerpo de pino dorado no solo proporciona un sonido cálido y resonante, sino que también asegura una durabilidad y belleza inigualables.\n- **Diseño Clásico**: El acabado dorado clásico le da a este guitarrón un aspecto elegante y tradicional, perfecto para destacar en cualquier presentación.\n- **Sonido Potente**: Diseñado para proyectar un sonido fuerte y claro, este guitarrón es ideal para acompañar voces y otros instrumentos en conjuntos grandes o pequeños.\n\n### Especificaciones Técnicas:\n\n- **Cuerpo**: Pino dorado clásico\n- **Puente**: Madera de alta resistencia para una mejor transmisión del sonido\n- **Diapasón**: Madera seleccionada para una mejor sensación y durabilidad\n- **Cuerdas**: Incluye un set de cuerdas de alta calidad para un sonido óptimo\n\nEl **Guitarrón JoshMusic Pino Dorado Clásico** no es solo un instrumento musical, es una pieza de arte que encapsula la esencia de la música mexicana. Ideal para músicos profesionales y aficionados que buscan un instrumento que combine calidad, estilo y rendimiento.\n\n¡Adquiere el tuyo y lleva tu música al siguiente nivel con JoshMusic!\n"
         },
         {
             "id": 13,
@@ -249,26 +254,26 @@
             "price": 650.0,
             "discountedPrice": 600.0,
             "category": "instrumentos",
-            "description": "",
+            "description": "\n## Ukelele Económico Ochoa (Guitarra Hawaiana)\n\nEl **Ukelele Económico Ochoa**, también conocido como guitarra hawaiana, es la opción perfecta para aquellos que buscan un instrumento accesible y de buena calidad para iniciarse en el mundo de la música. Ideal para principiantes y aficionados, este ukelele ofrece un excelente equilibrio entre precio y rendimiento.\n\n### Características Principales\n\n|   |   |\n| ------------ | ------------ |\n| **Marca**  |  Guitarras Ochoa |\n| **Línea**  |  Clásica |\n| **Modelo**  | Ukulele Acústico  |\n\n### Beneficios del Ukelele Ochoa\n\n- **Diseño Ligero y Portátil**: Fácil de llevar a cualquier parte, ideal para tocar en casa, en la playa, o en reuniones con amigos.\n- **Calidad Sonora**: A pesar de su precio accesible, este ukelele ofrece una resonancia clara y brillante que deleitará a cualquier oyente.\n- **Materiales Duraderos**: Construido con materiales resistentes que aseguran una larga vida útil del instrumento.\n- **Variedad de Colores**: Disponible en tres atractivos acabados para que elijas el que mejor se adapte a tu estilo.\n\n### Especificaciones Técnicas\n\n- **Tipo de Cuerdas**: Nylon, para una mayor suavidad y facilidad de toque\n- **Tamaño**: Estándar soprano, perfecto para manos pequeñas y grandes\n- **Diapasón**: Madera de alta calidad para una mejor sensación y durabilidad\n- **Afinación**: Estable y fácil de ajustar\n\nEl **Ukelele Económico Ochoa (Guitarra Hawaiana)** es la puerta de entrada perfecta al maravilloso mundo de la música. Con su diseño atractivo, calidad sonora y precio accesible, este ukelele es una excelente elección para músicos de todas las edades.\n\n¡Adquiere el tuyo hoy y comienza tu viaje musical!\n",
             "variations": [
                 {
-                    "value": "Azul Marino Clásico",
+                    "value": "Marron Natural",
                     "images": [
-                        "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://http2.mlstatic.com/D_NQ_NP_853336-MLM71474349254_092023-O.webp"
                     ],
                     "variantID": "13_1"
                 },
                 {
                     "value": "Degradado Rosa",
                     "images": [
-                        "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://http2.mlstatic.com/D_NQ_NP_622859-MLM71521057101_092023-O.webp"
                     ],
                     "variantID": "13_2"
                 },
                 {
-                    "value": "Marron Natural",
+                    "value": "Azul Marino Clásico",
                     "images": [
-                        "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://http2.mlstatic.com/D_NQ_NP_691707-MLM71474221266_092023-O.webp"
                     ],
                     "variantID": "13_3"
                 }
@@ -281,19 +286,19 @@
             "price": 1390.0,
             "discountedPrice": 1100.0,
             "category": "instrumentos",
-            "description": "",
+            "description": "\n## Ukulele Soprano Solar\n\nEl **Ukulele Soprano Solar** es una excelente opción para músicos de todos los niveles que buscan un instrumento de alta calidad y gran rendimiento. Con su diseño compacto y sonido claro, este ukulele es ideal para cualquier ocasión, ya sea para practicar en casa o para tocar en presentaciones en vivo.\n\n### Características\n\n| **Atributo**              |   |\n|---------------------------|------------------------|\n| **Marca**                 | Solar  |\n| **Tamaño**                | Soprano  |\n| **Orientación de la mano**| Diestro|\n| **Largo**                 | 21\"  |\n| **Tipo de ukulele**       | Acústico |\n| **Materiales**            | Madera, Zebrano |\n| **Cantidad de cuerdas**   | 4  |\n\n### Beneficios del Ukulele Soprano Solar\n\n- **Sonido Claro y Brillante**: Ofrece una calidad sonora excelente, perfecta para cualquier género musical.\n- **Diseño Compacto y Ligero**: Ideal para llevarlo a cualquier parte y tocar en cualquier momento.\n- **Materiales de Alta Calidad**: Fabricado con madera y zebrano, asegurando durabilidad y un sonido superior.\n- **Acabado Elegante**: Disponible en dos estilos únicos: Natural Vetado y Caoba Tallada, para que elijas el que mejor se adapte a tu gusto.\n- **Accesorios Incluidos**: Viene con un estuche y funda, proporcionando protección y comodidad al transportarlo.\n\nEl **Ukulele Soprano Solar** es la elección perfecta para aquellos que buscan un instrumento versátil, duradero y de gran calidad. Con su diseño atractivo y su sonido excepcional, este ukulele te acompañará en tu viaje musical, ya seas un principiante o un músico experimentado.\n\n¡Adquiere el tuyo y comienza a disfrutar de la música!\n",
             "variations": [
                 {
                     "value": "SO-05B-S Natural vetado",
                     "images": [
-                        "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://http2.mlstatic.com/D_NQ_NP_914975-MLM70513870232_072023-O.webp"
                     ],
                     "variantID": "14_1"
                 },
                 {
                     "value": "SO-20-S Caoba Tallada",
                     "images": [
-                        "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://http2.mlstatic.com/D_NQ_NP_802811-MLM49303109085_032022-O.webp"
                     ],
                     "variantID": "14_2"
                 }
@@ -710,7 +715,7 @@
                 "https://products.shureweb.eu/cdn-cgi/image/width=1400,height=1400,format=auto/shure_product_db/product_main_images/files/8ed/a9e/17-/header_transparent/e5ed31006c35010746bf58406c28c521.png",
                 "https://products.shureweb.eu/cdn-cgi/image/width=1400,height=1400,format=auto/shure_product_db/product_main_images/files/8ed/a9e/17-/header_transparent/e5ed31006c35010746bf58406c28c521.png"
             ],
-            "category": "iluminacion",
+            "category": "audio-profesional",
             "description": "Receptor inalámbrico digital cuádruple diseñado para aplicaciones de refuerzo sonoro profesional. Incluye características como la diversity digital con conmutación predictiva, hasta 72 MHz de banda de sintonización y la encriptación AES de 256 bits para garantizar la privacidad."
         },
         {
@@ -766,9 +771,148 @@
             ],
             "category":"microfonia",
             "description": "\nNUEVO SISTEMA DE MICRÓFONIA inalámbrica de la **SerieWM** el increíble WM201, una opción asombrosa diseñada para trompetistas, guitarristas, bajistas y todo apasionado de la música que requiera un sistema inalámbrico profesional con un excelente sonido y claridad.\nUtilizándolo para bajo o guitarra; acordeón ó instrumento de viento.\n\n## Especificaciones\n|   |   |\n| ------------ | ------------ |\n|  **Frecuencia de trabajo** |  UHF 630-660MHZ  |\n| **Ancho de banda**  | 20MHZ  |\n| **Rango dinámico** |   96DB  |\n|  **Respuesta de frecuencia** |  30-20KHZ/ 2DB  |\n| **SALIDA DE AUDIO** |  1 Salida Desbalanceada X6.3MM, 1 Salida Balanceada XLR  |\n\n## Transmisor body pack (especificaciones)\n|   |   |\n| ------------ | ------------ |\n| **Baterías**  |  2X1.5V AA |\n| **Vida de las baterias**  |  5H |\n| **Frecuencia De Trabajo**  |  UHF 630-660MHZ  |\n| **Cambio de frecuencia**  | Via Infrarrojo  |\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/rjug8jdcPhg?si=DxAfTbmoyDCWsAdA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n\n"
-
-
+        },
+        {
+            "id": 55,
+            "name": "Set de Cuerdas para Guitarra Clásica Victor 20",
+            "price": 160.0,
+            "discountedPrice": 150.0,
+            "category": "accesorios",
+            "images": [
+                "https://veerkamponline.com/cdn/shop/products/guitarra_clasica3_1500x.jpg?v=1570140874",
+                "https://m.media-amazon.com/images/I/61woltgR+mL._AC_SL1144_.jpg"
+            ],
+            "description": "\nSet de cuerdas Victor para guitarra clásica, compuesto por 6 cuerdas de nylon con borla, ofreciendo un tono suave y una durabilidad excepcional. Ideal para guitarristas de todos los niveles.\n\nVíctor es una marca mexicana con más de 5 décadas en el mercado. Sus productos han colaborado con múltiples músicos, grupos, tríos y aficionados, para generar la música que ha alegrado el corazón de un pueblo indiscutiblemente musical.Para el músico profesional, la claridad y alta fidelidad en el sonido a la hora de estar en público o en el estudio de grabación es sumamente importante.\n"
+        },
+        {
+            "id": 56,
+            "name": "Baquetas promark ''LA SPECIAL'' punta madera",
+            "price": 250.00,
+            "discountedPrice": 230.00,
+            "category": "accesorios",
+            "description": "\nEleva la calidad de tu música con las baquetas LA Special de Promark. Estas baquetas, hechas con madera de hickory, proporcionan una excelente respuesta y un tacto tradicional, adaptándose a diversos géneros musicales y técnicas de toque. Gracias a su punta ovalada de madera, ofrecen una ejecución precisa y un tono bien definido en cada impacto, ideal tanto para sesiones de estudio como para presentaciones en vivo. Las baquetas LA Special son versátiles, resistentes y ofrecen un excelente desempeño y durabilidad a un costo económico, siendo una opción perfecta para bateristas de todos los niveles que buscan fiabilidad y calidad.\n\nFicha técnica\n|   |   |\n| ------------ | ------------ |\n|  **Marca** |  Promark  LA Special |\n|  **Fabricación** | U.S.A  |\n|  **Material**  |  Hickory   |\n|  **Medidas Disponibles** | 5A, 5B, 2B  |\n| **Longitud**  |  40.64cm |\n| **Punta**  | Madera  |\n\n",
+            "variations": [
+                {
+                    "value": "5B",
+                    "images": [
+                        "https://veerkamponline.com/cdn/shop/products/3630025_1500x.jpg?v=1571953911"
+                    ],
+                    "variantID": "56_1"
+                },
+                {
+                    "value": "5A",
+                    "images": [
+                        "https://veerkamponline.com/cdn/shop/products/3630025_1500x.jpg?v=1571953911"
+                    ],
+                    "variantID": "56_2"
+                },
+                {
+                    "value": "2B",
+                    "images": [
+                        "https://veerkamponline.com/cdn/shop/products/3630025_1500x.jpg?v=1571953911"
+                    ],
+                    "variantID": "56_3"
+                }
+            ],
+            "variationKey": "Medida"
+        },
+        {
+            "id": 57,
+            "name": "Baquetas promark ''LA SPECIAL'' punta de Nylon",
+            "price": 250.00,
+            "discountedPrice": 230.00,
+            "category": "accesorios",
+            "description": "\nLas baquetas LA Special ofrecen toda la calidad de Promark a precios accesibles, hechas en madera de hickory, lo que las hace ligeras pero resistentes. La punta de nylon proporciona un sonido más brillante y definido en tus tambores, ideal para estilos de música que requieren mayor claridad en los ataques.\n\nFicha técnica\n|   |   |\n| ------------ | ------------ |\n|  **Marca** | LA Special |\n|  **Fabricación** | U.S.A  |\n|  **Material**  |  Hickory   |\n|  **Medidas Disponibles** | 2B, 5A, 5B, 7A  |\n| **Longitud**  |  40.64cm |\n| **Punta**  | Madera  |\n",
+            "variations": [
+                {
+                    "value": "5B",
+                    "images": [
+                        "https://veerkamponline.com/cdn/shop/products/3630035_1500x.jpg?v=1571954280"
+                    ],
+                    "variantID": "56_1"
+                },
+                {
+                    "value": "5A",
+                    "images": [
+                        "https://veerkamponline.com/cdn/shop/products/3630035_1500x.jpg?v=1571954280"
+                    ],
+                    "variantID": "56_2"
+                },
+                {
+                    "value": "2B",
+                    "images": [
+                        "https://veerkamponline.com/cdn/shop/products/3630035_1500x.jpg?v=1571954280"
+                    ],
+                    "variantID": "56_3"
+                }
+            ],
+            "variationKey": "Medida"
+        },
+        {
+            "id": 58,
+            "name": "Cable de Micrófono XLR Macho a Hembra - The American Cable Company",
+            "category": "accesorios",
+            "description": "\n\n**El Cable de Micrófono XLR Macho a Hembra** de T**he American Cable Company **es una elección ideal para profesionales del audio que buscan calidad y fiabilidad. Este cable está diseñado para ofrecer una transmisión de señal clara y libre de interferencias, garantizando un rendimiento excepcional en todo tipo de aplicaciones de audio.\n\n## Características\n\n- Calidad Superior: Fabricado con materiales de alta calidad que aseguran una larga vida útil y un uso continuo.\n- Construcción Robusta: Ensamblado por personal calificado, este cable está diseñado para soportar el uso riguroso tanto en estudios como en escenarios.\n- Conectores Profesionales: Conectores XLR macho y hembra de precisión que proporcionan una conexión segura y sin ruido.\n - Varias Longitudes Disponibles: Ofrecemos una amplia gama de longitudes para adaptarse a cualquier configuración. Esto es ideal para profesionales que necesitan diferentes opciones para diversas aplicaciones, garantizando siempre la máxima flexibilidad y comodidad. \n- Garantía de Fabricación: Los productos de The American Cable Company están garantizados contra defectos de materiales y fabricación.\n\n## Especificaciones Técnicas\n|   |   |\n| ------------ | ------------ |\n| **Tipo de Conector**  | XLR Macho a XLR Hembra  |\n| **Color del cable**  | Negro  |\n| **Uso**   |  Micrófonos, mezcladoras, interfaces de audio, y otros equipos de audio profesional |\n| **Ensamblado por**  | Acoustic Control de México, S.A. de C.V.  |\n\n \n Longitudes Disponibles: \n  - 3 ft (aprox. 1 m)\n  - 10 ft (aprox. 3 m)\n  - 20 ft (aprox. 6 m)\n  - 30 ft (aprox. 9 m)\n  - 40 ft (aprox. 12 m)\n  - 50 ft (aprox. 15 m) \n\n **Incluye**:\n 1 x Cable de Micrófono XLR Macho a Hembra (disponible en varias longitudes)\n\n",
+            "variations": [
+                {
+                    "value": "3 ft (aprox. 1 m)",
+                    "price": 210.00,
+                    "discountedPrice": 190.00,
+                    "images": [
+                        ""
+                    ],
+                    "variantID": "58_1"
+                },
+                {
+                    "value": "10 ft (aprox. 3 m)",
+                    "price": 260.00,
+                    "discountedPrice": 240.00,
+                    "images": [
+                        ""
+                    ],
+                    "variantID": "58_2"
+                },
+                {
+                    "value": "20 ft (aprox. 6 m)",
+                    "price": 290.00,
+                    "discountedPrice": 270.00,
+                    "images": [
+                        ""
+                    ],
+                    "variantID": "58_3"
+                },
+                {
+                    "value": "30 ft (aprox. 9 m)",
+                    "price": 420.00,
+                    "discountedPrice": 400.00,
+                    "images": [
+                        ""
+                    ],
+                    "variantID": "58_4"
+                },
+                {
+                    "value": "40 ft (aprox. 12 m)",
+                    "price": 550.00,
+                    "discountedPrice": 530.00,
+                    "images": [
+                        ""
+                    ],
+                    "variantID": "58_5"
+                },
+                {
+                    "value": "50 ft (aprox. 15 m)",
+                    "price": 580.00,
+                    "discountedPrice": 560.00,
+                    "images": [
+                        ""
+                    ],
+                    "variantID": "58_6"
+                }
+            ],
+            "variationKey": "Longitud"
         }
+
+        
 
   
     ]

@@ -642,7 +642,7 @@ th {
 
 /* Estilos para las celdas normales */
 td {
-  padding: 8px; /* Espaciado interno */
+  padding: 8px;
   text-align: left; /* Alineación del texto */
   border-bottom: 1px solid #ddd; /* Borde inferior */
 }
@@ -655,7 +655,7 @@ tbody tr:hover {
 
 .product-info p:nth-child(2) {
   color: var(--very-light-pink);
-  font-size: var(--md);
+  /* font-size: var(--md); */
   margin-top: 0;
   margin-bottom: 16px;
 }
