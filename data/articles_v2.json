@@ -120,8 +120,8 @@
                 },
                 {
                     "value": "Palo Escrito",
-                    "price": 2900.0,
-                    "discountedPrice": 2700,
+                    "price": 3500.0,
+                    "discountedPrice": 3350.00,
                     "images": [
                         "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg"
                     ],
@@ -140,22 +140,6 @@
             "variationKey": "Madera"
         },
         {
-            "id": 5,
-            "name": "Guitarra acustica de estudio JoshMusic 3/4 (Tercerola) - Para niños de 6 a 12 años",
-            "category": "instrumentos",
-            "description": "\nLa **Guitarra acústica de estudio JoshMusic 3/4 (Tercerola)** es una opción premium diseñada para niños de 6 a 12 años que buscan un instrumento de alta calidad y un sonido excepcional. Fabricada en la renombrada ciudad de **Paracho**, esta guitarra está hecha con madera seleccionada para ofrecer la mejor resonancia y durabilidad.\n\n## Características principales\n\n- **Madera disponible:** La elección de la madera es crucial para el sonido y la estética de la guitarra. La variación que manejamos es:\n  - **Caoba:** Proporciona un sonido rico y equilibrado.\n- **Tamaño:** 3/4, ideal para niños de 6 a 12 años.\n\nAsegúrate de revisar la parte superior, donde puedes seleccionar y ver si tu guitarra favorita de esta madera está disponible en este momento. Estamos trabajando para agregar más guitarras de diferentes maderas en el futuro.\n\nCada guitarra es una obra maestra artesanal que refleja la rica herencia de Paracho. Estas guitarras son perfectas para estudiar, practicar y tocar en diversos entornos, ofreciendo un rendimiento superior y un toque de elegancia.\n",
-            "variations": [
-                {
-                    "value": "Caoba",
-                    "price": 3000.0,
-                    "discountedPrice": 2800.0,
-                    "images": [],
-                    "variantID": "5_1"
-                }
-            ],
-            "variationKey": "Madera"
-        },
-        {
             "id": 6,
             "name": "Guitarra Electroacústica Tagima TW30 dreadnought sin corte Azul profundo Galáctico",
             "price": 5500.0,
@@ -169,7 +153,7 @@
         },
         {
             "id": 7,
-            "name": "J N Guitarra Electroacustica Tapa De Abeto Serie Glencairn",
+            "name": "J N Stagg Guitarra Electroacustica Tapa De Abeto Serie Glencairn",
             "price": 5800.0,
             "discountedPrice": 5650.0,
             "images": [
@@ -185,14 +169,31 @@
         },
         {
             "id": 8,
-            "name": "Guitarra Electroacústica de 12 Cuerdas (Docerola) McCartney X12-MA Color nogal brillante",
-            "price": 5900.0,
-            "discountedPrice": 5700.0,
-            "images": [
-                "https://articulo.mercadolibre.com.mx/MLM-2015957953-guitarra-electroacustica-mccartney-12-cuerdas-color-natural-_JM?matt_tool=38017478&matt_word=&matt_source=google&matt_campaign_id=19644170615&matt_ad_group_id=144405426863&matt_match_type=&matt_network=g&matt_device=c&matt_creative=647377391744&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=117335053&matt_product_id=MLM2015957953&matt_product_partition_id=1803740323341&matt_target_id=aud-1884306157387:pla-1803740323341&cq_src=google_ads&cq_cmp=19644170615&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gclid=CjwKCAjwupGyBhBBEiwA0UcqaEiGbWhi6j8_P-4FOK9q4G_1_nH1MfI-SkGR0AuNVjIo46dGpMN7eRoCmXQQAvD_BwE"
-            ],
+            "name": "Guitarra Electroacústica de 12 Cuerdas (Docerola) McCartney X12-MA",
             "category": "instrumentos",
-            "description": ""
+            "description": "",
+            "variations": [
+                {
+                    "value": "Nogal Brillante",
+                    "price": 5900.0,
+                    "discountedPrice": 5700.0,
+                    "images": [
+                        "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg"
+                    ],
+                    "variantID": "8_1"
+                },
+                {
+                    "value": "Negro brillante",
+                    "price":5900.0,
+                    "discountedPrice": 5700.0,
+                    "images": [
+                        "https://scontent.fzmm1-1.fna.fbcdn.net/v/t1.6435-9/106489970_940319079821461_6569846395320778740_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cN4Z-ZmV8EgAb4phZlI&_nc_ht=scontent.fzmm1-1.fna&oh=00_AfDll5JIeIvhdvVOHp8iu68bmqbbp7ugQSKpqYtkH6_MKw&oe=66465462"
+                    ],
+                    "variantID": "8_2"
+                }
+            ],
+            "variationKey": "color"
+            
         },
         {
             "id": 9,
@@ -226,31 +227,41 @@
                     "discountedPrice": 7800.0,
                     "images": [],
                     "variantID": "10_2"
+                },
+                {
+                    "value": "Palo Escrito",
+                    "price": 6500.0,
+                    "discountedPrice": 6250.0,
+                    "images": [],
+                    "variantID": "10_3"
                 }
             ],
             "variationKey": "estilo"
         },
         {
-            "id": 11,
-            "name": "Bajo acústico Cardiel (Bajoloche) Meloconton Claro",
-            "price": 7000.0,
-            "discountedPrice": 6850.0,
-            "images": [],
-            "category": "instrumentos",
-            "description": "\n## Bajo Acústico Cardiel (Bajoloche) - Melocotón Claro\n\nEl **Bajo Acústico Cardiel (Bajoloche)** es la elección perfecta para aquellos que buscan un instrumento de alta calidad con un diseño único y atractivo. Con su acabado en **Melocotón Claro**, este bajoloche no solo suena increíble, sino que también luce espectacular.\n\n### Características Destacadas:\n\n- **Diseño Exclusivo**: El acabado en **Melocotón Claro** le da a este bajo acústico un aspecto fresco y moderno, ideal para destacar en cualquier escenario.\n- **Calidad Sonora Superior**: Fabricado con maderas seleccionadas y técnicas artesanales, este bajoloche ofrece una resonancia profunda y una claridad sonora que satisfará a los músicos más exigentes.\n- **Construcción Robusta**: Diseñado para durar, el Bajo Acústico Cardiel combina robustez y ligereza, permitiendo un uso cómodo y prolongado sin comprometer la durabilidad.\n- **Versatilidad Musical**: Perfecto para una variedad de géneros musicales, desde el folk hasta el jazz, este instrumento se adapta a diferentes estilos y técnicas de interpretación.\n\n### Especificaciones Técnicas:\n\n- **Cuerpo**: Acabado en Melocotón Claro\n- **Puente**: Madera de alta resistencia para una mejor transmisión del sonido\n- **Diapasón**: Madera seleccionada para una mejor sensación y durabilidad\n- **Cuerdas**: Incluye un set de cuerdas de alta calidad para un sonido óptimo\n\nEl **Bajo Acústico Cardiel (Bajoloche) Melocotón Claro** es más que un instrumento; es una pieza de arte que destaca tanto en sonido como en apariencia. Ideal para músicos profesionales y aficionados que buscan un instrumento que combine calidad, estilo y rendimiento.\n\n¡Descubre el sonido y la belleza del Bajoloche Cardiel y lleva tu música al siguiente nivel!\n"
-
-        },
-        {
             "id": 12,
-            "name": "Guitarron JoshMusic Pino Dorado Clásico",
-            "price": 5500.0,
-            "discountedPrice": 5300.0,
+            "name": "Guitarron JoshMusic",
             "category": "instrumentos",
-            "description": "\n## Guitarrón JoshMusic - Pino Dorado Clásico\n\nEl **Guitarrón JoshMusic** en acabado **Pino Dorado Clásico** es la elección perfecta para los amantes de la música tradicional mexicana. Este instrumento, con su rica resonancia y elegante diseño, es ideal para cualquier mariachi o grupo folklórico que busque calidad y autenticidad en su sonido.\n\n### Características Destacadas:\n\n- **Construcción Artesanal**: Cada guitarrón es fabricado con esmero por artesanos expertos, utilizando técnicas tradicionales que garantizan una calidad excepcional.\n- **Materiales de Primera Calidad**: El cuerpo de pino dorado no solo proporciona un sonido cálido y resonante, sino que también asegura una durabilidad y belleza inigualables.\n- **Diseño Clásico**: El acabado dorado clásico le da a este guitarrón un aspecto elegante y tradicional, perfecto para destacar en cualquier presentación.\n- **Sonido Potente**: Diseñado para proyectar un sonido fuerte y claro, este guitarrón es ideal para acompañar voces y otros instrumentos en conjuntos grandes o pequeños.\n\n### Especificaciones Técnicas:\n\n- **Cuerpo**: Pino dorado clásico\n- **Puente**: Madera de alta resistencia para una mejor transmisión del sonido\n- **Diapasón**: Madera seleccionada para una mejor sensación y durabilidad\n- **Cuerdas**: Incluye un set de cuerdas de alta calidad para un sonido óptimo\n\nEl **Guitarrón JoshMusic Pino Dorado Clásico** no es solo un instrumento musical, es una pieza de arte que encapsula la esencia de la música mexicana. Ideal para músicos profesionales y aficionados que buscan un instrumento que combine calidad, estilo y rendimiento.\n\n¡Adquiere el tuyo y lleva tu música al siguiente nivel con JoshMusic!\n"
+            "price": 6800.0,
+            "discountedPrice": 6650.0,
+            "description": "## Guitarrón JoshMusic - Pino Dorado Clásico\n\nEl **Guitarrón JoshMusic** en acabado **Pino Dorado Clásico** es la elección perfecta para los amantes de la música tradicional mexicana. Este instrumento, con su rica resonancia y elegante diseño, es ideal para cualquier mariachi o grupo folklórico que busque calidad y autenticidad en su sonido.\n\n### Características Destacadas:\n\n- **Construcción Artesanal**: Cada guitarrón es fabricado con esmero por artesanos expertos, utilizando técnicas tradicionales que garantizan una calidad excepcional.\n- **Materiales de Primera Calidad**: El cuerpo de pino dorado no solo proporciona un sonido cálido y resonante, sino que también asegura una durabilidad y belleza inigualables.\n- **Diseño Clásico**: El acabado dorado clásico le da a este guitarrón un aspecto elegante y tradicional, perfecto para destacar en cualquier presentación.\n- **Sonido Potente**: Diseñado para proyectar un sonido fuerte y claro, este guitarrón es ideal para acompañar voces y otros instrumentos en conjuntos grandes o pequeños.\n\n### Especificaciones Técnicas:\n\n- **Cuerpo**: Pino dorado clásico\n- **Puente**: Madera de alta resistencia para una mejor transmisión del sonido\n- **Diapasón**: Madera seleccionada para una mejor sensación y durabilidad\n- **Cuerdas**: Incluye un set de cuerdas de alta calidad para un sonido óptimo\n\nEl **Guitarrón JoshMusic Pino Dorado Clásico** no es solo un instrumento musical, es una pieza de arte que encapsula la esencia de la música mexicana. Ideal para músicos profesionales y aficionados que buscan un instrumento que combine calidad, estilo y rendimiento.\n\n¡Adquiere el tuyo y lleva tu música al siguiente nivel con JoshMusic!",
+            "variations": [
+                {
+                    "value": "Palo Escrito",
+                    "images": [],
+                    "variantID": "12_1"
+                },
+                {
+                    "value": "Cedro",
+                    "images": [],
+                    "variantID": "10_2"
+                }
+            ],
+            "variationKey": "Madera"
         },
         {
             "id": 13,
-            "name": "Ukelele economico Ochoa (guitarra hawaiana)",
+            "name": "Ukelele economico (guitarra hawaiana)",
             "price": 650.0,
             "discountedPrice": 600.0,
             "category": "instrumentos",
@@ -317,7 +328,7 @@
         {
             "id": 16,
             "name": "Madonlina acústica Cedro selecto",
-            "price": 1500,
+            "price": 1650,
             "discountedPrice": 1450,
             "images": [],
             "category": "instrumentos",
@@ -387,7 +398,7 @@
             "discountedPrice": 8700.0,
             "images": [],
             "category": "instrumentos",
-            "description": ""
+            "description": "Explora nuevos horizontes musicales con la elegante y versátil Guitarra Eléctrica Tagima Flat con Corte ACO en un impresionante color Madera Natural. Esta guitarra está diseñada para ofrecerte un sonido excepcional y una experiencia de ejecución cómoda, ideal para guitarristas de todos los niveles. Con una relacion calidad-precio, es una inversión en elgancia y estilo.\n\n## Características destacadas:\n\n- **Diseño Moderno:** La Tagima Flat cuenta con un diseño delgado y un corte ACO, lo que permite un acceso fácil a los trastes superiores y un toque moderno.\n- **Color Madera Natural:** El acabado en Madera Natural no solo realza la belleza del instrumento, sino que también destaca la calidad de la madera utilizada.\n- **Sonido Superior:** Equipado con pastillas de alta calidad, este modelo proporciona un sonido rico y versátil, adecuado para diversos géneros musicales.\n- **Construcción Duradera:** Fabricada con materiales de primera clase, la Tagima Flat asegura una durabilidad y resistencia excepcionales, soportando el uso constante.\n- **Comodidad y Estilo:** El diseño ergonómico y los detalles estéticos hacen de esta guitarra una elección tanto práctica como visualmente atractiva.\n\nLa Guitarra Eléctrica Tagima Flat con Corte ACO en color Madera Natural es más que un instrumento musical; es una extensión de tu creatividad y pasión por la música. Aprovecha esta oportunidad de añadir una pieza única y de alta calidad a tu colección."
         },
         {
             "id": 22,
@@ -395,18 +406,22 @@
             "price": 5200.0,
             "discountedPrice": 5050.0,
             "category": "instrumentos",
-            "description": "",
+            "description": "\nGuitarra electrica para zurdos TG-500 LH SB D MG color sunburst, cuerpo en basswood, brazo en arce, diapason en technical wood (oscuro) 22 trastes, pickguard Mint Green, 3 Pick Ups single coils Tagima, selector de 5 posiciones, 1 control de volumen, 2 controles de tono.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ARqSS-Bc4-Y?si=YTBx7Gz56pu-TXzo\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n\n# Ficha Técnica\n\n|Característica|Detalle|\n|------------------------|------------------------------|\n|**Peso**|5 kg|\n|**Dimensiones**|116 × 43 × 9 cm|\n|**Guitarra Eléctrica**|Sí|\n|**Tipo**|Strato|\n|**Color**|Sunburst  o Negro|\n|**Cuerpo**|Basswood|\n|**Brazo**|Arce|\n|**Pick Ups**|12 Tagima Single Coils|",
             "variations": [
                 {
                     "value": "Negro",
                     "images": [
-                        "https://m.media-amazon.com/images/I/81PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://http2.mlstatic.com/D_NQ_NP_950999-MLA74781615045_022024-O.webp",
+                        "https://http2.mlstatic.com/D_NQ_NP_613144-MLA46361216860_062021-O.webp",
+                        "https://http2.mlstatic.com/D_NQ_NP_911479-MLA46361216862_062021-O.webp"
                     ],
                     "variantID": "22_1"
                 },
                 {
                     "value": "Degradado Sol Naciente (Sunburst)",
-                    "images": [],
+                    "images": [
+                        "https://www.audiocentro.com.co/wp-content/uploads/2020/09/TG-500-LH-SB-D.png"
+                    ],
                     "variantID": "22_2"
                 }
             ],
@@ -415,8 +430,8 @@
         {
             "id": 23,
             "name": "Procesador de audio MLM 408 - Melo",
-            "price": 22336.00,
-            "discountedPrice": 19753.00,
+            "price": 19600.00,
+            "discountedPrice": 18800.00,
             "images": [
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/MLM-408.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/MLM-408-Atr-s.png"
@@ -500,7 +515,7 @@
             "price": 8500,
             "discountedPrice": 8250.0,
             "images": [
-                "https://m.media-amazon.com/images/I/88PiVCVe4xL._AC_SL1500_.jpg"
+                ""
             ],
             "category": "audio-profesional",
             "description": ""
@@ -575,8 +590,8 @@
         {
             "id": 37,
             "name": "Bafle Melo M-15A",
-            "price": 21500,
-            "discountedPrice": 21000,
+            "price": 21400,
+            "discountedPrice": 20900,
             "images": [],
             "category": "audio-profesional",
             "description": ""
@@ -604,8 +619,8 @@
         {
             "id": 40,
             "name": "Sistema De Sonido Vamav VRX815",
-            "price": 19900,
-            "discountedPrice": 16500,
+            "price": 19200,
+            "discountedPrice": 16600,
             "images": [
                 "https://macalmusic.com.mx/cdn/shop/products/D_NQ_NP_2X_644669-MLM50183912084_062022-F.webp?v=1660235005&width=1000"
             ],
@@ -637,8 +652,8 @@
         {
             "id": 43,
             "name": "QSC CP8 - Altavoz Compacto de 8",
-            "price": 12080,
-            "discountedPrice": 11800,
+            "price": 12200,
+            "discountedPrice": 11500,
             "images": [
                 "https://http2.mlstatic.com/D_NQ_NP_939529-MLU72572529622_112023-O.webp"
             ],
@@ -649,7 +664,7 @@
             "id": 44,
             "name": "KD332 Micrófono Inalámbrico Doble",
             "price": 3900,
-            "discountedPrice": 3500,
+            "discountedPrice": 3700,
             "images": [
 
             ],
@@ -709,19 +724,19 @@
         {
             "id": 49,
             "name": "Pack de cabezas moviles Mega Spot 470",
-            "price": 101037,
-            "discountedPrice": 100000,
+            "price": 112300,
+            "discountedPrice": 109660,
             "images": [
                 "https://lite-tek.com.mx/wp-content/uploads/2020/09/Mega-Spot-470W-20R.jpg",
                 "https://lite-tek.com.mx/wp-content/uploads/2020/09/Mega-Spot-470.jpg",
                 "https://lite-tek.com.mx/wp-content/uploads/2020/09/Mega-Spot-20R.jpg"
             ],
             "category": "iluminacion",
-            "description": "Una descripcion"
+            "description": ""
         },
         {
             "id": 50,
-            "name": "ULXD4Q Receptor inalámbrico digital cuádruple",
+            "name": "ULXD4Q Receptor inalámbrico digital cuádruple Shure",
             "price": 157000,
             "discountedPrice": 155700,
             "images": [
@@ -734,8 +749,8 @@
         {
             "id": 51,
             "name": "NT 700 - Columna con subwoofer de 12' y Bluetooth",
-            "price": 19322.00,
-            "discountedPrice": 17350.00,
+            "price": 15600.00,
+            "discountedPrice": 14990.00,
             "images": [
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2024/02/NT-700-catalogo.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2024/02/NT-700-Lateral.png",
@@ -748,8 +763,8 @@
         {
             "id": 52,
             "name": "Amplificador FP14000 / MELO",
-            "price": 27949.00,
-            "discountedPrice": 27789.00,
+            "price": 26400.00,
+            "discountedPrice": 25300.00,
             "images": [
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/FP14000-1-1024x221.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/FP14000-2.png",
@@ -763,8 +778,8 @@
         {
             "id": 53,
             "name": "Subwoofer Activo 18'' M18-A",
-            "price": 30896.00,
-            "discountedPrice": 28165.00,
+            "price": 27000.00,
+            "discountedPrice": 26000.00,
             "images": [
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M18-A-catalogo-768x403.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M-18-A-5.png",
@@ -777,8 +792,8 @@
         {
             "id":54,
             "name":"WM 201 - Sistema inalámbrico para instrumentos de viento",
-            "price": 3800.00,
-            "discountedPrice":3600.00,
+            "price": 4900.00,
+            "discountedPrice":4600.00,
             "images":[
 
             ],
@@ -927,18 +942,18 @@
         {
             "id": 59,
             "name": "Proyector de Luz PAR 54X1 Megaluz",
-            "price": 1725.00,
-            "discountedPrice": 1672.00,
+            "price": 1150.00,
+            "discountedPrice": 980.00,
             "images": [
                 "https://http2.mlstatic.com/D_NQ_NP_630045-MLM52596970143_112022-O.webp",
                 "https://http2.mlstatic.com/D_NQ_NP_935732-MLM52596970142_112022-O.webp"
             ],
             "category": "iluminacion",
-            "description": "\n\nEl **Megaluz Proyector de Luz PAR 54X1** es un dispositivo de iluminación ideal para discotecas, eventos y espectáculos. Diseñado con 54 lámparas LED RGB 3 en 1, este proyector ofrece una amplia gama de colores, incluyendo azul, verde y rojo.\n\nEste proyector permite trabajar con hasta seis canales DMX diferentes y se puede controlar mediante protocolos DMX 512. Además, ofrece varios modos de operación como Auto, DMX, Maestro/Esclavo y Activado por Sonido.\n\nCon unas dimensiones de 290 mm de ancho y 230 mm de profundidad, el Megaluz Proyector de Luz PAR 54X1W también incluye una pantalla incorporada y funciona a través del suministro eléctrico AC (corriente alterna). Su color negro lo hace adecuado para su uso en interiores.\n\n#### Especificaciones Técnicas\n\n| Especificación         | Detalle                         |\n|------------------------|---------------------------------|\n| Voltaje                | 85-265V ~ 60Hz|\n| Consumo de corriente   | 80W|\n| Color                  | RGB 3 en 1|\n| Modos DMX              | 6 canales|\n| Operación              | DMX 512, Automático, Audio Rítmico, Maestro|\n| Dimensiones            | 290 mm (ancho) x 230 mm (profundidad) x 280 mm (altura) |\n| Potencia individual LED| 1W cada uno  |\n| Color del dispositivo  | Negro |\n\nEl Megaluz Proyector de Luz PAR 54X1 es una opción versátil y potente para todas tus necesidades de iluminación en eventos y espectáculos.\n"
+            "description": "\n\nEl **Megaluz Proyector de Luz PAR 54X1** es un dispositivo de iluminación ideal para discotecas, eventos y espectáculos. Diseñado con 54 lámparas LED RGB 3 en 1, este proyector ofrece una amplia gama de colores, incluyendo azul, verde y rojo.\n\nEste proyector permite trabajar con hasta seis canales DMX diferentes y se puede controlar mediante protocolos DMX 512. Además, ofrece varios modos de operación como Auto, DMX, Maestro/Esclavo y Activado por Sonido.\n\nCon unas dimensiones de 290 mm de ancho y 230 mm de profundidad, el Megaluz Proyector de Luz PAR 54X1W también incluye una pantalla incorporada y funciona a través del suministro eléctrico AC (corriente alterna). Su color negro lo hace adecuado para su uso en interiores.\n\n#### Especificaciones Técnicas\n\n| Especificación         | Detalle |\n|------------------------|---------------------------------|\n| Voltaje                | 85-265V ~ 60Hz|\n| Consumo de corriente   | 80W|\n| Color                  | RGB 3 en 1|\n| Modos DMX              | 6 canales|\n| Operación              | DMX 512, Automático, Audio Rítmico, Maestro|\n| Dimensiones            | 290 mm (ancho) x 230 mm (profundidad) x 280 mm (altura) |\n| Potencia individual LED| 1W cada uno  |\n| Color del dispositivo  | Negro |\n\nEl Megaluz Proyector de Luz PAR 54X1 es una opción versátil y potente para todas tus necesidades de iluminación en eventos y espectáculos.\n"
         },
         {
             "id": 60,
-            "name": "Set de Cuerdas para Guitarra Clásica Victor 20",
+            "name": "Cabeza Movil WASH Megaluz Tiny Wash",
             "price": 1628.0,
             "discountedPrice": 1440.0,
             "category": "iluminacion",
@@ -946,7 +961,18 @@
                 "https://http2.mlstatic.com/D_NQ_NP_833316-MLM70225528243_062023-O.webp",
                 "https://www-x-megaluzshow-x-com.img.addlink.cn/Uploads/5baa7b82944e8.png"
             ],
-            "description": "\nSet de cuerdas Victor para guitarra clásica, compuesto por 6 cuerdas de nylon con borla, ofreciendo un tono suave y una durabilidad excepcional. Ideal para guitarristas de todos los niveles.\n\nVíctor es una marca mexicana con más de 5 décadas en el mercado. Sus productos han colaborado con múltiples músicos, grupos, tríos y aficionados, para generar la música que ha alegrado el corazón de un pueblo indiscutiblemente musical.Para el músico profesional, la claridad y alta fidelidad en el sonido a la hora de estar en público o en el estudio de grabación es sumamente importante.\n"
+            "description": "Una descripcion del producto que falta por llenar en este producto" 
+        },
+        {
+            "id": 61,
+            "name": "Cabeza Móvil Led De 15w Efecto Disco Mini Ball Lite Tek",
+            "price": 2428.0,
+            "discountedPrice": 21158.0,
+            "category": "iluminacion",
+            "images": [
+                "https://lite-tek.com.mx/wp-content/uploads/2023/03/MiniBall.jpg"
+            ],
+            "description": "**MiniBALL** es una cabeza móvil de leds, que proyecta múltiples haces de\n    colores RGBW emulando el efecto de una bola de cristal de los 70’s,\n    pero con movimiento.\n Lámpara: LED de 15W\n    Modos de operación: DMX512, Audio, Auto, Master/Slave\n    Efectos: Rayos delgados que giran en ambos sentidos\n    RGBW\n    Dimmer 0-100% mecánico\n    11 Canales DMX\n    Estrobo: 1-20 veces por segundo\n    Display\n    IP20\n    Voltaje: 110 240V~ 50-60Hz 35W\n"
         }
 
 
