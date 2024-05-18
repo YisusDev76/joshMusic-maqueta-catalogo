@@ -147,6 +147,7 @@ label.field {
   --white: #FFFFFF;
   --black: #000000;
   --very-light-pink: #C7C7C7;
+  --gray-jm: #a0a0a0;
   --text-input-field: #F7F7F7;
   --hospital-green: #ACD9B2;
   --hospital-gren-hover:#1fd537;
@@ -597,7 +598,7 @@ body::-webkit-scrollbar-track:active {
 }
 
 .product-description-markdowm p { 
-  color: var(--very-light-pink);
+  color: var(--gray-jm);
   font-size: small; 
 }
 
