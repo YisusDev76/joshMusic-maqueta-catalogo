@@ -368,7 +368,6 @@ function filterProducts(category) {
 }
 
 function addProductToCart(productId, variantId = null) {
-     // Buscar el producto existente en el carrito con el mismo ID y variante
     const existingProduct = shoppingCart.find(product => 
         product.id === productId && product.variantId === variantId
     );
@@ -467,11 +466,12 @@ function renderCart(arrayCarrito) {
         //Genero el contenedor del producto
         const productCartContainer = document.createElement('div');
         productCartContainer.classList.add('shopping-cart');
+        
         productDetails = productList.find(producto => producto.id === product.id);
 
         //Genero la imagen del producto y la agrego un figure 
         const productImg = document.createElement('img');
-        productImg.setAttribute('src', getFirstProductImage(product));
+        productImg.setAttribute('src', getFirstProductImage(productDetails));
         productImg.setAttribute('alt', productDetails.name);
         productImg.classList.add('hover-neon-effect');
 
@@ -502,7 +502,6 @@ function renderCart(arrayCarrito) {
         productFigure.classList.add('cart-product-figure');
         productFigure.append(productImg, numberOfSameProduct);
 
-        //Agrego la imagen para quitar el producto del carrito junto con el evento para eliminarlo y hacer un update de precios
         const productDeleteButton = document.createElement('img');
         productDeleteButton.setAttribute('src', './icons/icon_close.png');
         productDeleteButton.setAttribute('alt', 'close');
