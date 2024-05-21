@@ -121,7 +121,7 @@
                 {
                     "value": "Palo Escrito",
                     "price": 3500.0,
-                    "discountedPrice": 3350.00,
+                    "discountedPrice": 3350.0,
                     "images": [
                         "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg"
                     ],
@@ -140,7 +140,7 @@
             "variationKey": "Madera"
         },
         {
-            "id": 6,
+            "id": 5,
             "name": "Guitarra Electroacústica Tagima TW30 dreadnought sin corte Azul profundo Galáctico",
             "price": 5500.0,
             "discountedPrice": 5350.0,
@@ -149,10 +149,9 @@
             ],
             "category": "instrumentos",
             "description": "\n## Guitarra Acústica Tagima TW-30 EQ\n\nLa **Tagima TW-30 EQ** no solo luce increíble, sino que también ofrece un sonido extraordinario a un precio accesible.\n\n### Características Destacadas\n\n- **Serie Woodstock**: Esta guitarra dreadnought pertenece a la renombrada serie Woodstock de Tagima.\n- **Diseño Elegante**: Fondo y aros satinados con un exclusivo diseño de rayas de tigre sobre una tapa de abeto.\n- **Acabado de Lujo**: Color azul profundo con un acabado brillante que resalta su belleza.\n- **Tecnología Integrada**: Incluye un ecualizador activo de 4 bandas y un afinador incorporado, asegurando que siempre suene perfecta.\n\n¡Descubre por qué la Tagima TW-30 EQ está capturando la atención de músicos de todo el mundo y lleva tu música al siguiente nivel con esta increíble guitarra!\n\n## Especificaciones\n\n|   |   |\n| ------------ | ------------ |\n| **Tapa**  |  Basswood y flamed maple veeneer |\n| **Puente**  | Madera Chhlik  |\n| **Diapasón**  | Madera Technical Wood 25.5\"  |\n| **Aros y Fondo**  | Sapele  |\n\n"
-
         },
         {
-            "id": 7,
+            "id": 6,
             "name": "J N Stagg Guitarra Electroacustica Tapa De Abeto Serie Glencairn",
             "price": 5800.0,
             "discountedPrice": 5650.0,
@@ -161,14 +160,12 @@
                 "https://http2.mlstatic.com/D_NQ_NP_806420-MLM74308593821_012024-O.webp",
                 "https://http2.mlstatic.com/D_NQ_NP_635330-MLM74309807877_012024-O.webp",
                 "https://http2.mlstatic.com/D_NQ_NP_639656-MLM74196001210_012024-O.webp"
-
-
             ],
             "category": "instrumentos",
             "description": "\nLa **Guitarra Electroacústica JN Glencairn (Campero) Estilo Nogal Mate** es una guitarra de alta calidad diseñada para ofrecer un sonido excepcional y una apariencia elegante. Esta guitarra es perfecta para músicos que buscan un instrumento versátil y bien construido.\n\n## Características principales\n\n- **Tapa:** Pícea (Spruce), que proporciona un tono brillante y claro.\n- **Cuerpo:** Sapelli, conocido por su durabilidad y resonancia cálida.\n- **Mástil:** Caoba con forma moderna en \"C\" y acabado satinado para un toque suave y cómodo.\n- **Diapasón:** Palo de rosa (Rosewood) con incrustaciones de puntos blancos.\n- **Puente:** Palo de rosa (Rosewood).\n- **Cejuela y selleta:** Hueso.\n- **Roseta y ribete:** ABS negro.\n- **Descansa brazos:** ABS negro.\n- **Golpeador:** Diseño transparente Glencairn.\n- **Clavijeros:** Cromados con perillas de tipo madera.\n- **Electrónica:** \n  - Pastilla debajo del puente.\n  - Preamplificador con afinador cromático incorporado.\n  - Controles de volumen, presencia, bajos, medios y agudos.\n  - Indicador de carga de batería.\n  - Salida de jack de 6,35 mm (1/4\").\n- **Acabado:** Mate poro abierto.\n- **Incluye:** Funda acolchada.\n- **Color:** Natural.\n\nEsta guitarra no solo es una herramienta musical excepcional, sino también una pieza de arte que refleja la dedicación y el detalle en su construcción. Perfecta para actuaciones en vivo, grabaciones en estudio y sesiones de práctica.\n"
         },
         {
-            "id": 8,
+            "id": 7,
             "name": "Guitarra Electroacústica de 12 Cuerdas (Docerola) McCartney X12-MA",
             "category": "instrumentos",
             "description": "",
@@ -180,23 +177,22 @@
                     "images": [
                         "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg"
                     ],
-                    "variantID": "8_1"
+                    "variantID": "7_1"
                 },
                 {
                     "value": "Negro brillante",
-                    "price":5900.0,
+                    "price": 5900.0,
                     "discountedPrice": 5700.0,
                     "images": [
                         "https://scontent.fzmm1-1.fna.fbcdn.net/v/t1.6435-9/106489970_940319079821461_6569846395320778740_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cN4Z-ZmV8EgAb4phZlI&_nc_ht=scontent.fzmm1-1.fna&oh=00_AfDll5JIeIvhdvVOHp8iu68bmqbbp7ugQSKpqYtkH6_MKw&oe=66465462"
                     ],
-                    "variantID": "8_2"
+                    "variantID": "7_2"
                 }
             ],
             "variationKey": "color"
-            
         },
         {
-            "id": 9,
+            "id": 8,
             "name": "Guitarra Electroacústica de 12 Cuerdas (Docerola) Cort Modelo GA-MEDX-12 OP Natural Mate",
             "price": 8000.0,
             "discountedPrice": 7800.0,
@@ -209,7 +205,7 @@
             "description": "\n### Descripción\n\nLa docerola **Cort GA-MEDX-12** es parte de la popular serie Grand Regal, ofreciendo una guitarra acústica-eléctrica de alta calidad a un precio asequible. Con una tapa de abeto, parte trasera y laterales de caoba, y el versátil preamplificador CE306T, esta guitarra es perfecta para músicos que buscan valor y calidad.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/xm88rk5Pb6U?si=HvHT44y7juUXoTvX\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n### Uso y Diseño\n\nEl diseño del Grand Regal lo hace ideal tanto para rasguear como para puntear, adaptándose a músicos versátiles que buscan una guitarra capaz de cubrir una variedad de sonidos y estilos. La tapa de abeto ofrece un equilibrio perfecto entre resistencia y flexibilidad, siendo una de las maderas más populares para guitarras acústicas. Su carácter sonoro versátil es ideal para diversos géneros musicales y estilos de interpretación. La caoba, conocida por su tono brillante pero cálido y su fuerte rango medio, ha sido una elección estándar para guitarras acústicas de alta gama durante décadas.\n\n### Especificaciones\n\n| Característica                | Detalle                                     |\n|-------------------------------|---------------------------------------------|\n| **Tipo de Guitarra**             | Acústica-Eléctrica |\n| **Serie**                         | Grand Regal   |\n| **Tapa**                          | Abeto |\n| **Fondo y Aros**                  | Caoba |\n| **Preamplificador**               | CE306T con ecualizador de 4 bandas  |\n| **Profundidad del Cuerpo**       | 117 mm (4 5/8\")  |\n|**Ancho de Combate Superior**    | 292 mm (11 1/2\") |\n| **Ancho de Combate Inferior**    | 405 mm (16\")  |\n| **Diseño del Puente**             | Superficie recortada |\n| **Tono**                          | Brillante, rango medio fuerte y cálido |\n| **Características Adicionales**   | Sintonizador de pantalla LCD, mejor jugabilidad, sustain mejorado |\n\n"
         },
         {
-            "id": 10,
+            "id": 9,
             "name": "Bajo Quinto JoshMusic acústico",
             "category": "instrumentos",
             "description": "\n## Bajo Quinto JoshMusic - Artesanía Mexicana de Calidad\n\nSumérgete en la tradición y la calidad con el **Bajo Quinto de JoshMusic**, un instrumento excepcionalmente fabricado en la cuna de la luthería mexicana: Paracho, Michoacán. Este bajo quinto, elaborado con esmero por nuestros artesanos, combina tradición y modernidad para ofrecerte un instrumento único en su clase.\n\n### Características Destacadas:\n\n- **Fabricación Artesanal**: Cada bajo quinto es cuidadosamente construido por manos expertas en Paracho, reconocida mundialmente por su maestría en la creación de instrumentos de cuerda.\n- **Materiales de Alta Calidad**: Utilizamos maderas seleccionadas para asegurar una resonancia perfecta y una durabilidad excepcional.\n- **Acabados Premium**: Disponible en dos impresionantes acabados:\n  - **Madera de Acre Rizado Natural**: Un acabado que resalta la belleza natural de la madera, mostrando sus vetas y textura únicas.\n  - **Cosmos Brillante**: Un acabado moderno y llamativo que aporta un brillo especial y un estilo distintivo a tu instrumento.\n- **Sonido Excepcional**: Diseñado para ofrecer una proyección sonora potente y clara, ideal para cualquier género musical.\n\n### Especificaciones Técnicas:\n\n- **Cuerpo**: Madera de acre rizado natural o acabado cosmos brillante\n- **Puente**: Madera de alta resistencia para una mejor transmisión del sonido\n- **Diapasón**: Madera seleccionada para una mejor sensación y durabilidad\n- **Cuerdas**: Incluye un set de cuerdas de alta calidad para un sonido óptimo\n\nEl Bajo Quinto de JoshMusic es más que un instrumento; es una pieza de arte que refleja el alma y la pasión de la música mexicana. Perfecto para músicos profesionales y aficionados que buscan calidad y autenticidad en su sonido.\n\n¡Adquiere el tuyo y lleva tu música al siguiente nivel con JoshMusic!\n\n",
@@ -219,27 +215,27 @@
                     "price": 8500.0,
                     "discountedPrice": 8350,
                     "images": [],
-                    "variantID": "10_1"
+                    "variantID": "9_1"
                 },
                 {
                     "value": "Cosmos Brillante",
                     "price": 8000.0,
                     "discountedPrice": 7800.0,
                     "images": [],
-                    "variantID": "10_2"
+                    "variantID": "9_2"
                 },
                 {
                     "value": "Palo Escrito",
                     "price": 6500.0,
                     "discountedPrice": 6250.0,
                     "images": [],
-                    "variantID": "10_3"
+                    "variantID": "9_3"
                 }
             ],
             "variationKey": "estilo"
         },
         {
-            "id": 12,
+            "id": 10,
             "name": "Guitarron JoshMusic",
             "category": "instrumentos",
             "price": 6800.0,
@@ -249,7 +245,7 @@
                 {
                     "value": "Palo Escrito",
                     "images": [],
-                    "variantID": "12_1"
+                    "variantID": "10_1"
                 },
                 {
                     "value": "Cedro",
@@ -260,7 +256,7 @@
             "variationKey": "Madera"
         },
         {
-            "id": 13,
+            "id": 11,
             "name": "Ukelele economico (guitarra hawaiana)",
             "price": 650.0,
             "discountedPrice": 600.0,
@@ -272,27 +268,27 @@
                     "images": [
                         "https://http2.mlstatic.com/D_NQ_NP_853336-MLM71474349254_092023-O.webp"
                     ],
-                    "variantID": "13_1"
+                    "variantID": "11_1"
                 },
                 {
                     "value": "Degradado Rosa",
                     "images": [
                         "https://http2.mlstatic.com/D_NQ_NP_622859-MLM71521057101_092023-O.webp"
                     ],
-                    "variantID": "13_2"
+                    "variantID": "11_2"
                 },
                 {
                     "value": "Azul Marino Clásico",
                     "images": [
                         "https://http2.mlstatic.com/D_NQ_NP_691707-MLM71474221266_092023-O.webp"
                     ],
-                    "variantID": "13_3"
+                    "variantID": "11_3"
                 }
             ],
             "variationKey": "color"
         },
         {
-            "id": 14,
+            "id": 12,
             "name": "Ukulele Soprano Solar",
             "price": 1390.0,
             "discountedPrice": 1100.0,
@@ -304,20 +300,20 @@
                     "images": [
                         "https://http2.mlstatic.com/D_NQ_NP_914975-MLM70513870232_072023-O.webp"
                     ],
-                    "variantID": "14_1"
+                    "variantID": "12_1"
                 },
                 {
                     "value": "SO-20-S Caoba Tallada",
                     "images": [
                         "https://http2.mlstatic.com/D_NQ_NP_802811-MLM49303109085_032022-O.webp"
                     ],
-                    "variantID": "14_2"
+                    "variantID": "12_2"
                 }
             ],
             "variationKey": "estilo"
         },
         {
-            "id": 15,
+            "id": 13,
             "name": "Mandolina Económica JoshMusic Color Miel Dorada",
             "price": 800.0,
             "discountedPrice": 750.0,
@@ -326,7 +322,7 @@
             "description": "La **Mandolina Económica JoshMusic** es una excelente opción para músicos principiantes y aficionados que buscan un instrumento asequible y de buena calidad. Con su acabado en **Color Miel Dorada**, esta mandolina no solo ofrece un sonido cálido y resonante, sino que también destaca por su atractivo diseño.\n\n### Características\n\n| **Atributo**              | **Valor**              |\n|---------------------------|------------------------|\n| **Marca**                 | JoshMusic              |\n| **Modelo**                | Mandolina Económica    |\n| **Color**                 | Miel Dorada            |\n\n### Beneficios de la Mandolina Económica JoshMusic\n\n- **Sonido Cálido y Resonante**: Diseñada para ofrecer una calidad sonora superior, ideal para diversos estilos musicales.\n- **Diseño Atractivo**: El acabado en color Miel Dorada le da a esta mandolina un aspecto elegante y clásico.\n- **Accesible**: Perfecta para principiantes y músicos con presupuesto limitado que no quieren sacrificar calidad.\n- **Construcción Duradera**: Fabricada con materiales resistentes que aseguran una larga vida útil del instrumento.\n\nLa **Mandolina Económica JoshMusic Color Miel Dorada** es la elección perfecta para aquellos que buscan un instrumento versátil, asequible y de gran calidad. Con su diseño atractivo y su sonido excepcional, esta mandolina te acompañará en tu viaje musical, ya seas un principiante o un músico experimentado.\n\n¡Adquiere la tuya y comienza a disfrutar de la música con JoshMusic!\n"
         },
         {
-            "id": 16,
+            "id": 14,
             "name": "Madonlina acústica Cedro selecto",
             "price": 1650,
             "discountedPrice": 1450,
@@ -335,7 +331,7 @@
             "description": "\n\n¡Descubre la belleza y la calidad de la Mandolina acústica Cedro selecto, hecha en Paracho, la cuna de los instrumentos finos en México! Esta mandolina combina la tradición artesanal con materiales de alta calidad para ofrecerte un sonido excepcional y una apariencia impresionante.\n\n### Características:\n\n- **Material**: Cedro selecto, conocido por su durabilidad y resonancia superior.\n- **Precio**: $1,500 MXN\n- **Origen**: Fabricada en Paracho, Michoacán, famosa por su excelencia en la construcción de instrumentos de cuerda.\n- **Diseño**: Acabado natural que resalta la belleza de la madera de cedro, con detalles finamente elaborados.\n\n### Ideal para:\n\n- Músicos aficionados y profesionales que buscan un instrumento con un sonido cálido y proyectado.\n- Coleccionistas que valoran la artesanía mexicana y los materiales de alta calidad.\n- Estudiantes de música que desean un instrumento confiable y duradero.\n\nHaz que tu música resuene con la riqueza del cedro y la maestría de los artesanos de Paracho. ¡Adquiere hoy tu Mandolina acústica Cedro selecto y eleva tu experiencia musical!\n\n**Nota:** La disponibilidad puede variar, asegúrate de realizar tu pedido con anticipación.\n\n"
         },
         {
-            "id": 17,
+            "id": 15,
             "name": "Bajo Eléctrico Mccartney P Bass 5 cuerdas Negro",
             "price": 4800,
             "discountedPrice": 4650,
@@ -347,7 +343,7 @@
             "description": "Descubre el poder y la versatilidad del Bajo Eléctrico Mccartney P Bass de 5 cuerdas en un elegante acabado negro. Este bajo está diseñado para ofrecerte una experiencia musical incomparable, perfecta tanto para principiantes como para músicos experimentados. Con un precio accesible de 4800 MXN, es una excelente opción para cualquier amante de la música.\n\n## Características destacadas:\n\n- **Diseño Clásico:** Inspirado en el icónico diseño de los bajos P Bass, este instrumento combina estilo y funcionalidad en un solo paquete.\n- **Cinco Cuerdas:** Ampliando tu rango tonal, las cinco cuerdas permiten una mayor versatilidad en tus interpretaciones.\n- **Acabado Negro Elegante:** Un acabado negro brillante que no solo luce espectacular en el escenario, sino que también es duradero y resistente.\n- **Sonido Potente:** Equipado con pastillas de alta calidad que proporcionan un sonido profundo y rico, ideal para cualquier género musical.\n- **Construcción Sólida:** Fabricado con materiales de primera, asegurando durabilidad y un rendimiento confiable durante años.\n\nEl Bajo Eléctrico Mccartney P Bass de 5 cuerdas en negro es más que un instrumento; es una herramienta para expresar tu creatividad musical. No dejes pasar esta oportunidad de llevar tu música al siguiente nivel con un bajo que combina calidad, estilo y precio accesible.\n\n"
         },
         {
-            "id": 18,
+            "id": 16,
             "name": "Logan Bajo Eléctrico Standard Jazz Bass 5 Cuerdas Vino",
             "price": 5550,
             "discountedPrice": 5450,
@@ -357,14 +353,12 @@
                 "https://tropicomusicstore.com/wp-content/uploads/L-EB-5C-1WI-3-1.jpg",
                 "https://tropicomusicstore.com/wp-content/uploads/L-EB-5C-1WI-1-1.jpg",
                 "https://m.media-amazon.com/images/I/615WKO+CqJL._AC_SL1500_.jpg"
-
             ],
             "category": "instrumentos",
             "description": "Presentamos el Logan J Bass, un bajo que captura la esencia de los icónicos Jazz Bass de Fender pero a un costo significativamente menor. Este instrumento ofrece especificaciones que, aunque son más básicas, mantienen una calidad sólida y un sonido vibrante. Además, su precio accesible lo hace aún más atractivo. Es una opción robusta, conocida por su estructura resistente y su capacidad para entregar actuaciones excepcionales, especialmente en las noches de sábado.\n\n |        |        |\n |-------------|-------------|\n | **Marca** | LOGAN    |\n | **Tipo de acabado** | Brillante    |\n | **Instrumento** | Bajo eléctrico |"
-
         },
         {
-            "id": 19,
+            "id": 17,
             "name": "Ibañez Bajo Eléctrico 6 cuerdas Marron Oscuro Mate, Serie Gio",
             "price": 10500,
             "discountedPrice": 10400,
@@ -378,7 +372,7 @@
             "description": "Los bajos de la serie GSR brindan el famoso sonido, la comodidad, el tono y la facilidad de ejecución de Soundgear. Los bajos GSR Soundgear no solo se destacan por su apariencia y su desempeño en su rango de precios, sino que también pasan por la misma rigurosa inspección y configuración que los modelos más costosos de Ibanez.\n\n## Ficha Técnica\n\n| Característica | Detalle |\n|-----------|----------------|\n| **Marca**| Ibanez |\n| **Fabricación**| China|\n| **Cuerpo**| Nyatoh|\n| **Color** | Café |\n| **Acabado** | Mate|\n| **Brazo** | Arce, GSR6 |\n| **Diapasón**| Jatoba |\n| **Trastes**| 22, Medium|\n| **Puente**| B16|\n| **Número de Cuerdas**| 6|\n| **Marca de Pastilla**| Ibanez, HH|\n| **Pastilla del Brazo**| Dynamix H Passive|\n| **Pastilla del Puente**| Dynamix H Passive|\n| **Electrónica**| Volumen x2, Tono, EQ Phat II|\n| **Material de la Cuerda** | Níquel|\n| **Hardware**| Negro|\n| **Orientación**| Diestro|\n| **Afinación**| 1C, 2G, 3D, 4A, 5E, 6B|\n| **Calibre de Cuerdas** | .032 / .045 / .065 / .085 / .105 / .130 |"
         },
         {
-            "id": 20,
+            "id": 18,
             "name": "Ibañez Bajo Eléctrico 4 cuerdas Rojo Cereza Brillante, Serie SDGR",
             "price": 10500,
             "discountedPrice": 10400,
@@ -392,7 +386,7 @@
             "description": "\nDurante 30 años, el SR le ha dado a los bajistas una alternativa moderna. Con su continua popularidad, **Ibañez** se esfuerza constantemente por responder a las necesidades más amplias de una variedad de intérpretes, con una variedad de presupuestos. Pero no importa cuáles sean las especificaciones, el corazón es el mismo: SR continúa eomocionando con su cuerpo suave y rápido, su cuerpo liviano y su electrónica perfectamente combinada.\n\n## Ficha Técnica\n\n|Característica|Detalle|\n|------------------------|-----------------------------------------|\n|**Marca**|Ibañez|\n|**Fabricación**|Indonesia|\n|**Cuerpo**|Nyatoh|\n|**Color**|Rojo|\n|**Acabado**|Brillante|\n|**Brazo**|SR4 5pzas Arce/Nogal|\n|**Diapasón**|Jatoba|\n|**Trastes**|24, Medium|\n|**Puente**|Accu-cast B120|\n|**Número de Cuerdas**|4|\n|**Marca de Pastilla**|Ibanez, HH|\n|**Pastilla del Brazo**|PowerSpan Dual Coil (pasiva)|\n|**Pastilla del Puente**|PowerSpan Dual Coil (pasiva)|\n|**Electrónica**|Volumen, Balancer, 3-band EQ, 3-way Power Tap switch|\n|**Material de la Cuerda**|Níquel|\n|**Hardware**|Negro|\n|**Orientación**|Diestro|\n|**Afinación**|1G, 2D, 3A, 4E|\n|**Calibre de Cuerdas**|.045 / .065 / .085 / .105|"
         },
         {
-            "id": 21,
+            "id": 19,
             "name": "Guitarra eléctrica Tagima flat con corte ACO Color Madera Natural",
             "price": 8900.0,
             "discountedPrice": 8700.0,
@@ -401,7 +395,7 @@
             "description": "Explora nuevos horizontes musicales con la elegante y versátil Guitarra Eléctrica Tagima Flat con Corte ACO en un impresionante color Madera Natural. Esta guitarra está diseñada para ofrecerte un sonido excepcional y una experiencia de ejecución cómoda, ideal para guitarristas de todos los niveles. Con una relacion calidad-precio, es una inversión en elgancia y estilo.\n\n## Características destacadas:\n\n- **Diseño Moderno:** La Tagima Flat cuenta con un diseño delgado y un corte ACO, lo que permite un acceso fácil a los trastes superiores y un toque moderno.\n- **Color Madera Natural:** El acabado en Madera Natural no solo realza la belleza del instrumento, sino que también destaca la calidad de la madera utilizada.\n- **Sonido Superior:** Equipado con pastillas de alta calidad, este modelo proporciona un sonido rico y versátil, adecuado para diversos géneros musicales.\n- **Construcción Duradera:** Fabricada con materiales de primera clase, la Tagima Flat asegura una durabilidad y resistencia excepcionales, soportando el uso constante.\n- **Comodidad y Estilo:** El diseño ergonómico y los detalles estéticos hacen de esta guitarra una elección tanto práctica como visualmente atractiva.\n\nLa Guitarra Eléctrica Tagima Flat con Corte ACO en color Madera Natural es más que un instrumento musical; es una extensión de tu creatividad y pasión por la música. Aprovecha esta oportunidad de añadir una pieza única y de alta calidad a tu colección."
         },
         {
-            "id": 22,
+            "id": 20,
             "name": "Guitarra eléctrica Tagima Tw series Tg-500 para zurdos stratocaster",
             "price": 5200.0,
             "discountedPrice": 5050.0,
@@ -415,33 +409,32 @@
                         "https://http2.mlstatic.com/D_NQ_NP_613144-MLA46361216860_062021-O.webp",
                         "https://http2.mlstatic.com/D_NQ_NP_911479-MLA46361216862_062021-O.webp"
                     ],
-                    "variantID": "22_1"
+                    "variantID": "20_1"
                 },
                 {
                     "value": "Degradado Sol Naciente (Sunburst)",
                     "images": [
                         "https://www.audiocentro.com.co/wp-content/uploads/2020/09/TG-500-LH-SB-D.png"
                     ],
-                    "variantID": "22_2"
+                    "variantID": "20_2"
                 }
             ],
             "variationKey": "color"
         },
         {
-            "id": 23,
+            "id": 21,
             "name": "Procesador de audio MLM 408 - Melo",
-            "price": 19600.00,
-            "discountedPrice": 18800.00,
+            "price": 19600.0,
+            "discountedPrice": 18800.0,
             "images": [
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/MLM-408.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/MLM-408-Atr-s.png"
             ],
             "category": "audio-profesional",
             "description": "\nEste equipo adopta una frecuencia de muestreo de 96 KHZ y resolución de tecnología\nde conversión 24 bits- Σ A/D y D/A, el procesamiento de señal mediante DSP a 32 bits de punto\nflotante de cuarta generación . Cada entrada incluye control de ganancia, 10 secciones de\necualización paramétrica, ecualización dinámica, divisor de frecuencia, compresor, controlador de\nretardo y puerta de ruido. Cada salida cuenta con una matriz mezcladora, un ecualizador\nparamétrico de 10 secciones, un divisor de frecuencia con opción de filtraje FIR de hasta 512 Taps,\nun compresor RMS, un limitador así como delay.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/P35WCpjJM08?si=5hl-9_UvKXHNZUmM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n**CARACTERISTÍCAS**\n- Interfaz de usuario.\n- Panel frontal: la pantalla LCD indica la dirección IP del dispositivo y el número predeterminado actuale información relacionada.\n- Panel trasero: Conexión a corriente eléctrica, entradas y salidas de audio balanceadas, interfaces GPIO, conexiones RS 232/485 e interfaces de red Rj45.\n- Software de control: el software de control de PC equipado con este dispositivo puede ejecutarse en sistemas operativos Windows 7, 10 o superior @ 64BIT .\n- Otras características.\n- Todas las interfaces de entrada/salida adoptan un circuito de protección electrostática y de RF para garantizar el funcionamiento confiable del equipo.\n\n**ESPECIFICACIONES**\n\n|   |   |\n| ------------ | ------------ |\n| **Frecuencia de muestreo y resolucion**  | 96KHz 24 bits AD/DA 400MHz 32bit punto flotante  |\n| **Respuesta de frecuencia**  |  20HZ-20KHz @ +/- 0.3 dB |\n|  **THD+N** |  > 115dB |\n| **Impedancia de salida** (balanceada)  | 100Ω  |\n| **Crosstalk**  |  < -100 dB @ 1kHz |\n| **Maximo nivel de entrada**  |  >20 dBu @ 1 kHz |\n| **Maximo nivel de salida** |  >20 dBu @ 1 kHz |\n|  **Señal ruido** | < – 93dBu  |\n| **Retraso fijo del equipo** | < 2ms  |\n| **Generador de ruido**  | Ruido rosa/ ruido blanco y tono seleccionable  |\n|  **Modulos de procesamiento de señal**  |  Compuerta de ruido /ecualizador/HPF/ LPF/FIR/compresor/Limitar or/compresor RMS/Delay |\n|  **Requerimientos de voltaje**  | 90V-240V 50Hz/60Hz < 20W  |\n| **Medidas sin caja**  |  483X268X45mm |\n|  **Peso** | 3.5Kg  |\n|  **Temperatura de operación**  |  0-+40 grados centigrados |\n| **Temperatura ambiente de almacenamiento** |  -10 – + 60 grados centigrados |\n| **Accesorios**  |  Manual de operación, cable de corriente y software |\n\n\n\n\n"
-
         },
         {
-            "id": 24,
+            "id": 22,
             "name": "Ibañez Guitarra eléctrica stratocaster doble pastilla, Serie Gio",
             "price": 5500.0,
             "discountedPrice": 5350.0,
@@ -450,7 +443,7 @@
             "description": ""
         },
         {
-            "id": 25,
+            "id": 23,
             "name": "Casio CT-S1 Rd Teclado 61 Teclas Midi Usb Touch Response Red Color Rojo",
             "price": 5400.0,
             "discountedPrice": 5250.0,
@@ -459,7 +452,7 @@
             "description": ""
         },
         {
-            "id": 26,
+            "id": 24,
             "name": "Casio Casiotone, 61-Key Portable Keyboard (CT-S200RD)",
             "price": 4900.0,
             "discountedPrice": 4750.0,
@@ -468,7 +461,7 @@
             "description": ""
         },
         {
-            "id": 27,
+            "id": 25,
             "name": "Teclado Musical Kaiser Mtc5505 61 Teclas",
             "price": 2800.0,
             "discountedPrice": 2700.0,
@@ -477,7 +470,7 @@
             "description": ""
         },
         {
-            "id": 28,
+            "id": 26,
             "name": "Teclado Musical Kaiser Con 54 Teclas Y 300 Ritmos, Mtc-5510",
             "price": 2800.0,
             "discountedPrice": 2700.0,
@@ -486,7 +479,7 @@
             "description": ""
         },
         {
-            "id": 29,
+            "id": 27,
             "name": "TECLADO CASIO PORTATIL CT-S100 con eliminador",
             "price": 3800.0,
             "discountedPrice": 3650.0,
@@ -495,7 +488,7 @@
             "description": ""
         },
         {
-            "id": 30,
+            "id": 28,
             "name": "Teclado Musical De 54 Teclas Kaiser MTC-5470 y micrófono incluido",
             "price": 1700,
             "discountedPrice": 1600,
@@ -507,10 +500,9 @@
             ],
             "category": "instrumentos",
             "description": "Con el Teclado versátil con micrófono y 54 teclas* KAISER®* podrás crear composiciones increíbles, o comenzar tus lecciones para convertirte en una gran tecladista.\n\n## Especificaciones\n- Versátil para cualquier género musical\n- Salida de audio de gran fidelidad\n- Función de grabar melodías\n- Volumen maestro\n- 12 tonos\n- 10 botones de ritmo\n- Tecnología de conectividad: Auxiliar\n- 2 h de vida\n- 8 botones de percusión\n- 20 canciones demo\n- Utiliza 6 baterías \"AA” (no incluidas)\n- Incluye: respaldo para partituras y adaptador para conectarse\n\n[Descarga manual en PDF.](https://d822yi8obt972.cloudfront.net/MANUALES+WEB/MTC-5470_MANUAL.pdf \"Descarga manual en PDF.\")"
-        
         },
         {
-            "id": 31,
+            "id": 29,
             "name": "Bafle Melo Dsp 1560",
             "price": 8500,
             "discountedPrice": 8250.0,
@@ -521,7 +513,7 @@
             "description": ""
         },
         {
-            "id": 32,
+            "id": 30,
             "name": "Sistema de Columna Activa NT 1000",
             "price": 21500,
             "discountedPrice": 20900,
@@ -530,7 +522,7 @@
             "description": ""
         },
         {
-            "id": 33,
+            "id": 31,
             "name": "M-SUB 28A Subwoofer de doble 18”",
             "price": 51800,
             "discountedPrice": 50800,
@@ -541,7 +533,7 @@
             "description": ""
         },
         {
-            "id": 34,
+            "id": 32,
             "name": "RF 200 - Micrófono Inalámbrico”",
             "price": 7500,
             "discountedPrice": 7300,
@@ -553,20 +545,20 @@
                     "images": [
                         "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/RF-200-catalogo-768x515.png"
                     ],
-                    "variantID": "34_1"
+                    "variantID": "32_1"
                 },
                 {
                     "value": "Black (Negro)",
                     "images": [
                         "https://http2.mlstatic.com/D_NQ_NP_837896-MLU75650621742_042024-O.webp"
                     ],
-                    "variantID": "34_2"
+                    "variantID": "32_2"
                 }
             ],
             "variationKey": "color"
         },
         {
-            "id": 35,
+            "id": 33,
             "name": "Amplificador FP10000Q MELO",
             "price": 26900,
             "discountedPrice": 25900,
@@ -577,7 +569,7 @@
             "description": ""
         },
         {
-            "id": 36,
+            "id": 34,
             "name": "Sistema Lineal MELO KENDO-A",
             "price": 53000,
             "discountedPrice": 52000,
@@ -588,7 +580,7 @@
             "description": ""
         },
         {
-            "id": 37,
+            "id": 35,
             "name": "Bafle Melo M-15A",
             "price": 21400,
             "discountedPrice": 20900,
@@ -597,7 +589,7 @@
             "description": ""
         },
         {
-            "id": 38,
+            "id": 36,
             "name": "Bafle activo doble 15” M215-A",
             "price": 31900,
             "discountedPrice": 30100,
@@ -606,7 +598,7 @@
             "description": ""
         },
         {
-            "id": 39,
+            "id": 37,
             "name": "Bafle VAMAV Mercury 15 BCN003 activo 15”",
             "price": 5000,
             "discountedPrice": 4500,
@@ -617,7 +609,7 @@
             "description": ""
         },
         {
-            "id": 40,
+            "id": 38,
             "name": "Sistema De Sonido Vamav VRX815",
             "price": 19200,
             "discountedPrice": 16600,
@@ -628,7 +620,7 @@
             "description": ""
         },
         {
-            "id": 41,
+            "id": 39,
             "name": "Bafle Vamav Nova 215 portátil con bluetooth negra 110V/240V",
             "price": 12000,
             "discountedPrice": 9500,
@@ -639,7 +631,7 @@
             "description": ""
         },
         {
-            "id": 42,
+            "id": 40,
             "name": "Subwoofer doble Vamav 1500w Rms Terra-218 Activo",
             "price": 19500,
             "discountedPrice": 16600,
@@ -650,7 +642,7 @@
             "description": ""
         },
         {
-            "id": 43,
+            "id": 41,
             "name": "QSC CP8 - Altavoz Compacto de 8",
             "price": 12200,
             "discountedPrice": 11500,
@@ -661,18 +653,16 @@
             "description": ""
         },
         {
-            "id": 44,
+            "id": 42,
             "name": "KD332 Micrófono Inalámbrico Doble",
             "price": 3900,
             "discountedPrice": 3700,
-            "images": [
-
-            ],
+            "images": [],
             "category": "microfonia",
             "description": ""
         },
         {
-            "id": 45,
+            "id": 43,
             "name": "Consola Melo Sm6usb 4 Canales Mono, Conexión Bluetooth",
             "price": 1900,
             "discountedPrice": 1750,
@@ -683,7 +673,7 @@
             "description": ""
         },
         {
-            "id": 46,
+            "id": 44,
             "name": "Kit de Micrófono de Bombo PGADRUMKIT5",
             "price": 8300,
             "discountedPrice": 8000,
@@ -694,7 +684,7 @@
             "description": ""
         },
         {
-            "id": 47,
+            "id": 45,
             "name": "Match 112 - Sistema lienal versátil Activo - 1000 W RMS",
             "price": 26900,
             "discountedPrice": 25900,
@@ -708,7 +698,7 @@
             "description": "##Esto es la descripcion de un producto \n Y es un lineal"
         },
         {
-            "id": 48,
+            "id": 46,
             "name": "DSP1540 Bafle Activo 400W RMS - Bluetooth",
             "price": 6800,
             "discountedPrice": 6660,
@@ -722,7 +712,7 @@
             "description": "La etapa de potencia de toda la serie DSP está basada en amplificaciones clase D, esto garantiza el mayor aprovechamiento de energía, entregando calidad sonora."
         },
         {
-            "id": 49,
+            "id": 47,
             "name": "Pack de cabezas moviles Mega Spot 470",
             "price": 112300,
             "discountedPrice": 109660,
@@ -735,7 +725,7 @@
             "description": ""
         },
         {
-            "id": 50,
+            "id": 48,
             "name": "ULXD4Q Receptor inalámbrico digital cuádruple Shure",
             "price": 157000,
             "discountedPrice": 155700,
@@ -747,10 +737,10 @@
             "description": "Receptor inalámbrico digital cuádruple diseñado para aplicaciones de refuerzo sonoro profesional. Incluye características como la diversity digital con conmutación predictiva, hasta 72 MHz de banda de sintonización y la encriptación AES de 256 bits para garantizar la privacidad."
         },
         {
-            "id": 51,
+            "id": 49,
             "name": "NT 700 - Columna con subwoofer de 12' y Bluetooth",
-            "price": 15600.00,
-            "discountedPrice": 14990.00,
+            "price": 15600.0,
+            "discountedPrice": 14990.0,
             "images": [
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2024/02/NT-700-catalogo.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2024/02/NT-700-Lateral.png",
@@ -761,10 +751,10 @@
             "description": "\nNT 700 es la respuesta de MELO a los profesionales que trabajan en lugares donde la estética es\nun tema fundamental, que requieren gran potencia en equipos compactos.\n\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5p91eKlesKA?si=LMrHqcVs0MqIhd1x\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n\n\n## CARACTERISTÍCAS\nNT700\nColumna activa.\nEquipado con un amplificador de 700W RMS.\nSonido potente y claro.\n126 db SPL pico.\n\nNT700 sistema activo de columna con un subwoofer.\n\nIncluye 2 fundas\n\n¡Olvídate del cableado!\n\n## ESPECIFICACIONES\n- Columna activa.\n- Equipado con un amplificador de 700w RMS.\n- Excelente sonido potente y claro.\n- 126 db SPL pico.\n- Conectividad Bluetooth.\n- Respuesta de Freuencia de 40Hz- 18kHz.\n- Max SPL 126 db SPL (pico).\n- Dispersión (H X V) 100° X 60°\n- Bocinas 1 x 12″ Subwoofer, 6 X 3″ Medios.\n- Potencia de Amplificador 700W RMS\n- Conectores de Entrada Combo, RCA Y TRS\n- Impedancia de Entrada de Línea: 20kΩ balanceada, 10kΩ no balanceada.\n- Impedancia de Entrada de Micrófono 2kΩ balanceada, 1kΩ no balanceada.\n- Impedancia de Entrada de Instrumento: 470kΩ no balanceada.\n- Nivel de Entrada Línea 775mVrms, Mic 400mVrms.\n- Voltaje: 120 o 240V vía switch 50/60Hz.\n- Consumo: 3.5 Amper 420W @ 120V.\n\n"
         },
         {
-            "id": 52,
+            "id": 50,
             "name": "Amplificador FP14000 / MELO",
-            "price": 26400.00,
-            "discountedPrice": 25300.00,
+            "price": 26400.0,
+            "discountedPrice": 25300.0,
             "images": [
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/FP14000-1-1024x221.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/FP14000-2.png",
@@ -773,13 +763,12 @@
             ],
             "category": "audio-profesional",
             "description": "\n\nEl FP14000 es un amplificador profesional con 14000W de salida pico con todos los canales operados y 2 canales de amplificación.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/wgs3MhBnVi0?si=mcCx-c_B-27LZJPd\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n **CARACTERÍSTICAS**\n- Amplificador dedicado a bajas frecuencias\n- 2 canales de amplificación\n- 2 entradas de señal balanceadas XLR\n- Selector de ganancia de entrada\n- Limitador de voltaje pico por canal\n- Sensor de temperatura\n- Protección contra cargas abiertas y cortocircuitos\n\nESPECIFICACIONES\n\n|   |   |\n| ------------ | ------------ |\n| Número de canales:   |  2 |\n| Salida de pico con todos los canales operados:  | 14000W  |\n| Salida de voltaje pico por canal  | 195V  |\n|  Máxima salida en modo stereo por canal  |   |\n| 16Ω:  | 1200W  |\n| 8Ω  | 2350W  |\n|  4Ω | 4400W  |\n| Consumo de corriente  |  16A@220V |\n|  THD 20Hz  |  20kHz < 0.1% |\n\n\n"
-
         },
         {
-            "id": 53,
+            "id": 51,
             "name": "Subwoofer Activo 18'' M18-A",
-            "price": 27000.00,
-            "discountedPrice": 26000.00,
+            "price": 27000.0,
+            "discountedPrice": 26000.0,
             "images": [
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M18-A-catalogo-768x403.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M-18-A-5.png",
@@ -790,18 +779,16 @@
             "description": "\n\nBafle activo, integra un componente de 18” con bocina de 4.5”, usamos un amplificador de clase D; el cual añade poco peso al bafle y tiene una capacidad de 1800W RWS.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/EvatBU6Vj-c?si=pBOMVOzZaFiSdXgb\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n**ESPECIFICACIONES**\n\n|   |   |\n| ------------ | ------------ |\n| **Rango de Frecuencia (-6dB)**  | 30-50HZ a 80 – 100 Hz  |\n| **Dispersión**  | Omnidireccional  |\n| **Presión Sonora Nominal @ 1m**  | 118 dB Ruido rosa  |\n|  **Presión Sonora Pico @ 1m** |  130 dB Ruido rosa |\n| **Componentes LF**  |  1X18” MWS-18F Ferrita / Bobina 4.5” |\n| **Amplificador**  |  1800W RMS |\n| **Conectores**  |  XLR |\n| **Gabinete**  | Bass Reflex  |\n| **Material Del Gabinete**  | Multiplay 18mm  |\n| **Pintura**  | Color Negro poliurea  |\n|  **Parrilla Frontal** | Pintura Electrostática Color Negro / Doble Perforado Elíptico  |\n|  **Sensibilidad de entrada** | .775 v  |\n| **Peso**  | 35 Kg  |\n| **Amplificación y proceso**  | MELO  |\n| **Voltaje**  | 115V AC 60 Hz  |\n\n**INFORMACIÓN**\n\nEl M 18-A es un subwoofer de 18” que incorpora un nuevo diseño bass reflex que permite el libre flujo de aire logrando una increíble respuesta en baja frecuencia. El altavoz de larga excursión con bobina de 4.5” proporcionan un desempeño excepcional y de mayor impacto. Este subwoofer de alto rendimiento se coloca como uno de los más compactos y potentes en el mercado profesional\n\n"
         },
         {
-            "id":54,
-            "name":"WM 201 - Sistema inalámbrico para instrumentos de viento",
-            "price": 4900.00,
-            "discountedPrice":4600.00,
-            "images":[
-
-            ],
-            "category":"microfonia",
+            "id": 52,
+            "name": "WM 201 - Sistema inalámbrico para instrumentos de viento",
+            "price": 4900.0,
+            "discountedPrice": 4600.0,
+            "images": [],
+            "category": "microfonia",
             "description": "\nNUEVO SISTEMA DE MICRÓFONIA inalámbrica de la **SerieWM** el increíble WM201, una opción asombrosa diseñada para trompetistas, guitarristas, bajistas y todo apasionado de la música que requiera un sistema inalámbrico profesional con un excelente sonido y claridad.\nUtilizándolo para bajo o guitarra; acordeón ó instrumento de viento.\n\n## Especificaciones\n|   |   |\n| ------------ | ------------ |\n|  **Frecuencia de trabajo** |  UHF 630-660MHZ  |\n| **Ancho de banda**  | 20MHZ  |\n| **Rango dinámico** |   96DB  |\n|  **Respuesta de frecuencia** |  30-20KHZ/ 2DB  |\n| **SALIDA DE AUDIO** |  1 Salida Desbalanceada X6.3MM, 1 Salida Balanceada XLR  |\n\n## Transmisor body pack (especificaciones)\n|   |   |\n| ------------ | ------------ |\n| **Baterías**  |  2X1.5V AA |\n| **Vida de las baterias**  |  5H |\n| **Frecuencia De Trabajo**  |  UHF 630-660MHZ  |\n| **Cambio de frecuencia**  | Via Infrarrojo  |\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/rjug8jdcPhg?si=DxAfTbmoyDCWsAdA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n\n"
         },
         {
-            "id": 55,
+            "id": 53,
             "name": "Set de Cuerdas para Guitarra Clásica Victor 20",
             "price": 160.0,
             "discountedPrice": 150.0,
@@ -813,10 +800,10 @@
             "description": "\nSet de cuerdas Victor para guitarra clásica, compuesto por 6 cuerdas de nylon con borla, ofreciendo un tono suave y una durabilidad excepcional. Ideal para guitarristas de todos los niveles.\n\nVíctor es una marca mexicana con más de 5 décadas en el mercado. Sus productos han colaborado con múltiples músicos, grupos, tríos y aficionados, para generar la música que ha alegrado el corazón de un pueblo indiscutiblemente musical.Para el músico profesional, la claridad y alta fidelidad en el sonido a la hora de estar en público o en el estudio de grabación es sumamente importante.\n"
         },
         {
-            "id": 56,
+            "id": 54,
             "name": "Baquetas promark ''LA SPECIAL'' punta madera",
-            "price": 250.00,
-            "discountedPrice": 230.00,
+            "price": 250.0,
+            "discountedPrice": 230.0,
             "category": "accesorios",
             "description": "\nEleva la calidad de tu música con las baquetas LA Special de Promark. Estas baquetas, hechas con madera de hickory, proporcionan una excelente respuesta y un tacto tradicional, adaptándose a diversos géneros musicales y técnicas de toque. Gracias a su punta ovalada de madera, ofrecen una ejecución precisa y un tono bien definido en cada impacto, ideal tanto para sesiones de estudio como para presentaciones en vivo. Las baquetas LA Special son versátiles, resistentes y ofrecen un excelente desempeño y durabilidad a un costo económico, siendo una opción perfecta para bateristas de todos los niveles que buscan fiabilidad y calidad.\n\nFicha técnica\n|   |   |\n| ------------ | ------------ |\n|  **Marca** |  Promark  LA Special |\n|  **Fabricación** | U.S.A  |\n|  **Material**  |  Hickory   |\n|  **Medidas Disponibles** | 5A, 5B, 2B  |\n| **Longitud**  |  40.64cm |\n| **Punta**  | Madera  |\n\n",
             "variations": [
@@ -825,30 +812,30 @@
                     "images": [
                         "https://veerkamponline.com/cdn/shop/products/3630025_1500x.jpg?v=1571953911"
                     ],
-                    "variantID": "56_1"
+                    "variantID": "54_1"
                 },
                 {
                     "value": "5A",
                     "images": [
                         "https://veerkamponline.com/cdn/shop/products/3630025_1500x.jpg?v=1571953911"
                     ],
-                    "variantID": "56_2"
+                    "variantID": "54_2"
                 },
                 {
                     "value": "2B",
                     "images": [
                         "https://veerkamponline.com/cdn/shop/products/3630025_1500x.jpg?v=1571953911"
                     ],
-                    "variantID": "56_3"
+                    "variantID": "54_3"
                 }
             ],
             "variationKey": "Medida"
         },
         {
-            "id": 57,
+            "id": 55,
             "name": "Baquetas promark ''LA SPECIAL'' punta de Nylon",
-            "price": 250.00,
-            "discountedPrice": 230.00,
+            "price": 250.0,
+            "discountedPrice": 230.0,
             "category": "accesorios",
             "description": "\nLas baquetas LA Special ofrecen toda la calidad de Promark a precios accesibles, hechas en madera de hickory, lo que las hace ligeras pero resistentes. La punta de nylon proporciona un sonido más brillante y definido en tus tambores, ideal para estilos de música que requieren mayor claridad en los ataques.\n\nFicha técnica\n|   |   |\n| ------------ | ------------ |\n|  **Marca** | LA Special |\n|  **Fabricación** | U.S.A  |\n|  **Material**  |  Hickory   |\n|  **Medidas Disponibles** | 2B, 5A, 5B, 7A  |\n| **Longitud**  |  40.64cm |\n| **Punta**  | Madera  |\n",
             "variations": [
@@ -857,93 +844,93 @@
                     "images": [
                         "https://veerkamponline.com/cdn/shop/products/3630035_1500x.jpg?v=1571954280"
                     ],
-                    "variantID": "56_1"
+                    "variantID": "55_1"
                 },
                 {
                     "value": "5A",
                     "images": [
                         "https://veerkamponline.com/cdn/shop/products/3630035_1500x.jpg?v=1571954280"
                     ],
-                    "variantID": "56_2"
+                    "variantID": "55_2"
                 },
                 {
                     "value": "2B",
                     "images": [
                         "https://veerkamponline.com/cdn/shop/products/3630035_1500x.jpg?v=1571954280"
                     ],
-                    "variantID": "56_3"
+                    "variantID": "55_3"
                 }
             ],
             "variationKey": "Medida"
         },
         {
-            "id": 58,
+            "id": 56,
             "name": "Cable de Micrófono XLR Macho a Hembra - The American Cable Company",
             "category": "accesorios",
             "description": "\n\n**El Cable de Micrófono XLR Macho a Hembra** de T**he American Cable Company **es una elección ideal para profesionales del audio que buscan calidad y fiabilidad. Este cable está diseñado para ofrecer una transmisión de señal clara y libre de interferencias, garantizando un rendimiento excepcional en todo tipo de aplicaciones de audio.\n\n## Características\n\n- Calidad Superior: Fabricado con materiales de alta calidad que aseguran una larga vida útil y un uso continuo.\n- Construcción Robusta: Ensamblado por personal calificado, este cable está diseñado para soportar el uso riguroso tanto en estudios como en escenarios.\n- Conectores Profesionales: Conectores XLR macho y hembra de precisión que proporcionan una conexión segura y sin ruido.\n - Varias Longitudes Disponibles: Ofrecemos una amplia gama de longitudes para adaptarse a cualquier configuración. Esto es ideal para profesionales que necesitan diferentes opciones para diversas aplicaciones, garantizando siempre la máxima flexibilidad y comodidad. \n- Garantía de Fabricación: Los productos de The American Cable Company están garantizados contra defectos de materiales y fabricación.\n\n## Especificaciones Técnicas\n|   |   |\n| ------------ | ------------ |\n| **Tipo de Conector**  | XLR Macho a XLR Hembra  |\n| **Color del cable**  | Negro  |\n| **Uso**   |  Micrófonos, mezcladoras, interfaces de audio, y otros equipos de audio profesional |\n| **Ensamblado por**  | Acoustic Control de México, S.A. de C.V.  |\n\n \n Longitudes Disponibles: \n  - 3 ft (aprox. 1 m)\n  - 10 ft (aprox. 3 m)\n  - 20 ft (aprox. 6 m)\n  - 30 ft (aprox. 9 m)\n  - 40 ft (aprox. 12 m)\n  - 50 ft (aprox. 15 m) \n\n **Incluye**:\n 1 x Cable de Micrófono XLR Macho a Hembra (disponible en varias longitudes)\n\n",
             "variations": [
                 {
                     "value": "3 ft (aprox. 1 m)",
-                    "price": 210.00,
-                    "discountedPrice": 190.00,
+                    "price": 210.0,
+                    "discountedPrice": 190.0,
                     "images": [
                         ""
                     ],
-                    "variantID": "58_1"
+                    "variantID": "56_1"
                 },
                 {
                     "value": "10 ft (aprox. 3 m)",
-                    "price": 260.00,
-                    "discountedPrice": 240.00,
+                    "price": 260.0,
+                    "discountedPrice": 240.0,
                     "images": [
                         ""
                     ],
-                    "variantID": "58_2"
+                    "variantID": "56_2"
                 },
                 {
                     "value": "20 ft (aprox. 6 m)",
-                    "price": 290.00,
-                    "discountedPrice": 270.00,
+                    "price": 290.0,
+                    "discountedPrice": 270.0,
                     "images": [
                         ""
                     ],
-                    "variantID": "58_3"
+                    "variantID": "56_3"
                 },
                 {
                     "value": "30 ft (aprox. 9 m)",
-                    "price": 420.00,
-                    "discountedPrice": 400.00,
+                    "price": 420.0,
+                    "discountedPrice": 400.0,
                     "images": [
                         ""
                     ],
-                    "variantID": "58_4"
+                    "variantID": "56_4"
                 },
                 {
                     "value": "40 ft (aprox. 12 m)",
-                    "price": 550.00,
-                    "discountedPrice": 530.00,
+                    "price": 550.0,
+                    "discountedPrice": 530.0,
                     "images": [
                         ""
                     ],
-                    "variantID": "58_5"
+                    "variantID": "56_5"
                 },
                 {
                     "value": "50 ft (aprox. 15 m)",
-                    "price": 580.00,
-                    "discountedPrice": 560.00,
+                    "price": 580.0,
+                    "discountedPrice": 560.0,
                     "images": [
                         ""
                     ],
-                    "variantID": "58_6"
+                    "variantID": "56_6"
                 }
             ],
             "variationKey": "Longitud"
         },
         {
-            "id": 59,
+            "id": 57,
             "name": "Proyector de Luz PAR 54X1 Megaluz",
-            "price": 1150.00,
-            "discountedPrice": 980.00,
+            "price": 1150.0,
+            "discountedPrice": 980.0,
             "images": [
                 "https://http2.mlstatic.com/D_NQ_NP_630045-MLM52596970143_112022-O.webp",
                 "https://http2.mlstatic.com/D_NQ_NP_935732-MLM52596970142_112022-O.webp"
@@ -952,7 +939,7 @@
             "description": "\n\nEl **Megaluz Proyector de Luz PAR 54X1** es un dispositivo de iluminación ideal para discotecas, eventos y espectáculos. Diseñado con 54 lámparas LED RGB 3 en 1, este proyector ofrece una amplia gama de colores, incluyendo azul, verde y rojo.\n\nEste proyector permite trabajar con hasta seis canales DMX diferentes y se puede controlar mediante protocolos DMX 512. Además, ofrece varios modos de operación como Auto, DMX, Maestro/Esclavo y Activado por Sonido.\n\nCon unas dimensiones de 290 mm de ancho y 230 mm de profundidad, el Megaluz Proyector de Luz PAR 54X1W también incluye una pantalla incorporada y funciona a través del suministro eléctrico AC (corriente alterna). Su color negro lo hace adecuado para su uso en interiores.\n\n#### Especificaciones Técnicas\n\n| Especificación         | Detalle |\n|------------------------|---------------------------------|\n| Voltaje                | 85-265V ~ 60Hz|\n| Consumo de corriente   | 80W|\n| Color                  | RGB 3 en 1|\n| Modos DMX              | 6 canales|\n| Operación              | DMX 512, Automático, Audio Rítmico, Maestro|\n| Dimensiones            | 290 mm (ancho) x 230 mm (profundidad) x 280 mm (altura) |\n| Potencia individual LED| 1W cada uno  |\n| Color del dispositivo  | Negro |\n\nEl Megaluz Proyector de Luz PAR 54X1 es una opción versátil y potente para todas tus necesidades de iluminación en eventos y espectáculos.\n"
         },
         {
-            "id": 60,
+            "id": 58,
             "name": "Cabeza Movil WASH Megaluz Tiny Wash",
             "price": 1628.0,
             "discountedPrice": 1440.0,
@@ -961,10 +948,10 @@
                 "https://http2.mlstatic.com/D_NQ_NP_833316-MLM70225528243_062023-O.webp",
                 "https://www-x-megaluzshow-x-com.img.addlink.cn/Uploads/5baa7b82944e8.png"
             ],
-            "description": "Una descripcion del producto que falta por llenar en este producto" 
+            "description": "Una descripcion del producto que falta por llenar en este producto"
         },
         {
-            "id": 61,
+            "id": 59,
             "name": "Cabeza Móvil Led De 15w Efecto Disco Mini Ball Lite Tek",
             "price": 2428.0,
             "discountedPrice": 21158.0,
@@ -974,10 +961,5 @@
             ],
             "description": "**MiniBALL** es una cabeza móvil de leds, que proyecta múltiples haces de\n    colores RGBW emulando el efecto de una bola de cristal de los 70’s,\n    pero con movimiento.\n Lámpara: LED de 15W\n    Modos de operación: DMX512, Audio, Auto, Master/Slave\n    Efectos: Rayos delgados que giran en ambos sentidos\n    RGBW\n    Dimmer 0-100% mecánico\n    11 Canales DMX\n    Estrobo: 1-20 veces por segundo\n    Display\n    IP20\n    Voltaje: 110 240V~ 50-60Hz 35W\n"
         }
-
-
-        
-
-  
     ]
-} 
+}
