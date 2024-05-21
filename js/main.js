@@ -299,7 +299,13 @@ const renderProducts = arr => {
         productPrice.innerText = formatPrice(price);
 
         const productName = document.createElement('p');
-        productName.innerText = product.name;
+        // Crear el nombre del producto según las variaciones
+        if (product.variations && product.variations.length > 0) {
+            const firstVariation = product.variations[0];
+            productName.innerText = `${product.name} - ${product.variationKey}: ${firstVariation.value}`;
+        } else {
+            productName.innerText = product.name;
+        }
 
         productInfoDiv.appendChild(productPrice);
         productInfoDiv.appendChild(productName);

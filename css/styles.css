@@ -662,7 +662,7 @@ tbody tr:hover {
 }
 
 .product-info p:nth-child(3) {
-  color: var(--very-light-pink);
+
   font-size: var(--sm);
   margin-top: 0;
   margin-bottom: 32px;

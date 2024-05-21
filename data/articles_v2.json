@@ -444,12 +444,17 @@
         },
         {
             "id": 23,
-            "name": "Casio CT-S1 Rd Teclado 61 Teclas Midi Usb Touch Response Red Color Rojo",
+            "name": "Teclado Casio Ct-S1 Rd, portátil Electrónico Color Rojo",
             "price": 5400.0,
             "discountedPrice": 5250.0,
-            "images": [],
+            "images": [
+                "https://http2.mlstatic.com/D_NQ_NP_760715-MLU74729760566_032024-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_865877-MLU74729760572_032024-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_861769-MLU74960295579_032024-O.webp"
+            ],
             "category": "instrumentos",
-            "description": ""
+            "description": "**Características del producto**\n\n|||\n|------------|------------|\n|**Marca**|Casio|\n|**Modelo**|Ct-S1|\n|**Voltaje**|220V|\n|**Color**|Rojo|\n\n**Calidad e Innovación de Casio**\nCasio, una empresa con una reputación consolidada en el mercado, se destaca por ofrecer productos originales e innovadores. Sus teclados musicales son una elección perfecta para quienes buscan calidad y rendimiento.\n\n**Eleva tu Música al Siguiente Nivel**\nEl Teclado Casio Ct-S1 Rd cuenta con 61 teclas, permitiéndote explorar una amplia variedad de composiciones musicales. Es ideal para músicos de nivel intermedio que desean perfeccionar sus habilidades y avanzar en su trayectoria musical.\n\n**Explora Nuevos Ritmos y Estilos**\nCon un extenso banco de estilos y ritmos musicales, este teclado te invita a dejar volar tu creatividad e improvisar con confianza sobre las pistas. Es la herramienta perfecta para aquellos que buscan expandir sus horizontes musicales."
+
         },
         {
             "id": 24,
