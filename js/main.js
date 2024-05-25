@@ -349,17 +349,36 @@ const renderProducts = arr => {
     });
 }
 
-    // Determinar la imagen principal del producto
-    function getFirstProductImage (product) {
+    // Determinar la imagen principal del producto considerando la variante seleccionada
+    function getFirstProductImage(product, variantId) {
+        if (variantId) {
+            const selectedVariant = product.variations.find(variation => variation.variantID === variantId);
+            if (selectedVariant && selectedVariant.images && selectedVariant.images.length > 0) {
+                return selectedVariant.images[0];
+            }
+        }
         return (product.images && product.images.length > 0) ? product.images[0] :
-        (product.variations && product.variations.length > 0 && product.variations[0].images && product.variations[0].images.length > 0) ? product.variations[0].images[0] :
-        'https://placehold.co/600x400';    
+            (product.variations && product.variations.length > 0 && product.variations[0].images && product.variations[0].images.length > 0) ? product.variations[0].images[0] :
+            'https://placehold.co/600x400';
     }
 
     function getFirstProductPrice(product){
         return product.price ? product.price : 
         (product.variations && product.variations.length > 0 && product.variations[0].price ? product.variations[0].price : 'Precio no disponible');
     }
+
+    function getProductNameWithVariant(product, variantId) {
+        console.log("el producto es", product);
+        console.log("la variante ", variantId);
+    if (variantId && product.variations && product.variations.length > 0) {
+        const selectedVariant = product.variations.find(variation => variation.variantID === variantId);
+        if (selectedVariant) {
+            return `${product.name} - ${product.variationKey}: ${selectedVariant.value}`;
+        }
+    }
+    return product.name;
+}
+
 
 
 function filterProducts(category) {
@@ -435,11 +454,31 @@ function buscarPrecioPorId(id) {
     return producto ? producto.price : 0;
 }
 
-// Función para calcular el total del carrito
-function calcularTotalCarrito(carrito) {
-    return carrito.reduce((total, item) => {
-        const precio = buscarPrecioPorId(item.id);
-        return total + (precio * item.cantidad);
+function calculateTotalCart(cart) {
+    return cart.reduce((total, item) => {
+        const product = productList.find(product => product.id === item.id);
+
+        let price;
+
+        // Case 1: The product does not have variants
+        if (!product.variations || product.variations.length === 0) {
+            price = product.price;
+        }
+        // Case 2: The product has variants and the price is in each variant
+        else if (item.variantId) {
+            const variant = product.variations.find(variation => variation.variantID === item.variantId);
+            if (variant && variant.price !== undefined) {
+                price = variant.price;
+            } else {
+                // Case 3: The product has variants but the price is in the main product
+                price = product.price;
+            }
+        } else {
+            // Default fallback for edge cases
+            price = product.price;
+        }
+
+        return total + (price * item.quantity);
     }, 0);
 }
 
@@ -460,6 +499,7 @@ function renderactualizarContadorCarrito(totalProductos) {
 }
 
 function renderCart(arrayCarrito) {
+    // console.log(arrayCarrito);
     const totalPriceContainer = asideShoppingCart.querySelector('#TotalPrice');
     const shoppingContainer = document.querySelector('.shopping-container');
     shoppingContainer.innerHTML = '';
@@ -477,14 +517,14 @@ function renderCart(arrayCarrito) {
 
         //Genero la imagen del producto y la agrego un figure 
         const productImg = document.createElement('img');
-        productImg.setAttribute('src', getFirstProductImage(productDetails));
+        productImg.setAttribute('src', getFirstProductImage(productDetails, product.variantId));
         productImg.setAttribute('alt', productDetails.name);
         productImg.classList.add('hover-neon-effect');
 
         const productPrice = document.createElement('p');
         const productName = document.createElement('p');
         productPrice.innerText = formatPrice(getPriceFromCart(product, productDetails));
-        productName.innerText = productDetails.name;
+        productName.innerText = getProductNameWithVariant(productDetails, product.variantId);
         /*
         * Este bloque de código utiliza una IIFE (Immediately Invoked Function Expression) para manejar
         * los event listeners dentro de un bucle for. Cada iteración del bucle sobrescribe 'productDetails',
@@ -516,7 +556,7 @@ function renderCart(arrayCarrito) {
             renderCart(shoppingCart);
             renderactualizarContadorCarrito(countProductsInCart());
 
-            const totalCarrito = calcularTotalCarrito(shoppingCart);
+            const totalCarrito = calculateTotalCart(shoppingCart);
             totalPriceContainer.innerText = formatPrice(totalCarrito);
         });
 
@@ -524,7 +564,7 @@ function renderCart(arrayCarrito) {
         productCartContainer.append(productFigure, productName, productPrice, productDeleteButton);
         shoppingContainer.appendChild(productCartContainer);
 
-        const totalCarrito = calcularTotalCarrito(shoppingCart);
+        const totalCarrito = calculateTotalCart(shoppingCart);
         totalPriceContainer.innerText = formatPrice(totalCarrito);
     }
 }

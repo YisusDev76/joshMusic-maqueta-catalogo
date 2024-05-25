@@ -514,6 +514,16 @@ body::-webkit-scrollbar-track:active {
   object-fit: contain;
 }
 
+
+/* img[alt] {
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  max-width: 100%;
+} */
+
 .shopping-cart p:nth-child(2) {
   color: var(--very-light-pink);
 }
