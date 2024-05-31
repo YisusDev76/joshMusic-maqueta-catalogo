@@ -694,13 +694,14 @@
             "price": 26900,
             "discountedPrice": 25900,
             "images": [
-                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-catalogo-768x381.png",
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717190054/match_112_aitomr.jpg",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-4.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-5.png",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-8.png"
             ],
             "category": "audio-profesional",
-            "description": "##Esto es la descripcion de un producto \n Y es un lineal"
+            "description": "**MATCH 112 ** es una caja de arreglo lineal amplificado, cargado con un sistema de rigging que soporta hasta 12 cajas manteniendo una directividad de 100⁰ horizontales en todo su conjunto.\n\nCuenta con un amplificador de 2 canales 1000W RMS en el cual se encuentra un DSP alemán que trabaja 64 bits @ 96 khz con el poder necesario para procesar la caja, en él se encuentran filtros «APF» , limitadores RMS y pico.\n\nEl sistema está diseñado a dos vías, conformado por una bocinas de 12 pulgadas de neodimio para medias frecuencias y dos drivers de 3 pulgadas de ferrita para altas frecuencias montado en una guía onda de dispersión constante de 100⁰ horizontal y 10⁰ vertical. Los ángulos para la cobertura van de 1⁰ a 10⁰ en pasos de 1⁰.\n\nCuenta con 8 presets de compensación de arreglos, estos crean una respuesta de frecuencia coherente y lo más plana posible para evitar en lo máximo el uso de equipos externos.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/4nAxgZhg-ao?si=rdPXnMZ2XrAeDCpO\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n## Especificaciones\n|||\n|------------|------------|\n|**Directividad Nominal H**|100°|\n|**Directividad Nominal V**|10°|\n|**Presión Sonora Nominal @ 1m**|118 dB|\n|**Presión Sonora Pico @ 1m**|130 dB|\n|**Rango de Frecuencia (-6dB)**|60Hz - 16kHz|\n\n\n## CARACTERÍSTICAS\n- Bafle activo a dos vías\n- 1 Componente de 12″ de neodimio\n- 2 drivers de 3″ de ferrita\n- Amplificador clase D 1000W RMS\n- 130 dB SPL pico\n- Presets para corrección de baja frecuencia\n- Presets para configurar “tiros” dentro del arreglo\n- Incluye Pole Mount para montaje sobre tripie o subwoofer\n- Rigging fácil e intuitivo\n\n[Descargar gratis el Manual de usuario](https://melosoundofmusic.com.mx/wp/wp-content/uploads/2022/12/MANUAL-MATCH-112.pdf \"Descargar gratis el Manual de usuario\")"
+
         },
         {
             "id": 46,
@@ -962,9 +963,13 @@
             "discountedPrice": 21158.0,
             "category": "iluminacion",
             "images": [
-                "https://lite-tek.com.mx/wp-content/uploads/2023/03/MiniBall.jpg"
+                "https://lite-tek.com.mx/wp-content/uploads/2023/03/Mini-Ball-Cabeza-movil.jpg",
+                "https://lite-tek.com.mx/wp-content/uploads/2023/03/MiniBall-efecto-setentas.jpg",
+                "https://lite-tek.com.mx/wp-content/uploads/2023/03/MiniBall.jpg",
+                "https://lite-tek.com.mx/wp-content/uploads/2023/03/Mini-Ball.jpg"
             ],
-            "description": "**MiniBALL** es una cabeza móvil de leds, que proyecta múltiples haces de\n    colores RGBW emulando el efecto de una bola de cristal de los 70’s,\n    pero con movimiento.\n Lámpara: LED de 15W\n    Modos de operación: DMX512, Audio, Auto, Master/Slave\n    Efectos: Rayos delgados que giran en ambos sentidos\n    RGBW\n    Dimmer 0-100% mecánico\n    11 Canales DMX\n    Estrobo: 1-20 veces por segundo\n    Display\n    IP20\n    Voltaje: 110 240V~ 50-60Hz 35W\n"
+            "description": "**MiniBALL** es una cabeza móvil de leds, que proyecta múltiples haces de colores RGBW emulando el efecto de una bola de cristal de los 70’s, pero con movimiento.\n\n**PRECAUCIONES DE SEGURIDAD**\nFavor de mantener la ventilación con una distancia mínima de 1 metro\npara que sea suficiente.\n\n## Especificaciones\n- Lámpara: LED de 15W\n- Modos de operación: DMX512, Audio, Auto, Master/Slave\n- Efectos: Rayos delgados que giran en ambos sentidos\n- RGBW\n- Dimmer 0-100% mecánico\n- 11 Canales DMX\n- Estrobo: 1-20 veces por segundo\n- Display\n- IP20\n- Voltaje: 110 240V~ 50-60Hz 35W\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bcw8SU7XihI?si=Cuon_FE0gsfULJ_V\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n"
+
         }
     ]
 }

@@ -515,14 +515,14 @@ body::-webkit-scrollbar-track:active {
 }
 
 
-/* img[alt] {
+.cart-product-figure img[alt] {
   font-size: 12px;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   display: block;
   max-width: 100%;
-} */
+}
 
 .shopping-cart p:nth-child(2) {
   color: var(--very-light-pink);
@@ -665,7 +665,7 @@ tbody tr:hover {
 
 
 .product-info p:nth-child(2) {
-  color: var(--very-light-pink);
+  /* color: var(--very-light-pink); */
   /* font-size: var(--md); */
   margin-top: 0;
   margin-bottom: 16px;
