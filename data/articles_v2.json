@@ -105,7 +105,7 @@
                     "price": 3400.0,
                     "discountedPrice": 3200.0,
                     "images": [
-                        "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717195233/guitarra-jm-cedro-rojo_i2otw5.jpg"
                     ],
                     "variantID": "4_1"
                 },
@@ -114,16 +114,16 @@
                     "price": 3000.0,
                     "discountedPrice": 2800.0,
                     "images": [
-                        "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717195585/guitarra-jm-caoba_zstzxe.jpg"
                     ],
                     "variantID": "4_2"
                 },
                 {
                     "value": "Palo Escrito",
-                    "price": 3500.0,
-                    "discountedPrice": 3350.0,
+                    "price": 4500.0,
+                    "discountedPrice": 4350.0,
                     "images": [
-                        "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717196754/guitarra-jm-paloescrito_y7spfd.jpg"
                     ],
                     "variantID": "4_3"
                 },
@@ -132,7 +132,7 @@
                     "price": 2400.0,
                     "discountedPrice": 2300.0,
                     "images": [
-                        "https://scontent.fzmm1-1.fna.fbcdn.net/v/t1.6435-9/106489970_940319079821461_6569846395320778740_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cN4Z-ZmV8EgAb4phZlI&_nc_ht=scontent.fzmm1-1.fna&oh=00_AfDll5JIeIvhdvVOHp8iu68bmqbbp7ugQSKpqYtkH6_MKw&oe=66465462"
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717197472/guitarra-jm-abeto_sxuplb.jpg"
                     ],
                     "variantID": "4_4"
                 }
@@ -211,25 +211,13 @@
             "description": "\n## Bajo Quinto JoshMusic - Artesanía Mexicana de Calidad\n\nSumérgete en la tradición y la calidad con el **Bajo Quinto de JoshMusic**, un instrumento excepcionalmente fabricado en la cuna de la luthería mexicana: Paracho, Michoacán. Este bajo quinto, elaborado con esmero por nuestros artesanos, combina tradición y modernidad para ofrecerte un instrumento único en su clase.\n\n### Características Destacadas:\n\n- **Fabricación Artesanal**: Cada bajo quinto es cuidadosamente construido por manos expertas en Paracho, reconocida mundialmente por su maestría en la creación de instrumentos de cuerda.\n- **Materiales de Alta Calidad**: Utilizamos maderas seleccionadas para asegurar una resonancia perfecta y una durabilidad excepcional.\n- **Acabados Premium**: Disponible en dos impresionantes acabados:\n  - **Madera de Acre Rizado Natural**: Un acabado que resalta la belleza natural de la madera, mostrando sus vetas y textura únicas.\n  - **Cosmos Brillante**: Un acabado moderno y llamativo que aporta un brillo especial y un estilo distintivo a tu instrumento.\n- **Sonido Excepcional**: Diseñado para ofrecer una proyección sonora potente y clara, ideal para cualquier género musical.\n\n### Especificaciones Técnicas:\n\n- **Cuerpo**: Madera de acre rizado natural o acabado cosmos brillante\n- **Puente**: Madera de alta resistencia para una mejor transmisión del sonido\n- **Diapasón**: Madera seleccionada para una mejor sensación y durabilidad\n- **Cuerdas**: Incluye un set de cuerdas de alta calidad para un sonido óptimo\n\nEl Bajo Quinto de JoshMusic es más que un instrumento; es una pieza de arte que refleja el alma y la pasión de la música mexicana. Perfecto para músicos profesionales y aficionados que buscan calidad y autenticidad en su sonido.\n\n¡Adquiere el tuyo y lleva tu música al siguiente nivel con JoshMusic!\n\n",
             "variations": [
                 {
-                    "value": "Madera de acre rizado Natural",
-                    "price": 8500.0,
-                    "discountedPrice": 8350,
-                    "images": [],
-                    "variantID": "9_1"
-                },
-                {
                     "value": "Cosmos Brillante",
                     "price": 8000.0,
                     "discountedPrice": 7800.0,
-                    "images": [],
-                    "variantID": "9_2"
-                },
-                {
-                    "value": "Palo Escrito",
-                    "price": 6500.0,
-                    "discountedPrice": 6250.0,
-                    "images": [],
-                    "variantID": "9_3"
+                    "images": [
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717198698/bajoquinto-jm-acustico_gspwj2.jpg"
+                    ],
+                    "variantID": "9_1"
                 }
             ],
             "variationKey": "estilo"
@@ -522,9 +510,12 @@
             "name": "Sistema de Columna Activa NT 1000",
             "price": 21500,
             "discountedPrice": 20900,
-            "images": [],
+            "images": [
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717201929/colunma-melo-nt1000_e1ta6d.jpg"
+            ],
             "category": "audio-profesional",
-            "description": ""
+            "description": "NT1000 es la respuesta de MELO a los profesionales que trabajan en lugares donde la estética es un tema fundamental, que requieren gran potencia en equipos compactos.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/SndEey0eVUo?si=xn8yd5Ioubi2LErE\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n## Caracteristícas\n- Columna activa.\n- Equipado con un amplificador de 1000W RMS.\n- Sonido potente y claro.\n- 129 db SPL pico.\n\nNT1000 sistema activo de columna con un subwoofer de 15” de ferrita, 4 bocinas de 5” en neodimio y un driver de 1.75” de neodimio montado en una guía de onda plana, el bafle esta fabricado en triplay de 15mm.\n\n\n## Especificaciones\n|||\n|------------|------------|\n|**Respuesta de Frecuencia**|45Hz – 18kHz|\n|**Max SPL**|129 db SPL (Pico)|\n|**Dispersión**|(H X V) 100° X 60°|\n|**Bocinas**|1 X 15” Subwoofer, 4 X 5” Medios y 1 X 1.75” Agudos|\n|**Potencia del Amplificador**|1000W RMS|\n|**Voltaje de toma corriente**|120V 60Hz|\n|**Nivel de Entrada Línea**|775mVrms|"
+
         },
         {
             "id": 31,
@@ -548,7 +539,9 @@
                 {
                     "value": "Golden (Dorado)",
                     "images": [
-                        "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/RF-200-catalogo-768x515.png"
+                        "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/RF-200-catalogo-768x515.png",
+                        "https://lh3.googleusercontent.com/pw/AP1GczN4H1lfMoRNVHJqWQ8-15wlrVPJIiuRJClGJPnv9kP3lmsNxd9smogE8llVCwbKs915jxEmbJx7GUj8ifRdr1JhsZ-GJhUM5Hp6fgVgSSsODhzunUI=w2400"
+                        
                     ],
                     "variantID": "32_1"
                 },
@@ -686,7 +679,7 @@
                 "https://products.shureweb.eu/cdn-cgi/image/width=1400,height=1400,format=auto/shure_product_db/product_main_images/files/32c/982/22-/header_transparent/b26a56932136fcf62a1a2f5064867b0f.png"
             ],
             "category": "microfonia",
-            "description": ""
+            "description": "El Kit de Micrófono de Bombo PGADRUMKIT5 es un paquete esencial de micrófonos de calidad profesional diseñado para proporcionar un sonido excelente para la presentación y grabación de bombo de micrófono cerrado, caja y timbal. En el PGADRUMKIT5 se incluyen un micrófono de bombo PGA52, tres micrófonos de bombo PGA56 y un micrófono de instrumento PGA57, junto con tres soportes de bombo y cinco cables XLR-XLR y un estuche de transporte.\n\n## Contenido de la caja\n- 1 x PGA52 Micrófono Cardioide de Bombo Dinámico\n- 3 x PGA56 Micrófonos Cardioides Caja/Timbal Dinámico\n- 1 x PGA57 Micrófono Cardioide de Instrumento Dinámico\n- 1 x A25D Pinza de Micrófono Resistente a Roturas\n- 3 x AP56DM Soportes de Borde de Bombo Resistentes a Rotura\n- 5 x XLR-XLR cables de 4,6m\n- Viene en un maletín de transporte con cierre"
         },
         {
             "id": 45,
@@ -715,7 +708,7 @@
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/DSP-1540-5.png"
             ],
             "category": "audio-profesional",
-            "description": "La etapa de potencia de toda la serie DSP está basada en amplificaciones clase D, esto garantiza el mayor aprovechamiento de energía, entregando calidad sonora."
+            "description": "La etapa de potencia de toda la serie DSP está basada en amplificaciones clase D, esto garantiza el mayor aprovechamiento de energía, entregando calidad sonora.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bIydm85BCfk?si=ap852ra8P6Z324of\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n## CaracteristíCas\nDisplay LCD\nBluetooth\n4 presets. Ecualizador de 3 bandas\nSelector de HPF, Delay\nModo PA y Monitor\nDos canales de entrada\nSelector de tipo de señal de entrada: Line/Mic\n\n## Especificaciones\n|||\n|------------|------------|\n|**Bocina LF**|15″|\n|**Driver**|HF: 1 3/4″|\n|**Alimentación**|100 – 240V~ 50/60Hz|\n|**Respuesta de frecuencia**|38 – 20 KHz|\n|**Potencia**|400W RMS|\n|**Amplificador**|Clase D, Bi Amp|\n|**Conectores**|Combo, XLR|"
         },
         {
             "id": 47,
