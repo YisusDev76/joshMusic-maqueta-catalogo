@@ -278,6 +278,7 @@ const renderProducts = arr => {
         const productImg = document.createElement('img');
         productImg.setAttribute('src', firstImage);
         productImg.setAttribute('alt', product.name);
+        productImg.setAttribute('loading', 'lazy');
         productImg.classList.add('cur-p');
         productImg.addEventListener('click', function () {
             detailsProduct(product);
@@ -519,6 +520,7 @@ function renderCart(arrayCarrito) {
         const productImg = document.createElement('img');
         productImg.setAttribute('src', getFirstProductImage(productDetails, product.variantId));
         productImg.setAttribute('alt', productDetails.name);
+        productImg.setAttribute('loading', 'lazy');
         productImg.classList.add('hover-neon-effect');
 
         const productPrice = document.createElement('p');
