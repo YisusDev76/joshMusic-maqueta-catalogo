@@ -30,7 +30,7 @@ let shoppingCart = [];
 
 // Llamamos a esta función cuando se carga la página
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('../data/articles_v2.json')
+    fetch('data/articles_v2.json')
         .then(response => response.json())
         .then(data => {
             if (Array.isArray(data.products)) {
