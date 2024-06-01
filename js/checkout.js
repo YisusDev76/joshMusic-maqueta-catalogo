@@ -399,24 +399,33 @@ const spanCartResume = document.querySelector('#resume-items');
 const spanTotalToPay = document.querySelector('#resume-totalToPay');
 const shippingCostElements = document.querySelectorAll('.shipping-cost');
 const totalToPayElments = document.querySelectorAll('.element-total-to-Pay');
+const arrowButton = document.querySelector('.button-with-arrow');
 let tooltipTimeout;
 
-let carritoGlobal = [];
-let totalCarrito = 0 ;
+let shoppingCart = [];
+let totalCart = 0 ;
 let totalToPay = 0;
 let selectedShippingProvider = null;
 let globalShippingPrice = 0;
 let priceShipping;
 
-carritoGlobal = JSON.parse(localStorage.getItem('carrito')) || [];
-if (carritoGlobal.length === 0) {
+shoppingCart = JSON.parse(localStorage.getItem('carrito')) || [];
+if (shoppingCart.length === 0) {
     // Redirige al usuario a la página de inicio si el carrito está vacío
     window.location.href = '/index.html';
 }
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    totalCarrito = calcularTotalCarrito(carritoGlobal);
+// fetch('/js/articles.json')
+//   .then(response => response.json())
+//   .then(data => {
+//     // Guardar los datos en productList
+//     productList.push(...data.productos);
+//     console.log(productList);
+//   })
+//   .catch(error => console.error('Error al cargar los datos:', error));
+    totalCart = calcularTotalCarrito(shoppingCart);
     inputs.forEach(function(input) {
         input.addEventListener('blur', function() {
             validateInput(this);
@@ -433,15 +442,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-      // Escucha el evento de toque
-    infoIcon.addEventListener('touchstart', function(e) {
-        // Previene el evento de clic en dispositivos móviles para evitar que se dispare dos veces
-        e.preventDefault();
-        toggleTooltip();
-    });
 
     priceShipping = generarPrecioAleatorio();
-    totalToPay = priceShipping + totalCarrito;
+    totalToPay = priceShipping + totalCart;
 
     shippingCostElements.forEach(function(elemento) {
         elemento.textContent =  formatPrice(priceShipping);
@@ -496,6 +499,43 @@ document.addEventListener('DOMContentLoaded', function () {
         phonePreview.textContent = this.value;
     });
 });
+
+infoIcon.addEventListener('touchstart', function(e) {
+    // Previene el evento de clic en dispositivos móviles para evitar que se dispare dos veces
+    e.preventDefault();
+    toggleTooltip();
+});
+
+arrowButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const formulario = document.getElementById('formularioInformacion');
+    const checkboxTerminos = document.getElementById('termsCheckbox');
+
+    // Comprobar primero la validez del formulario
+    if (!formulario.checkValidity()) {
+        const camposInvalidos = formulario.querySelectorAll(':invalid');
+        camposInvalidos.forEach(campo => {
+            campo.classList.add('blinking');
+            setTimeout(() => {
+                campo.classList.remove('blinking');
+            }, 2000);            
+        });
+        formulario.scrollIntoView(true);
+        window.scrollBy(0, -200); // Asume una altura de navbar de 200px
+    } else if (!checkboxTerminos.checked) { // Solo se comprueba el checkbox si el formulario es válido
+        const shippingWarning = document.querySelector('.shipping-warning'); // Asegúrate de que este selector coincida con tu elemento de advertencia
+        shippingWarning.classList.add('blinking');
+        setTimeout(() => {
+            shippingWarning.classList.remove('blinking');
+        }, 2000);        
+        checkboxTerminos.scrollIntoView(true);
+        window.scrollBy(0, -200); // Ajusta de nuevo por la altura del navbar
+    } else {
+        // Todo es válido, proceder a la redirección
+        window.location.href = '#cartSummary';
+    }
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
     updateInfoUI();
@@ -571,8 +611,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const precioTotal = nuevaCantidad * productoEncontrado.price;
                 document.getElementById(`price-${idProducto}`).innerText = `$${precioTotal.toFixed(2)}`;
         
-                // Actualiza la cantidad en carritoGlobal
-                const productoEnCarrito = carritoGlobal.find(producto => producto.id === idProducto);
+                // Actualiza la cantidad en shoppingCart
+                const productoEnCarrito = shoppingCart.find(producto => producto.id === idProducto);
                 if (productoEnCarrito) {
                     productoEnCarrito.cantidad = nuevaCantidad;
                 }
@@ -582,13 +622,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     function guardarCarritoEnLocalStorage() {
-        const jsonCart = JSON.stringify(carritoGlobal);
+        const jsonCart = JSON.stringify(shoppingCart);
         localStorage.setItem('carrito', jsonCart);
     }
 
 
     function checkCartStatus() {
-        if (carritoGlobal.length === 0) {
+        if (shoppingCart.length === 0) {
             console.log("El carrito esta vacio");
           document.getElementById('total-items').innerText = '0 items';
           document.getElementById('empty-cart-message').classList.remove('inactive');
@@ -600,7 +640,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
     
     // Inicializar la vista con los productos del carrito
-    renderCart(carritoGlobal);
+    renderCart(shoppingCart);
 });
 
 document.getElementById('termsCheckbox').addEventListener('change', function() {
@@ -679,8 +719,8 @@ function calcularTotalCarrito(carrito) {
 }
 
 function updateInfoUI(){
-    spanCartResume.innerHTML = contarTotalItems(carritoGlobal); 
-    totalItems.textContent = contarTotalItems(carritoGlobal) + " artículos";
+    spanCartResume.innerHTML = contarTotalItems(shoppingCart); 
+    totalItems.textContent = contarTotalItems(shoppingCart) + " artículos";
 }
 
 //Solo en lo que existe una forma de caluclar el precio que se acerce a lo que pidio josh
