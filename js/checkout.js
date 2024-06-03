@@ -188,7 +188,6 @@ arrowButton.addEventListener('click', (e) => {
 });
 
 function renderCart(arrayCarrito) {
-    console.log("La variable arrayCarrito ", arrayCarrito);
     const contenedorProductos = document.querySelector(".my-order-content");
     contenedorProductos.innerHTML = ''; // Limpiar el contenedor existente
 
@@ -196,7 +195,6 @@ function renderCart(arrayCarrito) {
         // Crear el div del producto
         const productoDiv = document.createElement("div");
         productoDiv.classList.add("order-item");
-        console.log(productList);
 
         productDetails = productList.find(productFinder => productFinder.id == producto.id);
        
@@ -208,7 +206,7 @@ function renderCart(arrayCarrito) {
         // Agregar imagen, detalles y opciones del producto
         productoDiv.innerHTML = `
             <div class="item-image">
-                <img src="${productDetails.image}" alt="${productDetails.name}">
+                <img src="${getFirstProductImage(productDetails, producto.variantId)}" alt="${productDetails.name}">
             </div>
             <div class="item-details">
                 <div class="nameAndPrice">
@@ -309,14 +307,22 @@ function formatPrice(price) {
     });
 }
 
-function contarTotalItems(carrito) {
-    let totalItems = 0;
+function contarTotalItems() {
+    console.log("entra a contar los productos del carrito");
+    return shoppingCart.reduce((total, item) => total + item.quantity, 0);
+}
 
-    for (let item of carrito) {
-        totalItems += item.cantidad;
+// Determinar la imagen principal del producto considerando la variante seleccionada
+function getFirstProductImage(product, variantId) {
+    if (variantId) {
+        const selectedVariant = product.variations.find(variation => variation.variantID === variantId);
+        if (selectedVariant && selectedVariant.images && selectedVariant.images.length > 0) {
+            return selectedVariant.images[0];
+        }
     }
-
-    return totalItems;
+    return (product.images && product.images.length > 0) ? product.images[0] :
+        (product.variations && product.variations.length > 0 && product.variations[0].images && product.variations[0].images.length > 0) ? product.variations[0].images[0] :
+        'https://placehold.co/600x400';
 }
 
 // Función para buscar el precio de un producto por su ID
