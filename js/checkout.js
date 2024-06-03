@@ -206,11 +206,11 @@ function renderCart(arrayCarrito) {
         // Agregar imagen, detalles y opciones del producto
         productoDiv.innerHTML = `
             <div class="item-image">
-                <img src="${getFirstProductImage(productDetails, producto.variantId)}" alt="${productDetails.name}">
+                <img src="${getFirstProductImage(productDetails, producto.variantId)}" alt="${productDetails.name}" loading="lazy">
             </div>
             <div class="item-details">
                 <div class="nameAndPrice">
-                    <h3 class="item-title">${productDetails.name}</h3>
+                    <h3 class="item-title">${getProductNameWithVariant(productDetails, producto.variantId)}</h3>
                     <p class="item-price" id="price-${producto.id}">$${productDetails.price * producto.cantidad}</p>
                 </div>
                 <div class="item-options">
@@ -308,7 +308,6 @@ function formatPrice(price) {
 }
 
 function contarTotalItems() {
-    console.log("entra a contar los productos del carrito");
     return shoppingCart.reduce((total, item) => total + item.quantity, 0);
 }
 
@@ -324,6 +323,17 @@ function getFirstProductImage(product, variantId) {
         (product.variations && product.variations.length > 0 && product.variations[0].images && product.variations[0].images.length > 0) ? product.variations[0].images[0] :
         'https://placehold.co/600x400';
 }
+
+function getProductNameWithVariant(product, variantId) {
+if (variantId && product.variations && product.variations.length > 0) {
+    const selectedVariant = product.variations.find(variation => variation.variantID === variantId);
+    if (selectedVariant) {
+        return `${product.name} - ${product.variationKey}: ${selectedVariant.value}`;
+    }
+}
+return product.name;
+}
+
 
 // Función para buscar el precio de un producto por su ID
 function buscarPrecioPorId(id) {

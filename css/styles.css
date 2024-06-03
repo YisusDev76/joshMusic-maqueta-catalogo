@@ -634,6 +634,10 @@ body::-webkit-scrollbar-track:active {
   text-decoration: underline;
 }
 
+.product-description-markdowm img{
+  width: 100%;
+}
+
 /* Estilos generales para todas las tablas */
 table {
   border-collapse: collapse;
