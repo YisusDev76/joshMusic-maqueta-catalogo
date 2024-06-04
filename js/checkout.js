@@ -196,51 +196,49 @@ function renderCart(arrayCarrito) {
         const productoDiv = document.createElement("div");
         productoDiv.classList.add("order-item");
 
-        productDetails = productList.find(productFinder => productFinder.id == producto.id);
-       
-        // console.log("La lista de productos es ", productList);
-        // console.log("Producto del carrito es, ", producto.quantity);
-        // console.log("El producto encintrado fue ", productDetails);
-        // console.log("El price de este producto es: ", getPriceFromCart(producto, productDetails));
-       
+        const productDetails = productList.find(productFinder => productFinder.id == producto.id);
+
+        const variantId = producto.variantId ? producto.variantId : '';
+        const uniqueId = variantId ? `${producto.id}-${variantId}` : `${producto.id}`;
 
         // Agregar imagen, detalles y opciones del producto
         productoDiv.innerHTML = `
             <div class="item-image">
-                <img src="${getFirstProductImage(productDetails, producto.variantId)}" alt="${productDetails.name}" loading="lazy">
+                <img src="${getFirstProductImage(productDetails, variantId)}" alt="${productDetails.name}" loading="lazy">
             </div>
             <div class="item-details">
                 <div class="nameAndPrice">
-                    <h3 class="item-title">${getProductNameWithVariant(productDetails, producto.variantId)}</h3>
-                    <p class="item-price" id="price-${producto.id}">$${getPriceFromCart(producto, productDetails)* producto.quantity}</p>
+                    <h3 class="item-title">${getProductNameWithVariant(productDetails, variantId)}</h3>
+                    <p class="item-price" id="price-${uniqueId}">$${getPriceFromCart(producto, productDetails) * producto.quantity}</p>
                 </div>
                 <div class="item-options">
-                <select class="item-quantity" data-id="${producto.quantity}">
-                    <option value="1">1 pza</option>
-                    <option value="2">2 pzas</option>
-                    <option value="3">3 pzas</option>
-                    <option value="4">4 pzas</option>
-                    <option value="5">5 pzas</option>
-                    <option value="6">6 pzas</option>
-                    <option value="7">7 pzas</option>
-                    <option value="8">8 pzas</option>
-                    <option value="9">9 pzas</option>
-                    <option value="10">10 pzas</option>
-                </select>
-            </div>
+                    <select class="item-quantity" data-id="${producto.id}" data-variant-id="${variantId}">
+                        <option value="1">1 pza</option>
+                        <option value="2">2 pzas</option>
+                        <option value="3">3 pzas</option>
+                        <option value="4">4 pzas</option>
+                        <option value="5">5 pzas</option>
+                        <option value="6">6 pzas</option>
+                        <option value="7">7 pzas</option>
+                        <option value="8">8 pzas</option>
+                        <option value="9">9 pzas</option>
+                        <option value="10">10 pzas</option>
+                    </select>
+                </div>
             </div>
         `;
 
         // Establecer la cantidad seleccionada
         const selectCantidad = productoDiv.querySelector(".item-quantity");
         selectCantidad.value = producto.quantity;
+
         // Asegurarse de que la opción actual esté disponible
         if (producto.quantity > 10) {
-        const option = document.createElement("option");
-        option.value = producto.quantity;
-        option.textContent = `${producto.quantity} pza${producto.quantity > 1 ? 's' : ''}`;
-        option.selected = true; // Marcar como seleccionada
-        selectCantidad.appendChild(option);
+            const option = document.createElement("option");
+            option.value = producto.quantity;
+            option.textContent = `${producto.quantity} pza${producto.quantity > 1 ? 's' : ''}`;
+            option.selected = true; // Marcar como seleccionada
+            selectCantidad.appendChild(option);
         } else {
             selectCantidad.value = producto.quantity;
         }
@@ -248,16 +246,32 @@ function renderCart(arrayCarrito) {
         // Añadir el event listener para cambios en la selección
         selectCantidad.addEventListener("change", function(event) {
             const newQty = parseInt(event.target.value);
-            console.log(newQty);
-            const precioTotal =  getPriceFromCart(producto, productDetails) * newQty;
-            console.log("EL nuevo precio total es ", precioTotal);
-            // actualizarPrecioProducto(producto, productDetails, nuevaCantidad);
-        });            
+            const id = event.target.getAttribute("data-id");
+            const variantId = event.target.getAttribute("data-variant-id");
+
+            // Encontrar el producto correcto en el array del carrito
+            let productoActualizado;
+            if (variantId) {
+                productoActualizado = arrayCarrito.find(item => item.id == id && item.variantId == variantId);
+            } else {
+                productoActualizado = arrayCarrito.find(item => item.id == id && !item.variantId);
+            }
+            
+            if (productoActualizado) {
+                productoActualizado.quantity = newQty;
+
+                // Actualizar el precio total del producto en la interfaz
+                const updatedPrice = getPriceFromCart(productoActualizado, productDetails) * newQty;
+                document.getElementById(`price-${uniqueId}`).textContent = `$${updatedPrice}`;
+            }
+        });
 
         // Agregar el producto al contenedor
         contenedorProductos.appendChild(productoDiv);
     });
 }
+
+
 
 document.getElementById('termsCheckbox').addEventListener('change', function() {
     if (this.checked) {
