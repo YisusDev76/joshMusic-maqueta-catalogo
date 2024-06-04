@@ -9,28 +9,18 @@
             "description": "La **Guitarra económica JoshMusic 4/4** es una excelente opción para aquellos que buscan un instrumento de calidad a un precio accesible. Fabricada en la renombrada ciudad de **Paracho**, conocida por su tradición y excelencia en la elaboración de guitarras, este modelo es perfecto para principiantes.\n\n## Características principales\n\n- **Madera:** Pino, que asegura una buena resonancia y durabilidad, ofreciendo un sonido claro y brillante.\n- **Tamaño:** 4/4, ideal para adolescentes y adultos.\n- **Variaciones:** Cada color viene con su propia personalidad, permitiéndote escoger el que mejor se adapte a tu estilo. Asegúrate de revisar la parte superior, donde puedes seleccionar y ver las variaciones disponibles actualmente.\n\nEsta guitarra es no solo una herramienta musical, sino también una pieza de arte que refleja la rica herencia de Paracho. Perfecta para aprender, practicar y disfrutar de la música con un toque de estilo personal.",
             "variations": [
                 {
-                    "value": "Degradado rojo Ruby",
+                    "value": "Rosa chicle",
                     "images": [
-                        "https://m.media-amazon.com/images/I/88PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717463951/Guitarra-jm-economica_l2jy6i.jpg"
                     ],
                     "variantID": "1_1"
                 },
                 {
-                    "value": "Degradado verde esmeralda",
-                    "images": [],
+                    "value": "Rosa chicle con negro",
+                    "images": [
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717464838/guitarra-jm-rosachicle-negro_iaqsuu.jpg"
+                    ],
                     "variantID": "1_2"
-                },
-                {
-                    "value": "Rosa cicle",
-                    "images": [],
-                    "variantID": "1_3"
-                },
-                {
-                    "value": "Negro y blanco (estilo The Punisher)",
-                    "price": 1150.0,
-                    "discountedPrice": 1100,
-                    "images": [],
-                    "variantID": "1_4"
                 }
             ],
             "variationKey": "color"
@@ -44,27 +34,11 @@
             "description": "\nLa **Guitarra económica JoshMusic (tercerola)** es una excelente opción para los niños de 6 a 12 años que buscan iniciarse en el mundo de la música con un instrumento de calidad a un precio accesible. Fabricada en la renombrada ciudad de **Paracho**, conocida por su tradición y excelencia en la elaboración de guitarras, este modelo es perfecto para pequeños músicos.\n\n## Características principales\n\n- **Madera:** Pino, que asegura una buena resonancia y durabilidad, ofreciendo un sonido claro y brillante.\n- **Tamaño:** Tercerola, ideal para niños de 6 a 12 años.\n- **Variaciones:** Cada color viene con su propia personalidad, permitiéndote escoger el que mejor se adapte al estilo del niño. Asegúrate de revisar la parte superior, donde puedes seleccionar y ver las variaciones disponibles actualmente.\n\nEsta guitarra no solo es una herramienta musical, sino también una pieza de arte que refleja la rica herencia de Paracho. Perfecta para aprender, practicar y disfrutar de la música desde una edad temprana con un toque de estilo personal.\n\n",
             "variations": [
                 {
-                    "value": "Negro brillante",
-                    "images": [
-                        "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg",
-                        "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg"
-                    ],
-                    "variantID": "2_1"
-                },
-                {
                     "value": "Negro Degradado Sol Naciente (Sunburst)",
                     "images": [
-                        "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg",
-                        "https://m.media-amazon.com/images/I/85PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717284908/tercerola-jm-economica_i6rcks.jpg"
                     ],
-                    "variantID": "2_2"
-                },
-                {
-                    "value": "Marron Natural veteado",
-                    "images": [
-                        "https://m.media-amazon.com/images/I/86PiVCVe4xL._AC_SL1500_.jpg"
-                    ],
-                    "variantID": "2_3"
+                    "variantID": "2_1"
                 }
             ],
             "variationKey": "color"
@@ -197,12 +171,10 @@
             "price": 8000.0,
             "discountedPrice": 7800.0,
             "images": [
-                "https://servimusic.mx/wp-content/uploads/2021/10/SM1516-01-150x150.jpg",
-                "https://servimusic.mx/wp-content/uploads/2021/10/SM1516-03-150x150.jpg",
-                "https://servimusic.mx/wp-content/uploads/2021/10/SM1516-02-150x150.jpg"
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717290001/docerola-cort-natural_cnlmdn.jpg"
             ],
             "category": "instrumentos",
-            "description": "\n### Descripción\n\nLa docerola **Cort GA-MEDX-12** es parte de la popular serie Grand Regal, ofreciendo una guitarra acústica-eléctrica de alta calidad a un precio asequible. Con una tapa de abeto, parte trasera y laterales de caoba, y el versátil preamplificador CE306T, esta guitarra es perfecta para músicos que buscan valor y calidad.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/xm88rk5Pb6U?si=HvHT44y7juUXoTvX\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n### Uso y Diseño\n\nEl diseño del Grand Regal lo hace ideal tanto para rasguear como para puntear, adaptándose a músicos versátiles que buscan una guitarra capaz de cubrir una variedad de sonidos y estilos. La tapa de abeto ofrece un equilibrio perfecto entre resistencia y flexibilidad, siendo una de las maderas más populares para guitarras acústicas. Su carácter sonoro versátil es ideal para diversos géneros musicales y estilos de interpretación. La caoba, conocida por su tono brillante pero cálido y su fuerte rango medio, ha sido una elección estándar para guitarras acústicas de alta gama durante décadas.\n\n### Especificaciones\n\n| Característica                | Detalle                                     |\n|-------------------------------|---------------------------------------------|\n| **Tipo de Guitarra**             | Acústica-Eléctrica |\n| **Serie**                         | Grand Regal   |\n| **Tapa**                          | Abeto |\n| **Fondo y Aros**                  | Caoba |\n| **Preamplificador**               | CE306T con ecualizador de 4 bandas  |\n| **Profundidad del Cuerpo**       | 117 mm (4 5/8\")  |\n|**Ancho de Combate Superior**    | 292 mm (11 1/2\") |\n| **Ancho de Combate Inferior**    | 405 mm (16\")  |\n| **Diseño del Puente**             | Superficie recortada |\n| **Tono**                          | Brillante, rango medio fuerte y cálido |\n| **Características Adicionales**   | Sintonizador de pantalla LCD, mejor jugabilidad, sustain mejorado |\n\n"
+            "description": "## Descripción\n\nLa docerola **Cort GA-MEDX-12** es parte de la popular serie Grand Regal, ofreciendo una guitarra acústica-eléctrica de alta calidad a un precio asequible. Con una tapa de abeto, parte trasera y laterales de caoba, y el versátil preamplificador CE306T, esta guitarra es perfecta para músicos que buscan valor y calidad.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/xm88rk5Pb6U?si=HvHT44y7juUXoTvX\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n### Uso y Diseño\n\nEl diseño del Grand Regal lo hace ideal tanto para rasguear como para puntear, adaptándose a músicos versátiles que buscan una guitarra capaz de cubrir una variedad de sonidos y estilos. La tapa de abeto ofrece un equilibrio perfecto entre resistencia y flexibilidad, siendo una de las maderas más populares para guitarras acústicas. Su carácter sonoro versátil es ideal para diversos géneros musicales y estilos de interpretación. La caoba, conocida por su tono brillante pero cálido y su fuerte rango medio, ha sido una elección estándar para guitarras acústicas de alta gama durante décadas.\n\n| Especificaciones| |\n|-------------------------------|---------------------------------------------|\n| **Tipo de Guitarra**             | Acústica-Eléctrica |\n| **Serie**                         | Grand Regal   |\n| **Tapa**                          | Abeto |\n| **Fondo y Aros**                  | Caoba |\n| **Preamplificador**               | CE306T con ecualizador de 4 bandas  |\n| **Profundidad del Cuerpo**       | 117 mm (4 5/8\")  |\n|**Ancho de Combate Superior**    | 292 mm (11 1/2\") |\n| **Ancho de Combate Inferior**    | 405 mm (16\")  |\n| **Diseño del Puente**             | Superficie recortada |\n| **Tono**                          | Brillante, rango medio fuerte y cálido |\n| **Características Adicionales**   | Sintonizador de pantalla LCD, mejor jugabilidad, sustain mejorado |"
         },
         {
             "id": 9,
@@ -224,21 +196,18 @@
         },
         {
             "id": 10,
-            "name": "Guitarron JoshMusic",
+            "name": "Guitarron JoshMusic acabado natural brillante",
             "category": "instrumentos",
             "price": 6800.0,
             "discountedPrice": 6650.0,
-            "description": "## Guitarrón JoshMusic - Pino Dorado Clásico\n\nEl **Guitarrón JoshMusic** en acabado **Pino Dorado Clásico** es la elección perfecta para los amantes de la música tradicional mexicana. Este instrumento, con su rica resonancia y elegante diseño, es ideal para cualquier mariachi o grupo folklórico que busque calidad y autenticidad en su sonido.\n\n### Características Destacadas:\n\n- **Construcción Artesanal**: Cada guitarrón es fabricado con esmero por artesanos expertos, utilizando técnicas tradicionales que garantizan una calidad excepcional.\n- **Materiales de Primera Calidad**: El cuerpo de pino dorado no solo proporciona un sonido cálido y resonante, sino que también asegura una durabilidad y belleza inigualables.\n- **Diseño Clásico**: El acabado dorado clásico le da a este guitarrón un aspecto elegante y tradicional, perfecto para destacar en cualquier presentación.\n- **Sonido Potente**: Diseñado para proyectar un sonido fuerte y claro, este guitarrón es ideal para acompañar voces y otros instrumentos en conjuntos grandes o pequeños.\n\n### Especificaciones Técnicas:\n\n- **Cuerpo**: Pino dorado clásico\n- **Puente**: Madera de alta resistencia para una mejor transmisión del sonido\n- **Diapasón**: Madera seleccionada para una mejor sensación y durabilidad\n- **Cuerdas**: Incluye un set de cuerdas de alta calidad para un sonido óptimo\n\nEl **Guitarrón JoshMusic Pino Dorado Clásico** no es solo un instrumento musical, es una pieza de arte que encapsula la esencia de la música mexicana. Ideal para músicos profesionales y aficionados que buscan un instrumento que combine calidad, estilo y rendimiento.\n\n¡Adquiere el tuyo y lleva tu música al siguiente nivel con JoshMusic!",
+            "description": "El **Guitarrón JoshMusic** en acabado **natural brillante** es la elección perfecta para los amantes de la música tradicional mexicana. Este instrumento, con su rica resonancia y elegante diseño, es ideal para cualquier mariachi o grupo folklórico que busque calidad y autenticidad en su sonido.\n\n### Características Destacadas:\n\n- **Construcción Artesanal**: Cada guitarrón es fabricado con esmero por artesanos expertos, utilizando técnicas tradicionales que garantizan una calidad excepcional.\n- **Materiales de Primera Calidad**: El cuerpo (de palo escrito o cedro segun la madera seleccionado)proporcionan un sonido cálido y resonante,que asegura una durabilidad y belleza inigualables.\n- **Diseño Clásico**: El acabado natural brillante le da a este guitarrón un aspecto elegante y tradicional, perfecto para destacar en cualquier presentación.\n- **Sonido Potente**: Diseñado para proyectar un sonido fuerte y claro, este guitarrón es ideal para acompañar voces y otros instrumentos en conjuntos grandes o pequeños.\n\n### Especificaciones Técnicas:\n\n- **Puente**: Madera de alta resistencia para una mejor transmisión del sonido\n- **Diapasón**: Madera seleccionada para una mejor sensación y durabilidad\n- **Cuerdas**: Incluye un set de cuerdas de alta calidad para un sonido óptimo\n\nEl **Guitarrón JoshMusic** no es solo un instrumento musical, es una pieza de arte que encapsula la esencia de la música mexicana. Ideal para músicos profesionales y aficionados que buscan un instrumento que combine calidad, estilo y rendimiento.\n\n¡Adquiere el tuyo y lleva tu música al siguiente nivel con JoshMusic!",
             "variations": [
                 {
                     "value": "Palo Escrito",
-                    "images": [],
+                    "images": [
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717462365/guitarron-jm_be3tcc.jpg"
+                    ],
                     "variantID": "10_1"
-                },
-                {
-                    "value": "Cedro",
-                    "images": [],
-                    "variantID": "10_2"
                 }
             ],
             "variationKey": "Madera"
@@ -332,18 +301,14 @@
         },
         {
             "id": 16,
-            "name": "Logan Bajo Eléctrico Standard Jazz Bass 5 Cuerdas Vino",
+            "name": "Bajo LOGAN 5 cuerdas TIPO JAZZ BASS color Vino",
             "price": 5550,
             "discountedPrice": 5450,
             "images": [
-                "https://tropicomusicstore.com/wp-content/uploads/L-EB-5C-1WI-2-1.jpg",
-                "https://tropicomusicstore.com/wp-content/uploads/L-EB-5C-1WI-4-1.jpg",
-                "https://tropicomusicstore.com/wp-content/uploads/L-EB-5C-1WI-3-1.jpg",
-                "https://tropicomusicstore.com/wp-content/uploads/L-EB-5C-1WI-1-1.jpg",
-                "https://m.media-amazon.com/images/I/615WKO+CqJL._AC_SL1500_.jpg"
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717283393/bajo-logan-5cuerdas_xfom8b.jpg"
             ],
             "category": "instrumentos",
-            "description": "Presentamos el Logan J Bass, un bajo que captura la esencia de los icónicos Jazz Bass de Fender pero a un costo significativamente menor. Este instrumento ofrece especificaciones que, aunque son más básicas, mantienen una calidad sólida y un sonido vibrante. Además, su precio accesible lo hace aún más atractivo. Es una opción robusta, conocida por su estructura resistente y su capacidad para entregar actuaciones excepcionales, especialmente en las noches de sábado.\n\n |        |        |\n |-------------|-------------|\n | **Marca** | LOGAN    |\n | **Tipo de acabado** | Brillante    |\n | **Instrumento** | Bajo eléctrico |"
+            "description": "Presentamos el Logan J Bass, un bajo que captura la esencia de los icónicos Jazz Bass de Fender pero a un costo significativamente menor. Este instrumento ofrece especificaciones que, aunque son más básicas, mantienen una calidad sólida y un sonido vibrante. Además, su precio accesible lo hace aún más atractivo. Es una opción robusta, conocida por su estructura resistente y su capacidad para entregar actuaciones excepcionales, especialmente en las noches de sábado.\n\n |        |        |\n |-------------|-------------|\n | **Marca** | LOGAN|\n | **Tipo de acabado** | Brillante    |\n | **Material diapasón** | Rosewood |\n | **Instrumento** | Bajo eléctrico |"
         },
         {
             "id": 17,
@@ -371,7 +336,7 @@
                 "https://veerkamponline.com/cdn/shop/products/8214294_3_1500x.jpg?v=1626472424"
             ],
             "category": "instrumentos",
-            "description": "\nDurante 30 años, el SR le ha dado a los bajistas una alternativa moderna. Con su continua popularidad, **Ibañez** se esfuerza constantemente por responder a las necesidades más amplias de una variedad de intérpretes, con una variedad de presupuestos. Pero no importa cuáles sean las especificaciones, el corazón es el mismo: SR continúa eomocionando con su cuerpo suave y rápido, su cuerpo liviano y su electrónica perfectamente combinada.\n\n## Ficha Técnica\n\n|Característica|Detalle|\n|------------------------|-----------------------------------------|\n|**Marca**|Ibañez|\n|**Fabricación**|Indonesia|\n|**Cuerpo**|Nyatoh|\n|**Color**|Rojo|\n|**Acabado**|Brillante|\n|**Brazo**|SR4 5pzas Arce/Nogal|\n|**Diapasón**|Jatoba|\n|**Trastes**|24, Medium|\n|**Puente**|Accu-cast B120|\n|**Número de Cuerdas**|4|\n|**Marca de Pastilla**|Ibanez, HH|\n|**Pastilla del Brazo**|PowerSpan Dual Coil (pasiva)|\n|**Pastilla del Puente**|PowerSpan Dual Coil (pasiva)|\n|**Electrónica**|Volumen, Balancer, 3-band EQ, 3-way Power Tap switch|\n|**Material de la Cuerda**|Níquel|\n|**Hardware**|Negro|\n|**Orientación**|Diestro|\n|**Afinación**|1G, 2D, 3A, 4E|\n|**Calibre de Cuerdas**|.045 / .065 / .085 / .105|"
+            "description": "Durante 30 años, el SR le ha dado a los bajistas una alternativa moderna. Con su continua popularidad, **Ibañez** se esfuerza constantemente por responder a las necesidades más amplias de una variedad de intérpretes, con una variedad de presupuestos. Pero no importa cuáles sean las especificaciones, el corazón es el mismo: SR continúa eomocionando con su cuerpo suave y rápido, su cuerpo liviano y su electrónica perfectamente combinada.\n\n## Ficha Técnica\n\n|Característica|Detalle|\n|------------------------|-----------------------------------------|\n|**Marca**|Ibañez|\n|**Fabricación**|Indonesia|\n|**Cuerpo**|Nyatoh|\n|**Color**|Rojo|\n|**Acabado**|Brillante|\n|**Brazo**|SR4 5pzas Arce/Nogal|\n|**Diapasón**|Jatoba|\n|**Trastes**|24, Medium|\n|**Puente**|Accu-cast B120|\n|**Número de Cuerdas**|4|\n|**Marca de Pastilla**|Ibanez, HH|\n|**Pastilla del Brazo**|PowerSpan Dual Coil (pasiva)|\n|**Pastilla del Puente**|PowerSpan Dual Coil (pasiva)|\n|**Electrónica**|Volumen, Balancer, 3-band EQ, 3-way Power Tap switch|\n|**Material de la Cuerda**|Níquel|\n|**Hardware**|Negro|\n|**Orientación**|Diestro|\n|**Afinación**|1G, 2D, 3A, 4E|\n|**Calibre de Cuerdas**|.045 / .065 / .085 / .105|"
         },
         {
             "id": 19,
@@ -388,12 +353,11 @@
             "price": 5200.0,
             "discountedPrice": 5050.0,
             "category": "instrumentos",
-            "description": "\nGuitarra electrica para zurdos TG-500 LH SB D MG color sunburst, cuerpo en basswood, brazo en arce, diapason en technical wood (oscuro) 22 trastes, pickguard Mint Green, 3 Pick Ups single coils Tagima, selector de 5 posiciones, 1 control de volumen, 2 controles de tono.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ARqSS-Bc4-Y?si=YTBx7Gz56pu-TXzo\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n\n# Ficha Técnica\n\n|Característica|Detalle|\n|------------------------|------------------------------|\n|**Peso**|5 kg|\n|**Dimensiones**|116 × 43 × 9 cm|\n|**Guitarra Eléctrica**|Sí|\n|**Tipo**|Strato|\n|**Color**|Sunburst  o Negro|\n|**Cuerpo**|Basswood|\n|**Brazo**|Arce|\n|**Pick Ups**|12 Tagima Single Coils|",
+            "description": "Guitarra electrica para zurdos TG-500 LH SB D MG, cuerpo en basswood, brazo en arce, diapason en technical wood (oscuro) 22 trastes, pickguard Mint Green, 3 Pick Ups single coils Tagima, selector de 5 posiciones, 1 control de volumen, 2 controles de tono.\n\nTagima es una de las marcas más importantes en el mercado sudamericano, que se ajusta a las distintas necesidades y gustos de cada guitarrista. Cuenta con una gran variedad de productos que satisfacen las demandas de un mercado exigente. Su evolución es permanente y centrada en el perfeccionismo.\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ARqSS-Bc4-Y?si=YTBx7Gz56pu-TXzo\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n|Ficha Técnica||\n|--------------------|--------------------------|\n|**Peso**|5 kg|\n|**Dimensiones**|116 × 43 × 9 cm|\n|**Guitarra Eléctrica**|Sí|\n|**Tipo**|Strato|\n|**Color**|Sunburst  o Negro|\n|**Cuerpo**|Basswood|\n|**Brazo**|Arce|\n|**Pick Ups**|12 Tagima Single Coils|\n|**Selector de pastillas**|5 posiciones|",
             "variations": [
                 {
                     "value": "Negro",
                     "images": [
-                        "https://http2.mlstatic.com/D_NQ_NP_950999-MLA74781615045_022024-O.webp",
                         "https://http2.mlstatic.com/D_NQ_NP_613144-MLA46361216860_062021-O.webp",
                         "https://http2.mlstatic.com/D_NQ_NP_911479-MLA46361216862_062021-O.webp"
                     ],
@@ -419,16 +383,19 @@
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/05/MLM-408-Atr-s.png"
             ],
             "category": "audio-profesional",
-            "description": "\nEste equipo adopta una frecuencia de muestreo de 96 KHZ y resolución de tecnología\nde conversión 24 bits- Σ A/D y D/A, el procesamiento de señal mediante DSP a 32 bits de punto\nflotante de cuarta generación . Cada entrada incluye control de ganancia, 10 secciones de\necualización paramétrica, ecualización dinámica, divisor de frecuencia, compresor, controlador de\nretardo y puerta de ruido. Cada salida cuenta con una matriz mezcladora, un ecualizador\nparamétrico de 10 secciones, un divisor de frecuencia con opción de filtraje FIR de hasta 512 Taps,\nun compresor RMS, un limitador así como delay.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/P35WCpjJM08?si=5hl-9_UvKXHNZUmM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n**CARACTERISTÍCAS**\n- Interfaz de usuario.\n- Panel frontal: la pantalla LCD indica la dirección IP del dispositivo y el número predeterminado actuale información relacionada.\n- Panel trasero: Conexión a corriente eléctrica, entradas y salidas de audio balanceadas, interfaces GPIO, conexiones RS 232/485 e interfaces de red Rj45.\n- Software de control: el software de control de PC equipado con este dispositivo puede ejecutarse en sistemas operativos Windows 7, 10 o superior @ 64BIT .\n- Otras características.\n- Todas las interfaces de entrada/salida adoptan un circuito de protección electrostática y de RF para garantizar el funcionamiento confiable del equipo.\n\n**ESPECIFICACIONES**\n\n|   |   |\n| ------------ | ------------ |\n| **Frecuencia de muestreo y resolucion**  | 96KHz 24 bits AD/DA 400MHz 32bit punto flotante  |\n| **Respuesta de frecuencia**  |  20HZ-20KHz @ +/- 0.3 dB |\n|  **THD+N** |  > 115dB |\n| **Impedancia de salida** (balanceada)  | 100Ω  |\n| **Crosstalk**  |  < -100 dB @ 1kHz |\n| **Maximo nivel de entrada**  |  >20 dBu @ 1 kHz |\n| **Maximo nivel de salida** |  >20 dBu @ 1 kHz |\n|  **Señal ruido** | < – 93dBu  |\n| **Retraso fijo del equipo** | < 2ms  |\n| **Generador de ruido**  | Ruido rosa/ ruido blanco y tono seleccionable  |\n|  **Modulos de procesamiento de señal**  |  Compuerta de ruido /ecualizador/HPF/ LPF/FIR/compresor/Limitar or/compresor RMS/Delay |\n|  **Requerimientos de voltaje**  | 90V-240V 50Hz/60Hz < 20W  |\n| **Medidas sin caja**  |  483X268X45mm |\n|  **Peso** | 3.5Kg  |\n|  **Temperatura de operación**  |  0-+40 grados centigrados |\n| **Temperatura ambiente de almacenamiento** |  -10 – + 60 grados centigrados |\n| **Accesorios**  |  Manual de operación, cable de corriente y software |\n\n\n\n\n"
+            "description": "Este equipo adopta una frecuencia de muestreo de 96 KHZ y resolución de tecnología\nde conversión 24 bits- Σ A/D y D/A, el procesamiento de señal mediante DSP a 32 bits de punto\nflotante de cuarta generación . Cada entrada incluye control de ganancia, 10 secciones de\necualización paramétrica, ecualización dinámica, divisor de frecuencia, compresor, controlador de\nretardo y puerta de ruido. Cada salida cuenta con una matriz mezcladora, un ecualizador\nparamétrico de 10 secciones, un divisor de frecuencia con opción de filtraje FIR de hasta 512 Taps,\nun compresor RMS, un limitador así como delay.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/P35WCpjJM08?si=5hl-9_UvKXHNZUmM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n**CARACTERISTÍCAS**\n- Interfaz de usuario.\n- Panel frontal: la pantalla LCD indica la dirección IP del dispositivo y el número predeterminado actuale información relacionada.\n- Panel trasero: Conexión a corriente eléctrica, entradas y salidas de audio balanceadas, interfaces GPIO, conexiones RS 232/485 e interfaces de red Rj45.\n- Software de control: el software de control de PC equipado con este dispositivo puede ejecutarse en sistemas operativos Windows 7, 10 o superior @ 64BIT .\n- Otras características.\n- Todas las interfaces de entrada/salida adoptan un circuito de protección electrostática y de RF para garantizar el funcionamiento confiable del equipo.\n\n**ESPECIFICACIONES**\n\n|   |   |\n| ------------ | ------------ |\n| **Frecuencia de muestreo y resolucion**  | 96KHz 24 bits AD/DA 400MHz 32bit punto flotante  |\n| **Respuesta de frecuencia**  |  20HZ-20KHz @ +/- 0.3 dB |\n|  **THD+N** |  > 115dB |\n| **Impedancia de salida** (balanceada)  | 100Ω  |\n| **Crosstalk**  |  < -100 dB @ 1kHz |\n| **Maximo nivel de entrada**  |  >20 dBu @ 1 kHz |\n| **Maximo nivel de salida** |  >20 dBu @ 1 kHz |\n|  **Señal ruido** | < – 93dBu  |\n| **Retraso fijo del equipo** | < 2ms  |\n| **Generador de ruido**  | Ruido rosa/ ruido blanco y tono seleccionable  |\n|  **Modulos de procesamiento de señal**  |  Compuerta de ruido /ecualizador/HPF/ LPF/FIR/compresor/Limitar or/compresor RMS/Delay |\n|  **Requerimientos de voltaje**  | 90V-240V 50Hz/60Hz < 20W  |\n| **Medidas sin caja**  |  483X268X45mm |\n|  **Peso** | 3.5Kg  |\n|  **Temperatura de operación**  |  0-+40 grados centigrados |\n| **Temperatura ambiente de almacenamiento** |  -10 – + 60 grados centigrados |\n| **Accesorios**  |  Manual de operación, cable de corriente y software |"
         },
         {
             "id": 22,
-            "name": "Ibañez Guitarra eléctrica stratocaster doble pastilla, Serie Gio",
+            "name": "Ibanez Guitarra Eléctrica Negro Mate doble pastilla GRGR131EX-BKF, Serie Gio",
             "price": 5500.0,
             "discountedPrice": 5350.0,
-            "images": [],
+            "images": [
+                "https://veerkamponline.com/cdn/shop/files/8202013_1500x.jpg?v=1686954524"
+            ],
             "category": "instrumentos",
-            "description": ""
+            "description": "\nUna guitarra no tiene que costar cara para sonar bien. La serie **GIO** fue desarrollado para los músicos que quieren calidad de Ibanez de una manera más accesible. No sólo en el aspecto de diseño sino también en el rendimiento del instrumento comprado con su gama de precios, pero su rigurosa inspección de calidad de construcción es la mismas que los modelos más caros de Ibanez.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ZzakysZWWfY?si=jUHxEZvZeolkJpLi\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n|**Ficha técnica**||\n|--------------------------------------------|--------------------------------------|\n|**Marca**|Ibanez|\n|**Fabricación**|China|\n|**Cuerpo**|Álamo|\n|**Acabado**|Mate|\n|**Color**|Negro|\n|**Brazo**|GRGR Arce|\n|**Trastes**|24, Jumbo|\n|**Diapasón**|Bound Purpleheart con Incrustaciones Reversed Negro Sharktooth|\n|**Puente**|Fijo F106|\n|**Número de cuerdas**|6|\n|**Marca de Pastillas**|Ibanez, HH|\n|**Pastilla del brazo**|Infinity R (H) (Passive/Ceramic)|\n|**Pastilla del puente**|Infinity R (H) (Passive/Ceramic)|\n|**Electronica**|Volumen, Tono, Selector de 5 cambios|\n|**Material de la cuerda**|Níquel|\n|**Hardware**|Negro|\n|**Orientación**|Diestro|\n|**Afinación**|1E, 2B, 3G, 4D, 5A, 6E|\n|**Calibre de cuerdas**|.010/.013/.017/.026/.036/.046|\n\n"
+
         },
         {
             "id": 23,
@@ -436,13 +403,12 @@
             "price": 5400.0,
             "discountedPrice": 5250.0,
             "images": [
-                "https://http2.mlstatic.com/D_NQ_NP_760715-MLU74729760566_032024-O.webp",
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717464532/casioct-s1rd_cm6mtv.jpg",
                 "https://http2.mlstatic.com/D_NQ_NP_865877-MLU74729760572_032024-O.webp",
                 "https://http2.mlstatic.com/D_NQ_NP_861769-MLU74960295579_032024-O.webp"
             ],
             "category": "instrumentos",
             "description": "**Características del producto**\n\n|||\n|------------|------------|\n|**Marca**|Casio|\n|**Modelo**|Ct-S1|\n|**Voltaje**|220V|\n|**Color**|Rojo|\n\n**Calidad e Innovación de Casio**\nCasio, una empresa con una reputación consolidada en el mercado, se destaca por ofrecer productos originales e innovadores. Sus teclados musicales son una elección perfecta para quienes buscan calidad y rendimiento.\n\n**Eleva tu Música al Siguiente Nivel**\nEl Teclado Casio Ct-S1 Rd cuenta con 61 teclas, permitiéndote explorar una amplia variedad de composiciones musicales. Es ideal para músicos de nivel intermedio que desean perfeccionar sus habilidades y avanzar en su trayectoria musical.\n\n**Explora Nuevos Ritmos y Estilos**\nCon un extenso banco de estilos y ritmos musicales, este teclado te invita a dejar volar tu creatividad e improvisar con confianza sobre las pistas. Es la herramienta perfecta para aquellos que buscan expandir sus horizontes musicales."
-
         },
         {
             "id": 24,
@@ -467,9 +433,11 @@
             "name": "Teclado Musical Kaiser Con 54 Teclas Y 300 Ritmos, Mtc-5510",
             "price": 2800.0,
             "discountedPrice": 2700.0,
-            "images": [],
+            "images": [
+                "https://kaiser.shop/cdn/shop/files/MTC-5510-2_3aeb231b-da5b-449b-acad-4b8cb80868e8_640x_crop_center.jpg?v=1716829641"
+            ],
             "category": "instrumentos",
-            "description": ""
+            "description": "El teclado musical para cualquier amante de la música. Cuenta con tres modos de aprendizaje, pantalla LED para ubicar de mejor manera los ritmos y voces, así como puertos USB y MDI para que grabes tus obras.\n\n![Dimensiones del kaiser](https://kaiser.shop/cdn/shop/files/MTC-5510-6_640x_crop_center.jpg?v=1716829642)\n## ESPECIFICACIONES\n- Versátil para cualquier género musical\n- Salida de audio de gran fidelidad\n- Puertos USB y USB MIDI para recibir y enviar música (grabación de audio)\n- Conexión para micrófono, audífonos y pedal sustein\n- Velocidad de ritmo\n- Pantalla LED\n- Tres formas de aprendizaje\n- 300 ritmos y 500 voces incluidos\n- 40 canciones y 54 percusiones\n- Incluye: respaldo para partituras y adaptador para conectarse  \n\n[Descarga el manual de usuario](https://d822yi8obt972.cloudfront.net/MANUALES+WEB/MTC-5510_MANUAL_LOW.pdf \"Descarga el manual de usuario\")"
         },
         {
             "id": 27,
@@ -530,7 +498,7 @@
         },
         {
             "id": 32,
-            "name": "RF 200 - Micrófono Inalámbrico”",
+            "name": "RF 200 - Micrófono Inalámbrico Melo",
             "price": 7500,
             "discountedPrice": 7300,
             "category": "microfonia",
@@ -582,29 +550,34 @@
             "name": "Bafle Melo M-15A",
             "price": 21400,
             "discountedPrice": 20900,
-            "images": [],
+            "images": [
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717477930/m15a-melo_ybnspu.jpg"
+            ],
             "category": "audio-profesional",
-            "description": ""
+            "description": "Bafle activo, con componente de 15” de ferrita con bocina de 3.5”, un driver de 3” con diafragma de titanio e imán ferrita. Potencia comprobada y medible.\n\nEl M15-A es un bafle activo, con un componente de 15” de ferrita con bobina de 3.5”, un driver de 3” con diafragma de titanio e imán de ferrita. Potencia comprobada y medible. Fabricado en triplay de 15mm y terminado en poliurea negra que mejora el sonido y alarga su vida útil, en la parte frontal se encuentra una malla de acero reforzada, en el costado y en la parte baja añadimos gomas para colocarlo en forma horizontal o vertical en el caso de uso como monitor, 4 puntos de colgado, pole mount y manijas laterales así como una trasera para fácil manipulación.\n\n## Características\n\nBiamplificado clase D 1000W RMS\nTransductor LF: 1X15” FERRITA\nDriver de 3” con diafragma de titanio e imán de ferrita.\nIncluye filtros FIR para una mejor coherencia y sonido HI_FI\n6 PRESETS\nRejilla de metal doble perforado elíptico con acabado en pintura electrostática\nConstrucción resistente en multiplay de 15mm\n\n|**ESPECIFICACIONES**||\n|-------------------------------------|-----------------------------------------|\n|**Transductor LF:**|1X15” FERRITA|\n|**Transductor HF:**|1×3”|\n|**Respuesta de frecuencia:**|60 HZ a 18 KHZ|\n|**Cobertura:**|80°H x 50°V|\n|**Máximo SPL:**|130 Db SPL|\n|**Amplificador:**|Biamplificado clase D 1000W RMS|\n|**Conectores:**|2 Conectores combo en entrada y un XLR macho de salida|\n|**Conexiones AC:**|Powercon|\n|**Material Del Gabinete:**|Triplay 15mm|\n|**Pintura:**|Color Negro poliurea|\n|**Parrilla Frontal:**|Pintura Electroestática Color Negro / Doble Perforado Elíptico|\n|**Amplificación y proceso:**|Melo|\n|**Dimensiones:**|720mm x 440mm x 400mm|\n|**Voltaje:**|115V~ 50/60Hz|\n|**Consumo eléctrico:**|400 W|"
         },
         {
             "id": 36,
-            "name": "Bafle activo doble 15” M215-A",
+            "name": "Bafle activo doble Melo 15” M215-A",
             "price": 31900,
             "discountedPrice": 30100,
-            "images": [],
+            "images": [
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717287031/m215-a_melo_ne06lk.jpg"
+            ],
             "category": "audio-profesional",
-            "description": ""
+            "description": "El M-215A está diseñado para el trabajo arduo del dia a dia, sus finos componentes y poderoso amplificador que integra, crean un gran sonido con baja distorsión, alta fidelidad y un SPL muy alto.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/VzdOJJ_WL6o?si=bOCyLj7_LMXpluB5\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n## Caracteristícas\n- M-215a: Bafle activo 2 vias de alta potencia, equipado con un amplificador de  1500W RMS.\n- Incluye filtros FIR para una mejor coherencia y sonido HL_FI, 131 db SPL pico.\n- Incluye filtros de fase lineal FIR.\n- Cuenta con diferentes puntos de colgado.\n\n## Especificaciones\n|||\n|------------|------------|\n|**Transductor LF**|2×15″ FERRITA|\n|**Transductor HF**|1×3″|\n|**Respuesta de Frecuencia**|55 HZ a 18 KHZ|\n|**Cobertura**|80ºH x 50ºV|\n|**Máximo SPL**|132 Db SPL|\n|**Amplificador**|Biamplificado clase D 1500W RMS|\n|**Enfriamiento**|Aire reforzado vía ventildor|\n|**Conectores**|2 Conectores combo en entrada y un XLR macho de salida.|\n|**Conexiones AC**|Powercon|\n|**Material del gabinete**|Triplay 15mm|\n|**Peso**|51Kg|\n|**Voltaje de Operación**|115V 50/60 Hz|"
         },
         {
             "id": 37,
-            "name": "Bafle VAMAV Mercury 15 BCN003 activo 15”",
+            "name": "Bafle VAMAV Mercury 15 BCN003 activo 15” activo 15”",
             "price": 5000,
             "discountedPrice": 4500,
             "images": [
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717276604/vamav-mercury15-bcn_wdmxan.jpg",
                 "https://www.stratusmusicstore.com.mx/cdn/shop/products/IMG_8739_500x.jpg?v=1636134532"
             ],
             "category": "audio-profesional",
-            "description": ""
+            "description": "Bafle amplificado vamav 15pulgadas **Mercury 15**, bluetooth, usb, SD, mp3.\n\nOfrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Una bocina que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.\nExcelente profundidad en frecuencias bajas\nCon este bafle no nesecitaras contratar sonido, tu seras el centro de atraccion.\nApto para eventos escolares, fiestas, exposiciones.\n\n## Especificaciones\n|||\n|------------|------------|\n|**Modelo / Estilo / Tipo**|MERCURY 15 BCN003|\n|**Peso del Producto Ensamblado**|23 kg|\n|**País de Origen**|China|\n|**Tamaño de la bocina**|15 pulgadas  x 1.75 pulgadas|\n|**Salida de línea**|1 XLR Pasiva, 1 salida amplificada 8 ohms|\n|**Wi-Fi**|No|\n|**Extras**|SD, USB, Bluetooth|"
         },
         {
             "id": 38,
@@ -612,21 +585,25 @@
             "price": 19200,
             "discountedPrice": 16600,
             "images": [
-                "https://macalmusic.com.mx/cdn/shop/products/D_NQ_NP_2X_644669-MLM50183912084_062022-F.webp?v=1660235005&width=1000"
+                "https://macalmusic.com.mx/cdn/shop/products/D_NQ_NP_2X_644669-MLM50183912084_062022-F.webp?v=1660235005&width=1000",
+                "https://http2.mlstatic.com/D_NQ_NP_921115-MLM50183852412_062022-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_711749-MLM50183853370_062022-O.webp",
+                "https://http2.mlstatic.com/D_NQ_NP_634894-MLM50183852413_062022-O.webp"
+
             ],
             "category": "audio-profesional",
-            "description": ""
+            "description": "La Bocina Tipo Torre Vamav VRX815 con Subwoofer Alámbrico de 800W está diseñada para escenarios y eventos. Incluye un woofer en la parte inferior para colocación directa en el piso.\n\nEl woofer tiene un diámetro de 38.1 cm (15\"), proporcionando una potencia RMS de hasta 800 W, y utiliza un imán de neodimio para garantizar una alta calidad de sonido.\n\nEn cuanto a su apariencia, este modelo es de color negro y emplea conectividad alámbrica mediante corriente alterna con una frecuencia de 50/60 Hz y un voltaje variable entre 110 y 240V.\n\nEn resumen, la Bocina Tipo Torre Vamav VRX815 con Subwoofer Alámbrico de 800W es ideal para usuarios profesionales o aficionados exigentes que buscan un rendimiento óptimo en presentaciones musicales o discursos públicos sin preocuparse por la calidad del sonido.\n\n## Especificaciones\n|||\n|------------|------------|\n|**Entrada XLR**|SI|\n|**Diámetro del woofer**|38.1 cm (15\")|\n|**Diámetro del controlador de gama media**|20.3 cm (8\")|\n|**Tipo de imán**|Neodimio|\n|**Alimentación**|Corriente alterna|\n|**Frecuencia de entrada AC**|50/60 Hz|\n|**Voltaje de entrada AC**|110 - 240 V|\n|**Entrada de 6.35 mm (1/4 pulgadas)**|2|"
         },
         {
             "id": 39,
-            "name": "Bafle Vamav Nova 215 portátil con bluetooth negra 110V/240V",
+            "name": "Bafle Vamav Nova 215 portátil con bluetooth negra",
             "price": 12000,
             "discountedPrice": 9500,
             "images": [
-                "https://http2.mlstatic.com/D_NQ_NP_859751-MLA53348152373_012023-O.webp"
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717458249/vama215Nova_xsduvx.jpg"
             ],
             "category": "audio-profesional",
-            "description": ""
+            "description": "La Vamav Nova 215 proporciona un sonido natural con una claridad y precisión excepcionales, que se distribuye uniformemente. Esta bocina garantiza tanto potencia como calidad en la reproducción de contenido multimedia.\n\nOlvídate del amplificador\nAl ser una bocina activa, solo necesitas conectarla a la fuente de sonido, ya que el propio equipo se encargará de amplificar y reproducir el audio. Esto ofrece practicidad y ahorra espacio, además de requerir menos cableado que una bocina pasiva. Es una solución ideal para producir música en casa o en un estudio, y también es perfecta para DJs.\n\n## Caracteristicas:\n- 2 Bocinas De 15\"\n- Bobina 3\"\n- Sensibilidad De 99 Db\n- Coneccion Via Bluetooth, Usb. Mp3, Memoria Sd\n- Dsp Integrado (Normal, Dj, Voice, Flat, Live)\n- Entrada Rca, 2 Entradas Combo Xlr Y Jack 6,3mm\n- Salida En Xlr\n- Perilla De Volumen Independiente\n- Ventilador Para Disipar Calor\n- Construccion En Madera Mdf De Alta Calidad\n- Manijas De Transporte Resistentes\n- Rejilla De Metal (Cubre Polvo)\n\n|**Especificaciones**||\n|------------|------------|\n|**Potencia RMS**|800 Watts|\n|**Wi-Fi**|No|\n|**Modelo / Estilo / Tipo**|NOVA 215|\n|**Color**|Negro|\n|**Peso del Producto Ensamblado**|41 kg|\n|**Ancho del Producto Ensamblado**|52 cm|\n|**Longitud del Producto Ensamblado**|50cm|\n|**Longitud del Producto Ensamblado**|117 cm|"
         },
         {
             "id": 40,
@@ -645,19 +622,21 @@
             "price": 12200,
             "discountedPrice": 11500,
             "images": [
-                "https://http2.mlstatic.com/D_NQ_NP_939529-MLU72572529622_112023-O.webp"
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717279358/qsc-front_jxj9zs.jpg"
             ],
             "category": "audio-profesional",
-            "description": ""
+            "description": "El Altavoz Qsc CP8 Activo 8 Pulgadas te ofrece un alto rendimiento, calidad superior y fiabilidad duradera. Estas son las señas de identidad de la marca QSC y los motivos por los que millones de profesionales de todo el mundo confían en QSC para ayudarlos a ofrecer con confianza mejores experiencias y presentaciones memorables. La serie CP continúa con esta tradición a la vez que ofrece un diseño muy compacto y una calidad líder en su clase.\n## Caracteristicas\n- Rendimiento compacto y potente; peso ligero y altamente portátil\n- Módulo amplificador clase D de potencia máxima de 1000 vatios\n- Contornos fácilmente seleccionados para aplicaciones de uso común\n- DSP avanzado con corrección intrínseca para una calidad de sonido superior y protección del altavoz\n- Transición emparejada de directividad (DMT) para una respuesta de frecuencia consistente en toda el área de cobertura\n- Aspecto profesional que se ve muy bien en cualquier aplicación\n- Uso para PA principal, monitor de escenario o amplificador de instrumento con la opción de elevar el altavoz a través del enchufe de poste de 35 mm\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/yj3p3flfu8c?si=em3B3PmfYIoO9ExN\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n## Especificaciones\n|||\n|------------|------------|\n|**Marca**|QSC|\n|**Potencia de salida máxima del altavoz**|1000 Watts|\n|**Tecnología de conectividad**|XLR/TRS|\n|**Transductor HF**|controlador de compresión de 1.4 in (35.6mm)|\n|**Nombre del modelo**|CP8-NA|"
         },
         {
             "id": 42,
             "name": "KD332 Micrófono Inalámbrico Doble",
             "price": 3900,
             "discountedPrice": 3700,
-            "images": [],
+            "images": [
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717452647/kd232_j30i67.jpg"
+            ],
             "category": "microfonia",
-            "description": ""
+            "description": "El micrófono inalámbrico doble UHF Digital es tu mejor aliado en el escenario con tecnología digital Pilot de 16 bits evita la interferencia aun en la misma frecuencia.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/JDIMedJAkmM?si=JqASaSIHKlwlLbiq\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\nLa base receptora del sistema Krieg Kd332 cuenta con dos funciones incorporadas que pueden ser o no utilizadas, dichas funciones son un efecto de Echo (Delay) con 3 parámetros ajustables y 6 tipos de EQ seleccionables. \n\n![Caracteristicas del Krieg Kd332](https://krieg.mx/images/receptor.png)\n\n## Características:\n- Marca: Krieg\n- Modelo: KD-332\n- Es gamer: No\n- Usos recomendados del micrófono: Voz\n\n|**Especificaciones Base Receptora**||\n|------------|------------|\n|**Banda Operativa**|UHF 660 – 690 MHz|\n|**Ancho de banda**|12.5MHz|\n|**Ancho de banda del canal**|300KHz|\n|**Rango Dinámico**|96dB|\n|**Distorsión**|<=0.1%|\n|**Respuesta en Frecuencia**|30Hz – 20KHz (+-2dB)|\n|**Fuente de alimentación**|96dB|\n|**SNR**|12-18V DC, 1A|\n|**Conectores de Salida de audio**|1 salida tipo Plug 6.3mm, 2 Salidas balanceadas XLR|\n|**Con conexión Bluetooth**|NO|\n|**Usos recomendados del micrófono**|Voz|\n\n[Descarga el manual de usuario aqui](https://krieg.mx/files/KD332_Manual_W.pdf \"Descarga el manual de usuario aqui\")"
         },
         {
             "id": 43,
@@ -689,8 +668,7 @@
             "images": [
                 "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717190054/match_112_aitomr.jpg",
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-4.png",
-                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-5.png",
-                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-8.png"
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/Match-112-5.png"
             ],
             "category": "audio-profesional",
             "description": "**MATCH 112 ** es una caja de arreglo lineal amplificado, cargado con un sistema de rigging que soporta hasta 12 cajas manteniendo una directividad de 100⁰ horizontales en todo su conjunto.\n\nCuenta con un amplificador de 2 canales 1000W RMS en el cual se encuentra un DSP alemán que trabaja 64 bits @ 96 khz con el poder necesario para procesar la caja, en él se encuentran filtros «APF» , limitadores RMS y pico.\n\nEl sistema está diseñado a dos vías, conformado por una bocinas de 12 pulgadas de neodimio para medias frecuencias y dos drivers de 3 pulgadas de ferrita para altas frecuencias montado en una guía onda de dispersión constante de 100⁰ horizontal y 10⁰ vertical. Los ángulos para la cobertura van de 1⁰ a 10⁰ en pasos de 1⁰.\n\nCuenta con 8 presets de compensación de arreglos, estos crean una respuesta de frecuencia coherente y lo más plana posible para evitar en lo máximo el uso de equipos externos.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/4nAxgZhg-ao?si=rdPXnMZ2XrAeDCpO\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n## Especificaciones\n|||\n|------------|------------|\n|**Directividad Nominal H**|100°|\n|**Directividad Nominal V**|10°|\n|**Presión Sonora Nominal @ 1m**|118 dB|\n|**Presión Sonora Pico @ 1m**|130 dB|\n|**Rango de Frecuencia (-6dB)**|60Hz - 16kHz|\n\n\n## CARACTERÍSTICAS\n- Bafle activo a dos vías\n- 1 Componente de 12″ de neodimio\n- 2 drivers de 3″ de ferrita\n- Amplificador clase D 1000W RMS\n- 130 dB SPL pico\n- Presets para corrección de baja frecuencia\n- Presets para configurar “tiros” dentro del arreglo\n- Incluye Pole Mount para montaje sobre tripie o subwoofer\n- Rigging fácil e intuitivo\n\n[Descargar gratis el Manual de usuario](https://melosoundofmusic.com.mx/wp/wp-content/uploads/2022/12/MANUAL-MATCH-112.pdf \"Descargar gratis el Manual de usuario\")"
@@ -708,7 +686,7 @@
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/DSP-1540-5.png"
             ],
             "category": "audio-profesional",
-            "description": "La etapa de potencia de toda la serie DSP está basada en amplificaciones clase D, esto garantiza el mayor aprovechamiento de energía, entregando calidad sonora.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bIydm85BCfk?si=ap852ra8P6Z324of\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n## CaracteristíCas\nDisplay LCD\nBluetooth\n4 presets. Ecualizador de 3 bandas\nSelector de HPF, Delay\nModo PA y Monitor\nDos canales de entrada\nSelector de tipo de señal de entrada: Line/Mic\n\n## Especificaciones\n|||\n|------------|------------|\n|**Bocina LF**|15″|\n|**Driver**|HF: 1 3/4″|\n|**Alimentación**|100 – 240V~ 50/60Hz|\n|**Respuesta de frecuencia**|38 – 20 KHz|\n|**Potencia**|400W RMS|\n|**Amplificador**|Clase D, Bi Amp|\n|**Conectores**|Combo, XLR|"
+            "description": "La etapa de potencia de toda la serie DSP está basada en amplificaciones clase D, esto garantiza el mayor aprovechamiento de energía, entregando calidad sonora.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bIydm85BCfk?si=ap852ra8P6Z324of\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n## Caracteristícas\nDisplay LCD\nBluetooth\n4 presets. Ecualizador de 3 bandas\nSelector de HPF, Delay\nModo PA y Monitor\nDos canales de entrada\nSelector de tipo de señal de entrada: Line/Mic\n|**Especificaciones**||\n|------------|------------|\n|**Bocina LF**|15″|\n|**Driver**|HF: 1 3/4″|\n|**Alimentación**|100 – 240V~ 50/60Hz|\n|**Respuesta de frecuencia**|38 – 20 KHz|\n|**Potencia**|400W RMS|\n|**Amplificador**|Clase D, Bi Amp|\n|**Conectores**|Combo, XLR|"
         },
         {
             "id": 47,
@@ -963,6 +941,17 @@
             ],
             "description": "**MiniBALL** es una cabeza móvil de leds, que proyecta múltiples haces de colores RGBW emulando el efecto de una bola de cristal de los 70’s, pero con movimiento.\n\n**PRECAUCIONES DE SEGURIDAD**\nFavor de mantener la ventilación con una distancia mínima de 1 metro\npara que sea suficiente.\n\n## Especificaciones\n- Lámpara: LED de 15W\n- Modos de operación: DMX512, Audio, Auto, Master/Slave\n- Efectos: Rayos delgados que giran en ambos sentidos\n- RGBW\n- Dimmer 0-100% mecánico\n- 11 Canales DMX\n- Estrobo: 1-20 veces por segundo\n- Display\n- IP20\n- Voltaje: 110 240V~ 50-60Hz 35W\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bcw8SU7XihI?si=Cuon_FE0gsfULJ_V\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n"
 
+        },
+        {
+            "id": 60,
+            "name": "Ibanez Bajo Eléctrico Azul Gris Metálico GSR180-BEM, Serie Gio",
+            "price": 4700,
+            "discountedPrice": 4650,
+            "images": [
+                "https://veerkamponline.com/cdn/shop/products/8203189_1500x.jpg?v=1632416496"
+            ],
+            "category": "instrumentos",
+            "description": "La serie Gio de Ibanez fue diseñada y construida para los músicos que buscan el mejor instrumento para iniciar, pero tomando en cuenta las mejores maderas posibles y electrónica para obtener un bajo con gran sonido redondo, grave, sin olvidar la comodidad del diapasón y brazo.\n\n|**Ficha técnica**||\n|---------------------------------|-------------------------------------|\n|**MARCA:**|Ibanez|\n|**CUERPO:**|Okoume|\n|**COLOR:**|Azul Gris Metálico|\n|**DIAPASÓN:**|Purpleheart|\n|**PUENTE:**|B10|\n|**MARCA DE PASTILLA:**|Ibanez|\n|**PASTILLA DEL PUENTE:**|Dynamix J pickup (Passive)|\n|**MATERIAL DE LA CUERDA:**|Níquel|\n|**ORIENTACIÓN:**|Diestro|\n|**CALIBRE DE CUERDAS:**|.045/.065/.085/.105|\n|**FABRICACIÓN:**|China|\n|**ACABADO:**|Brillante|\n|**BRAZO:**|Arce|\n|**TRASTES:**|22|\n|**NÚMERO DE CUERDAS:**|4|\n|**PASTILLA DEL BRAZO:**|Dynamix J pickup (Passive)|\n|**ELECTRONICA:**|Volumen x2, Tono|\n|**HARDWARE:**|Cromado|\n|**AFINACIÓN:**|1G, 2D, 3A, 4E|"
         }
     ]
 }
