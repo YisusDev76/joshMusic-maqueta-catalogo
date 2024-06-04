@@ -119,20 +119,20 @@ function guardarCarritoEnLocalStorage() {
 
 
     // Función para actualizar la cantidad en el carrito
-    function actualizarPrecioProducto(idProducto, nuevaCantidad) {
+    function actualizarPrecioProducto(productInCart,product, newQty) {
         // Encuentra el producto en productList por su ID para obtener el precio actualizado
-        const productoEncontrado = productList.find(producto => producto.id === idProducto);
-        if (productoEncontrado) {
-            const precioTotal = nuevaCantidad * productoEncontrado.price;
+        if (product && productInCart) {
+            const precioTotal =  getPriceFromCart(productInCart, product) * newQty;
             document.getElementById(`price-${idProducto}`).innerText = `$${precioTotal.toFixed(2)}`;
+            console.log("Estoy viendo la de actualizar el precio de un producto");
     
-            // Actualiza la cantidad en shoppingCart
-            const productoEnCarrito = shoppingCart.find(producto => producto.id === idProducto);
-            if (productoEnCarrito) {
-                productoEnCarrito.cantidad = nuevaCantidad;
-            }
+            // // Actualiza la cantidad en shoppingCart
+            // const productoEnCarrito = shoppingCart.find(producto => producto.id === idProducto);
+            // if (productoEnCarrito) {
+            //     productoEnCarrito.cantidad = nuevaCantidad;
+            // }
 
-            guardarCarritoEnLocalStorage();
+            // guardarCarritoEnLocalStorage();
         }
     }
 
@@ -198,9 +198,10 @@ function renderCart(arrayCarrito) {
 
         productDetails = productList.find(productFinder => productFinder.id == producto.id);
        
-        console.log("La lista de productos es ", productList);
-        console.log("Producto del carrito es, ", producto.id);
-        console.log("El producto encintrado fue ", productDetails);
+        // console.log("La lista de productos es ", productList);
+        // console.log("Producto del carrito es, ", producto.quantity);
+        // console.log("El producto encintrado fue ", productDetails);
+        // console.log("El price de este producto es: ", getPriceFromCart(producto, productDetails));
        
 
         // Agregar imagen, detalles y opciones del producto
@@ -211,10 +212,10 @@ function renderCart(arrayCarrito) {
             <div class="item-details">
                 <div class="nameAndPrice">
                     <h3 class="item-title">${getProductNameWithVariant(productDetails, producto.variantId)}</h3>
-                    <p class="item-price" id="price-${producto.id}">$${productDetails.price * producto.cantidad}</p>
+                    <p class="item-price" id="price-${producto.id}">$${getPriceFromCart(producto, productDetails)* producto.quantity}</p>
                 </div>
                 <div class="item-options">
-                <select class="item-quantity" data-id="${producto.cantidad}">
+                <select class="item-quantity" data-id="${producto.quantity}">
                     <option value="1">1 pza</option>
                     <option value="2">2 pzas</option>
                     <option value="3">3 pzas</option>
@@ -232,22 +233,25 @@ function renderCart(arrayCarrito) {
 
         // Establecer la cantidad seleccionada
         const selectCantidad = productoDiv.querySelector(".item-quantity");
-        selectCantidad.value = producto.cantidad;
+        selectCantidad.value = producto.quantity;
         // Asegurarse de que la opción actual esté disponible
-        if (producto.cantidad > 10) {
+        if (producto.quantity > 10) {
         const option = document.createElement("option");
-        option.value = producto.cantidad;
-        option.textContent = `${producto.cantidad} pza${producto.cantidad > 1 ? 's' : ''}`;
+        option.value = producto.quantity;
+        option.textContent = `${producto.quantity} pza${producto.quantity > 1 ? 's' : ''}`;
         option.selected = true; // Marcar como seleccionada
         selectCantidad.appendChild(option);
         } else {
-            selectCantidad.value = producto.cantidad;
+            selectCantidad.value = producto.quantity;
         }
 
         // Añadir el event listener para cambios en la selección
         selectCantidad.addEventListener("change", function(event) {
-            const nuevaCantidad = parseInt(event.target.value);
-            actualizarPrecioProducto(producto.id, nuevaCantidad);
+            const newQty = parseInt(event.target.value);
+            console.log(newQty);
+            const precioTotal =  getPriceFromCart(producto, productDetails) * newQty;
+            console.log("EL nuevo precio total es ", precioTotal);
+            // actualizarPrecioProducto(producto, productDetails, nuevaCantidad);
         });            
 
         // Agregar el producto al contenedor
@@ -325,13 +329,31 @@ function getFirstProductImage(product, variantId) {
 }
 
 function getProductNameWithVariant(product, variantId) {
-if (variantId && product.variations && product.variations.length > 0) {
-    const selectedVariant = product.variations.find(variation => variation.variantID === variantId);
-    if (selectedVariant) {
-        return `${product.name} - ${product.variationKey}: ${selectedVariant.value}`;
+    if (variantId && product.variations && product.variations.length > 0) {
+        const selectedVariant = product.variations.find(variation => variation.variantID === variantId);
+        if (selectedVariant) {
+            return `${product.name} - ${product.variationKey}: ${selectedVariant.value}`;
+        }
     }
+    return product.name;
 }
-return product.name;
+
+function getPriceFromCart(cartItem, product) {
+    console.log("Entra a obtener el price");
+    console.log(product);
+    if (cartItem.variantId) {
+        // Buscar la variante específica usando el variantId
+        const variant = product.variations.find(variant => variant.variantID === cartItem.variantId);
+
+        // Si encontramos la variante y tiene un precio definido, retornamos ese precio
+        if (variant && variant.price) {
+            return variant.price;
+        }
+    }
+    
+    // Si el variantId es null o la variante no tiene un precio definido, usamos el precio del producto
+    // También cubre el caso donde el producto tiene variantes pero sin precios individuales
+    return product.price;
 }
 
 

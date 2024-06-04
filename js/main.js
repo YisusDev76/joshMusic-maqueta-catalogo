@@ -500,7 +500,6 @@ function renderactualizarContadorCarrito(totalProductos) {
 }
 
 function renderCart(arrayCarrito) {
-    // console.log(arrayCarrito);
     const totalPriceContainer = asideShoppingCart.querySelector('#TotalPrice');
     const shoppingContainer = document.querySelector('.shopping-container');
     shoppingContainer.innerHTML = '';
