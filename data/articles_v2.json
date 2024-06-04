@@ -9,28 +9,18 @@
             "description": "La **Guitarra económica JoshMusic 4/4** es una excelente opción para aquellos que buscan un instrumento de calidad a un precio accesible. Fabricada en la renombrada ciudad de **Paracho**, conocida por su tradición y excelencia en la elaboración de guitarras, este modelo es perfecto para principiantes.\n\n## Características principales\n\n- **Madera:** Pino, que asegura una buena resonancia y durabilidad, ofreciendo un sonido claro y brillante.\n- **Tamaño:** 4/4, ideal para adolescentes y adultos.\n- **Variaciones:** Cada color viene con su propia personalidad, permitiéndote escoger el que mejor se adapte a tu estilo. Asegúrate de revisar la parte superior, donde puedes seleccionar y ver las variaciones disponibles actualmente.\n\nEsta guitarra es no solo una herramienta musical, sino también una pieza de arte que refleja la rica herencia de Paracho. Perfecta para aprender, practicar y disfrutar de la música con un toque de estilo personal.",
             "variations": [
                 {
-                    "value": "Degradado rojo Ruby",
+                    "value": "Rosa chicle",
                     "images": [
-                        "https://m.media-amazon.com/images/I/88PiVCVe4xL._AC_SL1500_.jpg"
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717463951/Guitarra-jm-economica_l2jy6i.jpg"
                     ],
                     "variantID": "1_1"
                 },
                 {
-                    "value": "Degradado verde esmeralda",
-                    "images": [],
+                    "value": "Rosa chicle con negro",
+                    "images": [
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717464838/guitarra-jm-rosachicle-negro_iaqsuu.jpg"
+                    ],
                     "variantID": "1_2"
-                },
-                {
-                    "value": "Rosa cicle",
-                    "images": [],
-                    "variantID": "1_3"
-                },
-                {
-                    "value": "Negro y blanco (estilo The Punisher)",
-                    "price": 1150.0,
-                    "discountedPrice": 1100,
-                    "images": [],
-                    "variantID": "1_4"
                 }
             ],
             "variationKey": "color"
@@ -206,21 +196,18 @@
         },
         {
             "id": 10,
-            "name": "Guitarron JoshMusic",
+            "name": "Guitarron JoshMusic acabado natural brillante",
             "category": "instrumentos",
             "price": 6800.0,
             "discountedPrice": 6650.0,
-            "description": "## Guitarrón JoshMusic - Pino Dorado Clásico\n\nEl **Guitarrón JoshMusic** en acabado **Pino Dorado Clásico** es la elección perfecta para los amantes de la música tradicional mexicana. Este instrumento, con su rica resonancia y elegante diseño, es ideal para cualquier mariachi o grupo folklórico que busque calidad y autenticidad en su sonido.\n\n### Características Destacadas:\n\n- **Construcción Artesanal**: Cada guitarrón es fabricado con esmero por artesanos expertos, utilizando técnicas tradicionales que garantizan una calidad excepcional.\n- **Materiales de Primera Calidad**: El cuerpo de pino dorado no solo proporciona un sonido cálido y resonante, sino que también asegura una durabilidad y belleza inigualables.\n- **Diseño Clásico**: El acabado dorado clásico le da a este guitarrón un aspecto elegante y tradicional, perfecto para destacar en cualquier presentación.\n- **Sonido Potente**: Diseñado para proyectar un sonido fuerte y claro, este guitarrón es ideal para acompañar voces y otros instrumentos en conjuntos grandes o pequeños.\n\n### Especificaciones Técnicas:\n\n- **Cuerpo**: Pino dorado clásico\n- **Puente**: Madera de alta resistencia para una mejor transmisión del sonido\n- **Diapasón**: Madera seleccionada para una mejor sensación y durabilidad\n- **Cuerdas**: Incluye un set de cuerdas de alta calidad para un sonido óptimo\n\nEl **Guitarrón JoshMusic Pino Dorado Clásico** no es solo un instrumento musical, es una pieza de arte que encapsula la esencia de la música mexicana. Ideal para músicos profesionales y aficionados que buscan un instrumento que combine calidad, estilo y rendimiento.\n\n¡Adquiere el tuyo y lleva tu música al siguiente nivel con JoshMusic!",
+            "description": "El **Guitarrón JoshMusic** en acabado **natural brillante** es la elección perfecta para los amantes de la música tradicional mexicana. Este instrumento, con su rica resonancia y elegante diseño, es ideal para cualquier mariachi o grupo folklórico que busque calidad y autenticidad en su sonido.\n\n### Características Destacadas:\n\n- **Construcción Artesanal**: Cada guitarrón es fabricado con esmero por artesanos expertos, utilizando técnicas tradicionales que garantizan una calidad excepcional.\n- **Materiales de Primera Calidad**: El cuerpo (de palo escrito o cedro segun la madera seleccionado)proporcionan un sonido cálido y resonante,que asegura una durabilidad y belleza inigualables.\n- **Diseño Clásico**: El acabado natural brillante le da a este guitarrón un aspecto elegante y tradicional, perfecto para destacar en cualquier presentación.\n- **Sonido Potente**: Diseñado para proyectar un sonido fuerte y claro, este guitarrón es ideal para acompañar voces y otros instrumentos en conjuntos grandes o pequeños.\n\n### Especificaciones Técnicas:\n\n- **Puente**: Madera de alta resistencia para una mejor transmisión del sonido\n- **Diapasón**: Madera seleccionada para una mejor sensación y durabilidad\n- **Cuerdas**: Incluye un set de cuerdas de alta calidad para un sonido óptimo\n\nEl **Guitarrón JoshMusic** no es solo un instrumento musical, es una pieza de arte que encapsula la esencia de la música mexicana. Ideal para músicos profesionales y aficionados que buscan un instrumento que combine calidad, estilo y rendimiento.\n\n¡Adquiere el tuyo y lleva tu música al siguiente nivel con JoshMusic!",
             "variations": [
                 {
                     "value": "Palo Escrito",
-                    "images": [],
+                    "images": [
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717462365/guitarron-jm_be3tcc.jpg"
+                    ],
                     "variantID": "10_1"
-                },
-                {
-                    "value": "Cedro",
-                    "images": [],
-                    "variantID": "10_2"
                 }
             ],
             "variationKey": "Madera"
@@ -416,7 +403,7 @@
             "price": 5400.0,
             "discountedPrice": 5250.0,
             "images": [
-                "https://http2.mlstatic.com/D_NQ_NP_760715-MLU74729760566_032024-O.webp",
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717464532/casioct-s1rd_cm6mtv.jpg",
                 "https://http2.mlstatic.com/D_NQ_NP_865877-MLU74729760572_032024-O.webp",
                 "https://http2.mlstatic.com/D_NQ_NP_861769-MLU74960295579_032024-O.webp"
             ],
@@ -563,9 +550,11 @@
             "name": "Bafle Melo M-15A",
             "price": 21400,
             "discountedPrice": 20900,
-            "images": [],
+            "images": [
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717477930/m15a-melo_ybnspu.jpg"
+            ],
             "category": "audio-profesional",
-            "description": ""
+            "description": "Bafle activo, con componente de 15” de ferrita con bocina de 3.5”, un driver de 3” con diafragma de titanio e imán ferrita. Potencia comprobada y medible.\n\nEl M15-A es un bafle activo, con un componente de 15” de ferrita con bobina de 3.5”, un driver de 3” con diafragma de titanio e imán de ferrita. Potencia comprobada y medible. Fabricado en triplay de 15mm y terminado en poliurea negra que mejora el sonido y alarga su vida útil, en la parte frontal se encuentra una malla de acero reforzada, en el costado y en la parte baja añadimos gomas para colocarlo en forma horizontal o vertical en el caso de uso como monitor, 4 puntos de colgado, pole mount y manijas laterales así como una trasera para fácil manipulación.\n\n## Características\n\nBiamplificado clase D 1000W RMS\nTransductor LF: 1X15” FERRITA\nDriver de 3” con diafragma de titanio e imán de ferrita.\nIncluye filtros FIR para una mejor coherencia y sonido HI_FI\n6 PRESETS\nRejilla de metal doble perforado elíptico con acabado en pintura electrostática\nConstrucción resistente en multiplay de 15mm\n\n|**ESPECIFICACIONES**||\n|-------------------------------------|-----------------------------------------|\n|**Transductor LF:**|1X15” FERRITA|\n|**Transductor HF:**|1×3”|\n|**Respuesta de frecuencia:**|60 HZ a 18 KHZ|\n|**Cobertura:**|80°H x 50°V|\n|**Máximo SPL:**|130 Db SPL|\n|**Amplificador:**|Biamplificado clase D 1000W RMS|\n|**Conectores:**|2 Conectores combo en entrada y un XLR macho de salida|\n|**Conexiones AC:**|Powercon|\n|**Material Del Gabinete:**|Triplay 15mm|\n|**Pintura:**|Color Negro poliurea|\n|**Parrilla Frontal:**|Pintura Electroestática Color Negro / Doble Perforado Elíptico|\n|**Amplificación y proceso:**|Melo|\n|**Dimensiones:**|720mm x 440mm x 400mm|\n|**Voltaje:**|115V~ 50/60Hz|\n|**Consumo eléctrico:**|400 W|"
         },
         {
             "id": 36,
@@ -697,7 +686,7 @@
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/DSP-1540-5.png"
             ],
             "category": "audio-profesional",
-            "description": "La etapa de potencia de toda la serie DSP está basada en amplificaciones clase D, esto garantiza el mayor aprovechamiento de energía, entregando calidad sonora.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bIydm85BCfk?si=ap852ra8P6Z324of\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n## CaracteristíCas\nDisplay LCD\nBluetooth\n4 presets. Ecualizador de 3 bandas\nSelector de HPF, Delay\nModo PA y Monitor\nDos canales de entrada\nSelector de tipo de señal de entrada: Line/Mic\n\n## Especificaciones\n|||\n|------------|------------|\n|**Bocina LF**|15″|\n|**Driver**|HF: 1 3/4″|\n|**Alimentación**|100 – 240V~ 50/60Hz|\n|**Respuesta de frecuencia**|38 – 20 KHz|\n|**Potencia**|400W RMS|\n|**Amplificador**|Clase D, Bi Amp|\n|**Conectores**|Combo, XLR|"
+            "description": "La etapa de potencia de toda la serie DSP está basada en amplificaciones clase D, esto garantiza el mayor aprovechamiento de energía, entregando calidad sonora.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bIydm85BCfk?si=ap852ra8P6Z324of\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n## Caracteristícas\nDisplay LCD\nBluetooth\n4 presets. Ecualizador de 3 bandas\nSelector de HPF, Delay\nModo PA y Monitor\nDos canales de entrada\nSelector de tipo de señal de entrada: Line/Mic\n|**Especificaciones**||\n|------------|------------|\n|**Bocina LF**|15″|\n|**Driver**|HF: 1 3/4″|\n|**Alimentación**|100 – 240V~ 50/60Hz|\n|**Respuesta de frecuencia**|38 – 20 KHz|\n|**Potencia**|400W RMS|\n|**Amplificador**|Clase D, Bi Amp|\n|**Conectores**|Combo, XLR|"
         },
         {
             "id": 47,
@@ -952,6 +941,17 @@
             ],
             "description": "**MiniBALL** es una cabeza móvil de leds, que proyecta múltiples haces de colores RGBW emulando el efecto de una bola de cristal de los 70’s, pero con movimiento.\n\n**PRECAUCIONES DE SEGURIDAD**\nFavor de mantener la ventilación con una distancia mínima de 1 metro\npara que sea suficiente.\n\n## Especificaciones\n- Lámpara: LED de 15W\n- Modos de operación: DMX512, Audio, Auto, Master/Slave\n- Efectos: Rayos delgados que giran en ambos sentidos\n- RGBW\n- Dimmer 0-100% mecánico\n- 11 Canales DMX\n- Estrobo: 1-20 veces por segundo\n- Display\n- IP20\n- Voltaje: 110 240V~ 50-60Hz 35W\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/bcw8SU7XihI?si=Cuon_FE0gsfULJ_V\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n"
 
+        },
+        {
+            "id": 60,
+            "name": "Ibanez Bajo Eléctrico Azul Gris Metálico GSR180-BEM, Serie Gio",
+            "price": 4700,
+            "discountedPrice": 4650,
+            "images": [
+                "https://veerkamponline.com/cdn/shop/products/8203189_1500x.jpg?v=1632416496"
+            ],
+            "category": "instrumentos",
+            "description": "La serie Gio de Ibanez fue diseñada y construida para los músicos que buscan el mejor instrumento para iniciar, pero tomando en cuenta las mejores maderas posibles y electrónica para obtener un bajo con gran sonido redondo, grave, sin olvidar la comodidad del diapasón y brazo.\n\n|**Ficha técnica**||\n|---------------------------------|-------------------------------------|\n|**MARCA:**|Ibanez|\n|**CUERPO:**|Okoume|\n|**COLOR:**|Azul Gris Metálico|\n|**DIAPASÓN:**|Purpleheart|\n|**PUENTE:**|B10|\n|**MARCA DE PASTILLA:**|Ibanez|\n|**PASTILLA DEL PUENTE:**|Dynamix J pickup (Passive)|\n|**MATERIAL DE LA CUERDA:**|Níquel|\n|**ORIENTACIÓN:**|Diestro|\n|**CALIBRE DE CUERDAS:**|.045/.065/.085/.105|\n|**FABRICACIÓN:**|China|\n|**ACABADO:**|Brillante|\n|**BRAZO:**|Arce|\n|**TRASTES:**|22|\n|**NÚMERO DE CUERDAS:**|4|\n|**PASTILLA DEL BRAZO:**|Dynamix J pickup (Passive)|\n|**ELECTRONICA:**|Volumen x2, Tono|\n|**HARDWARE:**|Cromado|\n|**AFINACIÓN:**|1G, 2D, 3A, 4E|"
         }
     ]
 }
