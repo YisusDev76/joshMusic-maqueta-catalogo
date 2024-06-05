@@ -369,8 +369,6 @@ const renderProducts = arr => {
     }
 
     function getProductNameWithVariant(product, variantId) {
-        console.log("el producto es", product);
-        console.log("la variante ", variantId);
     if (variantId && product.variations && product.variations.length > 0) {
         const selectedVariant = product.variations.find(variation => variation.variantID === variantId);
         if (selectedVariant) {

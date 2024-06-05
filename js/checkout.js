@@ -393,7 +393,6 @@ function updateInfoUI(){
     spanCartResume.innerHTML = contarTotalItems(shoppingCart); 
     totalItems.textContent = contarTotalItems(shoppingCart) + " artículos";
 }
-
 document.getElementById('contact-store-btn').addEventListener('click', function() {
     let message = "Estoy interesado en adquirir los siguientes productos:\n\n";
     shoppingCart.forEach(cartItem => {
@@ -402,13 +401,30 @@ document.getElementById('contact-store-btn').addEventListener('click', function(
             if (cartItem.variantId) {
                 const variant = product.variations.find(variation => variation.variantID === cartItem.variantId);
                 if (variant) {
-                    message += `- ${product.name} (Variante: ${variant.value}, Cantidad: ${cartItem.quantity}, Precio: ${variant.price} MXN, ID: ${cartItem.variantId})\n`;
+                    message += `- ${getProductNameWithVariant(product, cartItem.variantId)} Cantidad: ${cartItem.quantity}, Precio: ${variant.price} MXN, ID: ${cartItem.variantId}\n`;
                 }
             } else {
-                message += `- ${product.name} (Cantidad: ${cartItem.quantity}, Precio: ${product.price} MXN, ID: ${cartItem.id})\n`;
+                message += `- ${product.name} Cantidad: ${cartItem.quantity}, Precio: ${product.price} MXN, ID: ${cartItem.id}\n`;
             }
         }
     });
+
+    // Obtener la información del formulario
+    const fullName = document.getElementById('full-name').value;
+    const company = document.getElementById('company').value;
+    const clientAddress = document.getElementById('clientAddress').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+
+    // Agregar la información personal al mensaje si está presente
+    if (fullName || company || clientAddress || email || phone) {
+        message += "\nEstos son mis datos personales:\n";
+        if (fullName) message += `Nombre Completo: ${fullName}\n`;
+        if (company) message += `Compañía: ${company}\n`;
+        if (clientAddress) message += `Dirección Completa: ${clientAddress}\n`;
+        if (email) message += `Correo electrónico: ${email}\n`;
+        if (phone) message += `Teléfono: ${phone}\n`;
+    }
 
     // Codificar el mensaje para URL
     const encodedMessage = encodeURIComponent(message);
