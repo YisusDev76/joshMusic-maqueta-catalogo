@@ -390,7 +390,7 @@
             "images": [],
             "category": "instrumentos",
             "description": "Explora nuevos horizontes musicales con la elegante y versátil Guitarra Eléctrica Tagima Flat con Corte ACO en un impresionante color Madera Natural. Esta guitarra está diseñada para ofrecerte un sonido excepcional y una experiencia de ejecución cómoda, ideal para guitarristas de todos los niveles. Con una relacion calidad-precio, es una inversión en elgancia y estilo.\n\n## Características destacadas:\n\n- **Diseño Moderno:** La Tagima Flat cuenta con un diseño delgado y un corte ACO, lo que permite un acceso fácil a los trastes superiores y un toque moderno.\n- **Color Madera Natural:** El acabado en Madera Natural no solo realza la belleza del instrumento, sino que también destaca la calidad de la madera utilizada.\n- **Sonido Superior:** Equipado con pastillas de alta calidad, este modelo proporciona un sonido rico y versátil, adecuado para diversos géneros musicales.\n- **Construcción Duradera:** Fabricada con materiales de primera clase, la Tagima Flat asegura una durabilidad y resistencia excepcionales, soportando el uso constante.\n- **Comodidad y Estilo:** El diseño ergonómico y los detalles estéticos hacen de esta guitarra una elección tanto práctica como visualmente atractiva.\n\nLa Guitarra Eléctrica Tagima Flat con Corte ACO en color Madera Natural es más que un instrumento musical; es una extensión de tu creatividad y pasión por la música. Aprovecha esta oportunidad de añadir una pieza única y de alta calidad a tu colección.",
-            "visible": true
+            "visible": false
         },
         {
             "id": 20,
@@ -468,7 +468,7 @@
             "images": [],
             "category": "instrumentos",
             "description": "",
-            "visible": true
+            "visible": false
         },
         {
             "id": 25,
@@ -478,7 +478,7 @@
             "images": [],
             "category": "instrumentos",
             "description": "",
-            "visible": true
+            "visible": false
         },
         {
             "id": 26,
@@ -500,7 +500,7 @@
             "images": [],
             "category": "instrumentos",
             "description": "",
-            "visible": true
+            "visible": false
         },
         {
             "id": 28,

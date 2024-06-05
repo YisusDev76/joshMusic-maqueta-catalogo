@@ -34,7 +34,20 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             if (Array.isArray(data.products)) {
-                productList.push(...data.products);
+                const filteredProducts = data.products.filter(product => {
+                    if (!product.visible) {
+                        return false;
+                    }
+
+                    if (product.variations && Array.isArray(product.variations)) {
+                        product.variations = product.variations.filter(variation => variation.visible);
+                        return product.variations.length > 0;
+                    }
+
+                    return true;
+                });
+
+                productList.push(...filteredProducts);
                 const category = window.location.hash.substring(1) || 'all';
                 filterProducts(category);
             } else {
@@ -50,9 +63,10 @@ document.addEventListener('DOMContentLoaded', function () {
     checkoutButton.addEventListener('click', () => {
         window.location.href = 'checkout.html';
     });
-  
+
     checkCartStatus();
 });
+
 
 
 // Manejador de eventos a cada enlace de la barra de navegación. 
