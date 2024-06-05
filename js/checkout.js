@@ -394,19 +394,31 @@ function updateInfoUI(){
     totalItems.textContent = contarTotalItems(shoppingCart) + " artículos";
 }
 
-//Solo en lo que existe una forma de caluclar el precio que se acerce a lo que pidio josh
-function generarPrecioAleatorio() {
-    // Generar número aleatorio entre 400 y 100000
-    const min = 400;
-    const max = 15000;
-    const numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
-    return numeroAleatorio;
-}
+document.getElementById('contact-store-btn').addEventListener('click', function() {
+    let message = "Estoy interesado en adquirir los siguientes productos:\n\n";
+    shoppingCart.forEach(cartItem => {
+        const product = productList.find(product => product.id === cartItem.id);
+        if (product) {
+            if (cartItem.variantId) {
+                const variant = product.variations.find(variation => variation.variantID === cartItem.variantId);
+                if (variant) {
+                    message += `- ${product.name} (Variante: ${variant.value}, Cantidad: ${cartItem.quantity}, Precio: ${variant.price} MXN, ID: ${cartItem.variantId})\n`;
+                }
+            } else {
+                message += `- ${product.name} (Cantidad: ${cartItem.quantity}, Precio: ${product.price} MXN, ID: ${cartItem.id})\n`;
+            }
+        }
+    });
 
+    // Codificar el mensaje para URL
+    const encodedMessage = encodeURIComponent(message);
 
-// function updateShippingCostUI(shippingProvider, shippingCost) {
-//     if (shippingCost !== undefined) {
-//         const formattedProvider = shippingProvider.charAt(0).toUpperCase() + shippingProvider.slice(1);
-//         document.getElementById(`price${formattedProvider}`).innerText = ` $${shippingCost}`;
-//     }
-// }
+    // Número de teléfono de la tienda (incluye el código de país, por ejemplo, +521234567890 para México)
+    const phoneNumber = "+524431013644";
+
+    // URL de WhatsApp
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    // Abrir WhatsApp en una nueva pestaña
+    window.open(whatsappUrl, '_blank');
+});
