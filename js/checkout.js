@@ -393,6 +393,7 @@ function updateInfoUI(){
     spanCartResume.innerHTML = contarTotalItems(shoppingCart); 
     totalItems.textContent = contarTotalItems(shoppingCart) + " artículos";
 }
+
 document.getElementById('contact-store-btn').addEventListener('click', function() {
     let message = "Estoy interesado en adquirir los siguientes productos:\n\n";
     shoppingCart.forEach(cartItem => {
@@ -429,8 +430,17 @@ document.getElementById('contact-store-btn').addEventListener('click', function(
     // Codificar el mensaje para URL
     const encodedMessage = encodeURIComponent(message);
 
-    // Número de teléfono de la tienda (incluye el código de país, por ejemplo, +521234567890 para México)
-    const phoneNumber = "+524431013644";
+    // Números de contacto divididos
+    const phoneNumberLow = ['523', '521', '207', '479'];
+    const phoneNumberHigh = ['524', '691', '751', '918'];
+
+    // Función para unir el número de teléfono
+    function joinPhoneNumber(parts) {
+        return parts.join('');
+    }
+
+    // Selección del número de contacto según el total del carrito
+    const phoneNumber = totalCart > 7400 ? joinPhoneNumber(phoneNumberHigh) : joinPhoneNumber(phoneNumberLow);
 
     // URL de WhatsApp
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
