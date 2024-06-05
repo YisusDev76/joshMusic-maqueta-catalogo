@@ -64,6 +64,13 @@
                         "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717570778/bajito-degradado-rojo_l7qxbp.jpg"
                     ],
                     "variantID": "3_2"
+                },
+                {
+                    "value": "Degradado Sol Naciente (Sunburst)",
+                    "images": [
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717595409/Bajito-jm-sunburst_zdfa33.jpg"
+                    ],
+                    "variantID": "3_3"
                 }
             ],
             "variationKey": "color"
