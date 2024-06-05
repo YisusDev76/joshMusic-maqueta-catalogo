@@ -406,8 +406,9 @@ input[type="checkbox"] {
 }
 
 .shipping-warning {
-  margin-top: 10px;
-  padding: 10px;
+  bottom: -15px;
+  left: 19px;
+  text-align: center;
   border-radius: 5px;
   font-size: 13px; /* Tamaño de fuente más pequeño */
   color: var(--very-light-pink);
@@ -453,6 +454,121 @@ input[type="checkbox"] {
   visibility: visible;
   opacity: 1;
 }
+
+/* Estilos específicos para los checkboxes */
+.checkbox-section {
+  margin-top: 20px;
+}
+
+.checkbox-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.checkbox-input {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 2px solid #5a5a5a;
+  margin-right: 10px;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  color: #333;
+  position: static;
+  transform: none;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+.btn-contact-store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #607d8b;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-contact-store img {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.btn-contact-store:hover {
+  background-color: #546e7a;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.terms-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.terms-close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.terms-close-button:hover,
+.terms-close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.terms-title, .terms-heading {
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.terms-paragraph {
+  color: #666;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.terms-heading {
+  margin-top: 20px;
+  font-size: 1.2em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.terms-paragraph strong {
+  color: #333;
+}
+
+
+
 /* Media Querys */
 /* Media query para pantallas menores a 601px */
 @media (max-width: 600px) {
@@ -518,6 +634,11 @@ input[type="checkbox"] {
     position: absolute;
     bottom: -5px;
     left: 15px; 
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 13px; /* Tamaño de fuente más pequeño */
+    color: var(--very-light-pink);
     
   }
 

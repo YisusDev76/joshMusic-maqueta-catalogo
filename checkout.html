@@ -59,9 +59,8 @@
                 </div>
           
                 <div class="input-container">
-                  <input type="tel" id="phone" name="phone" class="login-input" required>
+                  <input type="tel" id="phone" name="phone" class="login-input">
                   <label for="phone" unselectable="on">Teléfono</label>
-                  <p class="error-message">Por favor, ingrese un teléfono valido</p>
                 </div>
               </div>
             </form>
@@ -76,17 +75,17 @@
             <p>El costo de envío y la forma de pago se coordinarán por WhatsApp. Selecciona tus productos, proporciona tu dirección y presiona 'Contactar a la tienda'. Nuestro equipo te informará del costo total y opciones de pago.</p>
             
             <div class="checkbox-container">
-              <input type="checkbox" id="termsCheckbox">
-              <label for="termsCheckbox" class="shipping-warning">He leído y aceptado la forma de pago y cómo será calculado el envío</label>
+              <input type="checkbox" id="termsShippingCheckbox">
+              <label for="termsShippingCheckbox" class="shipping-warning">He leído y aceptado la forma de pago y cómo será calculado el envío</label>
             </div>
           </div>
           
           
 
           <div class="card card-information">
-            <h1>Maybe you could also be interested in...</h1>
-            <p>Datos del usuario</p>
-            <input type="text" placeholder="Nombre completo">
+            <!-- <h1>Maybe you could also be interested in...</h1> -->
+            <!-- <p>Datos del usuario</p>
+            <input type="text" placeholder="Nombre completo"> -->
           </div>
         </div>
       
@@ -120,11 +119,76 @@
               <span class="element-total-to-Pay"></span>
             </div>
 
+            <!-- Nueva sección -->
+            <div class="checkbox-section">
+              <div class="checkbox-item">
+                  <input type="checkbox" id="newsletterCheckbox" class="checkbox-input">
+                  <label for="newsletterCheckbox" class="checkbox-label">Me gustaria recibir correos con descuentos y promociones</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="termsCheckbox" class="checkbox-input">
+                <label for="termsCheckbox" class="checkbox-label">
+                    Confirmo que la información proporcionada es correcta y acepto los 
+                    <a href="#" id="openModal">Términos y Condiciones</a>
+                </label>
+            </div>
+            </div>
+            <!-- <button id="contact-store-btn" class="btn-contact-store">Contactar a la tienda</button> -->
+            <button id="contact-store-btn" class="btn-contact-store">
+            <img src="./icons/whatsapp-logo.svg" alt="WhatsApp">
+            Contactar a la tienda
+           </button>
+
           </div>
 
         </div>
       
       </div>
+
+         <!-- Modal -->
+         <div id="termsModal" class="modal">
+          <div class="modal-content terms-modal-content">
+              <span class="close-button terms-close-button" id="closeModal">&times;</span>
+              <h1 class="terms-title">Términos y Condiciones</h1>
+              <p class="terms-paragraph">Al utilizar el sitio web o comprar productos de JoshMusic, acepta los siguientes términos de servicio.</p>
+              
+              <h2 class="terms-heading">Ley aplicable y jurisdicción</h2>
+              <p class="terms-paragraph">Estos términos de servicio se regirán e interpretarán de acuerdo con las leyes de México, y cualquier disputa que surja de estos términos de servicio se resolverá en los tribunales de Michoacán, México.</p>
+              
+              <h2 class="terms-heading">Limitación de responsabilidad</h2>
+              <p class="terms-paragraph">No somos responsables de ningún daño o pérdida, incluidos, entre otros, la pérdida de beneficios, la pérdida de datos o la interrupción del negocio, que resulten del uso o la imposibilidad de utilizar nuestro sitio web o nuestros productos.</p>
+              
+              <h2 class="terms-heading">Cambios en los Términos de servicio</h2>
+              <p class="terms-paragraph">Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Las modificaciones entrarán en vigor en el momento de su publicación en el sitio web.</p>
+              
+              <h2 class="terms-heading">Información del Producto</h2>
+              <p class="terms-paragraph">Nos esforzamos por proporcionar información precisa sobre los productos en nuestro sitio web, incluidas descripciones, precios e imágenes. Sin embargo, no garantizamos la exactitud, integridad o confiabilidad de la información contenida en el sitio web. Nos reservamos el derecho de modificar o descontinuar productos en cualquier momento sin previo aviso.</p>
+              
+              <h2 class="terms-heading">Aceptación de los Términos</h2>
+              <p class="terms-paragraph">Al acceder a este sitio web, asumimos que aceptas estos términos y condiciones. No continúes utilizando joshMusic.com.mx si no estás de acuerdo con todos los términos y condiciones establecidos en esta página.</p>
+              
+              <h2 class="terms-heading">Proceso de Compra</h2>
+              <p class="terms-paragraph">
+                  <strong>Selección de Productos:</strong> Puedes agregar productos al carrito de compras desde nuestro catálogo.<br>
+                  <strong>Pedido por WhatsApp:</strong> Una vez que hayas seleccionado tus productos, el proceso de compra se completa enviando un mensaje de WhatsApp con los detalles del pedido. Este mensaje incluye los productos seleccionados y sus cantidades.<br>
+                  <strong>Confirmación del Pedido:</strong> Recibirás una confirmación del pedido a través de WhatsApp una vez que procesemos tu solicitud.
+              </p>
+              
+              <h2 class="terms-heading">Envío y Entrega</h2>
+              <p class="terms-paragraph">
+                  <strong>Costos de Envío:</strong> Los costos de envío serán discutidos y acordados a través de WhatsApp antes de la confirmación final del pedido.<br>
+                  <strong>Plazos de Entrega:</strong> Los plazos de entrega pueden variar según la ubicación y el método de envío acordado. No somos responsables de retrasos causados por el transportista.<br>
+                  <strong>Rastreo de Pedido:</strong> Proporcionaremos un número de rastreo para que puedas seguir el estado de tu pedido, si aplica.
+              </p>
+              
+              <h2 class="terms-heading">Devoluciones y Reembolsos</h2>
+              <p class="terms-paragraph">
+                  <strong>Política de Devolución:</strong> Aceptamos devoluciones dentro de los [número] días posteriores a la recepción del producto. El producto debe estar en su estado original y sin usar.<br>
+                  <strong>Proceso de Reembolso:</strong> Una vez recibida la devolución, inspeccionaremos el producto y te notificaremos sobre la aprobación o rechazo del reembolso. Si se aprueba, se procesará un reembolso a tu método original de pago.
+              </p>
+          </div>
+      </div>
+      
 </body>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzIZl7CPRCjGmbGN4tp2zrf--7URcxpN8&libraries=places&callback=initMap" async defer"></script>
 <script>

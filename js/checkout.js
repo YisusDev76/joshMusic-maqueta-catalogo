@@ -394,19 +394,72 @@ function updateInfoUI(){
     totalItems.textContent = contarTotalItems(shoppingCart) + " artículos";
 }
 
-//Solo en lo que existe una forma de caluclar el precio que se acerce a lo que pidio josh
-function generarPrecioAleatorio() {
-    // Generar número aleatorio entre 400 y 100000
-    const min = 400;
-    const max = 15000;
-    const numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
-    return numeroAleatorio;
+document.getElementById('contact-store-btn').addEventListener('click', function() {
+    let message = "Estoy interesado en adquirir los siguientes productos:\n\n";
+    shoppingCart.forEach(cartItem => {
+        const product = productList.find(product => product.id === cartItem.id);
+        if (product) {
+            if (cartItem.variantId) {
+                const variant = product.variations.find(variation => variation.variantID === cartItem.variantId);
+                if (variant) {
+                    message += `- ${getProductNameWithVariant(product, cartItem.variantId)} Cantidad: ${cartItem.quantity}, Precio: ${variant.price} MXN, ID: ${cartItem.variantId}\n`;
+                }
+            } else {
+                message += `- ${product.name} Cantidad: ${cartItem.quantity}, Precio: ${product.price} MXN, ID: ${cartItem.id}\n`;
+            }
+        }
+    });
+
+    // Obtener la información del formulario
+    const fullName = document.getElementById('full-name').value;
+    const company = document.getElementById('company').value;
+    const clientAddress = document.getElementById('clientAddress').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+
+    // Agregar la información personal al mensaje si está presente
+    if (fullName || company || clientAddress || email || phone) {
+        message += "\nEstos son mis datos personales:\n";
+        if (fullName) message += `Nombre Completo: ${fullName}\n`;
+        if (company) message += `Compañía: ${company}\n`;
+        if (clientAddress) message += `Dirección Completa: ${clientAddress}\n`;
+        if (email) message += `Correo electrónico: ${email}\n`;
+        if (phone) message += `Teléfono: ${phone}\n`;
+    }
+
+    // Codificar el mensaje para URL
+    const encodedMessage = encodeURIComponent(message);
+
+    // Números de contacto divididos
+    const phoneNumberLow = ['523', '521', '207', '479'];
+    const phoneNumberHigh = ['524', '691', '751', '918'];
+
+    // Función para unir el número de teléfono
+    function joinPhoneNumber(parts) {
+        return parts.join('');
+    }
+
+    // Selección del número de contacto según el total del carrito
+    const phoneNumber = totalCart > 7400 ? joinPhoneNumber(phoneNumberHigh) : joinPhoneNumber(phoneNumberLow);
+
+    // URL de WhatsApp
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    // Abrir WhatsApp en una nueva pestaña
+    window.open(whatsappUrl, '_blank');
+});
+
+ // JavaScript para manejar la apertura y cierre del modal
+ document.getElementById('openModal').onclick = function() {
+    document.getElementById('termsModal').style.display = 'block';
 }
 
+document.getElementById('closeModal').onclick = function() {
+    document.getElementById('termsModal').style.display = 'none';
+}
 
-// function updateShippingCostUI(shippingProvider, shippingCost) {
-//     if (shippingCost !== undefined) {
-//         const formattedProvider = shippingProvider.charAt(0).toUpperCase() + shippingProvider.slice(1);
-//         document.getElementById(`price${formattedProvider}`).innerText = ` $${shippingCost}`;
-//     }
-// }
+window.onclick = function(event) {
+    if (event.target == document.getElementById('termsModal')) {
+        document.getElementById('termsModal').style.display = 'none';
+    }
+}

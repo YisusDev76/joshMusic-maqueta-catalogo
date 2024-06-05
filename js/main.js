@@ -34,7 +34,20 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             if (Array.isArray(data.products)) {
-                productList.push(...data.products);
+                const filteredProducts = data.products.filter(product => {
+                    if (!product.visible) {
+                        return false;
+                    }
+
+                    if (product.variations && Array.isArray(product.variations)) {
+                        product.variations = product.variations.filter(variation => variation.visible);
+                        return product.variations.length > 0;
+                    }
+
+                    return true;
+                });
+
+                productList.push(...filteredProducts);
                 const category = window.location.hash.substring(1) || 'all';
                 filterProducts(category);
             } else {
@@ -50,9 +63,10 @@ document.addEventListener('DOMContentLoaded', function () {
     checkoutButton.addEventListener('click', () => {
         window.location.href = 'checkout.html';
     });
-  
+
     checkCartStatus();
 });
+
 
 
 // Manejador de eventos a cada enlace de la barra de navegación. 
@@ -369,8 +383,6 @@ const renderProducts = arr => {
     }
 
     function getProductNameWithVariant(product, variantId) {
-        console.log("el producto es", product);
-        console.log("la variante ", variantId);
     if (variantId && product.variations && product.variations.length > 0) {
         const selectedVariant = product.variations.find(variation => variation.variantID === variantId);
         if (selectedVariant) {
@@ -442,8 +454,8 @@ function syncCartToLocalStorage() {
  * mantiene en el nuevo array. De esta manera, el producto con idProducto es 
  * efectivamente removido del carrito.
  */
-function removeFromCart(idProducto) {
-    shoppingCart = shoppingCart.filter(producto => producto.id !== idProducto);
+function removeFromCart(idProducto, variantId) {
+    shoppingCart = shoppingCart.filter(producto => producto.id !== idProducto || producto.variantId !== variantId);
     syncCartToLocalStorage();
     checkCartStatus();
 }
@@ -553,7 +565,7 @@ function renderCart(arrayCarrito) {
         productDeleteButton.setAttribute('src', './icons/icon_close.png');
         productDeleteButton.setAttribute('alt', 'close');
         productDeleteButton.addEventListener('click', function () {
-            removeFromCart(product.id);
+            removeFromCart(product.id, product.variantId);
             renderCart(shoppingCart);
             renderactualizarContadorCarrito(countProductsInCart());
 
