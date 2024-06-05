@@ -314,8 +314,8 @@
             "discountedPrice": 750.0,
             "images": [],
             "category": "instrumentos",
-            "description": "La **Mandolina Económica JoshMusic** es una excelente opción para músicos principiantes y aficionados que buscan un instrumento asequible y de buena calidad. Con su acabado en **Color Miel Dorada**, esta mandolina no solo ofrece un sonido cálido y resonante, sino que también destaca por su atractivo diseño.\n\n### Características\n\n| **Atributo**              | **Valor**              |\n|---------------------------|------------------------|\n| **Marca**                 | JoshMusic              |\n| **Modelo**                | Mandolina Económica    |\n| **Color**                 | Miel Dorada            |\n\n### Beneficios de la Mandolina Económica JoshMusic\n\n- **Sonido Cálido y Resonante**: Diseñada para ofrecer una calidad sonora superior, ideal para diversos estilos musicales.\n- **Diseño Atractivo**: El acabado en color Miel Dorada le da a esta mandolina un aspecto elegante y clásico.\n- **Accesible**: Perfecta para principiantes y músicos con presupuesto limitado que no quieren sacrificar calidad.\n- **Construcción Duradera**: Fabricada con materiales resistentes que aseguran una larga vida útil del instrumento.\n\nLa **Mandolina Económica JoshMusic Color Miel Dorada** es la elección perfecta para aquellos que buscan un instrumento versátil, asequible y de gran calidad. Con su diseño atractivo y su sonido excepcional, esta mandolina te acompañará en tu viaje musical, ya seas un principiante o un músico experimentado.\n\n¡Adquiere la tuya y comienza a disfrutar de la música con JoshMusic!\n",
-            "visible": true
+            "description": "La **Mandolina Económica JoshMusic** es una excelente opción para músicos principiantes y aficionados que buscan un instrumento asequible y de buena calidad. Con su acabado en **Color Miel Dorada**, esta mandolina no solo ofrece un sonido cálido y resonante, sino que también destaca por su atractivo diseño.\n\n### Características\n\n| **Atributo**              | **Valor**              |\n|---------------------------|------------------------|\n| **Marca**                 | JoshMusic              |\n| **Modelo**                | Mandolina Económica    |\n| **Color**                 | Miel Dorada            |\n\n### Beneficios de la Mandolina Económica JoshMusic\n\n- **Sonido Cálido y Resonante**: Diseñada para ofrecer una calidad sonora superior, ideal para diversos estilos musicales.\n- **Diseño Atractivo**: El acabado en color Miel Dorada le da a esta mandolina un aspecto elegante y clásico.\n- **Accesible**: Perfecta para principiantes y músicos con presupuesto limitado que no quieren sacrificar calidad.\n- **Construcción Duradera**: Fabricada con materiales resistentes que aseguran una larga vida útil del instrumento.\n\nLa **Mandolina Económica JoshMusic Color Miel Dorada** es la elección perfecta para aquellos que buscan un instrumento versátil, asequible y de gran calidad. Con su diseño atractivo y su sonido excepcional, esta mandolina te acompañará en tu viaje musical, ya seas un principiante o un músico experimentado.\n\n¡Adquiere la tuya y comienza a disfrutar de la música con JoshMusic!",
+            "visible": false
         },
         {
             "id": 14,
@@ -324,8 +324,8 @@
             "discountedPrice": 1450,
             "images": [],
             "category": "instrumentos",
-            "description": "\n\n¡Descubre la belleza y la calidad de la Mandolina acústica Cedro selecto, hecha en Paracho, la cuna de los instrumentos finos en México! Esta mandolina combina la tradición artesanal con materiales de alta calidad para ofrecerte un sonido excepcional y una apariencia impresionante.\n\n### Características:\n\n- **Material**: Cedro selecto, conocido por su durabilidad y resonancia superior.\n- **Precio**: $1,500 MXN\n- **Origen**: Fabricada en Paracho, Michoacán, famosa por su excelencia en la construcción de instrumentos de cuerda.\n- **Diseño**: Acabado natural que resalta la belleza de la madera de cedro, con detalles finamente elaborados.\n\n### Ideal para:\n\n- Músicos aficionados y profesionales que buscan un instrumento con un sonido cálido y proyectado.\n- Coleccionistas que valoran la artesanía mexicana y los materiales de alta calidad.\n- Estudiantes de música que desean un instrumento confiable y duradero.\n\nHaz que tu música resuene con la riqueza del cedro y la maestría de los artesanos de Paracho. ¡Adquiere hoy tu Mandolina acústica Cedro selecto y eleva tu experiencia musical!\n\n**Nota:** La disponibilidad puede variar, asegúrate de realizar tu pedido con anticipación.\n\n",
-            "visible": true
+            "description": "¡Descubre la belleza y la calidad de la Mandolina acústica Cedro selecto, hecha en Paracho, la cuna de los instrumentos finos en México! Esta mandolina combina la tradición artesanal con materiales de alta calidad para ofrecerte un sonido excepcional y una apariencia impresionante.\n\n### Características:\n\n- **Material**: Cedro selecto, conocido por su durabilidad y resonancia superior.\n- **Precio**: $1,500 MXN\n- **Origen**: Fabricada en Paracho, Michoacán, famosa por su excelencia en la construcción de instrumentos de cuerda.\n- **Diseño**: Acabado natural que resalta la belleza de la madera de cedro, con detalles finamente elaborados.\n\n### Ideal para:\n\n- Músicos aficionados y profesionales que buscan un instrumento con un sonido cálido y proyectado.\n- Coleccionistas que valoran la artesanía mexicana y los materiales de alta calidad.\n- Estudiantes de música que desean un instrumento confiable y duradero.\n\nHaz que tu música resuene con la riqueza del cedro y la maestría de los artesanos de Paracho. ¡Adquiere hoy tu Mandolina acústica Cedro selecto y eleva tu experiencia musical!\n\n**Nota:** La disponibilidad puede variar, asegúrate de realizar tu pedido con anticipación.",
+            "visible": false
         },
         {
             "id": 15,
@@ -519,14 +519,14 @@
         },
         {
             "id": 29,
-            "name": "Bafle Melo Dsp 1560",
+            "name": "Bafle Melo Dsp 1560D",
             "price": 8500,
             "discountedPrice": 8250.0,
             "images": [
-                ""
+                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/DSP-1560D-catalogo.png"
             ],
             "category": "audio-profesional",
-            "description": "",
+            "description": "La etapa de potencia de toda la serie DSP está basada en amplificaciones clase D, esto garantiza el mayor aprovechamiento de energía, entregando calidad sonora.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/T2Oeg-Rju_s?si=lkgJk6OG9h812wQq\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n**Caracteristícas**\n- Combina un amplificador digital de alta eficiencia con un gran sonido análogo\n- 130 dB Max SPL\n- Sistema DSP\n- Display de control\n- Entrada directa para micrófono o instrumento\n- Gran versatilidad, uso como monitor de piso. PA en Stand o Tripié\n- El difusor de agudos le permite un tiro más largo que los sistemas comunes\n- Asa ergonómica de diseño antideslizante\n- Diseño elegante\n- Construcción robusta\n- 4 presets, ecualizador de 3 bandas\n\n|**Especificaciones**||\n|--------------------------------|------------------------------|\n|**Bocina LF**|15\"|\n|**Bocina HF**|1 3/4\"|\n|**Alimentación**|120V~50-60Hz|\n|**Nivel Máximo**|130dB SPL|\n|**Respuesta de frecuencia (Hz)**|50 - 18 KHz|\n|**Impedancia**|4 ohm|\n|**Potencia**|600W RMS|\n|**Potencia programa**|1200W|\n|**SPL Max**|130 dB|\n|**Presets**|Music, Monitor, Speech y Dj|\n|**Corte de bajo**|80, 100, 120 y 150 Hz|\n|**Puntos de colgado**|2XM8|\n|**Conectores**|Combo|\n|**Peso**|20 Kg|\n|**Medidas del empaque (mm)**|477 x 440 x 754|\n|**Salida (EIA TEST STAND)**|100Hz 1% THD 2x350W/4ohm|\n|**Damping factor**|500 (20Hz - 1000Hz)|\n\n## Amplificador\n- Salida (EIA Test Stand, 1000Hz 1% THD) 2x350W/4ohm\n- S/N >95dBA\n- Damping factor >500 (20Hz-1000Hz)",
             "visible": true
         },
         {
@@ -798,7 +798,7 @@
                 "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2024/02/NT-700-Funda-2.png"
             ],
             "category": "audio-profesional",
-            "description": "\nNT 700 es la respuesta de MELO a los profesionales que trabajan en lugares donde la estética es\nun tema fundamental, que requieren gran potencia en equipos compactos.\n\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5p91eKlesKA?si=LMrHqcVs0MqIhd1x\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n\n\n## CARACTERISTÍCAS\nNT700\nColumna activa.\nEquipado con un amplificador de 700W RMS.\nSonido potente y claro.\n126 db SPL pico.\n\nNT700 sistema activo de columna con un subwoofer.\n\nIncluye 2 fundas\n\n¡Olvídate del cableado!\n\n## ESPECIFICACIONES\n- Columna activa.\n- Equipado con un amplificador de 700w RMS.\n- Excelente sonido potente y claro.\n- 126 db SPL pico.\n- Conectividad Bluetooth.\n- Respuesta de Freuencia de 40Hz- 18kHz.\n- Max SPL 126 db SPL (pico).\n- Dispersión (H X V) 100° X 60°\n- Bocinas 1 x 12″ Subwoofer, 6 X 3″ Medios.\n- Potencia de Amplificador 700W RMS\n- Conectores de Entrada Combo, RCA Y TRS\n- Impedancia de Entrada de Línea: 20kΩ balanceada, 10kΩ no balanceada.\n- Impedancia de Entrada de Micrófono 2kΩ balanceada, 1kΩ no balanceada.\n- Impedancia de Entrada de Instrumento: 470kΩ no balanceada.\n- Nivel de Entrada Línea 775mVrms, Mic 400mVrms.\n- Voltaje: 120 o 240V vía switch 50/60Hz.\n- Consumo: 3.5 Amper 420W @ 120V.\n\n",
+            "description": "NT 700 es la respuesta de MELO a los profesionales que trabajan en lugares donde la estética es\nun tema fundamental, que requieren gran potencia en equipos compactos.\n\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5p91eKlesKA?si=LMrHqcVs0MqIhd1x\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n\n\n## CARACTERISTÍCAS\nNT700\nColumna activa.\nEquipado con un amplificador de 700W RMS.\nSonido potente y claro.\n126 db SPL pico.\n\nNT700 sistema activo de columna con un subwoofer.\n\nIncluye 2 fundas\n\n¡Olvídate del cableado!\n\n## ESPECIFICACIONES\n- Columna activa.\n- Equipado con un amplificador de 700w RMS.\n- Excelente sonido potente y claro.\n- 126 db SPL pico.\n- Conectividad Bluetooth.\n- Respuesta de Freuencia de 40Hz- 18kHz.\n- Max SPL 126 db SPL (pico).\n- Dispersión (H X V) 100° X 60°\n- Bocinas 1 x 12″ Subwoofer, 6 X 3″ Medios.\n- Potencia de Amplificador 700W RMS\n- Conectores de Entrada Combo, RCA Y TRS\n- Impedancia de Entrada de Línea: 20kΩ balanceada, 10kΩ no balanceada.\n- Impedancia de Entrada de Micrófono 2kΩ balanceada, 1kΩ no balanceada.\n- Impedancia de Entrada de Instrumento: 470kΩ no balanceada.\n- Nivel de Entrada Línea 775mVrms, Mic 400mVrms.\n- Voltaje: 120 o 240V vía switch 50/60Hz.\n- Consumo: 3.5 Amper 420W @ 120V.",
             "visible": true
         },
         {
@@ -932,7 +932,7 @@
             "id": 56,
             "name": "Cable de Micrófono XLR Macho a Hembra - The American Cable Company",
             "category": "accesorios",
-            "description": "\n\n**El Cable de Micrófono XLR Macho a Hembra** de T**he American Cable Company **es una elección ideal para profesionales del audio que buscan calidad y fiabilidad. Este cable está diseñado para ofrecer una transmisión de señal clara y libre de interferencias, garantizando un rendimiento excepcional en todo tipo de aplicaciones de audio.\n\n## Características\n\n- Calidad Superior: Fabricado con materiales de alta calidad que aseguran una larga vida útil y un uso continuo.\n- Construcción Robusta: Ensamblado por personal calificado, este cable está diseñado para soportar el uso riguroso tanto en estudios como en escenarios.\n- Conectores Profesionales: Conectores XLR macho y hembra de precisión que proporcionan una conexión segura y sin ruido.\n - Varias Longitudes Disponibles: Ofrecemos una amplia gama de longitudes para adaptarse a cualquier configuración. Esto es ideal para profesionales que necesitan diferentes opciones para diversas aplicaciones, garantizando siempre la máxima flexibilidad y comodidad. \n- Garantía de Fabricación: Los productos de The American Cable Company están garantizados contra defectos de materiales y fabricación.\n\n## Especificaciones Técnicas\n|   |   |\n| ------------ | ------------ |\n| **Tipo de Conector**  | XLR Macho a XLR Hembra  |\n| **Color del cable**  | Negro  |\n| **Uso**   |  Micrófonos, mezcladoras, interfaces de audio, y otros equipos de audio profesional |\n| **Ensamblado por**  | Acoustic Control de México, S.A. de C.V.  |\n\n \n Longitudes Disponibles: \n  - 3 ft (aprox. 1 m)\n  - 10 ft (aprox. 3 m)\n  - 20 ft (aprox. 6 m)\n  - 30 ft (aprox. 9 m)\n  - 40 ft (aprox. 12 m)\n  - 50 ft (aprox. 15 m) \n\n **Incluye**:\n 1 x Cable de Micrófono XLR Macho a Hembra (disponible en varias longitudes)\n\n",
+            "description": "**El Cable de Micrófono XLR Macho a Hembra** de T**he American Cable Company **es una elección ideal para profesionales del audio que buscan calidad y fiabilidad. Este cable está diseñado para ofrecer una transmisión de señal clara y libre de interferencias, garantizando un rendimiento excepcional en todo tipo de aplicaciones de audio.\n\n## Características\n\n- Calidad Superior: Fabricado con materiales de alta calidad que aseguran una larga vida útil y un uso continuo.\n- Construcción Robusta: Ensamblado por personal calificado, este cable está diseñado para soportar el uso riguroso tanto en estudios como en escenarios.\n- Conectores Profesionales: Conectores XLR macho y hembra de precisión que proporcionan una conexión segura y sin ruido.\n - Varias Longitudes Disponibles: Ofrecemos una amplia gama de longitudes para adaptarse a cualquier configuración. Esto es ideal para profesionales que necesitan diferentes opciones para diversas aplicaciones, garantizando siempre la máxima flexibilidad y comodidad. \n- Garantía de Fabricación: Los productos de The American Cable Company están garantizados contra defectos de materiales y fabricación.\n\n## Especificaciones Técnicas\n|   |   |\n| ------------ | ------------ |\n| **Tipo de Conector**  | XLR Macho a XLR Hembra  |\n| **Color del cable**  | Negro  |\n| **Uso**   |  Micrófonos, mezcladoras, interfaces de audio, y otros equipos de audio profesional |\n| **Ensamblado por**  | Acoustic Control de México, S.A. de C.V.  |\n\n \n Longitudes Disponibles: \n  - 3 ft (aprox. 1 m)\n  - 10 ft (aprox. 3 m)\n  - 20 ft (aprox. 6 m)\n  - 30 ft (aprox. 9 m)\n  - 40 ft (aprox. 12 m)\n  - 50 ft (aprox. 15 m) \n\n **Incluye**:\n 1 x Cable de Micrófono XLR Macho a Hembra (disponible en varias longitudes)",
             "variations": [
                 {
                     "value": "3 ft (aprox. 1 m)",
@@ -942,14 +942,14 @@
                         ""
                     ],
                     "variantID": "56_1",
-                    "visible": true
+                    "visible": false
                 },
                 {
                     "value": "10 ft (aprox. 3 m)",
                     "price": 260.0,
                     "discountedPrice": 240.0,
                     "images": [
-                        ""
+                        "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717626245/XLR_3m_wwxihm.jpg"
                     ],
                     "variantID": "56_2",
                     "visible": true
@@ -962,7 +962,7 @@
                         ""
                     ],
                     "variantID": "56_3",
-                    "visible": true
+                    "visible": false
                 },
                 {
                     "value": "30 ft (aprox. 9 m)",
