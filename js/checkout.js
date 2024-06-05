@@ -46,13 +46,16 @@ document.addEventListener('DOMContentLoaded', function () {
                  // Inicializar la vista con los productos del carrito
                 renderCart(shoppingCart);
                 updateInfoUI();
+                totalCart = calculateTotalCart(shoppingCart);
+                //Funcion para actualizar el precio del carrito en los elementos html que muestren dicho subtotal
+                totalToPayElments.forEach(function(elemento) {
+                    elemento.textContent =  formatPrice(totalCart);
+                });
             } else {
                 console.error('La propiedad "products" no existe o no es un array');
             }
         })
         .catch(error => console.error('Error al cargar los datos:', error));
-    totalCart = calcularTotalCarrito(shoppingCart);
-
     inputs.forEach(function(input) {
         input.addEventListener('blur', function() {
             validateInput(this);
@@ -68,17 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         });
-    });
-    
-    priceShipping = generarPrecioAleatorio();
-    totalToPay = priceShipping + totalCart;
-
-    shippingCostElements.forEach(function(elemento) {
-        elemento.textContent =  formatPrice(priceShipping);
-    });
-
-    totalToPayElments.forEach(function(elemento) {
-        elemento.textContent =  formatPrice(totalToPay);
     });
 });
 
@@ -116,25 +108,6 @@ function guardarCarritoEnLocalStorage() {
     const jsonCart = JSON.stringify(shoppingCart);
     localStorage.setItem('carrito', jsonCart);
 }
-
-
-    // Función para actualizar la cantidad en el carrito
-    function actualizarPrecioProducto(productInCart,product, newQty) {
-        // Encuentra el producto en productList por su ID para obtener el precio actualizado
-        if (product && productInCart) {
-            const precioTotal =  getPriceFromCart(productInCart, product) * newQty;
-            document.getElementById(`price-${idProducto}`).innerText = `$${precioTotal.toFixed(2)}`;
-            console.log("Estoy viendo la de actualizar el precio de un producto");
-    
-            // // Actualiza la cantidad en shoppingCart
-            // const productoEnCarrito = shoppingCart.find(producto => producto.id === idProducto);
-            // if (productoEnCarrito) {
-            //     productoEnCarrito.cantidad = nuevaCantidad;
-            // }
-
-            // guardarCarritoEnLocalStorage();
-        }
-    }
 
   // Función para manejar la visibilidad del tooltip
   function toggleTooltip() {
@@ -245,9 +218,12 @@ function renderCart(arrayCarrito) {
 
         // Añadir el event listener para cambios en la selección
         selectCantidad.addEventListener("change", function(event) {
+            console.log("Entra al event de change");
             const newQty = parseInt(event.target.value);
             const id = event.target.getAttribute("data-id");
+            console.log("el id del producto del change es ", id);
             const variantId = event.target.getAttribute("data-variant-id");
+            console.log("el id del producto del change es ", variantId);
 
             // Encontrar el producto correcto en el array del carrito
             let productoActualizado;
@@ -263,6 +239,16 @@ function renderCart(arrayCarrito) {
                 // Actualizar el precio total del producto en la interfaz
                 const updatedPrice = getPriceFromCart(productoActualizado, productDetails) * newQty;
                 document.getElementById(`price-${uniqueId}`).textContent = `$${updatedPrice}`;
+
+                totalCart = calculateTotalCart(shoppingCart);
+                //Funcion para actualizar el precio del carrito en los elementos html que muestren dicho subtotal
+                totalToPayElments.forEach(function(elemento) {
+                    elemento.textContent =  formatPrice(totalCart);
+                });
+
+                // Actualizar el localStorage
+                localStorage.setItem('carrito', JSON.stringify(arrayCarrito));
+                
             }
         });
 
@@ -353,8 +339,6 @@ function getProductNameWithVariant(product, variantId) {
 }
 
 function getPriceFromCart(cartItem, product) {
-    console.log("Entra a obtener el price");
-    console.log(product);
     if (cartItem.variantId) {
         // Buscar la variante específica usando el variantId
         const variant = product.variations.find(variant => variant.variantID === cartItem.variantId);
@@ -377,10 +361,31 @@ function buscarPrecioPorId(id) {
     return producto ? producto.price : 0;
 }
 
-function calcularTotalCarrito(carrito) {
-    return carrito.reduce((total, item) => {
-        const precio = buscarPrecioPorId(item.id);
-        return total + (precio * item.cantidad);
+function calculateTotalCart(cart) {
+    return cart.reduce((total, item) => {
+        const product = productList.find(product => product.id === item.id);
+
+        let price;
+
+        // Case 1: The product does not have variants
+        if (!product.variations || product.variations.length === 0) {
+            price = product.price;
+        }
+        // Case 2: The product has variants and the price is in each variant
+        else if (item.variantId) {
+            const variant = product.variations.find(variation => variation.variantID === item.variantId);
+            if (variant && variant.price !== undefined) {
+                price = variant.price;
+            } else {
+                // Case 3: The product has variants but the price is in the main product
+                price = product.price;
+            }
+        } else {
+            // Default fallback for edge cases
+            price = product.price;
+        }
+
+        return total + (price * item.quantity);
     }, 0);
 }
 

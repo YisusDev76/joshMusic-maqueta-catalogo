@@ -406,9 +406,10 @@ input[type="checkbox"] {
 }
 
 .shipping-warning {
+  margin-top: 10px;
   padding: 10px;
   border-radius: 5px;
-  font-size: 12px; /* Tamaño de fuente más pequeño */
+  font-size: 13px; /* Tamaño de fuente más pequeño */
   color: var(--very-light-pink);
 }
 
@@ -515,7 +516,8 @@ input[type="checkbox"] {
 
   .shipping-warning{
     position: absolute;
-    bottom: 9px; /* Ajusta según necesites */
+    bottom: -5px;
+    left: 15px; 
     
   }
 
