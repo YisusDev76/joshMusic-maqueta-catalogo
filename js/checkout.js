@@ -438,3 +438,18 @@ document.getElementById('contact-store-btn').addEventListener('click', function(
     // Abrir WhatsApp en una nueva pestaña
     window.open(whatsappUrl, '_blank');
 });
+
+ // JavaScript para manejar la apertura y cierre del modal
+ document.getElementById('openModal').onclick = function() {
+    document.getElementById('termsModal').style.display = 'block';
+}
+
+document.getElementById('closeModal').onclick = function() {
+    document.getElementById('termsModal').style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target == document.getElementById('termsModal')) {
+        document.getElementById('termsModal').style.display = 'none';
+    }
+}
