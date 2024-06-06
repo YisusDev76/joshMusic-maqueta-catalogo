@@ -547,10 +547,10 @@
             "price": 51800,
             "discountedPrice": 50800,
             "images": [
-                "https://melosoundofmusic.com.mx/wp/wp-content/uploads/2023/02/M-Sub28-A-5-300x169.png"
+                "https://res.cloudinary.com/dtm7zuks0/image/upload/v1717716633/msub28a-melo_rh0ka4.jpg"
             ],
             "category": "audio-profesional",
-            "description": "",
+            "description": "Subwoofer de doble 18” que proporciona un rendimiento excepcional y de mayor impacto en la extensión de baja frecuencia.\n\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/pn4EkG3NUT0?si=Cm_r_h6vLJnZBgfB\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n\n## Información\n------------\nEl M-SUB28-A es un subwoofer que ha sido concebido desde el comienzo para satisfacer el mercado que necesita más potencia en sus eventos y es un excelente complemento de nuestros sistemas KENDO y KODA. Sus dos componentes de 18” están montados en cámaras independientes, con puertos de sintonía diseñados para el libre flujo de aire y una muy baja distorsión a grandes presiones. Añadimos un módulo RAM Audio de 3000W RMS clase D dedicado, el cual brinda una gran calidad de sonido y añade un peso mínimo a la caja. Integra un procesador de clase mundial de la misma marca el cual trabaja a 64Bits @ 96Khz con el cual procesamos y limitamos con compresores RMS y Limitadores PICO el trabajo del subwoofer para garantizar el mejor sonido en todo momento.\n\n\n|**Especificaciones**||\n|--------------------------------|-----------------------------------|\n|**Tipo**|Activo|\n|**Rango de Frecuencia**|29Hz-70Hz (-6dB)|\n|**Presión Sonora Nominal**|134 dB SPL|\n|**Presión Sonora Máxima**|140 dB SPL|\n|**Componentes LF**|2×18” Bobina de 4.5\"|\n|**MWS-18F MELO**|(Ferrita)|\n|**Conectores de entrada**|XLR Balanceados|\n|**Amplificador**|Clase D 3000W RMS|\n|**Presets**|Cardioide, End Fire, Frontal y Corte a 40Hz|\n|**Rango de voltaje**|85V a 265V|\n|**Consumo**|2.2 Amp (@4 Ohms 230V)|\n|**Protección**|Limitadores RMS y Pico|\n|**Procesamiento**|RAM Audio 64 Bits 96 Khz|\n|**Dimensiones (L x A x P)**|1200mm x 551mm x 877mm|\n|**Material**|Multiplay 18mm|\n|**Peso**|94.5 kg|",
             "visible": true
         },
         {

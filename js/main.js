@@ -1,8 +1,5 @@
 //Navbar escritorio/tablets
 
-//Revisar que hay un problema que, cuando hay un producto que sus variantes valen lo mismo, y por ende el precio no esta en cada variante, eso hace romper el codigo
-// y hace que de el error de  read properties of undefined (reading 'toLocaleString') por lo tanto hay que ajustar eso, ya se poniendo el precio aunque sea el mismo para cada variantes,
-// o manejar logica adicional para este apartado
 const navBarRight = document.querySelector('.navbar-right');
 const menuEmail = document.querySelector('.navbar-email');
 const menuHamIcon = document.querySelector('.menu');
@@ -47,7 +44,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     return true;
                 });
 
-                productList.push(...filteredProducts);
+               
+                const sortedProducts = sortAndShuffleProducts(filteredProducts);
+                productList.push(...sortedProducts);
+
                 const category = window.location.hash.substring(1) || 'all';
                 filterProducts(category);
             } else {
@@ -66,6 +66,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     checkCartStatus();
 });
+
+ // Ordenar los productos según la categoría "audio" y mezclar los demás
+function sortAndShuffleProducts(products) {
+    // Filtrar los productos que pertenecen a la categoría "audio-profesional"
+    const audioProducts = products.filter(product => product.category === 'audio-profesional');
+    const otherProducts = products.filter(product => product.category !== 'audio-profesional');
+
+    // Mezclar aleatoriamente los productos que no son de la categoría "audio-profesional"
+    const shuffledOtherProducts = otherProducts.sort(() => 0.5 - Math.random());
+
+    // Concatenar los productos "audio-profesional" con los otros productos mezclados
+    return audioProducts.concat(shuffledOtherProducts);
+}
 
 
 
