@@ -22,6 +22,22 @@ const mobileMenuLine = document.querySelector('.mobile-menu ul:nth-child(1)');
 const totalProduct = document.querySelector('.product-count');
 const totalPrice = document.querySelector('.price-count');
 
+const discountRules = [
+    {
+        category: 'audio-profesional',
+        customizedDiscount: true,
+        percentageDiscount: false,
+        discountPercentage: 10 // Solo se utiliza si percentageDiscount es true
+    },
+    // {
+    //     category: 'microfonia',
+    //     customizedDiscount: false,
+    //     percentageDiscount: true,
+    //     discountPercentage: 15
+    // }
+];
+
+
 const productList = [];
 let shoppingCart = [];
 
@@ -44,8 +60,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     return true;
                 });
 
-               
-                const sortedProducts = sortAndShuffleProducts(filteredProducts);
+                // Aplicar descuentos y renderizar productos
+                const productsWithDiscounts = applyDiscounts(filteredProducts);
+
+                console.log("Así se ve el array después de aplicar los descuentos: ");
+                console.log(productsWithDiscounts);
+
+                const sortedProducts = sortAndShuffleProducts(productsWithDiscounts);
                 productList.push(...sortedProducts);
 
                 const category = window.location.hash.substring(1) || 'all';
@@ -80,6 +101,37 @@ function sortAndShuffleProducts(products) {
     return audioProducts.concat(shuffledOtherProducts);
 }
 
+function applyDiscounts(products) {
+    return products.map(product => {
+        discountRules.forEach(rule => {
+            if (product.category === rule.category) {
+                if (rule.customizedDiscount) {
+                    if (product.variations && Array.isArray(product.variations)) {
+                        product.variations.forEach(variation => {
+                            variation.originalPrice = variation.price;
+                            variation.price = variation.discountedPrice;
+                        });
+                    } else {
+                        product.originalPrice = product.price;
+                        product.price = product.discountedPrice;
+                    }
+                } else if (rule.percentageDiscount) {
+                    const discount = product.price * (rule.discountPercentage / 100);
+                    if (product.variations && Array.isArray(product.variations)) {
+                        product.variations.forEach(variation => {
+                            variation.originalPrice = variation.price;
+                            variation.discountedPrice = variation.price - discount;
+                        });
+                    } else {
+                        product.originalPrice = product.price;
+                        product.discountedPrice = product.price - discount;
+                    }
+                }
+            }
+        });
+        return product;
+    });
+}
 
 
 // Manejador de eventos a cada enlace de la barra de navegación. 
@@ -322,12 +374,22 @@ const renderProducts = arr => {
 
         // Determinar el precio del producto
         const price = getFirstProductPrice(product);
-
         const productPrice = document.createElement('p');
+        productPrice.classList.add('price');
         productPrice.innerText = formatPrice(price);
 
-        const productName = document.createElement('p');
+
+        // Crear el precio original tachado si existe
+        if (product.originalPrice) {
+            const originalPrice = document.createElement('p');
+            originalPrice.innerText = formatPrice(product.originalPrice);
+            originalPrice.classList.add('original-price'); // Clase CSS para estilo
+
+            productInfoDiv.appendChild(originalPrice);
+        }
+        
         // Crear el nombre del producto según las variaciones
+        const productName = document.createElement('p');
         if (product.variations && product.variations.length > 0) {
             const firstVariation = product.variations[0];
             productName.innerText = `${product.name} - ${product.variationKey}: ${firstVariation.value}`;

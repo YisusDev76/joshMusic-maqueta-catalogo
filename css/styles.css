@@ -602,6 +602,20 @@ body::-webkit-scrollbar-track:active {
   margin-bottom: 4px;
 }
 
+.original-price {
+  text-decoration: line-through;
+  color: #888; /* Color gris para el precio original */
+  font-size: 0.8em !important;
+  font-weight: normal !important;
+}
+
+.price{
+  font-weight: bold !important;
+  font-size: medium !important;
+  color: #000000 !important;
+}
+
+
 /* Estilos para la descripcion que esta hecha en markdown */
 .product-description-markdowm { 
   margin-bottom: 20px; 
@@ -680,7 +694,8 @@ tbody tr:hover {
   font-size: var(--sm);
   margin-top: 0;
   margin-bottom: 32px;
-  opacity: 0;
+  opacity: 1;
+  color: var(--very-light-pink);
   transition-duration: .3s;
   transition-property: opacity;
   transition-delay: .18s;
