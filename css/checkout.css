@@ -494,7 +494,9 @@ input[type="checkbox"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%;
 }
+
 .btn-contact-store img {
   margin-right: 8px;
   width: 24px;
@@ -504,6 +506,43 @@ input[type="checkbox"] {
 .btn-contact-store:hover {
   background-color: #546e7a;
 }
+
+.contact-options {
+  text-align: center;
+}
+
+.secondary-option {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-call-store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+  background-color: transparent;
+  color: #37322B;
+  border: 2px solid #37322B;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 70%;
+}
+
+.btn-call-store img {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.btn-call-store:hover {
+  /* background-color: #37322B;
+  color: white; */
+}
+
 
 /* Estilos para el modal */
 .modal {
@@ -657,5 +696,22 @@ input[type="checkbox"] {
   .contentShippingAndTax p{
     font-size: large;
   }
+
+  @keyframes changeColor {
+    0%, 100% { 
+        background-color: #28a2a2; /* Color original */
+        color: white;
+    }
+    50% { 
+        background-color: #546e7a; /* Color más oscuro */
+        color: white;
+    }
+}
+
+.blinking-btn {
+    animation: changeColor 1s linear 2; /* Cambia el color dos veces en 2 segundos */
+}
+
+
 
 }
