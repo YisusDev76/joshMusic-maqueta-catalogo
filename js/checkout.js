@@ -23,6 +23,8 @@ const phonePreview = document.querySelector('#preview-phone');
 const clientAddressInput = document.querySelector('#clientAddress');
 let tooltipTimeout;
 
+const phoneNumberLow = ['523', '521', '207', '479'];
+const phoneNumberHigh = ['524', '691', '751', '918'];
 const productList = [];
 let shoppingCart = [];
 let totalCart = 0 ;
@@ -71,6 +73,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 totalToPayElments.forEach(function(elemento) {
                     elemento.textContent =  formatPrice(totalCart);
                 });
+
+                startBlinking();
             } else {
                 console.error('La propiedad "products" no existe o no es un array');
             }
@@ -487,17 +491,13 @@ document.getElementById('contact-store-btn').addEventListener('click', function(
     // Codificar el mensaje para URL
     const encodedMessage = encodeURIComponent(message);
 
-    // Números de contacto divididos
-    const phoneNumberLow = ['523', '521', '207', '479'];
-    const phoneNumberHigh = ['524', '691', '751', '918'];
-
     // Función para unir el número de teléfono
     function joinPhoneNumber(parts) {
         return parts.join('');
     }
 
     // Selección del número de contacto según el total del carrito
-    const phoneNumber = totalCart > 7400 ? joinPhoneNumber(phoneNumberHigh) : joinPhoneNumber(phoneNumberLow);
+    const phoneNumber = totalCart > 7500 ? joinPhoneNumber(phoneNumberHigh) : joinPhoneNumber(phoneNumberLow);
 
     // URL de WhatsApp
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
@@ -505,6 +505,46 @@ document.getElementById('contact-store-btn').addEventListener('click', function(
     // Abrir WhatsApp en una nueva pestaña
     window.open(whatsappUrl, '_blank');
 });
+
+document.getElementById('call-store-btn').addEventListener('click', function() {
+    function joinPhoneNumber(parts) {
+        return parts.join('');
+    }
+
+    const phoneNumber = totalCart > 7500 ? joinPhoneNumber(phoneNumberHigh) : joinPhoneNumber(phoneNumberLow);
+    const formattedPhoneNumber = `+${phoneNumber}`;
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        window.location.href = `tel:${formattedPhoneNumber}`;
+    } else {
+        navigator.clipboard.writeText(formattedPhoneNumber).then(() => {
+            alert('Número copiado al portapapeles: ' + formattedPhoneNumber);
+        }).catch(err => {
+            console.error('Error al copiar el número al portapapeles: ', err);
+        });
+    }
+});
+
+document.getElementById('call-store-btn').addEventListener('mouseenter', function() {
+    function joinPhoneNumber(parts) {
+        return parts.join('');
+    }
+
+    const phoneNumber = totalCart > 7500 ? joinPhoneNumber(phoneNumberHigh) : joinPhoneNumber(phoneNumberLow);
+    const formattedPhoneNumber = `+${phoneNumber}`;
+
+    const button = document.getElementById('call-store-btn');
+    button.innerHTML = `<img src="./icons/phone-outgoing.svg" alt="Llamar"> Llamar: ${formattedPhoneNumber}`;
+});
+
+document.getElementById('call-store-btn').addEventListener('mouseleave', function() {
+    const button = document.getElementById('call-store-btn');
+    // button.textContent = 'Llamar';
+    button.innerHTML = '<img src="./icons/phone-outgoing.svg" alt="Llamar"> Llamar'
+});
+
 
  // JavaScript para manejar la apertura y cierre del modal
  document.getElementById('openModal').onclick = function() {
@@ -519,4 +559,23 @@ window.onclick = function(event) {
     if (event.target == document.getElementById('termsModal')) {
         document.getElementById('termsModal').style.display = 'none';
     }
+}
+
+function getRandomTime(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
+function startBlinking() {
+    const contactButton = document.getElementById('contact-store-btn');
+    const randomTime = getRandomTime(10000, 60000);
+
+    setTimeout(() => {
+        contactButton.classList.add('blinking-btn');
+
+        setTimeout(() => {
+            contactButton.classList.remove('blinking-btn');
+            startBlinking(); // Reiniciar el ciclo
+        }, 2000); // Duración del cambio de color
+
+    }, randomTime);
 }
