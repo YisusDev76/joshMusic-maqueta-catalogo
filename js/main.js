@@ -62,10 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Aplicar descuentos y renderizar productos
                 const productsWithDiscounts = applyDiscounts(filteredProducts);
-
-                console.log("Así se ve el array después de aplicar los descuentos: ");
-                console.log(productsWithDiscounts);
-
                 const sortedProducts = sortAndShuffleProducts(productsWithDiscounts);
                 productList.push(...sortedProducts);
 
