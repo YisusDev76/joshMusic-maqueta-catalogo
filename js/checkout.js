@@ -1,4 +1,3 @@
-//DATASET
 // Lista de productos
 
 const radioOptions = document.querySelectorAll('.radio-option input[type="radio"]');
@@ -14,12 +13,14 @@ const shippingCostElements = document.querySelectorAll('.shipping-cost');
 const totalToPayElments = document.querySelectorAll('.element-total-to-Pay');
 const arrowButton = document.querySelector('.button-with-arrow');
 const fullNamePreview = document.getElementById('preview-full-name');
+const previewAddress = document.getElementById('preview-address');
 const companyInput = document.getElementById('company');
 const companyPreview = document.getElementById('preview-company');
 var emailInput = document.getElementById('email');
 var emailPreview = document.getElementById('preview-email');
 const phoneInput = document.getElementById('phone');
 const phonePreview = document.querySelector('#preview-phone');
+const clientAddressInput = document.querySelector('#clientAddress');
 let tooltipTimeout;
 
 const productList = [];
@@ -29,6 +30,22 @@ let totalToPay = 0;
 let selectedShippingProvider = null;
 let globalShippingPrice = 0;
 let priceShipping;
+
+const discountRules = [
+    {
+        category: 'audio-profesional',
+        customizedDiscount: true,
+        percentageDiscount: false,
+        discountPercentage: 10 // Solo se utiliza si percentageDiscount es true
+    },
+    // {
+    //     category: 'microfonia',
+    //     customizedDiscount: false,
+    //     percentageDiscount: true,
+    //     discountPercentage: 15
+    // }
+];
+
 
 shoppingCart = JSON.parse(localStorage.getItem('carrito')) || [];
 if (shoppingCart.length === 0) {
@@ -42,7 +59,10 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             if (Array.isArray(data.products)) {
-                productList.push(...data.products);
+                // Aplicar descuentos y renderizar productos
+                const productsWithDiscounts = applyDiscounts(data.products);
+                productList.push(...productsWithDiscounts);
+
                  // Inicializar la vista con los productos del carrito
                 renderCart(shoppingCart);
                 updateInfoUI();
@@ -90,6 +110,43 @@ emailInput.addEventListener('input', function() {
 phoneInput.addEventListener('input', function () {
     phonePreview.textContent = this.value;
 });
+
+
+clientAddressInput.addEventListener('input', function () {
+    previewAddress.textContent = this.value;
+});
+
+function applyDiscounts(products) {
+    return products.map(product => {
+        discountRules.forEach(rule => {
+            if (product.category === rule.category) {
+                if (rule.customizedDiscount) {
+                    if (product.variations && Array.isArray(product.variations)) {
+                        product.variations.forEach(variation => {
+                            variation.originalPrice = variation.price;
+                            variation.price = variation.discountedPrice;
+                        });
+                    } else {
+                        product.originalPrice = product.price;
+                        product.price = product.discountedPrice;
+                    }
+                } else if (rule.percentageDiscount) {
+                    const discount = product.price * (rule.discountPercentage / 100);
+                    if (product.variations && Array.isArray(product.variations)) {
+                        product.variations.forEach(variation => {
+                            variation.originalPrice = variation.price;
+                            variation.discountedPrice = variation.price - discount;
+                        });
+                    } else {
+                        product.originalPrice = product.price;
+                        product.discountedPrice = product.price - discount;
+                    }
+                }
+            }
+        });
+        return product;
+    });
+}
 
 function checkCartStatus() {
     if (shoppingCart.length === 0) {
